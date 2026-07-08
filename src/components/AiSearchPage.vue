@@ -1,32 +1,9 @@
 <template>
   <section>
-    <!-- 搜索输入 -->
-    <div class="flex gap-3 mb-4">
-      <input
-        v-model="rtStore.query"
-        @keydown.enter="rtStore.search()"
-        type="text"
-        placeholder="输入关键词，如：固态电池最新进展..."
-        class="flex-1 px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
-        :disabled="rtStore.isLoading"
-      />
-      <button
-        @click="rtStore.search()"
-        :disabled="!rtStore.query.trim() || rtStore.isLoading"
-        class="px-6 py-3 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-all"
-      >
-        <span v-if="rtStore.isLoading" class="animate-pulse">搜索中...</span>
-        <span v-else>🔍 搜索</span>
-      </button>
-    </div>
-
-    <!-- 数据源选择 -->
-    <div class="mb-4">
-      <div class="flex items-center justify-between mb-2">
-        <span class="text-xs text-text-secondary">数据源偏好（可选）</span>
-        <button v-if="rtStore.selectedSources.length > 0" @click="rtStore.clearSources()" class="text-xs text-accent-amber hover:text-accent-amber/80">清除</button>
-      </div>
-      <div class="flex flex-wrap gap-2">
+    <!-- 筛选项（左侧）+ 搜索框（右侧） -->
+    <div class="flex items-start gap-3 mb-3">
+      <!-- 左侧：筛选内容，自动换行 -->
+      <div class="flex-1 flex flex-wrap gap-2">
         <button
           v-for="src in rtStore.availableSources"
           :key="src"
@@ -36,22 +13,43 @@
             ? 'bg-primary/20 border-primary text-primary-light'
             : 'bg-bg-deep border-border text-text-muted hover:border-primary/30 hover:text-text-secondary'"
         >{{ src }}</button>
+        <button v-if="rtStore.selectedSources.length > 0" @click="rtStore.clearSources()" class="px-3 py-1.5 rounded-lg text-xs text-accent-amber hover:text-accent-amber/80 border border-accent-amber/30">清除</button>
+      </div>
+
+      <!-- 右侧：返回数量 + 搜索框 -->
+      <div class="flex flex-col items-end gap-2 shrink-0 w-64">
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-text-muted">返回数量：</span>
+          <select v-model.number="rtStore.resultLimit" class="px-2 py-1 rounded-lg bg-bg-deep border border-border text-xs text-text-secondary focus:outline-none focus:border-primary">
+            <option :value="3">3 条</option>
+            <option :value="5">5 条</option>
+            <option :value="10">10 条</option>
+            <option :value="15">15 条</option>
+          </select>
+        </div>
+        <div class="flex gap-2 w-full">
+          <input
+            v-model="rtStore.query"
+            @keydown.enter="rtStore.search()"
+            type="text"
+            placeholder="搜索资讯..."
+            class="flex-1 px-4 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+            :disabled="rtStore.isLoading"
+          />
+          <button
+            @click="rtStore.search()"
+            :disabled="!rtStore.query.trim() || rtStore.isLoading"
+            class="px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-all shrink-0"
+          >
+            <span v-if="rtStore.isLoading" class="animate-pulse">...</span>
+            <span v-else>🔍</span>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- 数量控制 -->
-    <div class="mb-4 flex items-center gap-3">
-      <span class="text-xs text-text-secondary">返回数量：</span>
-      <select v-model.number="rtStore.resultLimit" class="px-3 py-1.5 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
-        <option :value="3">3 条</option>
-        <option :value="5">5 条</option>
-        <option :value="10">10 条</option>
-        <option :value="15">15 条</option>
-      </select>
-    </div>
-
     <!-- 错误提示 -->
-    <div v-if="rtStore.error" class="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">⚠️ {{ rtStore.error }}</div>
+    <div v-if="rtStore.error" class="mb-3 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">⚠️ {{ rtStore.error }}</div>
 
     <!-- 加载状态 -->
     <div v-if="rtStore.isLoading" class="text-center py-12">

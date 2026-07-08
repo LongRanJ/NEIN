@@ -1,20 +1,7 @@
 <template>
   <section>
-    <!-- 搜索框 -->
-    <div class="flex gap-3 mb-4">
-      <div class="flex-1 relative">
-        <input
-          v-model="localQuery"
-          type="text"
-          placeholder="搜索资讯标题、摘要、来源、关键词..."
-          class="w-full px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
-        />
-        <button v-if="localQuery" @click="localQuery = ''" class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white">✕</button>
-      </div>
-    </div>
-
-    <!-- 筛选器 -->
-    <div class="flex flex-wrap gap-3 mb-4">
+    <!-- 筛选项（左侧）+ 条数 + 搜索框（右侧） -->
+    <div class="flex items-center flex-wrap gap-3 mb-3">
       <select v-model="selectedSource" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
         <option value="">全部来源</option>
         <option v-for="s in store.sources" :key="s" :value="s">{{ s }}</option>
@@ -26,13 +13,18 @@
         <option value="low">一般</option>
       </select>
       <button v-if="hasFilters" @click="clearFilters" class="px-3 py-2 rounded-lg bg-accent-amber/20 text-accent-amber text-sm hover:bg-accent-amber/30 transition-colors">清除筛选</button>
-    </div>
-
-    <div class="flex items-center justify-between mb-3">
-      <span class="text-sm text-text-muted">
-        <template v-if="localQuery || hasFilters">找到 {{ localResults.length }} 条结果</template>
-        <template v-else>共 {{ store.articles.length }} 条资讯</template>
+      <span class="text-xs text-text-muted ml-auto">
+        共 <span class="text-primary font-medium">{{ localResults.length }}</span> 条资讯
       </span>
+      <div class="relative w-64">
+        <input
+          v-model="localQuery"
+          type="text"
+          placeholder="搜索资讯..."
+          class="w-full px-4 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+        />
+        <button v-if="localQuery" @click="localQuery = ''" class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white text-xs">✕</button>
+      </div>
     </div>
 
     <!-- 结果列表 -->

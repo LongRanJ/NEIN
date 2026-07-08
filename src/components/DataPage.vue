@@ -1,29 +1,28 @@
 <template>
   <section>
-    <!-- 图表区域 -->
-    <div class="space-y-4">
-      <!-- 第一行：关键词分布 + 来源分布 -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div class="glass rounded-xl p-4">
-          <h4 class="text-sm font-medium text-text-secondary mb-3">📊 关键词分布</h4>
-          <div ref="keywordChartRef" class="w-full h-52"></div>
-        </div>
-        <div class="glass rounded-xl p-4">
-          <h4 class="text-sm font-medium text-text-secondary mb-3">📰 来源分布</h4>
-          <div ref="sourceChartRef" class="w-full h-52"></div>
-        </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <!-- 关键词分布 -->
+      <div class="glass rounded-xl p-4">
+        <h4 class="text-sm font-medium text-text-secondary mb-3">📊 关键词分布</h4>
+        <div ref="keywordChartRef" class="w-full h-56"></div>
       </div>
 
-      <!-- 第二行：时间线（2/3） + 重要性分布（1/3） -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div class="glass rounded-xl p-4 lg:col-span-2">
-          <h4 class="text-sm font-medium text-text-secondary mb-3">📈 资讯时间线</h4>
-          <div ref="timelineChartRef" class="w-full h-52"></div>
-        </div>
-        <div class="glass rounded-xl p-4">
-          <h4 class="text-sm font-medium text-text-secondary mb-3">⚠️ 重要性分布</h4>
-          <div ref="importanceChartRef" class="w-full h-52"></div>
-        </div>
+      <!-- 来源分布 -->
+      <div class="glass rounded-xl p-4">
+        <h4 class="text-sm font-medium text-text-secondary mb-3">📰 来源分布</h4>
+        <div ref="sourceChartRef" class="w-full h-56"></div>
+      </div>
+
+      <!-- 资讯时间线 -->
+      <div class="glass rounded-xl p-4">
+        <h4 class="text-sm font-medium text-text-secondary mb-3">📈 资讯时间线</h4>
+        <div ref="timelineChartRef" class="w-full h-56"></div>
+      </div>
+
+      <!-- 重要性分布 -->
+      <div class="glass rounded-xl p-4">
+        <h4 class="text-sm font-medium text-text-secondary mb-3">⚠️ 重要性分布</h4>
+        <div ref="importanceChartRef" class="w-full h-56"></div>
       </div>
     </div>
   </section>
