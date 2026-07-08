@@ -1,7 +1,27 @@
 {
   "lastUpdated": "2026-07-08T02:00:00Z",
-  "keywords": ["锂电池材料", "固态电池", "磷酸铁锂", "三元锂", "快充技术", "新能源事故", "储能", "氢能"],
-  "sources": ["36氪", "第一财经", "界面新闻", "财联社", "OFweek", "高工锂电", "汽车之家", "电车通", "北极星储能网", "能源杂志"],
+  "keywords": [
+    "锂电池材料",
+    "固态电池",
+    "磷酸铁锂",
+    "三元锂",
+    "快充技术",
+    "新能源事故",
+    "储能",
+    "氢能"
+  ],
+  "sources": [
+    "36氪",
+    "第一财经",
+    "界面新闻",
+    "财联社",
+    "OFweek",
+    "高工锂电",
+    "汽车之家",
+    "电车通",
+    "北极星储能网",
+    "能源杂志"
+  ],
   "articles": [
     {
       "id": "a001",
@@ -10,9 +30,20 @@
       "source": "36氪",
       "sourceUrl": "https://36kr.com",
       "publishedAt": "2026-07-07",
-      "keywords": ["固态电池", "锂电池材料"],
+      "keywords": [
+        "固态电池",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "三星SDI",
+          "丰田"
+        ],
+        "主要事件": "固态电池量产倒计时：三大技术路线谁主沉浮"
+      }
     },
     {
       "id": "a002",
@@ -21,9 +52,15 @@
       "source": "高工锂电",
       "sourceUrl": "https://gg-lb.com",
       "publishedAt": "2026-07-07",
-      "keywords": ["磷酸铁锂", "三元锂"],
+      "keywords": [
+        "磷酸铁锂",
+        "三元锂"
+      ],
       "category": "市场动态",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "磷酸铁锂出货量首次超过三元锂：成本优势持续扩大"
+      }
     },
     {
       "id": "a003",
@@ -32,9 +69,14 @@
       "source": "汽车之家",
       "sourceUrl": "https://autohome.com.cn",
       "publishedAt": "2026-07-06",
-      "keywords": ["快充技术"],
+      "keywords": [
+        "快充技术"
+      ],
       "category": "产业配套",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "800V快充成标配：充电桩基础设施建设提速"
+      }
     },
     {
       "id": "a004",
@@ -43,9 +85,15 @@
       "source": "财联社",
       "sourceUrl": "https://cls.cn",
       "publishedAt": "2026-07-06",
-      "keywords": ["新能源事故", "锂电池材料"],
+      "keywords": [
+        "新能源事故",
+        "锂电池材料"
+      ],
       "category": "安全事件",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "某品牌电动车自燃事件引发电池安全大讨论"
+      }
     },
     {
       "id": "a005",
@@ -54,9 +102,15 @@
       "source": "北极星储能网",
       "sourceUrl": "https://chuneng.bjx.com.cn",
       "publishedAt": "2026-07-05",
-      "keywords": ["储能", "锂电池材料"],
+      "keywords": [
+        "储能",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "钠离子电池储能电站并网：成本降至0.3元/Wh"
+      }
     },
     {
       "id": "a006",
@@ -65,9 +119,14 @@
       "source": "能源杂志",
       "sourceUrl": "https://inengyuan.com",
       "publishedAt": "2026-07-05",
-      "keywords": ["氢能"],
+      "keywords": [
+        "氢能"
+      ],
       "category": "市场动态",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "绿氢成本首次低于灰氢：可再生能源制氢迎来拐点"
+      }
     },
     {
       "id": "a007",
@@ -76,9 +135,15 @@
       "source": "第一财经",
       "sourceUrl": "https://yicai.com",
       "publishedAt": "2026-07-04",
-      "keywords": ["锂电池材料"],
+      "keywords": [
+        "锂电池材料"
+      ],
       "category": "资源布局",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "锂矿资源争夺战：非洲成为新战场"
+      }
     },
     {
       "id": "a008",
@@ -87,9 +152,15 @@
       "source": "OFweek",
       "sourceUrl": "https://ofweek.com",
       "publishedAt": "2026-07-04",
-      "keywords": ["固态电池", "锂电池材料"],
+      "keywords": [
+        "固态电池",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "固态电池电解质材料突破：成本降低60%"
+      }
     },
     {
       "id": "a009",
@@ -98,9 +169,15 @@
       "source": "界面新闻",
       "sourceUrl": "https://jiemian.com",
       "publishedAt": "2026-07-03",
-      "keywords": ["三元锂", "锂电池材料"],
+      "keywords": [
+        "三元锂",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "三元锂电池回收技术新进展：回收率达98%"
+      }
     },
     {
       "id": "a010",
@@ -109,9 +186,14 @@
       "source": "电车通",
       "sourceUrl": "https://dianchetong.com",
       "publishedAt": "2026-07-03",
-      "keywords": ["新能源事故"],
+      "keywords": [
+        "新能源事故"
+      ],
       "category": "安全数据",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "新能源汽车起火概率降至燃油车以下：数据首次反转"
+      }
     },
     {
       "id": "a011",
@@ -120,9 +202,16 @@
       "source": "北极星储能网",
       "sourceUrl": "https://chuneng.bjx.com.cn",
       "publishedAt": "2026-07-02",
-      "keywords": ["储能", "新能源事故"],
+      "keywords": [
+        "储能",
+        "新能源事故"
+      ],
       "category": "安全事件",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "储能电站安全事故频发：行业呼吁统一标准"
+      }
     },
     {
       "id": "a012",
@@ -131,9 +220,14 @@
       "source": "能源杂志",
       "sourceUrl": "https://inengyuan.com",
       "publishedAt": "2026-07-02",
-      "keywords": ["氢能"],
+      "keywords": [
+        "氢能"
+      ],
       "category": "产业配套",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "氢燃料电池重卡商业化运营破千辆"
+      }
     },
     {
       "id": "a013",
@@ -142,9 +236,18 @@
       "source": "36氪",
       "sourceUrl": "https://36kr.com",
       "publishedAt": "2026-07-01",
-      "keywords": ["快充技术", "锂电池材料"],
+      "keywords": [
+        "快充技术",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代"
+        ],
+        "主要事件": "快充电池技术路线之争：硅碳负极 vs 锂金属负极"
+      }
     },
     {
       "id": "a014",
@@ -153,9 +256,15 @@
       "source": "高工锂电",
       "sourceUrl": "https://gg-lb.com",
       "publishedAt": "2026-07-01",
-      "keywords": ["磷酸铁锂", "锂电池材料"],
+      "keywords": [
+        "磷酸铁锂",
+        "锂电池材料"
+      ],
       "category": "技术突破",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸锰铁锂：下一代正极材料的产业化提速"
+      }
     },
     {
       "id": "a015",
@@ -164,9 +273,14 @@
       "source": "第一财经",
       "sourceUrl": "https://yicai.com",
       "publishedAt": "2026-06-30",
-      "keywords": ["新能源事故"],
+      "keywords": [
+        "新能源事故"
+      ],
       "category": "政策法规",
-      "importance": "low"
+      "importance": "low",
+      "tags": {
+        "主要事件": "新能源车险费率下调：电池安全改善是主因"
+      }
     },
     {
       "id": "a016",
@@ -175,9 +289,15 @@
       "source": "财联社",
       "sourceUrl": "https://cls.cn",
       "publishedAt": "2026-06-30",
-      "keywords": ["锂电池材料"],
+      "keywords": [
+        "锂电池材料"
+      ],
       "category": "市场分析",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "全球锂电池产能过剩预警：中国企业占全球70%"
+      }
     },
     {
       "id": "a017",
@@ -186,9 +306,21 @@
       "source": "OFweek",
       "sourceUrl": "https://ofweek.com",
       "publishedAt": "2026-06-29",
-      "keywords": ["固态电池"],
+      "keywords": [
+        "固态电池"
+      ],
       "category": "竞争格局",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "宁德时代",
+          "比亚迪",
+          "三星SDI",
+          "丰田"
+        ],
+        "主要事件": "固态电池专利战升级：中日韩三国博弈"
+      }
     },
     {
       "id": "a018",
@@ -197,9 +329,18 @@
       "source": "汽车之家",
       "sourceUrl": "https://autohome.com.cn",
       "publishedAt": "2026-06-29",
-      "keywords": ["快充技术"],
+      "keywords": [
+        "快充技术"
+      ],
       "category": "政策法规",
-      "importance": "low"
+      "importance": "low",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "蔚来"
+        ],
+        "主要事件": "换电模式重获关注：标准化难题有望突破"
+      }
     },
     {
       "id": "a019",
@@ -208,9 +349,14 @@
       "source": "界面新闻",
       "sourceUrl": "https://jiemian.com",
       "publishedAt": "2026-06-28",
-      "keywords": ["氢能"],
+      "keywords": [
+        "氢能"
+      ],
       "category": "技术突破",
-      "importance": "high"
+      "importance": "high",
+      "tags": {
+        "主要事件": "氢燃料电池催化剂突破：铂用量降低90%"
+      }
     },
     {
       "id": "a020",
@@ -219,9 +365,14 @@
       "source": "北极星储能网",
       "sourceUrl": "https://chuneng.bjx.com.cn",
       "publishedAt": "2026-06-28",
-      "keywords": ["储能"],
+      "keywords": [
+        "储能"
+      ],
       "category": "商业模式",
-      "importance": "medium"
+      "importance": "medium",
+      "tags": {
+        "主要事件": "储能商业模式创新：共享储能电站盈利模式跑通"
+      }
     }
   ]
 }

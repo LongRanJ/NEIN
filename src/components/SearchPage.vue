@@ -1,7 +1,7 @@
 <template>
-  <section id="search" class="glass rounded-2xl p-6">
+  <section>
     <!-- Tab 切换 -->
-    <div class="flex items-center gap-1 mb-4 p-1 rounded-xl bg-bg-deep/50 w-fit">
+    <div class="flex items-center gap-1 mb-6 p-1 rounded-xl bg-bg-deep/50 w-fit">
       <button
         @click="activeTab = 'local'"
         class="px-4 py-2 rounded-lg text-sm font-medium transition-all"
@@ -16,9 +16,6 @@
 
     <!-- ========== 本地搜索模式 ========== -->
     <div v-if="activeTab === 'local'">
-      <h3 class="text-lg font-semibold text-white mb-4">🔍 本地资讯检索</h3>
-
-      <!-- Search input -->
       <div class="flex gap-3 mb-4">
         <div class="flex-1 relative">
           <input
@@ -27,25 +24,15 @@
             placeholder="搜索资讯标题、摘要、来源、关键词..."
             class="w-full px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
           />
-          <button
-            v-if="localQuery"
-            @click="localQuery = ''"
-            class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white"
-          >✕</button>
+          <button v-if="localQuery" @click="localQuery = ''" class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white">✕</button>
         </div>
       </div>
 
-      <!-- Filters -->
+      <!-- 筛选器 -->
       <div class="flex flex-wrap gap-3 mb-4">
         <select v-model="selectedSource" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
           <option value="">全部来源</option>
           <option v-for="s in store.sources" :key="s" :value="s">{{ s }}</option>
-        </select>
-        <select v-model="selectedDate" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
-          <option value="">全部时间</option>
-          <option value="3">最近3天</option>
-          <option value="7">最近7天</option>
-          <option value="14">最近14天</option>
         </select>
         <select v-model="selectedImportance" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
           <option value="">全部重要性</option>
@@ -63,8 +50,8 @@
         </span>
       </div>
 
-      <!-- Results -->
-      <div class="space-y-3 max-h-96 overflow-y-auto">
+      <!-- 结果列表 -->
+      <div class="space-y-3 max-h-[60vh] overflow-y-auto">
         <div
           v-for="article in localResults"
           :key="article.id"
@@ -85,7 +72,7 @@
         </div>
       </div>
 
-      <div v-if="localResults.length === 0 && (localQuery || hasFilters)" class="text-center py-8 text-text-muted">
+      <div v-if="localResults.length === 0 && (localQuery || hasFilters)" class="text-center py-12 text-text-muted">
         <div class="text-3xl mb-2">🔍</div>
         <p>未找到匹配的资讯</p>
       </div>
@@ -93,10 +80,8 @@
 
     <!-- ========== AI 实时搜索模式 ========== -->
     <div v-if="activeTab === 'ai'">
-      <h3 class="text-lg font-semibold text-white mb-4">🤖 AI 实时搜索</h3>
       <p class="text-xs text-text-muted mb-4">通过 AI 联网搜索最新资讯，支持自定义数据源和数量</p>
 
-      <!-- 搜索输入 -->
       <div class="flex gap-3 mb-4">
         <input
           v-model="rtStore.query"
@@ -147,12 +132,10 @@
       </div>
 
       <!-- 错误提示 -->
-      <div v-if="rtStore.error" class="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
-        ⚠️ {{ rtStore.error }}
-      </div>
+      <div v-if="rtStore.error" class="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">⚠️ {{ rtStore.error }}</div>
 
       <!-- 加载状态 -->
-      <div v-if="rtStore.isLoading" class="text-center py-8">
+      <div v-if="rtStore.isLoading" class="text-center py-12">
         <div class="inline-flex items-center gap-2 text-text-muted">
           <div class="w-5 h-5 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
           <span>AI 正在搜索中，请稍候...</span>
@@ -160,7 +143,7 @@
       </div>
 
       <!-- 搜索结果 -->
-      <div v-if="rtStore.results.length > 0 && !rtStore.isLoading" class="space-y-3 max-h-96 overflow-y-auto">
+      <div v-if="rtStore.results.length > 0 && !rtStore.isLoading" class="space-y-3 max-h-[60vh] overflow-y-auto">
         <div class="text-sm text-text-muted mb-2">找到 {{ rtStore.results.length }} 条结果</div>
         <div
           v-for="(item, i) in rtStore.results"
@@ -185,8 +168,7 @@
         </div>
       </div>
 
-      <!-- 空状态 -->
-      <div v-if="rtStore.hasSearched && rtStore.results.length === 0 && !rtStore.isLoading && !rtStore.error" class="text-center py-8 text-text-muted">
+      <div v-if="rtStore.hasSearched && rtStore.results.length === 0 && !rtStore.isLoading && !rtStore.error" class="text-center py-12 text-text-muted">
         <div class="text-3xl mb-2">🔍</div>
         <p>未找到相关结果，请尝试其他关键词</p>
       </div>
@@ -204,11 +186,8 @@ const store = useNewsStore()
 const rtStore = useRealtimeSearchStore()
 
 const activeTab = ref('local')
-
-// 本地搜索状态
 const localQuery = ref('')
 const selectedSource = ref('')
-const selectedDate = ref('')
 const selectedImportance = ref('')
 
 const fuse = new Fuse(store.articles, {
@@ -217,7 +196,7 @@ const fuse = new Fuse(store.articles, {
   includeMatches: true
 })
 
-const hasFilters = computed(() => selectedSource.value || selectedDate.value || selectedImportance.value)
+const hasFilters = computed(() => selectedSource.value || selectedImportance.value)
 
 const localResults = computed(() => {
   let results = store.articles
@@ -227,13 +206,6 @@ const localResults = computed(() => {
   if (selectedSource.value) {
     results = results.filter(a => a.source === selectedSource.value)
   }
-  if (selectedDate.value) {
-    const days = parseInt(selectedDate.value)
-    const cutoff = new Date()
-    cutoff.setDate(cutoff.getDate() - days)
-    const cutoffStr = cutoff.toISOString().split('T')[0]
-    results = results.filter(a => a.publishedAt >= cutoffStr)
-  }
   if (selectedImportance.value) {
     results = results.filter(a => a.importance === selectedImportance.value)
   }
@@ -242,7 +214,6 @@ const localResults = computed(() => {
 
 function clearFilters() {
   selectedSource.value = ''
-  selectedDate.value = ''
   selectedImportance.value = ''
 }
 

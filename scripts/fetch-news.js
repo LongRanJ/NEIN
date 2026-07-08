@@ -181,6 +181,32 @@ function dedup(articles) {
   })
 }
 
+// ─── Tags Extraction ─────────────────────────────────────
+
+function extractTags(title, summary) {
+  const text = title + summary
+  const tags = {}
+
+  // 时间
+  const dateMatch = text.match(/(20\d{2}[年\-\/\.](?:1[0-2]|0?[1-9])[月\-\/\.](?:3[01]|[12]?\d))/)
+  if (dateMatch) tags['时间'] = dateMatch[1]
+
+  // 地点
+  const locations = ['北京', '上海', '深圳', '广州', '杭州', '成都', '武汉', '南京', '合肥', '西安', '苏州', '重庆', '中国', '美国', '日本', '韩国', '德国', '欧洲', '北美']
+  const foundLocations = locations.filter(loc => text.includes(loc))
+  if (foundLocations.length) tags['地点'] = foundLocations.slice(0, 3).join('、')
+
+  // 涉及企业
+  const companies = ['宁德时代', '比亚迪', '国轩高科', '亿纬锂能', '中创新航', '欣旺达', '蜂巢能源', '三星SDI', 'LG新能源', '松下', '丰田', '特斯拉', '大众', '宝马', '蔚来', '小鹏', '理想', '小米', '华为', '广汽', '长安', '吉利', '上汽', '北汽', '宝马', '奔驰']
+  const foundCompanies = companies.filter(co => text.includes(co))
+  if (foundCompanies.length) tags['涉及企业'] = foundCompanies.slice(0, 5)
+
+  // 主要事件（取标题前30字）
+  tags['主要事件'] = title.slice(0, 30)
+
+  return tags
+}
+
 // ─── Main ──────────────────────────────────────────────────
 
 async function main() {
@@ -221,25 +247,66 @@ async function main() {
   // Sort by date descending
   allArticles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
 
+  // Load existing data for deduplication
+  const outputPath = 'src/data/news.json'
+  let existingArticles = []
+  if (existsSync(outputPath)) {
+    try {
+      const existing = JSON.parse(readFileSync(outputPath, 'utf-8'))
+      existingArticles = existing.articles || []
+      console.log(`\n📂 Loaded ${existingArticles.length} existing articles for dedup`)
+    } catch (e) {
+      console.log('\n⚠️ Could not read existing data, starting fresh')
+    }
+  }
+
+  // Dedup new articles internally
+  allArticles = dedup(allArticles)
+
+  // Add tags to new articles
+  allArticles = allArticles.map(a => ({
+    ...a,
+    tags: extractTags(a.title, a.summary)
+  }))
+
+  // Merge: existing + new (dedup by title prefix)
+  const existingKeys = new Set(existingArticles.map(a => a.title.slice(0, 20)))
+  const newArticles = allArticles.filter(a => !existingKeys.has(a.title.slice(0, 20)))
+
+  if (newArticles.length > 0) {
+    console.log(`\n🆕 Found ${newArticles.length} new articles to add`)
+  } else {
+    console.log('\n✅ No new articles found, all already exist in database')
+  }
+
+  // Merge: new articles prepended, existing kept
+  const mergedArticles = [...newArticles, ...existingArticles]
+
+  // Sort by date descending
+  mergedArticles.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+
   // Build output
   const output = {
     lastUpdated: new Date().toISOString(),
     keywords: KEYWORDS,
     sources: SOURCES,
-    articles: allArticles
+    articles: mergedArticles
   }
 
-  // Read existing data for fallback
-  const outputPath = 'src/data/news.json'
-  if (allArticles.length === 0 && existsSync(outputPath)) {
+  if (allArticles.length === 0 && existingArticles.length > 0) {
     console.log('\n⚠️ No new articles fetched, keeping existing data.')
+    // Still update lastUpdated
+    existingArticles = existingArticles // keep as is
+    const keepOutput = { lastUpdated: new Date().toISOString(), keywords: KEYWORDS, sources: SOURCES, articles: existingArticles }
+    writeFileSync(outputPath, JSON.stringify(keepOutput, null, 2), 'utf-8')
+    console.log(`   Updated lastUpdated timestamp`)
     return
   }
 
   writeFileSync(outputPath, JSON.stringify(output, null, 2), 'utf-8')
-  console.log(`\n✅ Done! ${allArticles.length} articles saved to ${outputPath}`)
+  console.log(`\n✅ Done! ${mergedArticles.length} articles saved to ${outputPath} (${newArticles.length} new, ${existingArticles.length} existing)`)
   console.log(`   Keywords: ${KEYWORDS.length}`)
-  console.log(`   Sources used: ${[...new Set(allArticles.map(a => a.source))].join(', ')}`)
+  console.log(`   Sources used: ${[...new Set(mergedArticles.map(a => a.source))].join(', ')}`)
 }
 
 main().catch(err => {
