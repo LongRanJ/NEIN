@@ -1,114 +1,195 @@
 <template>
   <section id="search" class="glass rounded-2xl p-6">
-    <h3 class="text-lg font-semibold text-white mb-4">🔍 资讯检索</h3>
+    <!-- Tab 切换 -->
+    <div class="flex items-center gap-1 mb-4 p-1 rounded-xl bg-bg-deep/50 w-fit">
+      <button
+        @click="activeTab = 'local'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-all"
+        :class="activeTab === 'local' ? 'bg-primary text-white shadow-lg' : 'text-text-muted hover:text-white'"
+      >🔍 本地搜索</button>
+      <button
+        @click="activeTab = 'ai'"
+        class="px-4 py-2 rounded-lg text-sm font-medium transition-all"
+        :class="activeTab === 'ai' ? 'bg-primary text-white shadow-lg' : 'text-text-muted hover:text-white'"
+      >🤖 AI 实时搜索</button>
+    </div>
 
-    <!-- Search input -->
-    <div class="flex gap-3 mb-4">
-      <div class="flex-1 relative">
+    <!-- ========== 本地搜索模式 ========== -->
+    <div v-if="activeTab === 'local'">
+      <h3 class="text-lg font-semibold text-white mb-4">🔍 本地资讯检索</h3>
+
+      <!-- Search input -->
+      <div class="flex gap-3 mb-4">
+        <div class="flex-1 relative">
+          <input
+            v-model="localQuery"
+            type="text"
+            placeholder="搜索资讯标题、摘要、来源、关键词..."
+            class="w-full px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+          />
+          <button
+            v-if="localQuery"
+            @click="localQuery = ''"
+            class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white"
+          >✕</button>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="flex flex-wrap gap-3 mb-4">
+        <select v-model="selectedSource" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
+          <option value="">全部来源</option>
+          <option v-for="s in store.sources" :key="s" :value="s">{{ s }}</option>
+        </select>
+        <select v-model="selectedDate" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
+          <option value="">全部时间</option>
+          <option value="3">最近3天</option>
+          <option value="7">最近7天</option>
+          <option value="14">最近14天</option>
+        </select>
+        <select v-model="selectedImportance" class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
+          <option value="">全部重要性</option>
+          <option value="high">重要</option>
+          <option value="medium">关注</option>
+          <option value="low">一般</option>
+        </select>
+        <button v-if="hasFilters" @click="clearFilters" class="px-3 py-2 rounded-lg bg-accent-amber/20 text-accent-amber text-sm hover:bg-accent-amber/30 transition-colors">清除筛选</button>
+      </div>
+
+      <div class="flex items-center justify-between mb-3">
+        <span class="text-sm text-text-muted">
+          <template v-if="localQuery || hasFilters">找到 {{ localResults.length }} 条结果</template>
+          <template v-else>共 {{ store.articles.length }} 条资讯</template>
+        </span>
+      </div>
+
+      <!-- Results -->
+      <div class="space-y-3 max-h-96 overflow-y-auto">
+        <div
+          v-for="article in localResults"
+          :key="article.id"
+          class="p-4 rounded-lg bg-bg-deep/50 border border-border/50 hover:border-primary/30 transition-all cursor-pointer"
+        >
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex-1">
+              <h4 class="text-sm font-medium text-white" v-html="highlight(article.title, localQuery)"></h4>
+              <p class="mt-1 text-xs text-text-secondary line-clamp-2" v-html="highlight(article.summary, localQuery)"></p>
+            </div>
+            <span class="shrink-0 px-2 py-0.5 rounded text-xs" :class="importanceClass(article.importance)">{{ importanceLabel(article.importance) }}</span>
+          </div>
+          <div class="mt-2 flex items-center gap-2 text-xs text-text-muted">
+            <span>📰 {{ article.source }}</span>
+            <span>·</span>
+            <span>📅 {{ article.publishedAt }}</span>
+          </div>
+        </div>
+      </div>
+
+      <div v-if="localResults.length === 0 && (localQuery || hasFilters)" class="text-center py-8 text-text-muted">
+        <div class="text-3xl mb-2">🔍</div>
+        <p>未找到匹配的资讯</p>
+      </div>
+    </div>
+
+    <!-- ========== AI 实时搜索模式 ========== -->
+    <div v-if="activeTab === 'ai'">
+      <h3 class="text-lg font-semibold text-white mb-4">🤖 AI 实时搜索</h3>
+      <p class="text-xs text-text-muted mb-4">通过 AI 联网搜索最新资讯，支持自定义数据源和数量</p>
+
+      <!-- 搜索输入 -->
+      <div class="flex gap-3 mb-4">
         <input
-          v-model="query"
-          @input="onSearch"
+          v-model="rtStore.query"
+          @keydown.enter="rtStore.search()"
           type="text"
-          placeholder="搜索资讯标题、摘要、来源、关键词..."
-          class="w-full px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+          placeholder="输入关键词，如：固态电池最新进展..."
+          class="flex-1 px-4 py-3 rounded-xl bg-bg-deep border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+          :disabled="rtStore.isLoading"
         />
         <button
-          v-if="query"
-          @click="clearSearch"
-          class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white"
-        >✕</button>
+          @click="rtStore.search()"
+          :disabled="!rtStore.query.trim() || rtStore.isLoading"
+          class="px-6 py-3 rounded-xl bg-primary text-white text-sm font-medium hover:bg-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+        >
+          <span v-if="rtStore.isLoading" class="animate-pulse">搜索中...</span>
+          <span v-else>🔍 搜索</span>
+        </button>
       </div>
-    </div>
 
-    <!-- Filters -->
-    <div class="flex flex-wrap gap-3 mb-4">
-      <!-- Source filter -->
-      <select
-        v-model="selectedSource"
-        @change="onSearch"
-        class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary"
-      >
-        <option value="">全部来源</option>
-        <option v-for="s in store.sources" :key="s" :value="s">{{ s }}</option>
-      </select>
+      <!-- 数据源选择 -->
+      <div class="mb-4">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs text-text-secondary">数据源偏好（可选）</span>
+          <button v-if="rtStore.selectedSources.length > 0" @click="rtStore.clearSources()" class="text-xs text-accent-amber hover:text-accent-amber/80">清除</button>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="src in rtStore.availableSources"
+            :key="src"
+            @click="rtStore.toggleSource(src)"
+            class="px-3 py-1.5 rounded-lg text-xs transition-all border"
+            :class="rtStore.selectedSources.includes(src)
+              ? 'bg-primary/20 border-primary text-primary-light'
+              : 'bg-bg-deep border-border text-text-muted hover:border-primary/30 hover:text-text-secondary'"
+          >{{ src }}</button>
+        </div>
+      </div>
 
-      <!-- Date filter -->
-      <select
-        v-model="selectedDate"
-        @change="onSearch"
-        class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary"
-      >
-        <option value="">全部时间</option>
-        <option value="3">最近3天</option>
-        <option value="7">最近7天</option>
-        <option value="14">最近14天</option>
-      </select>
+      <!-- 数量控制 -->
+      <div class="mb-4 flex items-center gap-3">
+        <span class="text-xs text-text-secondary">返回数量：</span>
+        <select v-model.number="rtStore.resultLimit" class="px-3 py-1.5 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary">
+          <option :value="3">3 条</option>
+          <option :value="5">5 条</option>
+          <option :value="10">10 条</option>
+          <option :value="15">15 条</option>
+        </select>
+      </div>
 
-      <!-- Importance filter -->
-      <select
-        v-model="selectedImportance"
-        @change="onSearch"
-        class="px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary focus:outline-none focus:border-primary"
-      >
-        <option value="">全部重要性</option>
-        <option value="high">重要</option>
-        <option value="medium">关注</option>
-        <option value="low">一般</option>
-      </select>
+      <!-- 错误提示 -->
+      <div v-if="rtStore.error" class="mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+        ⚠️ {{ rtStore.error }}
+      </div>
 
-      <button
-        v-if="hasFilters"
-        @click="clearFilters"
-        class="px-3 py-2 rounded-lg bg-accent-amber/20 text-accent-amber text-sm hover:bg-accent-amber/30 transition-colors"
-      >
-        清除筛选
-      </button>
-    </div>
+      <!-- 加载状态 -->
+      <div v-if="rtStore.isLoading" class="text-center py-8">
+        <div class="inline-flex items-center gap-2 text-text-muted">
+          <div class="w-5 h-5 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+          <span>AI 正在搜索中，请稍候...</span>
+        </div>
+      </div>
 
-    <!-- Results count -->
-    <div class="flex items-center justify-between mb-3">
-      <span class="text-sm text-text-muted">
-        <template v-if="query || hasFilters">
-          找到 {{ filteredResults.length }} 条结果
-        </template>
-        <template v-else>
-          共 {{ store.articles.length }} 条资讯
-        </template>
-      </span>
-    </div>
-
-    <!-- Results -->
-    <div class="space-y-3 max-h-96 overflow-y-auto">
-      <div
-        v-for="article in filteredResults"
-        :key="article.id"
-        class="p-4 rounded-lg bg-bg-deep/50 border border-border/50 hover:border-primary/30 transition-all cursor-pointer"
-      >
-        <div class="flex items-start justify-between gap-3">
-          <div class="flex-1">
-            <h4 class="text-sm font-medium text-white" v-html="highlight(article.title)"></h4>
-            <p class="mt-1 text-xs text-text-secondary line-clamp-2" v-html="highlight(article.summary)"></p>
+      <!-- 搜索结果 -->
+      <div v-if="rtStore.results.length > 0 && !rtStore.isLoading" class="space-y-3 max-h-96 overflow-y-auto">
+        <div class="text-sm text-text-muted mb-2">找到 {{ rtStore.results.length }} 条结果</div>
+        <div
+          v-for="(item, i) in rtStore.results"
+          :key="i"
+          class="p-4 rounded-lg bg-bg-deep/50 border border-border/50 hover:border-accent-green/30 transition-all"
+        >
+          <div class="flex items-start justify-between gap-3">
+            <div class="flex-1">
+              <h4 class="text-sm font-medium text-white">{{ item.title }}</h4>
+              <p class="mt-1 text-xs text-text-secondary line-clamp-2">{{ item.summary }}</p>
+            </div>
+            <span class="shrink-0 px-2 py-0.5 rounded text-xs bg-accent-green/20 text-accent-green">AI 搜索</span>
           </div>
-          <span
-            class="shrink-0 px-2 py-0.5 rounded text-xs"
-            :class="importanceClass(article.importance)"
-          >{{ importanceLabel(article.importance) }}</span>
-        </div>
-        <div class="mt-2 flex items-center gap-2 text-xs text-text-muted">
-          <span>📰 {{ article.source }}</span>
-          <span>·</span>
-          <span>📅 {{ article.publishedAt }}</span>
-          <span>·</span>
-          <span v-for="kw in article.keywords" :key="kw" class="text-primary-light">{{ kw }} </span>
+          <div class="mt-2 flex items-center gap-2 text-xs text-text-muted flex-wrap">
+            <span>📰 {{ item.source || '未知来源' }}</span>
+            <span v-if="item.date">· 📅 {{ item.date }}</span>
+            <span v-if="item.url">· <a :href="item.url" target="_blank" class="text-primary-light hover:underline">查看原文</a></span>
+          </div>
+          <div v-if="item.keywords?.length" class="mt-2 flex flex-wrap gap-1">
+            <span v-for="kw in item.keywords" :key="kw" class="px-2 py-0.5 rounded text-xs bg-primary/10 text-primary-light">{{ kw }}</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Empty state -->
-    <div v-if="filteredResults.length === 0 && (query || hasFilters)" class="text-center py-8 text-text-muted">
-      <div class="text-3xl mb-2">🔍</div>
-      <p>未找到匹配的资讯</p>
-      <p class="text-xs mt-1">请尝试其他关键词或筛选条件</p>
+      <!-- 空状态 -->
+      <div v-if="rtStore.hasSearched && rtStore.results.length === 0 && !rtStore.isLoading && !rtStore.error" class="text-center py-8 text-text-muted">
+        <div class="text-3xl mb-2">🔍</div>
+        <p>未找到相关结果，请尝试其他关键词</p>
+      </div>
     </div>
   </section>
 </template>
@@ -117,10 +198,15 @@
 import { ref, computed } from 'vue'
 import Fuse from 'fuse.js'
 import { useNewsStore } from '../stores/news'
+import { useRealtimeSearchStore } from '../stores/realtimeSearch'
 
 const store = useNewsStore()
+const rtStore = useRealtimeSearchStore()
 
-const query = ref('')
+const activeTab = ref('local')
+
+// 本地搜索状态
+const localQuery = ref('')
 const selectedSource = ref('')
 const selectedDate = ref('')
 const selectedImportance = ref('')
@@ -133,20 +219,14 @@ const fuse = new Fuse(store.articles, {
 
 const hasFilters = computed(() => selectedSource.value || selectedDate.value || selectedImportance.value)
 
-const filteredResults = computed(() => {
+const localResults = computed(() => {
   let results = store.articles
-
-  // Text search
-  if (query.value.trim()) {
-    results = fuse.search(query.value).map(r => r.item)
+  if (localQuery.value.trim()) {
+    results = fuse.search(localQuery.value).map(r => r.item)
   }
-
-  // Source filter
   if (selectedSource.value) {
     results = results.filter(a => a.source === selectedSource.value)
   }
-
-  // Date filter
   if (selectedDate.value) {
     const days = parseInt(selectedDate.value)
     const cutoff = new Date()
@@ -154,22 +234,11 @@ const filteredResults = computed(() => {
     const cutoffStr = cutoff.toISOString().split('T')[0]
     results = results.filter(a => a.publishedAt >= cutoffStr)
   }
-
-  // Importance filter
   if (selectedImportance.value) {
     results = results.filter(a => a.importance === selectedImportance.value)
   }
-
   return results
 })
-
-function onSearch() {
-  // Reactivity handles it
-}
-
-function clearSearch() {
-  query.value = ''
-}
 
 function clearFilters() {
   selectedSource.value = ''
@@ -177,9 +246,9 @@ function clearFilters() {
   selectedImportance.value = ''
 }
 
-function highlight(text) {
-  if (!query.value.trim()) return text
-  const regex = new RegExp(`(${query.value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi')
+function highlight(text, q) {
+  if (!q?.trim()) return text
+  const regex = new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi')
   return text.replace(regex, '<mark class="bg-accent-amber/30 text-accent-amber rounded px-0.5">$1</mark>')
 }
 
