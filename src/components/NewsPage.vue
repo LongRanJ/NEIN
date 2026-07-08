@@ -77,6 +77,8 @@
           <span>📰 {{ article.source }}</span>
           <span>·</span>
           <span>📅 {{ article.publishedAt }}</span>
+          <span v-if="isArticleUrl(article.sourceUrl)">·</span>
+          <a v-if="isArticleUrl(article.sourceUrl)" :href="article.sourceUrl" target="_blank" @click.stop class="text-primary-light hover:underline">查看原文</a>
           <span v-if="article.keywords?.length">·</span>
           <span v-for="kw in article.keywords" :key="kw" class="text-primary-light">{{ kw }}</span>
         </div>
@@ -114,7 +116,7 @@
           <div class="mt-4 flex flex-wrap gap-1.5">
             <span v-for="kw in selectedArticle.keywords" :key="kw" class="px-2 py-0.5 rounded text-xs bg-primary/10 text-primary-light">{{ kw }}</span>
           </div>
-          <a v-if="selectedArticle.sourceUrl" :href="selectedArticle.sourceUrl" target="_blank" class="mt-4 inline-block text-sm text-primary hover:underline">查看原文 →</a>
+          <a v-if="isArticleUrl(selectedArticle.sourceUrl)" :href="selectedArticle.sourceUrl" target="_blank" class="mt-4 inline-block text-sm text-primary hover:underline">查看原文 →</a>
         </div>
       </div>
     </Teleport>
@@ -173,6 +175,18 @@ function importanceClass(imp) {
 
 function importanceLabel(imp) {
   return { high: '重要', medium: '关注', low: '一般' }[imp] || ''
+}
+
+// 判断 URL 是否是具体文章链接（不是仅域名）
+function isArticleUrl(url) {
+  if (!url) return false
+  try {
+    const u = new URL(url)
+    // 路径长度 > 1 表示有具体路径（不只是 /）
+    return u.pathname.length > 1
+  } catch {
+    return false
+  }
 }
 </script>
 

@@ -1,49 +1,58 @@
 <template>
   <section>
-    <!-- 筛选项（左侧）+ 搜索框（右侧） -->
-    <div class="flex items-start gap-3 mb-3">
-      <!-- 左侧：筛选内容，自动换行 -->
-      <div class="flex-1 flex flex-wrap gap-2">
+    <!-- 筛选项（左侧，超出省略）+ 返回数量 + 搜索框（右侧） -->
+    <div class="flex items-center gap-3 mb-3">
+      <!-- 左侧：筛选项，超出显示省略号 -->
+      <div class="flex-1 min-w-0 flex items-center gap-2 overflow-hidden">
+        <template v-for="(src, i) in rtStore.availableSources" :key="src">
+          <button
+            v-if="i < visibleCount"
+            @click="rtStore.toggleSource(src)"
+            class="shrink-0 px-3 py-1.5 rounded-lg text-xs transition-all border"
+            :class="rtStore.selectedSources.includes(src)
+              ? 'bg-primary/20 border-primary text-primary-light'
+              : 'bg-bg-deep border-border text-text-muted hover:border-primary/30 hover:text-text-secondary'"
+          >{{ src }}</button>
+        </template>
         <button
-          v-for="src in rtStore.availableSources"
-          :key="src"
-          @click="rtStore.toggleSource(src)"
-          class="px-3 py-1.5 rounded-lg text-xs transition-all border"
-          :class="rtStore.selectedSources.includes(src)
-            ? 'bg-primary/20 border-primary text-primary-light'
-            : 'bg-bg-deep border-border text-text-muted hover:border-primary/30 hover:text-text-secondary'"
-        >{{ src }}</button>
-        <button v-if="rtStore.selectedSources.length > 0" @click="rtStore.clearSources()" class="px-3 py-1.5 rounded-lg text-xs text-accent-amber hover:text-accent-amber/80 border border-accent-amber/30">清除</button>
+          v-if="visibleCount < rtStore.availableSources.length"
+          @click="visibleCount = rtStore.availableSources.length"
+          class="shrink-0 px-2 py-1.5 rounded-lg text-xs text-text-muted hover:text-white border border-border hover:border-primary/30 transition-all"
+          title="展开全部"
+        >···</button>
+        <button
+          v-if="visibleCount >= rtStore.availableSources.length && rtStore.selectedSources.length > 0"
+          @click="rtStore.clearSources(); visibleCount = defaultVisible"
+          class="shrink-0 px-2 py-1.5 rounded-lg text-xs text-accent-amber border border-accent-amber/30 hover:bg-accent-amber/10 transition-all"
+        >清除</button>
       </div>
 
       <!-- 右侧：返回数量 + 搜索框 -->
-      <div class="flex flex-col items-end gap-2 shrink-0 w-64">
-        <div class="flex items-center gap-2">
-          <span class="text-xs text-text-muted">返回数量：</span>
-          <select v-model.number="rtStore.resultLimit" class="px-2 py-1 rounded-lg bg-bg-deep border border-border text-xs text-text-secondary focus:outline-none focus:border-primary">
-            <option :value="3">3 条</option>
-            <option :value="5">5 条</option>
-            <option :value="10">10 条</option>
-            <option :value="15">15 条</option>
-          </select>
-        </div>
-        <div class="flex gap-2 w-full">
+      <div class="flex items-center gap-2 shrink-0">
+        <select v-model.number="rtStore.resultLimit" class="px-2 py-1.5 rounded-lg bg-bg-deep border border-border text-xs text-text-secondary focus:outline-none focus:border-primary">
+          <option :value="3">3条</option>
+          <option :value="5">5条</option>
+          <option :value="10">10条</option>
+          <option :value="15">15条</option>
+        </select>
+        <div class="relative w-64">
           <input
             v-model="rtStore.query"
             @keydown.enter="rtStore.search()"
             type="text"
             placeholder="搜索资讯..."
-            class="flex-1 px-4 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+            class="w-full px-4 py-1.5 pr-8 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
             :disabled="rtStore.isLoading"
           />
           <button
+            v-if="rtStore.query.trim() && !rtStore.isLoading"
             @click="rtStore.search()"
-            :disabled="!rtStore.query.trim() || rtStore.isLoading"
-            class="px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-all shrink-0"
-          >
-            <span v-if="rtStore.isLoading" class="animate-pulse">...</span>
-            <span v-else>🔍</span>
-          </button>
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-primary transition-colors"
+          >🔍</button>
+          <span
+            v-if="rtStore.isLoading"
+            class="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 border border-primary border-t-transparent rounded-full animate-spin"
+          ></span>
         </div>
       </div>
     </div>
@@ -93,9 +102,18 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import { useRealtimeSearchStore } from '../stores/realtimeSearch'
 
 const rtStore = useRealtimeSearchStore()
+
+const defaultVisible = 5
+const visibleCount = ref(defaultVisible)
+
+onMounted(() => {
+  // 根据容器宽度计算默认显示数量
+  visibleCount.value = defaultVisible
+})
 </script>
 
 <style scoped>

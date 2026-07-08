@@ -45,6 +45,10 @@
           <span>📰 {{ article.source }}</span>
           <span>·</span>
           <span>📅 {{ article.publishedAt }}</span>
+          <template v-if="isArticleUrl(article.sourceUrl)">
+            <span>·</span>
+            <a :href="article.sourceUrl" target="_blank" class="text-primary-light hover:underline">查看原文</a>
+          </template>
         </div>
       </div>
     </div>
@@ -106,6 +110,16 @@ function importanceClass(imp) {
 
 function importanceLabel(imp) {
   return { high: '重要', medium: '关注', low: '一般' }[imp] || ''
+}
+
+function isArticleUrl(url) {
+  if (!url) return false
+  try {
+    const u = new URL(url)
+    return u.pathname.length > 1
+  } catch {
+    return false
+  }
 }
 </script>
 
