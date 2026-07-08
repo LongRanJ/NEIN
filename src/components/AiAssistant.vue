@@ -21,15 +21,15 @@
             <span class="text-lg">🤖</span>
             <div>
               <h3 class="text-sm font-semibold text-white">AI 资讯助手</h3>
-              <p class="text-xs text-text-muted">{{ modeLabel }}</p>
+              <p class="text-xs text-text-muted">AI 智能分析模式</p>
             </div>
           </div>
           <div class="flex items-center gap-1">
             <button
-              @click="showSettings = !showSettings"
+              @click="showInfo = !showInfo"
               class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all text-sm"
-              title="设置"
-            >⚙️</button>
+              title="关于"
+            >ℹ️</button>
             <button
               @click="aiStore.clearHistory()"
               class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all text-sm"
@@ -38,50 +38,19 @@
           </div>
         </div>
 
-        <!-- Settings panel -->
-        <div v-if="showSettings" class="px-4 py-3 border-b border-border bg-bg-deep/50 overflow-y-auto max-h-64">
-          <h4 class="text-xs font-medium text-text-secondary mb-2">AI 模式</h4>
-          <div class="space-y-2 mb-3">
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" v-model="aiStore.mode" value="mimo" class="accent-primary" />
-              <span class="text-xs text-text-primary">🤖 MIMO 智能分析（推荐）</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" v-model="aiStore.mode" value="external" class="accent-primary" />
-              <span class="text-xs text-text-primary">🌐 外部模型（OpenAI/DeepSeek）</span>
-            </label>
-            <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" v-model="aiStore.mode" value="internal" class="accent-primary" />
-              <span class="text-xs text-text-primary">🏢 内部模型（公司内网）</span>
-            </label>
-          </div>
-
-          <!-- MIMO settings -->
-          <div v-if="aiStore.mode === 'mimo'" class="space-y-2 mt-3">
-            <input v-model="aiStore.internalApiUrl" placeholder="MIMO API URL（默认即可）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.internalApiKey" type="password" placeholder="MIMO API Key（tp-xxxxx）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.internalModel" placeholder="模型名称（默认 mimo-v2.5-pro）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <p class="text-xs text-text-muted">数据范围：当前时间筛选区间内的新闻 + AI搜索结果</p>
-          </div>
-
-          <!-- External model settings -->
-          <div v-if="aiStore.mode === 'external'" class="space-y-2 mt-3">
-            <input v-model="aiStore.externalApiUrl" placeholder="API URL" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.externalApiKey" type="password" placeholder="API Key" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.externalModel" placeholder="模型名称" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-          </div>
-
-          <!-- Internal model settings -->
-          <div v-if="aiStore.mode === 'internal'" class="space-y-2 mt-3">
-            <input v-model="aiStore.internalApiUrl" placeholder="内部模型 API URL" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.internalModel" placeholder="模型名称" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-            <input v-model="aiStore.internalApiKey" type="password" placeholder="API Key（如需要）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
-          </div>
-
+        <!-- Info panel -->
+        <div v-if="showInfo" class="px-4 py-3 border-b border-border bg-bg-deep/50">
+          <h4 class="text-xs font-medium text-text-secondary mb-2">AI 智能分析</h4>
+          <ul class="text-xs text-text-muted space-y-1.5">
+            <li>• 基于 MIMO 大模型驱动</li>
+            <li>• 数据范围：当前时间筛选区间的新闻 + AI搜索结果</li>
+            <li>• 支持行业趋势分析、技术对比、事件总结等</li>
+            <li>• 所有回答基于数据库中的真实新闻</li>
+          </ul>
           <button
-            @click="showSettings = false"
+            @click="showInfo = false"
             class="mt-3 w-full px-3 py-1.5 rounded-lg bg-primary/20 text-primary-light text-xs hover:bg-primary/30 transition-colors"
-          >完成设置</button>
+          >知道了</button>
         </div>
 
         <!-- Messages -->
@@ -147,13 +116,13 @@
 </template>
 
 <script setup>
-import { ref, nextTick, watch, computed } from 'vue'
+import { ref, nextTick, watch } from 'vue'
 import { marked } from 'marked'
 import { useAiStore } from '../stores/ai'
 
 const aiStore = useAiStore()
 const inputText = ref('')
-const showSettings = ref(false)
+const showInfo = ref(false)
 const messagesContainer = ref(null)
 
 const quickQuestions = [
@@ -162,12 +131,6 @@ const quickQuestions = [
   '储能行业最新安全事件有哪些？',
   '快充技术发展趋势如何？'
 ]
-
-const modeLabel = computed(() => ({
-  mimo: 'MIMO 智能分析模式',
-  external: '外部模型模式',
-  internal: '内部模型模式'
-})[aiStore.mode])
 
 function renderMarkdown(text) {
   try {
