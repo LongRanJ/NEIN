@@ -1,57 +1,216 @@
-// Vercel Serverless Function - 调用 MIMO API 进行实时资讯搜索
-// 环境变量：MIMO_API_KEY（在 Vercel 后台配置）
+// Vercel Serverless Function - RSS 实时抓取 + MIMO 分析
+// 环境变量：MIMO_API_KEY
+
+// RSS 源列表
+const RSS_FEEDS = [
+  { name: '36氪', url: 'https://36kr.com/feed', keywords: ['锂电池', '固态电池', '储能', '氢能', '新能源', '电池', '充电', '磷酸铁锂', '三元锂', '快充'] },
+  { name: 'IT之家', url: 'https://www.ithome.com/rss/', keywords: ['新能源', '电池', '充电', '氢能', '储能', '电动'] },
+  { name: '虎嗅', url: 'https://www.huxiu.com/rss/0.xml', keywords: ['新能源', '电池', '储能', '锂', '氢能', '充电'] },
+  { name: '界面新闻', url: 'https://www.jiemian.com/rss', keywords: ['新能源', '电池', '储能', '锂', '氢能', '充电', '光伏'] },
+  { name: '财联社', url: 'https://www.cls.cn/rss', keywords: ['新能源', '电池', '储能', '锂', '氢能', '充电'] },
+]
+
+// Google News RSS（按关键词搜索）
+async function fetchGoogleNews(keyword, limit = 5) {
+  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(keyword + ' 新能源')}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans`
+  return await fetchRSSItems(url, limit, 'Google News', keyword)
+}
+
+// 通用 RSS 抓取
+async function fetchRSSItems(url, limit, sourceName, keyword) {
+  try {
+    const resp = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NEIN/1.0)' },
+      signal: AbortSignal.timeout(10000)
+    })
+    if (!resp.ok) return []
+    const xml = await resp.text()
+
+    // 简单 XML 解析（不依赖外部库）
+    const items = []
+    const itemMatches = xml.match(/<item>([\s\S]*?)<\/item>/gi) || []
+
+    for (const item of itemMatches.slice(0, limit)) {
+      const title = extractTag(item, 'title')
+      const link = extractTag(item, 'link')
+      const description = extractTag(item, 'description')
+      const pubDate = extractTag(item, 'pubDate')
+      const source = extractTag(item, 'source') || sourceName
+
+      if (title) {
+        items.push({
+          title: cleanText(title),
+          summary: cleanText(description || '').slice(0, 200),
+          source: source,
+          url: link || '',
+          date: parseDate(pubDate),
+          keywords: keyword ? [keyword] : []
+        })
+      }
+    }
+    return items
+  } catch (err) {
+    console.error(`RSS fetch failed: ${url} - ${err.message}`)
+    return []
+  }
+}
+
+// 从直接 RSS 源搜索
+async function fetchDirectRSS(feed, query, limit = 5) {
+  try {
+    const resp = await fetch(feed.url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NEIN/1.0)' },
+      signal: AbortSignal.timeout(10000)
+    })
+    if (!resp.ok) return []
+    const xml = await resp.text()
+
+    const items = []
+    const itemMatches = xml.match(/<item>([\s\S]*?)<\/item>/gi) || []
+
+    for (const item of itemMatches) {
+      const title = extractTag(item, 'title') || ''
+      const description = extractTag(item, 'description') || ''
+      const text = title + description
+
+      // 关键词匹配：用户查询词 或 源预设关键词
+      const queryMatch = query.split(/\s+/).some(q => q && text.includes(q))
+      const kwMatch = feed.keywords.some(kw => text.includes(kw))
+
+      if (queryMatch || kwMatch) {
+        items.push({
+          title: cleanText(title),
+          summary: cleanText(description).slice(0, 200),
+          source: feed.name,
+          url: extractTag(item, 'link') || '',
+          date: parseDate(extractTag(item, 'pubDate')),
+          keywords: feed.keywords.filter(kw => text.includes(kw))
+        })
+      }
+
+      if (items.length >= limit) break
+    }
+    return items
+  } catch (err) {
+    console.error(`RSS fetch failed: ${feed.name} - ${err.message}`)
+    return []
+  }
+}
+
+// XML 辅助函数
+function extractTag(xml, tag) {
+  // 处理 CDATA
+  const cdataMatch = xml.match(new RegExp(`<${tag}[^>]*>\\s*<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>\\s*</${tag}>`, 'i'))
+  if (cdataMatch) return cdataMatch[1].trim()
+
+  const match = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, 'i'))
+  return match ? match[1].trim() : ''
+}
+
+function cleanText(text) {
+  return text.replace(/<[^>]+>/g, '').replace(/&[^;]+;/g, ' ').replace(/\s+/g, ' ').trim()
+}
+
+function parseDate(dateStr) {
+  try {
+    const d = new Date(dateStr)
+    if (isNaN(d.getTime())) return new Date().toISOString().split('T')[0]
+    return d.toISOString().split('T')[0]
+  } catch {
+    return new Date().toISOString().split('T')[0]
+  }
+}
+
+function dedup(items) {
+  const seen = new Set()
+  return items.filter(item => {
+    const key = item.title.slice(0, 15)
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
+// ─── 主处理函数 ─────────────────────────────────────────
 
 export default async function handler(req, res) {
-  // CORS headers
+  // CORS
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end()
-  }
-
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' })
-  }
+  if (req.method === 'OPTIONS') return res.status(200).end()
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
   const { query, sources, limit = 5 } = req.body
-
-  if (!query || !query.trim()) {
-    return res.status(400).json({ error: '请输入搜索关键词' })
-  }
+  if (!query?.trim()) return res.status(400).json({ error: '请输入搜索关键词' })
 
   const apiKey = process.env.MIMO_API_KEY
-  if (!apiKey) {
-    return res.status(500).json({ error: '服务端未配置 MIMO API Key' })
-  }
-
-  // 构建搜索 prompt
-  const sourceText = sources && sources.length > 0
-    ? `优先从以下来源获取信息：${sources.join('、')}`
-    : '不限定来源，综合搜索'
-
-  const systemPrompt = `你是新能源行业资讯搜索助手。你的任务是根据用户提供的关键词，搜索最新的新能源行业相关资讯。
-
-搜索范围：锂电池材料、固态电池、磷酸铁锂、三元锂、快充技术、新能源事故、储能、氢能等新能源领域。
-
-${sourceText}
-
-返回数量要求：${limit} 条
-
-请严格以 JSON 数组格式返回结果，不要包含任何其他文字。每条结果包含以下字段：
-- title: 资讯标题
-- summary: 内容摘要（50-100字）
-- source: 信息来源
-- url: 原文链接（如果能获取到）
-- date: 发布日期（YYYY-MM-DD 格式，如果能获取到）
-- keywords: 相关关键词数组
-
-示例格式：
-[{"title":"标题","summary":"摘要","source":"来源","url":"链接","date":"2026-07-08","keywords":["关键词1","关键词2"]}]`
+  if (!apiKey) return res.status(500).json({ error: '服务端未配置 MIMO API Key' })
 
   try {
-    const response = await fetch('https://token-plan-cn.xiaomimimo.com/v1/chat/completions', {
+    // ─── 第一步：从多个 RSS 源抓取实时数据 ───
+    console.log(`Searching RSS for: ${query}, sources: ${sources?.join(',')}, limit: ${limit}`)
+
+    let allItems = []
+
+    // Google News RSS（主要搜索渠道）
+    const googleResults = await fetchGoogleNews(query, limit * 2)
+    allItems.push(...googleResults)
+
+    // 直接 RSS 源
+    const feedsToSearch = sources?.length > 0
+      ? RSS_FEEDS.filter(f => sources.includes(f.name))
+      : RSS_FEEDS
+
+    for (const feed of feedsToSearch) {
+      const results = await fetchDirectRSS(feed, query, limit)
+      allItems.push(...results)
+    }
+
+    // 去重
+    allItems = dedup(allItems)
+
+    // 按日期排序
+    allItems.sort((a, b) => b.date.localeCompare(a.date))
+
+    // 取前 N*3 条给 MIMO 筛选（RSS 结果可能不够精准）
+    const candidates = allItems.slice(0, limit * 3)
+
+    console.log(`Found ${allItems.length} RSS items, ${candidates.length} candidates for MIMO`)
+
+    // 如果 RSS 完全没有结果，回退到纯 MIMO 搜索
+    if (candidates.length === 0) {
+      console.log('No RSS results, falling back to pure MIMO search')
+      const fallbackResults = await mimoPureSearch(apiKey, query, sources, limit)
+      return res.status(200).json({ success: true, query, count: fallbackResults.length, results: fallbackResults, source: 'ai' })
+    }
+
+    // ─── 第二步：用 MIMO 筛选和总结 ───
+    const sourceText = sources?.length > 0 ? `用户偏好的来源：${sources.join('、')}` : ''
+
+    const systemPrompt = `你是新能源行业资讯分析助手。你收到了一批从 RSS 抓取的实时新闻数据，请根据用户的搜索关键词进行筛选和总结。
+
+任务：
+1. 从候选数据中筛选出与用户关键词最相关的结果
+2. 如果候选数据中有高度相关的结果，直接使用，不要编造
+3. 如果候选数据中没有足够相关的，可以基于你的知识补充，但必须标注来源为"AI 补充"
+4. ${sourceText}
+
+返回要求：
+- 返回 JSON 数组，最多 ${limit} 条
+- 每条包含：title, summary(50-100字), source, url, date, keywords(数组)
+- 优先保留有原文链接的结果
+- 按相关性排序`
+
+    const userPrompt = `搜索关键词：${query}
+
+以下是 RSS 实时抓取的候选数据：
+${candidates.map((c, i) => `${i + 1}. [${c.source}] ${c.title} (${c.date})\n   ${c.summary}\n   链接: ${c.url || '无'}`).join('\n\n')}
+
+请从以上数据中筛选最相关的结果，返回 JSON 数组。`
+
+    const mimoResp = await fetch('https://token-plan-cn.xiaomimimo.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -61,52 +220,87 @@ ${sourceText}
         model: 'mimo-v2.5',
         messages: [
           { role: 'system', content: systemPrompt },
-          { role: 'user', content: `请搜索以下关键词相关的最新新能源行业资讯：${query}` }
+          { role: 'user', content: userPrompt }
         ],
         temperature: 0.3,
-        max_tokens: 4000
+        max_tokens: 3000
       })
     })
 
-    if (!response.ok) {
-      const errText = await response.text().catch(() => '')
-      console.error('MIMO API error:', response.status, errText)
-      return res.status(502).json({ error: `MIMO API 错误: ${response.status}` })
+    if (!mimoResp.ok) {
+      // MIMO 调用失败，直接返回 RSS 原始结果
+      console.error('MIMO API error, returning raw RSS results')
+      const rawResults = candidates.slice(0, limit)
+      return res.status(200).json({ success: true, query, count: rawResults.length, results: rawResults, source: 'rss' })
     }
 
-    const data = await response.json()
-    const content = data.choices?.[0]?.message?.content || ''
+    const mimoData = await mimoResp.json()
+    const content = mimoData.choices?.[0]?.message?.content || ''
 
-    // 尝试解析 JSON 结果
+    // 解析 MIMO 返回的 JSON
     let results = []
     try {
-      // 提取 JSON 部分（处理可能被 markdown 包裹的情况）
       const jsonMatch = content.match(/\[[\s\S]*\]/)
       if (jsonMatch) {
         results = JSON.parse(jsonMatch[0])
       }
-    } catch (parseErr) {
-      console.error('JSON parse error:', parseErr.message, 'Content:', content)
-      // 如果解析失败，返回原始文本作为单条结果
-      results = [{
-        title: `搜索结果：${query}`,
-        summary: content.slice(0, 200),
-        source: 'MIMO AI 搜索',
-        url: '',
-        date: new Date().toISOString().split('T')[0],
-        keywords: query.split(/\s+/)
-      }]
+    } catch {
+      // 解析失败，返回 RSS 原始结果
+      results = candidates.slice(0, limit)
+    }
+
+    // 确保结果不为空
+    if (results.length === 0) {
+      results = candidates.slice(0, limit)
     }
 
     return res.status(200).json({
       success: true,
       query,
       count: results.length,
-      results
+      results,
+      source: 'rss+ai'
     })
 
   } catch (err) {
     console.error('Search error:', err.message)
     return res.status(500).json({ error: `搜索失败: ${err.message}` })
+  }
+}
+
+// 纯 MIMO 搜索（RSS 无结果时的回退方案）
+async function mimoPureSearch(apiKey, query, sources, limit) {
+  const sourceText = sources?.length > 0 ? `优先从以下来源获取：${sources.join('、')}` : ''
+
+  const resp = await fetch('https://token-plan-cn.xiaomimimo.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model: 'mimo-v2.5',
+      messages: [
+        {
+          role: 'system',
+          content: `你是新能源行业资讯搜索助手。根据用户关键词搜索最新资讯。${sourceText}。返回 JSON 数组，每条包含 title, summary, source, url, date, keywords 字段。最多 ${limit} 条。只返回 JSON，不要其他文字。`
+        },
+        { role: 'user', content: query }
+      ],
+      temperature: 0.3,
+      max_tokens: 3000
+    })
+  })
+
+  if (!resp.ok) return []
+
+  const data = await resp.json()
+  const content = data.choices?.[0]?.message?.content || ''
+
+  try {
+    const jsonMatch = content.match(/\[[\s\S]*\]/)
+    return jsonMatch ? JSON.parse(jsonMatch[0]) : []
+  } catch {
+    return []
   }
 }
