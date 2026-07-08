@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-bg-deep">
     <AppHeader />
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-20">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-8">
       <!-- 实时资讯页 -->
       <div v-if="pageStore.currentPage === 'news'">
         <NewsPage />
