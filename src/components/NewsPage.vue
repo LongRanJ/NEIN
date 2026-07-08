@@ -11,7 +11,6 @@
         </span>
       </div>
       <div class="flex items-center gap-3">
-        <span class="text-xs text-text-muted">🕐 数据更新于 {{ formattedTime }}</span>
         <button
           @click="triggerUpdate"
           :disabled="isUpdating"

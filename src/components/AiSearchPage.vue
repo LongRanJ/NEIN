@@ -1,10 +1,5 @@
 <template>
   <section>
-    <div class="flex items-center justify-between mb-6">
-      <h3 class="text-lg font-semibold text-white">🤖 AI 实时搜索</h3>
-      <span class="text-xs text-text-muted">RSS 实时抓取 + MIMO 智能筛选</span>
-    </div>
-
     <!-- 搜索输入 -->
     <div class="flex gap-3 mb-4">
       <input

@@ -63,26 +63,30 @@
         </div>
       </div>
 
-      <!-- 第二行：Tab 导航 -->
-      <nav class="flex items-center gap-1 -mb-px">
-        <button
-          v-for="tab in tabs"
-          :key="tab.key"
-          @click="pageStore.setPage(tab.key)"
-          class="flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium transition-all border-b-2"
-          :class="pageStore.currentPage === tab.key
-            ? 'border-primary text-primary-light'
-            : 'border-transparent text-text-muted hover:text-white hover:border-border'"
-        >
-          <span>{{ tab.icon }}</span>
-          <span>{{ tab.label }}</span>
-        </button>
+      <!-- 第二行：Tab 导航 + 动态说明 -->
+      <nav class="flex items-center justify-between -mb-px">
+        <div class="flex items-center gap-1">
+          <button
+            v-for="tab in tabs"
+            :key="tab.key"
+            @click="pageStore.setPage(tab.key)"
+            class="flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium transition-all border-b-2"
+            :class="pageStore.currentPage === tab.key
+              ? 'border-primary text-primary-light'
+              : 'border-transparent text-text-muted hover:text-white hover:border-border'"
+          >
+            <span>{{ tab.icon }}</span>
+            <span>{{ tab.label }}</span>
+          </button>
+        </div>
+        <span v-if="tabDesc" class="text-xs text-text-muted pr-1">{{ tabDesc }}</span>
       </nav>
     </div>
   </header>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { usePageStore } from '../stores/page'
 import { useTimeFilterStore } from '../stores/timeFilter'
 
@@ -92,9 +96,11 @@ const timeFilter = useTimeFilterStore()
 const tabs = [
   { key: 'news', label: '实时资讯', icon: '📰' },
   { key: 'data', label: '数据统计', icon: '📊' },
-  { key: 'localSearch', label: '本地检索', icon: '🔎' },
-  { key: 'aiSearch', label: 'AI实时搜索', icon: '🤖' }
+  { key: 'localSearch', label: '本地检索', icon: '🔎', desc: '在已有新闻库中搜索' },
+  { key: 'aiSearch', label: 'AI实时搜索', icon: '🤖', desc: 'RSS 实时抓取 + MIMO 智能筛选' }
 ]
+
+const tabDesc = computed(() => tabs.find(t => t.key === pageStore.currentPage)?.desc || '')
 
 const presets = [
   { label: '今天', days: 0 },

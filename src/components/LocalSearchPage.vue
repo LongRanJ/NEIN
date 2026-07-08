@@ -1,10 +1,5 @@
 <template>
   <section>
-    <div class="flex items-center justify-between mb-6">
-      <h3 class="text-lg font-semibold text-white">🔎 本地检索</h3>
-      <span class="text-xs text-text-muted">在已有新闻库中搜索</span>
-    </div>
-
     <!-- 搜索框 -->
     <div class="flex gap-3 mb-4">
       <div class="flex-1 relative">
