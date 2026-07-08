@@ -79,7 +79,28 @@
             <span>{{ tab.label }}</span>
           </button>
         </div>
-        <span v-if="tabDesc" class="text-xs text-text-muted pr-1">{{ tabDesc }}</span>
+        <div class="flex items-center gap-4">
+          <!-- 数据统计页：紧凑统计数字 -->
+          <div v-if="pageStore.currentPage === 'data'" class="flex items-center gap-3">
+            <div class="text-center">
+              <div class="text-sm font-bold text-primary leading-none">{{ newsStore.timeFilteredArticles.length }}</div>
+              <div class="text-[10px] text-text-muted mt-0.5">资讯</div>
+            </div>
+            <div class="text-center">
+              <div class="text-sm font-bold text-accent-green leading-none">{{ newsStore.keywords.length }}</div>
+              <div class="text-[10px] text-text-muted mt-0.5">关键词</div>
+            </div>
+            <div class="text-center">
+              <div class="text-sm font-bold text-accent-amber leading-none">{{ newsStore.sources.length }}</div>
+              <div class="text-[10px] text-text-muted mt-0.5">来源</div>
+            </div>
+            <div class="text-center">
+              <div class="text-sm font-bold text-primary-light leading-none">{{ highCount }}</div>
+              <div class="text-[10px] text-text-muted mt-0.5">重要</div>
+            </div>
+          </div>
+          <span v-if="tabDesc" class="text-xs text-text-muted pr-1">{{ tabDesc }}</span>
+        </div>
       </nav>
     </div>
   </header>
@@ -89,13 +110,17 @@
 import { computed } from 'vue'
 import { usePageStore } from '../stores/page'
 import { useTimeFilterStore } from '../stores/timeFilter'
+import { useNewsStore } from '../stores/news'
 
 const pageStore = usePageStore()
 const timeFilter = useTimeFilterStore()
+const newsStore = useNewsStore()
+
+const highCount = computed(() => newsStore.timeFilteredArticles.filter(a => a.importance === 'high').length)
 
 const tabs = [
   { key: 'news', label: '实时资讯', icon: '📰' },
-  { key: 'data', label: '数据统计', icon: '📊' },
+  { key: 'data', label: '数据统计', icon: '📊', desc: '数据基于当前筛选范围' },
   { key: 'localSearch', label: '本地检索', icon: '🔎', desc: '在已有新闻库中搜索' },
   { key: 'aiSearch', label: 'AI实时搜索', icon: '🤖', desc: 'RSS 实时抓取 + MIMO 智能筛选' }
 ]

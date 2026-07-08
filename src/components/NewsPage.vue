@@ -1,35 +1,12 @@
 <template>
   <section>
-    <!-- 时间筛选提示 + 更新按钮 -->
-    <div class="flex items-center justify-between mb-4">
-      <div class="flex items-center gap-2">
-        <span class="text-sm text-text-muted">
-          📅 {{ timeFilter.displayRange }}
-        </span>
-        <span class="text-sm text-text-secondary">
-          共 <span class="text-primary font-medium">{{ store.timeFilteredArticles.length }}</span> 条资讯
-        </span>
-      </div>
-      <div class="flex items-center gap-3">
-        <button
-          @click="triggerUpdate"
-          :disabled="isUpdating"
-          class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/20 text-primary-light text-xs hover:bg-primary/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-        >
-          <span v-if="isUpdating" class="w-3 h-3 border border-primary-light border-t-transparent rounded-full animate-spin"></span>
-          <span v-else>🔄</span>
-          <span>{{ isUpdating ? '更新中...' : '更新数据' }}</span>
-        </button>
-      </div>
-    </div>
-
     <!-- 更新提示 -->
     <div v-if="updateMsg" class="mb-4 p-3 rounded-lg text-sm" :class="updateSuccess ? 'bg-green-500/10 border border-green-500/30 text-green-400' : 'bg-red-500/10 border border-red-500/30 text-red-400'">
       {{ updateMsg }}
     </div>
 
-    <!-- 关键词标签 -->
-    <div class="flex flex-wrap gap-2 mb-6">
+    <!-- 关键词标签 + 条数 + 更新按钮 -->
+    <div class="flex items-center flex-wrap gap-2 mb-6">
       <button
         @click="store.setActiveKeyword(null)"
         class="px-3 py-1.5 rounded-full text-xs font-medium transition-all border"
@@ -49,6 +26,20 @@
         {{ kw }}
         <span class="ml-1 opacity-60">{{ store.keywordStats[kw] || 0 }}</span>
       </button>
+
+      <!-- 右侧：条数 + 更新按钮 -->
+      <div class="ml-auto flex items-center gap-3">
+        <span class="text-xs text-text-muted">共 <span class="text-primary font-medium">{{ store.timeFilteredArticles.length }}</span> 条</span>
+        <button
+          @click="triggerUpdate"
+          :disabled="isUpdating"
+          class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/20 text-primary-light text-xs hover:bg-primary/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+        >
+          <span v-if="isUpdating" class="w-3 h-3 border border-primary-light border-t-transparent rounded-full animate-spin"></span>
+          <span v-else>🔄</span>
+          <span>{{ isUpdating ? '更新中...' : '更新数据' }}</span>
+        </button>
+      </div>
     </div>
 
     <!-- 新闻卡片列表 -->

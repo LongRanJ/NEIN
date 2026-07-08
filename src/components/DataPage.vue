@@ -1,77 +1,28 @@
 <template>
   <section>
-    <!-- 时间筛选提示 -->
-    <div class="flex items-center justify-between mb-6">
-      <span class="text-sm text-text-muted">📅 {{ timeFilter.displayRange }}</span>
-      <span class="text-xs text-text-muted">数据基于当前时间筛选范围</span>
-    </div>
-
-    <!-- 统计概览卡片 -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-      <div class="glass rounded-xl p-4 text-center animate-fade-in" style="animation-delay: 0.1s">
-        <div class="text-2xl font-bold text-primary">{{ store.timeFilteredArticles.length }}</div>
-        <div class="text-xs text-text-secondary mt-1">资讯总量</div>
-      </div>
-      <div class="glass rounded-xl p-4 text-center animate-fade-in" style="animation-delay: 0.2s">
-        <div class="text-2xl font-bold text-accent-green">{{ store.keywords.length }}</div>
-        <div class="text-xs text-text-secondary mt-1">追踪关键词</div>
-      </div>
-      <div class="glass rounded-xl p-4 text-center animate-fade-in" style="animation-delay: 0.3s">
-        <div class="text-2xl font-bold text-accent-amber">{{ store.sources.length }}</div>
-        <div class="text-xs text-text-secondary mt-1">数据来源</div>
-      </div>
-      <div class="glass rounded-xl p-4 text-center animate-fade-in" style="animation-delay: 0.4s">
-        <div class="text-2xl font-bold text-primary-light">{{ highCount }}</div>
-        <div class="text-xs text-text-secondary mt-1">重要资讯</div>
-      </div>
-    </div>
-
     <!-- 图表区域 -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <!-- 关键词分布 -->
-      <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📊 关键词分布</h4>
-        <div ref="keywordChartRef" class="w-full h-52"></div>
+    <div class="space-y-4">
+      <!-- 第一行：关键词分布 + 来源分布 -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="glass rounded-xl p-4">
+          <h4 class="text-sm font-medium text-text-secondary mb-3">📊 关键词分布</h4>
+          <div ref="keywordChartRef" class="w-full h-52"></div>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <h4 class="text-sm font-medium text-text-secondary mb-3">📰 来源分布</h4>
+          <div ref="sourceChartRef" class="w-full h-52"></div>
+        </div>
       </div>
 
-      <!-- 来源分布 -->
-      <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📰 来源分布</h4>
-        <div ref="sourceChartRef" class="w-full h-52"></div>
-      </div>
-
-      <!-- 时间线 -->
-      <div class="glass rounded-xl p-4 lg:col-span-2">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📈 资讯时间线</h4>
-        <div ref="timelineChartRef" class="w-full h-52"></div>
-      </div>
-
-      <!-- 重要性分布 -->
-      <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">⚠️ 重要性分布</h4>
-        <div ref="importanceChartRef" class="w-full h-40"></div>
-      </div>
-
-      <!-- 数据来源表格 -->
-      <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📋 数据来源统计</h4>
-        <div class="space-y-2 max-h-40 overflow-y-auto">
-          <div
-            v-for="(count, src) in store.sourceStats"
-            :key="src"
-            class="flex items-center justify-between text-sm"
-          >
-            <span class="text-text-secondary">{{ src }}</span>
-            <div class="flex items-center gap-2">
-              <div class="w-20 h-1.5 rounded-full bg-bg-deep overflow-hidden">
-                <div
-                  class="h-full rounded-full bg-primary transition-all"
-                  :style="{ width: `${(count / maxSourceCount) * 100}%` }"
-                ></div>
-              </div>
-              <span class="text-text-muted text-xs w-6 text-right">{{ count }}</span>
-            </div>
-          </div>
+      <!-- 第二行：时间线（2/3） + 重要性分布（1/3） -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="glass rounded-xl p-4 lg:col-span-2">
+          <h4 class="text-sm font-medium text-text-secondary mb-3">📈 资讯时间线</h4>
+          <div ref="timelineChartRef" class="w-full h-52"></div>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <h4 class="text-sm font-medium text-text-secondary mb-3">⚠️ 重要性分布</h4>
+          <div ref="importanceChartRef" class="w-full h-52"></div>
         </div>
       </div>
     </div>
@@ -79,13 +30,11 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, nextTick } from 'vue'
+import { ref, watch, onMounted, nextTick } from 'vue'
 import * as echarts from 'echarts'
 import { useNewsStore } from '../stores/news'
-import { useTimeFilterStore } from '../stores/timeFilter'
 
 const store = useNewsStore()
-const timeFilter = useTimeFilterStore()
 
 const keywordChartRef = ref(null)
 const sourceChartRef = ref(null)
@@ -93,9 +42,6 @@ const timelineChartRef = ref(null)
 const importanceChartRef = ref(null)
 
 let keywordChart, sourceChart, timelineChart, importanceChart
-
-const highCount = computed(() => store.timeFilteredArticles.filter(a => a.importance === 'high').length)
-const maxSourceCount = computed(() => Math.max(...Object.values(store.sourceStats), 1))
 
 function initCharts() {
   if (keywordChartRef.value) {
@@ -191,7 +137,6 @@ onMounted(() => {
   window.addEventListener('resize', handleResize)
 })
 
-// 数据变化时更新图表
 watch(() => [store.timeFilteredArticles, store.keywordStats, store.sourceStats], () => {
   nextTick(() => {
     updateKeywordChart()
