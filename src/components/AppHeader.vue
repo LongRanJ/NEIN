@@ -92,7 +92,8 @@ const timeFilter = useTimeFilterStore()
 const tabs = [
   { key: 'news', label: '实时资讯', icon: '📰' },
   { key: 'data', label: '数据统计', icon: '📊' },
-  { key: 'search', label: '信息检索', icon: '🔍' }
+  { key: 'localSearch', label: '本地检索', icon: '🔎' },
+  { key: 'aiSearch', label: 'AI实时搜索', icon: '🤖' }
 ]
 
 const presets = [

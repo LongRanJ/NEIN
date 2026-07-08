@@ -12,9 +12,14 @@
         <DataPage />
       </div>
 
-      <!-- 信息检索页 -->
-      <div v-else-if="pageStore.currentPage === 'search'">
-        <SearchPage />
+      <!-- 本地检索页 -->
+      <div v-else-if="pageStore.currentPage === 'localSearch'">
+        <LocalSearchPage />
+      </div>
+
+      <!-- AI实时搜索页 -->
+      <div v-else-if="pageStore.currentPage === 'aiSearch'">
+        <AiSearchPage />
       </div>
     </main>
     <AppFooter />
@@ -27,7 +32,8 @@ import { usePageStore } from './stores/page'
 import AppHeader from './components/AppHeader.vue'
 import NewsPage from './components/NewsPage.vue'
 import DataPage from './components/DataPage.vue'
-import SearchPage from './components/SearchPage.vue'
+import LocalSearchPage from './components/LocalSearchPage.vue'
+import AiSearchPage from './components/AiSearchPage.vue'
 import AppFooter from './components/AppFooter.vue'
 import AiAssistant from './components/AiAssistant.vue'
 

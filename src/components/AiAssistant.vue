@@ -43,8 +43,8 @@
           <h4 class="text-xs font-medium text-text-secondary mb-2">AI 模式</h4>
           <div class="space-y-2 mb-3">
             <label class="flex items-center gap-2 cursor-pointer">
-              <input type="radio" v-model="aiStore.mode" value="frontend" class="accent-primary" />
-              <span class="text-xs text-text-primary">🔍 纯前端搜索（无需API）</span>
+              <input type="radio" v-model="aiStore.mode" value="mimo" class="accent-primary" />
+              <span class="text-xs text-text-primary">🤖 MIMO 智能分析（推荐）</span>
             </label>
             <label class="flex items-center gap-2 cursor-pointer">
               <input type="radio" v-model="aiStore.mode" value="external" class="accent-primary" />
@@ -54,6 +54,14 @@
               <input type="radio" v-model="aiStore.mode" value="internal" class="accent-primary" />
               <span class="text-xs text-text-primary">🏢 内部模型（公司内网）</span>
             </label>
+          </div>
+
+          <!-- MIMO settings -->
+          <div v-if="aiStore.mode === 'mimo'" class="space-y-2 mt-3">
+            <input v-model="aiStore.internalApiUrl" placeholder="MIMO API URL（默认即可）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
+            <input v-model="aiStore.internalApiKey" type="password" placeholder="MIMO API Key（tp-xxxxx）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
+            <input v-model="aiStore.internalModel" placeholder="模型名称（默认 mimo-v2.5-pro）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />
+            <p class="text-xs text-text-muted">数据范围：当前时间筛选区间内的新闻 + AI搜索结果</p>
           </div>
 
           <!-- External model settings -->
@@ -156,7 +164,7 @@ const quickQuestions = [
 ]
 
 const modeLabel = computed(() => ({
-  frontend: '纯前端搜索模式',
+  mimo: 'MIMO 智能分析模式',
   external: '外部模型模式',
   internal: '内部模型模式'
 })[aiStore.mode])
