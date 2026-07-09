@@ -35,8 +35,8 @@
           :disabled="isUpdating"
           class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/20 text-primary-light text-xs hover:bg-primary/30 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
         >
-          <span v-if="isUpdating" class="w-3 h-3 border border-primary-light border-t-transparent rounded-full animate-spin"></span>
-          <span v-else>🔄</span>
+          <span v-if="isUpdating" class="w-3.5 h-3.5 border border-primary-light border-t-transparent rounded-full animate-spin"></span>
+          <span v-else class="inline-flex" v-html="icons.refresh"></span>
           <span>{{ isUpdating ? '更新中...' : '更新数据' }}</span>
         </button>
       </div>
@@ -127,6 +127,7 @@
 import { ref, computed } from 'vue'
 import { useNewsStore } from '../stores/news'
 import { useTimeFilterStore } from '../stores/timeFilter'
+import { icons } from '../assets/icons'
 
 const store = useNewsStore()
 const timeFilter = useTimeFilterStore()

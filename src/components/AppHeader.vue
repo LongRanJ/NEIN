@@ -19,7 +19,6 @@
 
         <!-- 时间筛选器 -->
         <div class="flex items-center gap-2">
-          <!-- 快捷按钮（桌面端） -->
           <div class="hidden lg:flex items-center gap-1">
             <button
               v-for="preset in presets"
@@ -30,9 +29,7 @@
             >{{ preset.label }}</button>
           </div>
 
-          <!-- 日期选择器 -->
           <div class="flex items-center gap-1.5 bg-bg-deep rounded-lg border border-border px-2 py-1.5">
-            <span class="text-xs text-text-muted">📅</span>
             <input
               type="date"
               :value="timeFilter.startDate"
@@ -48,22 +45,18 @@
             />
           </div>
 
-          <!-- GitHub -->
           <a
             href="https://github.com/LongRanJ/NEIN"
             target="_blank"
             rel="noopener"
             class="w-8 h-8 rounded-lg bg-bg-card border border-border flex items-center justify-center text-text-secondary hover:text-white hover:border-primary transition-all"
             title="GitHub"
-          >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-          </a>
+            v-html="icons.github"
+          ></a>
         </div>
       </div>
 
-      <!-- 第二行：Tab 导航 + 动态说明 -->
+      <!-- 第二行：Tab 导航 + 右侧信息 -->
       <nav class="flex items-center justify-between -mb-px">
         <div class="flex items-center gap-1">
           <button
@@ -75,31 +68,18 @@
               ? 'border-primary text-primary-light'
               : 'border-transparent text-text-muted hover:text-white hover:border-border'"
           >
-            <span>{{ tab.icon }}</span>
+            <span class="inline-flex" v-html="tab.icon"></span>
             <span>{{ tab.label }}</span>
           </button>
         </div>
-        <div class="flex items-center gap-4">
-          <!-- 数据统计页：紧凑统计数字 -->
-          <div v-if="pageStore.currentPage === 'data'" class="flex items-center gap-3">
-            <div class="text-center">
-              <div class="text-sm font-bold text-primary leading-none">{{ newsStore.timeFilteredArticles.length }}</div>
-              <div class="text-[10px] text-text-muted mt-0.5">资讯</div>
-            </div>
-            <div class="text-center">
-              <div class="text-sm font-bold text-accent-green leading-none">{{ newsStore.keywords.length }}</div>
-              <div class="text-[10px] text-text-muted mt-0.5">关键词</div>
-            </div>
-            <div class="text-center">
-              <div class="text-sm font-bold text-accent-amber leading-none">{{ newsStore.sources.length }}</div>
-              <div class="text-[10px] text-text-muted mt-0.5">来源</div>
-            </div>
-            <div class="text-center">
-              <div class="text-sm font-bold text-primary-light leading-none">{{ highCount }}</div>
-              <div class="text-[10px] text-text-muted mt-0.5">重要</div>
-            </div>
-          </div>
-          <span v-if="tabDesc" class="text-xs text-text-muted pr-1">{{ tabDesc }}</span>
+        <div class="flex items-center gap-3 pr-1">
+          <!-- 数据统计页：仅显示资讯数目 -->
+          <span v-if="pageStore.currentPage === 'data'" class="flex items-center gap-1.5 text-xs text-text-muted">
+            <span class="text-primary font-medium">{{ newsStore.timeFilteredArticles.length }}</span>
+            <span>条资讯</span>
+          </span>
+          <!-- 其他页：Tab 说明文字 -->
+          <span v-if="tabDesc" class="text-xs text-text-muted">{{ tabDesc }}</span>
         </div>
       </nav>
     </div>
@@ -111,21 +91,23 @@ import { computed } from 'vue'
 import { usePageStore } from '../stores/page'
 import { useTimeFilterStore } from '../stores/timeFilter'
 import { useNewsStore } from '../stores/news'
+import { icons } from '../assets/icons'
 
 const pageStore = usePageStore()
 const timeFilter = useTimeFilterStore()
 const newsStore = useNewsStore()
 
-const highCount = computed(() => newsStore.timeFilteredArticles.filter(a => a.importance === 'high').length)
-
 const tabs = [
-  { key: 'news', label: '实时资讯', icon: '📰' },
-  { key: 'data', label: '数据统计', icon: '📊', desc: '数据基于当前筛选范围' },
-  { key: 'localSearch', label: '本地检索', icon: '🔎', desc: '在已有新闻库中搜索' },
-  { key: 'aiSearch', label: 'AI实时搜索', icon: '🤖', desc: 'RSS 实时抓取 + MIMO 智能筛选' }
+  { key: 'news', label: '实时资讯', icon: icons.news },
+  { key: 'data', label: '数据统计', icon: icons.chart },
+  { key: 'localSearch', label: '本地检索', icon: icons.search, desc: '在已有新闻库中搜索' },
+  { key: 'aiSearch', label: 'AI实时搜索', icon: icons.ai, desc: 'RSS 实时抓取 + 智能筛选' }
 ]
 
-const tabDesc = computed(() => tabs.find(t => t.key === pageStore.currentPage)?.desc || '')
+const tabDesc = computed(() => {
+  if (pageStore.currentPage === 'data') return '数据基于当前筛选范围'
+  return tabs.find(t => t.key === pageStore.currentPage)?.desc || ''
+})
 
 const presets = [
   { label: '今天', days: 0 },

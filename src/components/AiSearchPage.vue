@@ -29,30 +29,46 @@
 
       <!-- 右侧：返回数量 + 搜索框 -->
       <div class="flex items-center gap-2 shrink-0">
-        <select v-model.number="rtStore.resultLimit" class="px-2 py-1.5 rounded-lg bg-bg-deep border border-border text-xs text-text-secondary focus:outline-none focus:border-primary">
-          <option :value="3">3条</option>
-          <option :value="5">5条</option>
-          <option :value="10">10条</option>
-          <option :value="15">15条</option>
-        </select>
+        <!-- 返回数量 -->
+        <div class="flex items-center gap-1">
+          <template v-for="n in presetCounts" :key="n">
+            <button
+              @click="rtStore.resultLimit = n; customCount = ''"
+              class="px-2 py-1 rounded text-xs transition-all"
+              :class="rtStore.resultLimit === n && !customCount ? 'bg-primary text-white' : 'text-text-muted hover:text-white hover:bg-bg-card'"
+            >{{ n }}</button>
+          </template>
+          <div class="relative">
+            <input
+              v-model="customCount"
+              @keydown.enter="applyCustomCount"
+              @blur="applyCustomCount"
+              type="number"
+              min="1"
+              max="50"
+              placeholder="自定义"
+              class="w-16 px-2 py-1 rounded bg-bg-deep border border-border text-xs text-text-primary placeholder-text-muted focus:outline-none focus:border-primary"
+            />
+          </div>
+          <span class="text-xs text-text-muted">条</span>
+        </div>
+
+        <!-- 搜索框 -->
         <div class="relative w-64">
           <input
             v-model="rtStore.query"
             @keydown.enter="rtStore.search()"
             type="text"
             placeholder="搜索资讯..."
-            class="w-full px-4 py-1.5 pr-8 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+            class="w-full px-4 py-1.5 pr-9 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
             :disabled="rtStore.isLoading"
           />
           <button
-            v-if="rtStore.query.trim() && !rtStore.isLoading"
             @click="rtStore.search()"
-            class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-primary transition-colors"
-          >🔍</button>
-          <span
-            v-if="rtStore.isLoading"
-            class="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 border border-primary border-t-transparent rounded-full animate-spin"
-          ></span>
+            :disabled="!rtStore.query.trim() || rtStore.isLoading"
+            class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-primary disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+            v-html="icons.search"
+          ></button>
         </div>
       </div>
     </div>
@@ -104,14 +120,23 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { useRealtimeSearchStore } from '../stores/realtimeSearch'
+import { icons } from '../assets/icons'
 
 const rtStore = useRealtimeSearchStore()
 
 const defaultVisible = 5
 const visibleCount = ref(defaultVisible)
+const presetCounts = [3, 5, 10, 15]
+const customCount = ref('')
+
+function applyCustomCount() {
+  const n = parseInt(customCount.value)
+  if (n > 0 && n <= 50) {
+    rtStore.resultLimit = n
+  }
+}
 
 onMounted(() => {
-  // 根据容器宽度计算默认显示数量
   visibleCount.value = defaultVisible
 })
 </script>
@@ -122,5 +147,14 @@ onMounted(() => {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+/* 隐藏 number 输入框的上下箭头 */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 </style>

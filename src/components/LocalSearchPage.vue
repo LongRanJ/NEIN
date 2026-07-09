@@ -21,9 +21,18 @@
           v-model="localQuery"
           type="text"
           placeholder="搜索资讯..."
-          class="w-full px-4 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
+          class="w-full px-4 py-2 pr-9 rounded-lg bg-bg-deep border border-border text-sm text-text-primary placeholder-text-muted focus:outline-none focus:border-primary transition-colors"
         />
-        <button v-if="localQuery" @click="localQuery = ''" class="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-white text-xs">✕</button>
+        <button
+          v-if="localQuery"
+          @click="localQuery = ''"
+          class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-white"
+        >✕</button>
+        <span
+          v-else
+          class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted"
+          v-html="icons.search"
+        ></span>
       </div>
     </div>
 
@@ -64,6 +73,7 @@
 import { ref, computed } from 'vue'
 import Fuse from 'fuse.js'
 import { useNewsStore } from '../stores/news'
+import { icons } from '../assets/icons'
 
 const store = useNewsStore()
 
