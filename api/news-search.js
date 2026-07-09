@@ -41,7 +41,7 @@ function thirtyDaysAgo() {
 
 // ─── Google News RSS 抓取 ────────────────────────────────
 
-async function fetchGoogleNews(keyword, limit = 30) {
+async function fetchGoogleNews(keyword, limit = 50) {
   const queries = [
     `${keyword} 新能源`,
     `${keyword} 电池`,
@@ -104,7 +104,7 @@ async function mimoFilter(keyword, items, apiKey) {
 要求：
 1. 按相关性排序
 2. 保留 title、summary、source、url、date 字段
-3. 最多返回20条
+3. 最多返回50条
 4. 只返回JSON数组
 
 新闻列表：
@@ -121,11 +121,11 @@ ${candidates.map((c, i) => `${i+1}. [${c.source}] ${c.title} (${c.date})\n   ${c
           { role: 'user', content: prompt }
         ],
         temperature: 0.2,
-        max_tokens: 4000
+        max_tokens: 8000
       })
     })
 
-    if (!resp.ok) return { results: candidates.slice(0, 20), overview: '' }
+    if (!resp.ok) return { results: candidates.slice(0, 50), overview: '' }
 
     const data = await resp.json()
     const content = data.choices?.[0]?.message?.content || ''
@@ -137,7 +137,7 @@ ${candidates.map((c, i) => `${i+1}. [${c.source}] ${c.title} (${c.date})\n   ${c
       if (jsonMatch) results = JSON.parse(jsonMatch[0])
     } catch {}
 
-    if (results.length === 0) results = candidates.slice(0, 20)
+    if (results.length === 0) results = candidates.slice(0, 50)
 
     results = results
       .filter(r => r.title && r.title.length >= 3)
@@ -168,7 +168,7 @@ ${candidates.map((c, i) => `${i+1}. [${c.source}] ${c.title} (${c.date})\n   ${c
 
     return { results, overview }
   } catch {
-    return { results: candidates.slice(0, 20), overview: '' }
+    return { results: candidates.slice(0, 50), overview: '' }
   }
 }
 
