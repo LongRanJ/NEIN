@@ -1,170 +1,170 @@
 {
   "sources": [
     {
-      "id": "sina",
-      "name": "新浪新闻",
-      "url_template": "https://search.sina.com.cn/?q={keyword}&range=all&time=0",
+      "id": "china5e",
+      "name": "中国能源网",
+      "url_template": "https://www.china5e.com/search?q={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".result-item", ".box-result"],
-        "title": ["h2 a", "h3 a", ".title a"],
-        "summary": [".summary", ".content", "p"],
-        "link": ["h2 a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "qq",
-      "name": "腾讯新闻",
-      "url_template": "https://news.qq.com/search?q={keyword}",
-      "type": "list",
-      "selectors": {
-        "container": [".list_item", ".search-item", ".item-wrap"],
-        "title": [".title a", "h3 a", ".item-title a"],
-        "summary": [".desc", ".summary", ".item-desc"],
-        "link": [".title a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "sohu",
-      "name": "搜狐新闻",
-      "url_template": "https://search.sohu.com/?keyword={keyword}",
-      "type": "list",
-      "selectors": {
-        "container": [".result-item", ".news-item", ".search-result-item"],
+        "container": [".search-result", ".news-item", ".list-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".summary", ".desc", "p"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
     },
     {
-      "id": "163",
-      "name": "网易新闻",
-      "url_template": "https://search.163.com/?q={keyword}",
+      "id": "bjx-chuneng",
+      "name": "北极星储能网",
+      "url_template": "https://chuneng.bjx.com.cn/search?keyword={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".item", ".search-item", ".news-item"],
+        "container": [".search-list", ".news-item", ".list-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".desc", ".summary", "p"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
     },
     {
-      "id": "ifeng",
-      "name": "凤凰网",
-      "url_template": "https://search.ifeng.com/search?q={keyword}&c=news",
+      "id": "ddqcw",
+      "name": "电动汽车网",
+      "url_template": "https://www.ddqcw.com/search?keyword={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".news-item", ".search-result-item", ".result-item"],
-        "title": [".title a", "h3 a", "h4 a"],
-        "summary": [".summary", ".desc", "p"],
-        "link": [".title a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "cctv",
-      "name": "央视新闻",
-      "url_template": "https://search.cctv.com/search.php?qtext={keyword}",
-      "type": "special",
-      "selectors": {
-        "container": [".list_item", ".result_item", ".search_item"],
-        "title": [".title a", "h3 a", "a.title"],
-        "summary": [".desc", ".summary", "p"],
-        "link": [".title a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "huanqiu",
-      "name": "环球网",
-      "url_template": "https://search.huanqiu.com/?q={keyword}",
-      "type": "list",
-      "selectors": {
-        "container": [".search-item", ".result-item", ".news-item"],
+        "container": [".search-result", ".news-item", ".list-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".summary", ".desc", "p"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
     },
     {
-      "id": "xinhua",
-      "name": "新华网",
-      "url_template": "https://so.news.cn/getNews?keyword={keyword}&curPage=1&sortField=0&searchFields=1&lang=zh",
-      "type": "api_json",
-      "selectors": {
-        "container": [],
-        "title": [],
-        "summary": [],
-        "link": []
-      },
-      "enabled": true
-    },
-    {
-      "id": "people",
-      "name": "人民网",
-      "url_template": "http://search.people.com.cn/people/search?keyword={keyword}&site=people",
+      "id": "gasgoo",
+      "name": "盖世汽车网",
+      "url_template": "https://auto.gasgoo.com/search?keyword={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".fr", ".result-item", ".search-item"],
-        "title": [".fl a", "h3 a", ".title a"],
-        "summary": [".summary", ".desc", "p"],
-        "link": [".fl a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "guancha",
-      "name": "观察者网",
-      "url_template": "https://search.guancha.cn/?q={keyword}",
-      "type": "list",
-      "selectors": {
-        "container": [".search-item", ".result-item", ".news-item"],
+        "container": [".search-result", ".news-item", ".list-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".summary", ".desc", "p"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
     },
     {
-      "id": "thepaper",
-      "name": "澎湃新闻",
-      "url_template": "https://www.thepaper.cn/search?keyword={keyword}",
+      "id": "d1ev",
+      "name": "第一电动网",
+      "url_template": "https://www.d1ev.com/search?keyword={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".search_item", ".news-item", ".result-item"],
-        "title": [".news_title a", "h3 a", ".title a"],
-        "summary": [".news_txt", ".summary", ".desc"],
-        "link": [".news_title a[href]", "h3 a[href]"]
-      },
-      "enabled": true
-    },
-    {
-      "id": "chinanews",
-      "name": "中国新闻网",
-      "url_template": "https://www.chinanews.com/search?keyword={keyword}",
-      "type": "list",
-      "selectors": {
-        "container": [".news-item", ".search-result-item", ".result-item"],
+        "container": [".search-result", ".news-item", ".article-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".summary", ".desc", "p"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
     },
     {
-      "id": "cankaoxiaoxi",
-      "name": "参考消息",
-      "url_template": "https://search.cankaoxiaoxi.com/?q={keyword}",
-      "type": "special",
+      "id": "ofweek-libattery",
+      "name": "OFWeek锂电网",
+      "url_template": "https://libattery.ofweek.com/search?keyword={keyword}",
+      "type": "list",
       "selectors": {
-        "container": [".result-item", ".news-item", ".search-item"],
+        "container": [".search-result", ".news-item", ".list-item"],
         "title": [".title a", "h3 a", "h2 a"],
-        "summary": [".summary", ".desc", "p"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "gg-lb",
+      "name": "高工氢电网",
+      "url_template": "https://www.gg-lb.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "escn",
+      "name": "中国储能网",
+      "url_template": "https://www.escn.com.cn/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "solarbe",
+      "name": "索比储能网",
+      "url_template": "https://www.solarbe.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "in-en",
+      "name": "国际能源网",
+      "url_template": "https://www.in-en.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "bjx-dianchi",
+      "name": "北极星电池网",
+      "url_template": "https://dianchi.bjx.com.cn/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-list", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "china-nengyuan",
+      "name": "新能源网",
+      "url_template": "https://www.china-nengyuan.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "dianchi",
+      "name": "电池网",
+      "url_template": "https://www.dianchi.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-result", ".news-item", ".list-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", ".intro"],
         "link": [".title a[href]", "h3 a[href]"]
       },
       "enabled": true
@@ -183,15 +183,15 @@
       "enabled": true
     },
     {
-      "id": "toutiao",
-      "name": "今日头条",
-      "url_template": "https://so.toutiao.com/search?keyword={keyword}&type=news",
+      "id": "bing",
+      "name": "Bing新闻",
+      "url_template": "https://www.bing.com/news/search?q={keyword}",
       "type": "list",
       "selectors": {
-        "container": [".result-content", ".search-result-item", ".cs-view-block"],
-        "title": [".text-ellipsis a", "h3 a", ".title a"],
-        "summary": [".desc", ".summary", ".content"],
-        "link": [".text-ellipsis a[href]", "h3 a[href]"]
+        "container": [".news-card", ".newsitem", ".card-content"],
+        "title": [".title a", "a.title", "h3 a"],
+        "summary": [".snippet", ".desc", ".content"],
+        "link": [".title a[href]", "a.title[href]"]
       },
       "enabled": true
     }
