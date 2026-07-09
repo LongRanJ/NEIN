@@ -42,6 +42,24 @@
       <button @click="store.error = ''" class="text-red-400 hover:text-red-300" v-html="icons.close"></button>
     </div>
 
+    <!-- 失败源修正提示 -->
+    <div v-if="store.failedSources.length > 0 && !store.isSearching" class="mb-4 p-3 rounded-lg bg-accent-amber/10 border border-accent-amber/30">
+      <div class="flex items-center justify-between">
+        <div class="text-sm text-accent-amber">
+          ⚠️ {{ store.failedSources.length }}个源超时：{{ store.failedSources.join('、') }}
+        </div>
+        <button
+          @click="store.fixSources()"
+          :disabled="store.isFixing"
+          class="px-3 py-1.5 rounded-lg bg-accent-amber/20 text-accent-amber text-xs font-medium hover:bg-accent-amber/30 disabled:opacity-50 transition-all flex items-center gap-1.5"
+        >
+          <span v-if="store.isFixing" class="w-3 h-3 border-2 border-accent-amber border-t-transparent rounded-full animate-spin"></span>
+          <span>{{ store.isFixing ? '提交中...' : '修正链接' }}</span>
+        </button>
+      </div>
+      <div v-if="store.fixMessage" class="mt-2 text-xs text-accent-green">✅ {{ store.fixMessage }}</div>
+    </div>
+
     <!-- 实时进度（搜索中时显示） -->
     <div v-if="store.isSearching" class="mb-4 p-4 rounded-lg bg-bg-deep/80 border border-border">
       <div class="flex items-center gap-2 mb-3">

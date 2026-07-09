@@ -12,6 +12,8 @@ export const useNewsReportStore = defineStore('newsReport', () => {
   const hasSearched = ref(false)
   const overview = ref('')
   const suggestedKeywords = ref([])
+  const isFixing = ref(false)
+  const fixMessage = ref('')
 
   const selectedItems = computed(() =>
     newsList.value.filter((_, i) => selectedIds.value.has(i))
@@ -165,6 +167,47 @@ ${items.map((item, i) => `${i + 1}. [${item.source}] ${item.title}\n   ${item.su
     }
   }
 
+  // ─── 失败源列表 ──────────────────────────────────────
+
+  const failedSources = computed(() => {
+    return Object.entries(sourceStatus.value)
+      .filter(([, status]) => status === 'timeout' || status === 'error' || status === 'empty')
+      .map(([name]) => name)
+  })
+
+  // ─── 修正失败源链接 ──────────────────────────────────
+
+  async function fixSources() {
+    if (failedSources.value.length === 0) return
+
+    isFixing.value = true
+    fixMessage.value = ''
+    error.value = ''
+
+    try {
+      const resp = await fetch('/api/fix-sources', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          failedSources: failedSources.value,
+          keyword: keyword.value
+        })
+      })
+
+      if (!resp.ok) {
+        const errData = await resp.json().catch(() => ({}))
+        throw new Error(errData.error || `请求失败: ${resp.status}`)
+      }
+
+      const data = await resp.json()
+      fixMessage.value = data.message || '修正任务已提交'
+    } catch (err) {
+      error.value = err.message
+    } finally {
+      isFixing.value = false
+    }
+  }
+
   // ─── 选择操作 ─────────────────────────────────────────
 
   function toggleSelect(index) {
@@ -210,8 +253,9 @@ ${items.map((item, i) => `${i + 1}. [${item.source}] ${item.title}\n   ${item.su
     keyword, newsList, selectedIds, sourceStatus,
     isSearching, isGenerating, error, hasSearched,
     overview, suggestedKeywords,
+    isFixing, fixMessage, failedSources,
     selectedItems, allSelected,
-    search, generatePpt,
+    search, generatePpt, fixSources,
     toggleSelect, toggleSelectAll, selectAll, clearSelect, reset
   }
 })
