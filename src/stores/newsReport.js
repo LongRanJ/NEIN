@@ -196,7 +196,7 @@ ${items.map((item, i) => `${i + 1}. [${item.source}] ${item.title}\n   ${item.su
 
       if (!resp.ok) {
         const errData = await resp.json().catch(() => ({}))
-        throw new Error(errData.error || `请求失败: ${resp.status}`)
+        throw new Error(errData.detail || errData.error || `请求失败: ${resp.status}`)
       }
 
       const data = await resp.json()
