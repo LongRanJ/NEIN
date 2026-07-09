@@ -3,12 +3,24 @@
     {
       "id": "china5e",
       "name": "中国能源网",
-      "url_template": "https://www.china5e.com/search?q={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:china5e.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".news-list h3 a", ".list-item .title a"],
-        "link": [".search-list .title a[href]", ".news-list h3 a[href]", ".list-item .title a[href]"],
-        "summary": [".search-list .desc", ".news-list .summary", ".list-item p"]
+        "title": [
+          ".search-list .title a",
+          ".news-list h3 a",
+          ".list-item .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".news-list h3 a[href]",
+          ".list-item .title a[href]"
+        ],
+        "summary": [
+          ".search-list .desc",
+          ".news-list .summary",
+          ".list-item p"
+        ]
       },
       "enabled": true
     },
@@ -18,153 +30,309 @@
       "url_template": "https://chuneng.bjx.com.cn/search?keyword={keyword}",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".list_item h3 a", ".news-list .title a"],
-        "link": [".search-list .title a[href]", ".list_item h3 a[href]", ".news-list .title a[href]"],
-        "summary": [".search-list .intro", ".list_item .desc", ".news-list .summary"]
+        "title": [
+          ".search-list .title a",
+          ".list_item h3 a",
+          ".news-list .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".list_item h3 a[href]",
+          ".news-list .title a[href]"
+        ],
+        "summary": [
+          ".search-list .intro",
+          ".list_item .desc",
+          ".news-list .summary"
+        ]
       },
       "enabled": true
     },
     {
       "id": "ddqcw",
       "name": "电动汽车网",
-      "url_template": "https://www.ddqcw.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:ddqcw.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".result-list .title a", ".news-list h3 a", ".search-item .title a"],
-        "link": [".result-list .title a[href]", ".news-list h3 a[href]", ".search-item .title a[href]"],
-        "summary": [".result-list .desc", ".news-list .summary", ".search-item p"]
+        "title": [
+          ".result-list .title a",
+          ".news-list h3 a",
+          ".search-item .title a"
+        ],
+        "link": [
+          ".result-list .title a[href]",
+          ".news-list h3 a[href]",
+          ".search-item .title a[href]"
+        ],
+        "summary": [
+          ".result-list .desc",
+          ".news-list .summary",
+          ".search-item p"
+        ]
       },
       "enabled": true
     },
     {
       "id": "gasgoo",
       "name": "盖世汽车网",
-      "url_template": "https://auto.gasgoo.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:auto.gasgoo.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".article-list .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".article-list .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".article-list .intro"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".article-list .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".article-list .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".article-list .intro"
+        ]
       },
       "enabled": true
     },
     {
       "id": "d1ev",
       "name": "第一电动网",
-      "url_template": "https://www.d1ev.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:d1ev.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".article-list h3 a", ".news-item .title a"],
-        "link": [".search-list .title a[href]", ".article-list h3 a[href]", ".news-item .title a[href]"],
-        "summary": [".search-list .desc", ".article-list .summary", ".news-item p"]
+        "title": [
+          ".search-list .title a",
+          ".article-list h3 a",
+          ".news-item .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".article-list h3 a[href]",
+          ".news-item .title a[href]"
+        ],
+        "summary": [
+          ".search-list .desc",
+          ".article-list .summary",
+          ".news-item p"
+        ]
       },
       "enabled": true
     },
     {
       "id": "ofweek-libattery",
       "name": "OFWeek锂电网",
-      "url_template": "https://libattery.ofweek.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:libattery.ofweek.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".list-wrap .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".list-wrap .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".list-wrap .intro"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".list-wrap .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".list-wrap .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".list-wrap .intro"
+        ]
       },
       "enabled": true
     },
     {
       "id": "gg-lb",
       "name": "高工氢电网",
-      "url_template": "https://www.gg-lb.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:gg-lb.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".news-list h3 a", ".article-item .title a"],
-        "link": [".search-list .title a[href]", ".news-list h3 a[href]", ".article-item .title a[href]"],
-        "summary": [".search-list .desc", ".news-list .summary", ".article-item p"]
+        "title": [
+          ".search-list .title a",
+          ".news-list h3 a",
+          ".article-item .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".news-list h3 a[href]",
+          ".article-item .title a[href]"
+        ],
+        "summary": [
+          ".search-list .desc",
+          ".news-list .summary",
+          ".article-item p"
+        ]
       },
       "enabled": true
     },
     {
       "id": "escn",
       "name": "中国储能网",
-      "url_template": "https://www.escn.com.cn/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:escn.com.cn+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".list-content .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".list-content .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".list-content .intro"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".list-content .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".list-content .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".list-content .intro"
+        ]
       },
       "enabled": true
     },
     {
       "id": "solarbe",
       "name": "索比储能网",
-      "url_template": "https://www.solarbe.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:solarbe.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".news-list h3 a", ".result-item .title a"],
-        "link": [".search-list .title a[href]", ".news-list h3 a[href]", ".result-item .title a[href]"],
-        "summary": [".search-list .desc", ".news-list .summary", ".result-item p"]
+        "title": [
+          ".search-list .title a",
+          ".news-list h3 a",
+          ".result-item .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".news-list h3 a[href]",
+          ".result-item .title a[href]"
+        ],
+        "summary": [
+          ".search-list .desc",
+          ".news-list .summary",
+          ".result-item p"
+        ]
       },
       "enabled": true
     },
     {
       "id": "in-en",
       "name": "国际能源网",
-      "url_template": "https://www.in-en.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:in-en.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".article-list .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".article-list .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".article-list .intro"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".article-list .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".article-list .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".article-list .intro"
+        ]
       },
       "enabled": true
     },
     {
       "id": "bjx-dianchi",
       "name": "北极星电池网",
-      "url_template": "https://dianchi.bjx.com.cn/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:dianchi.bjx.com.cn+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-list .title a", ".list_item h3 a", ".news-list .title a"],
-        "link": [".search-list .title a[href]", ".list_item h3 a[href]", ".news-list .title a[href]"],
-        "summary": [".search-list .intro", ".list_item .desc", ".news-list .summary"]
+        "title": [
+          ".search-list .title a",
+          ".list_item h3 a",
+          ".news-list .title a"
+        ],
+        "link": [
+          ".search-list .title a[href]",
+          ".list_item h3 a[href]",
+          ".news-list .title a[href]"
+        ],
+        "summary": [
+          ".search-list .intro",
+          ".list_item .desc",
+          ".news-list .summary"
+        ]
       },
       "enabled": true
     },
     {
       "id": "china-nengyuan",
       "name": "新能源网",
-      "url_template": "https://www.china-nengyuan.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:china-nengyuan.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".list-wrap .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".list-wrap .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".list-wrap .intro"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".list-wrap .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".list-wrap .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".list-wrap .intro"
+        ]
       },
       "enabled": true
     },
     {
       "id": "dianchi",
       "name": "电池网",
-      "url_template": "https://www.dianchi.com/search?keyword={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:dianchi.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".search-result .title a", ".news-list h3 a", ".list-item .title a"],
-        "link": [".search-result .title a[href]", ".news-list h3 a[href]", ".list-item .title a[href]"],
-        "summary": [".search-result .desc", ".news-list .summary", ".list-item p"]
+        "title": [
+          ".search-result .title a",
+          ".news-list h3 a",
+          ".list-item .title a"
+        ],
+        "link": [
+          ".search-result .title a[href]",
+          ".news-list h3 a[href]",
+          ".list-item .title a[href]"
+        ],
+        "summary": [
+          ".search-result .desc",
+          ".news-list .summary",
+          ".list-item p"
+        ]
       },
       "enabled": true
     },
     {
       "id": "baidu",
       "name": "百度新闻",
-      "url_template": "https://news.baidu.com/ns?word={keyword}",
+      "url_template": "https://www.bing.com/search?q=site:news.baidu.com+%E5%9B%BA%E6%80%81%E7%94%B5%E6%B1%A0",
       "type": "general",
       "selectors": {
-        "title": [".result .news-title a", ".result h3 a", "li .c-title a"],
-        "link": [".result .news-title a[href]", ".result h3 a[href]", "li .c-title a[href]"],
-        "summary": [".result .c-summary", ".result .c-abstract", "li .c-abstract"]
+        "title": [
+          ".result .news-title a",
+          ".result h3 a",
+          "li .c-title a"
+        ],
+        "link": [
+          ".result .news-title a[href]",
+          ".result h3 a[href]",
+          "li .c-title a[href]"
+        ],
+        "summary": [
+          ".result .c-summary",
+          ".result .c-abstract",
+          "li .c-abstract"
+        ]
       },
       "enabled": true
     },
@@ -174,9 +342,21 @@
       "url_template": "https://www.bing.com/news/search?q={keyword}",
       "type": "general",
       "selectors": {
-        "title": [".news-card a.title", ".news-card h3 a", "a.title"],
-        "link": [".news-card a.title[href]", ".news-card h3 a[href]", "a.title[href]"],
-        "summary": [".news-card .snippet", ".news-card .desc", ".news-card .content"]
+        "title": [
+          ".news-card a.title",
+          ".news-card h3 a",
+          "a.title"
+        ],
+        "link": [
+          ".news-card a.title[href]",
+          ".news-card h3 a[href]",
+          "a.title[href]"
+        ],
+        "summary": [
+          ".news-card .snippet",
+          ".news-card .desc",
+          ".news-card .content"
+        ]
       },
       "enabled": true
     }
