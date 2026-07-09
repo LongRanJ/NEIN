@@ -32,8 +32,10 @@
 import { ref, watch, onMounted, nextTick } from 'vue'
 import * as echarts from 'echarts'
 import { useNewsStore } from '../stores/news'
+import { useAiStore } from '../stores/ai'
 
 const store = useNewsStore()
+const aiStore = useAiStore()
 
 const keywordChartRef = ref(null)
 const sourceChartRef = ref(null)
@@ -134,6 +136,12 @@ function handleResize() {
 onMounted(() => {
   nextTick(initCharts)
   window.addEventListener('resize', handleResize)
+})
+
+// AI 面板开关时触发图表重排
+watch(() => aiStore.isOpen, () => {
+  // 等 CSS transition (300ms) 完成后再 resize
+  setTimeout(() => handleResize(), 350)
 })
 
 watch(() => [store.timeFilteredArticles, store.keywordStats, store.sourceStats], () => {

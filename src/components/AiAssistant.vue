@@ -1,14 +1,12 @@
 <template>
   <div>
-    <!-- Floating button -->
+    <!-- Floating button - 面板打开时隐藏 -->
     <button
-      @click="aiStore.isOpen = !aiStore.isOpen"
+      v-if="!aiStore.isOpen"
+      @click="aiStore.isOpen = true"
       class="fixed bottom-6 right-6 z-[90] w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent-green text-white shadow-lg hover:shadow-primary/30 transition-all animate-pulse-glow flex items-center justify-center"
-      :style="aiStore.isOpen ? 'z-index:85' : ''"
-      :class="{ 'rotate-0': !aiStore.isOpen, 'rotate-90': aiStore.isOpen }"
     >
-      <span v-if="aiStore.isOpen" class="inline-flex" v-html="closeIconLg"></span>
-      <span v-else class="inline-flex" v-html="aiIconLg"></span>
+      <span class="inline-flex" v-html="aiIconLg"></span>
     </button>
 
     <!-- AI Panel - 右侧 1/3 -->
@@ -53,6 +51,14 @@
               class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
               v-html="icons.trash"
             ></button>
+            <!-- 关闭按钮 -->
+            <button
+              @click="aiStore.isOpen = false"
+              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
+              title="关闭助手"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
           </div>
         </div>
 
@@ -177,7 +183,6 @@ const showSettings = ref(false)
 const messagesContainer = ref(null)
 
 const aiIconLg = computed(() => icons.ai.replace('width="16"', 'width="28"').replace('height="16"', 'height="28"'))
-const closeIconLg = computed(() => icons.close.replace('width="14"', 'width="24"').replace('height="14"', 'height="24"'))
 
 const quickQuestions = [
   '最近固态电池有什么进展？',
