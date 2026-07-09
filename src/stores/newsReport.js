@@ -201,62 +201,178 @@ ${items.map((item, i) => `${i+1}. [${item.source}] ${item.title} - ${item.summar
       // MIMO 内容增强
       const enhanced = await enhanceContent()
 
-      // 前端生成 PPT（pptxgenjs 原生支持浏览器）
+      // 前端生成 PPT
       const PptxGenJS = (await import('pptxgenjs')).default
       const pptx = new PptxGenJS()
       pptx.layout = 'LAYOUT_WIDE'
 
       const today = new Date().toISOString().split('T')[0]
-      const slides = selectedItems.value
+      const items = selectedItems.value
 
       // 主题色
       const BG = '0F1729'
       const PRIMARY = '38BDF8'
-      const GREEN = '22C55E'
       const WHITE = 'FFFFFF'
       const LIGHT = 'E2E8F0'
       const MUTED = '94A3B8'
+      const ACCENT = 'F59E0B'
+      const DIVIDER_W = 1.5
+      const MARGIN_L = 0.8
 
-      // 封面
+      // ─── 封面页 ─────────────────────────────
+
       const cover = pptx.addSlide()
       cover.background = { color: BG }
-      cover.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
-      cover.addText(`${keyword.value} - 新闻简报`, { x: 1, y: 1.8, w: 11, h: 1.5, fontSize: 40, color: WHITE, bold: true })
-      cover.addText(`生成日期：${today}`, { x: 1, y: 3.5, w: 11, h: 0.6, fontSize: 18, color: MUTED })
+      // 渐变装饰条
+      cover.addShape(pptx.ShapeType.rect, {
+        x: 0, y: 0, w: '100%', h: 1.2,
+        fill: { type: 'solid', color: '1A3A5C' }
+      })
+      cover.addShape(pptx.ShapeType.rect, {
+        x: 0, y: 0, w: '100%', h: 0.08,
+        fill: { type: 'solid', color: PRIMARY }
+      })
+      // 标题
+      cover.addText(`${keyword.value} - 新闻简报`, {
+        x: MARGIN_L, y: 1.8, w: 11, h: 1.2,
+        fontSize: 38, color: WHITE, bold: true
+      })
+      // 日期
+      cover.addText(today, {
+        x: MARGIN_L, y: 3.2, w: 11, h: 0.5,
+        fontSize: 16, color: MUTED
+      })
+      // 分割线
+      cover.addShape(pptx.ShapeType.rect, {
+        x: MARGIN_L, y: 3.9, w: DIVIDER_W, h: 0.04,
+        fill: { type: 'solid', color: PRIMARY }
+      })
+      // 概述
       if (enhanced?.overview) {
-        cover.addText(enhanced.overview, { x: 1, y: 4.3, w: 11, h: 1.2, fontSize: 14, color: LIGHT, wrap: true })
+        cover.addText(enhanced.overview, {
+          x: MARGIN_L, y: 4.2, w: 11, h: 1.2,
+          fontSize: 14, color: LIGHT, wrap: true, lineSpacing: 22
+        })
       }
-      cover.addText('NEIN 新能源行业资讯平台', { x: 1, y: 6.2, w: 11, h: 0.4, fontSize: 11, color: MUTED })
-
-      // 内容页
-      slides.forEach((item, i) => {
-        const s = pptx.addSlide()
-        s.background = { color: BG }
-        s.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
-        s.addText(`#${i + 1}`, { x: 0.5, y: 0.3, w: 1, h: 0.5, fontSize: 16, color: PRIMARY, bold: true })
-        s.addText(item.title, { x: 0.5, y: 0.9, w: 12, h: 0.9, fontSize: 26, color: WHITE, bold: true, wrap: true })
-        s.addShape(pptx.ShapeType.rect, { x: 0.5, y: 1.9, w: 2, h: 0.04, fill: { type: 'solid', color: PRIMARY } })
-
-        const bullets = enhanced?.enhanced?.find(e => e.index === i)?.bullets
-        if (bullets?.length) {
-          s.addText(bullets.map(b => `•  ${b}`).join('\n'), { x: 0.5, y: 2.2, w: 12, h: 3.2, fontSize: 16, color: LIGHT, wrap: true, valign: 'top', lineSpacing: 28 })
-        } else if (item.summary) {
-          s.addText(item.summary, { x: 0.5, y: 2.2, w: 12, h: 3.2, fontSize: 16, color: LIGHT, wrap: true, valign: 'top', lineSpacing: 26 })
-        }
-
-        s.addText(item.source ? `来源：${item.source}` : '', { x: 0.5, y: 5.6, w: 6, h: 0.35, fontSize: 11, color: MUTED })
-        if (item.url) s.addText(`原文链接：${item.url}`, { x: 0.5, y: 6.0, w: 12, h: 0.35, fontSize: 9, color: PRIMARY })
-        s.addText(`${i + 1} / ${slides.length}`, { x: 11, y: 6.8, w: 2, h: 0.3, fontSize: 9, color: MUTED, align: 'right' })
+      // 统计
+      const sourceNames = [...new Set(items.map(i => i.source))]
+      const statsText = `共 ${items.length} 条资讯 | 来源：${sourceNames.slice(0, 3).join('、')}${sourceNames.length > 3 ? '等' : ''}`
+      cover.addText(statsText, {
+        x: MARGIN_L, y: 5.6, w: 11, h: 0.4,
+        fontSize: 12, color: MUTED
+      })
+      // 平台名
+      cover.addText('NEIN 新能源行业资讯平台', {
+        x: MARGIN_L, y: 6.5, w: 11, h: 0.4,
+        fontSize: 11, color: MUTED
       })
 
-      // 封底
+      // ─── 内容页 ─────────────────────────────
+
+      let slideIndex = 0
+      for (const item of items) {
+        // 获取内容：bullets > summary > title拼接
+        const bullets = enhanced?.enhanced?.find(e => e.index === slideIndex)?.bullets
+        let content = ''
+        if (bullets?.length) {
+          content = bullets.map(b => `•  ${b}`).join('\n')
+        } else if (item.summary && item.summary.length > 10) {
+          content = item.summary
+        } else {
+          // 兜底：跳过无内容的条目
+          slideIndex++
+          continue
+        }
+
+        const s = pptx.addSlide()
+        s.background = { color: BG }
+
+        // 顶部装饰条
+        s.addShape(pptx.ShapeType.rect, {
+          x: 0, y: 0, w: '100%', h: 0.06,
+          fill: { type: 'solid', color: PRIMARY }
+        })
+
+        // 序号（大字）
+        s.addText(`#${slideIndex + 1}`, {
+          x: MARGIN_L, y: 0.3, w: 1.2, h: 0.6,
+          fontSize: 28, color: PRIMARY, bold: true
+        })
+
+        // 标题
+        s.addText(item.title, {
+          x: MARGIN_L, y: 1.0, w: 11.4, h: 0.9,
+          fontSize: 24, color: WHITE, bold: true, wrap: true
+        })
+
+        // 分割线
+        s.addShape(pptx.ShapeType.rect, {
+          x: MARGIN_L, y: 2.0, w: DIVIDER_W, h: 0.04,
+          fill: { type: 'solid', color: PRIMARY }
+        })
+
+        // 内容
+        s.addText(content, {
+          x: MARGIN_L, y: 2.3, w: 11.4, h: 3.2,
+          fontSize: 15, color: LIGHT, wrap: true, valign: 'top', lineSpacing: 26
+        })
+
+        // 底部：来源 + 日期
+        const metaParts = []
+        if (item.source) metaParts.push(`来源：${item.source}`)
+        if (item.date) metaParts.push(item.date)
+        s.addText(metaParts.join('  ·  '), {
+          x: MARGIN_L, y: 5.8, w: 8, h: 0.35,
+          fontSize: 11, color: MUTED
+        })
+
+        // 原文链接
+        if (item.url) {
+          s.addText([
+            { text: '原文链接：', options: { color: MUTED } },
+            { text: item.url, options: { color: PRIMARY, hyperlink: { url: item.url } } }
+          ], {
+            x: MARGIN_L, y: 6.2, w: 11.4, h: 0.3,
+            fontSize: 9
+          })
+        }
+
+        // 页码
+        s.addText(`${slideIndex + 1} / ${items.length}`, {
+          x: 11, y: 6.8, w: 2, h: 0.3,
+          fontSize: 9, color: MUTED, align: 'right'
+        })
+
+        slideIndex++
+      }
+
+      // ─── 封底页 ─────────────────────────────
+
       const back = pptx.addSlide()
       back.background = { color: BG }
-      back.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
-      back.addText('感谢阅读', { x: 1, y: 2.2, w: 11, h: 1.5, fontSize: 44, color: WHITE, bold: true, align: 'center' })
-      back.addText('由 NEIN 新能源行业资讯平台自动生成', { x: 1, y: 4, w: 11, h: 0.6, fontSize: 16, color: MUTED, align: 'center' })
+      back.addShape(pptx.ShapeType.rect, {
+        x: 0, y: 0, w: '100%', h: 1.2,
+        fill: { type: 'solid', color: '1A3A5C' }
+      })
+      back.addShape(pptx.ShapeType.rect, {
+        x: 0, y: 0, w: '100%', h: 0.08,
+        fill: { type: 'solid', color: PRIMARY }
+      })
+      back.addText('感谢阅读', {
+        x: 1, y: 2.5, w: 11, h: 1.2,
+        fontSize: 44, color: WHITE, bold: true, align: 'center'
+      })
+      back.addText('由 NEIN 新能源行业资讯平台自动生成', {
+        x: 1, y: 4.2, w: 11, h: 0.6,
+        fontSize: 16, color: MUTED, align: 'center'
+      })
+      back.addText(today, {
+        x: 1, y: 5.0, w: 11, h: 0.5,
+        fontSize: 14, color: MUTED, align: 'center'
+      })
 
-      // 下载
+      // ─── 下载 ───────────────────────────────
+
       const blob = await pptx.write({ outputType: 'blob' })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
