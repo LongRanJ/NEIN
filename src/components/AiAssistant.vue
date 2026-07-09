@@ -4,17 +4,19 @@
     <button
       @click="aiStore.isOpen = !aiStore.isOpen"
       class="fixed bottom-6 right-6 z-[90] w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent-green text-white shadow-lg hover:shadow-primary/30 transition-all animate-pulse-glow flex items-center justify-center"
+      :style="aiStore.isOpen ? 'z-index:85' : ''"
       :class="{ 'rotate-0': !aiStore.isOpen, 'rotate-90': aiStore.isOpen }"
     >
-      <span v-if="aiStore.isOpen" v-html="icons.close"></span>
-      <span v-else v-html="icons.ai"></span>
+      <span v-if="aiStore.isOpen" class="inline-flex" v-html="closeIconLg"></span>
+      <span v-else class="inline-flex" v-html="aiIconLg"></span>
     </button>
 
     <!-- AI Panel - 右侧 1/3 -->
     <Transition name="panel">
       <div
         v-if="aiStore.isOpen"
-        class="fixed top-14 right-0 bottom-0 z-[80] w-1/3 min-w-[320px] max-w-[480px] glass border-l border-border flex flex-col shadow-2xl"
+        class="fixed right-0 bottom-0 z-[80] w-1/3 min-w-[320px] max-w-[480px] glass border-l border-border flex flex-col shadow-2xl"
+        :style="{ top: headerHeight + 'px' }"
       >
         <!-- Header -->
         <div class="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
@@ -160,15 +162,22 @@
 </template>
 
 <script setup>
-import { ref, nextTick, watch } from 'vue'
+import { ref, computed, nextTick, watch } from 'vue'
 import { marked } from 'marked'
 import { useAiStore } from '../stores/ai'
 import { icons } from '../assets/icons'
+
+const props = defineProps({
+  headerHeight: { type: Number, default: 80 }
+})
 
 const aiStore = useAiStore()
 const inputText = ref('')
 const showSettings = ref(false)
 const messagesContainer = ref(null)
+
+const aiIconLg = computed(() => icons.ai.replace('width="16"', 'width="28"').replace('height="16"', 'height="28"'))
+const closeIconLg = computed(() => icons.close.replace('width="14"', 'width="24"').replace('height="14"', 'height="24"'))
 
 const quickQuestions = [
   '最近固态电池有什么进展？',

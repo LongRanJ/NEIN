@@ -1,20 +1,16 @@
 <template>
-  <header class="sticky top-0 z-50 glass">
+  <header ref="headerRef" class="sticky top-0 z-50 glass">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- 第一行：Logo + 标题 + 时间筛选 -->
-      <div class="flex items-center justify-between h-14">
-        <!-- Logo + 合并标题 -->
+      <div class="flex items-center justify-between h-10">
         <div class="flex items-center gap-3">
-          <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-primary to-accent-green flex items-center justify-center text-white font-bold text-lg shrink-0">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent-green flex items-center justify-center text-white font-bold text-base shrink-0">
             N
           </div>
-          <div class="min-w-0">
-            <h1 class="text-base sm:text-lg font-bold text-white leading-tight truncate">
-              NEIN
-              <span class="hidden sm:inline text-sm font-normal text-text-secondary ml-1">新能源行业资讯平台</span>
-            </h1>
-            <p class="text-xs text-text-muted truncate">聚合锂电池 · 固态电池 · 储能 · 氢能等领域最新动态</p>
-          </div>
+          <h1 class="text-sm sm:text-base font-bold text-white leading-tight truncate">
+            NEIN
+            <span class="hidden sm:inline text-xs font-normal text-text-secondary ml-1">新能源行业资讯平台</span>
+          </h1>
         </div>
 
         <!-- 时间筛选器 -->
@@ -29,19 +25,19 @@
             >{{ preset.label }}</button>
           </div>
 
-          <div class="flex items-center gap-1.5 bg-bg-deep rounded-lg border border-border px-2 py-1.5">
+          <div class="flex items-center gap-1.5 bg-bg-deep rounded-lg border border-border px-2 py-1">
             <input
               type="date"
               :value="timeFilter.startDate"
               @change="timeFilter.setRange($event.target.value, timeFilter.endDate)"
-              class="bg-transparent text-xs text-text-primary focus:outline-none w-24"
+              class="bg-transparent text-xs text-text-primary focus:outline-none w-24 date-input"
             />
             <span class="text-xs text-text-muted">~</span>
             <input
               type="date"
               :value="timeFilter.endDate"
               @change="timeFilter.setRange(timeFilter.startDate, $event.target.value)"
-              class="bg-transparent text-xs text-text-primary focus:outline-none w-24"
+              class="bg-transparent text-xs text-text-primary focus:outline-none w-24 date-input"
             />
           </div>
 
@@ -63,7 +59,7 @@
             v-for="tab in tabs"
             :key="tab.key"
             @click="pageStore.setPage(tab.key)"
-            class="flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium transition-all border-b-2"
+            class="flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-all border-b-2"
             :class="pageStore.currentPage === tab.key
               ? 'border-primary text-primary-light'
               : 'border-transparent text-text-muted hover:text-white hover:border-border'"
@@ -73,12 +69,10 @@
           </button>
         </div>
         <div class="flex items-center gap-3 pr-1">
-          <!-- 数据统计页：仅显示资讯数目 -->
           <span v-if="pageStore.currentPage === 'data'" class="flex items-center gap-1.5 text-xs text-text-muted">
             <span class="text-primary font-medium">{{ newsStore.timeFilteredArticles.length }}</span>
             <span>条资讯</span>
           </span>
-          <!-- 其他页：Tab 说明文字 -->
           <span v-if="tabDesc" class="text-xs text-text-muted">{{ tabDesc }}</span>
         </div>
       </nav>
@@ -87,7 +81,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { usePageStore } from '../stores/page'
 import { useTimeFilterStore } from '../stores/timeFilter'
 import { useNewsStore } from '../stores/news'
@@ -96,6 +90,26 @@ import { icons } from '../assets/icons'
 const pageStore = usePageStore()
 const timeFilter = useTimeFilterStore()
 const newsStore = useNewsStore()
+
+const headerRef = ref(null)
+const headerHeight = ref(80)
+
+// 暴露 header 高度给父组件
+defineExpose({ headerHeight })
+
+function updateHeight() {
+  if (headerRef.value) {
+    headerHeight.value = headerRef.value.offsetHeight
+  }
+}
+
+onMounted(() => {
+  updateHeight()
+  window.addEventListener('resize', updateHeight)
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', updateHeight)
+})
 
 const tabs = [
   { key: 'news', label: '实时资讯', icon: icons.news },
@@ -125,9 +139,12 @@ function isPresetActive(days) {
 </script>
 
 <style>
-/* 日期选择器日历图标改为白色 */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1);
+/* 日期选择器暗色主题 */
+.date-input {
+  color-scheme: dark;
+}
+.date-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
   cursor: pointer;
 }
 </style>
