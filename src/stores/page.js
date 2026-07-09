@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const usePageStore = defineStore('page', () => {
-  // 当前页面：news | data | localSearch | aiSearch
+  // 当前页面：news | data | localSearch | aiSearch | newsReport
   const currentPage = ref('news')
 
   function setPage(page) {

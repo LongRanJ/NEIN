@@ -115,7 +115,8 @@ const tabs = [
   { key: 'news', label: '实时资讯', icon: icons.news },
   { key: 'data', label: '数据统计', icon: icons.chart },
   { key: 'localSearch', label: '本地检索', icon: icons.search, desc: '在已有新闻库中搜索' },
-  { key: 'aiSearch', label: 'AI实时搜索', icon: icons.ai, desc: 'RSS 实时抓取 + 智能筛选' }
+  { key: 'aiSearch', label: 'AI实时搜索', icon: icons.ai, desc: 'RSS 实时抓取 + 智能筛选' },
+  { key: 'newsReport', label: '资讯&报告', icon: icons.report, desc: '15源新闻搜索 + PPT生成' }
 ]
 
 const tabDesc = computed(() => {

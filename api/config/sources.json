@@ -1,0 +1,208 @@
+{
+  "sources": [
+    {
+      "id": "sina",
+      "name": "新浪新闻",
+      "url_template": "https://search.sina.com.cn/?q={keyword}&range=all&time=0",
+      "type": "list",
+      "selectors": {
+        "container": [".result-item", ".box-result"],
+        "title": ["h2 a", "h3 a", ".title a"],
+        "summary": [".summary", ".content", "p"],
+        "link": ["h2 a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "qq",
+      "name": "腾讯新闻",
+      "url_template": "https://news.qq.com/search?q={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".list_item", ".search-item", ".item-wrap"],
+        "title": [".title a", "h3 a", ".item-title a"],
+        "summary": [".desc", ".summary", ".item-desc"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "sohu",
+      "name": "搜狐新闻",
+      "url_template": "https://search.sohu.com/?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".result-item", ".news-item", ".search-result-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "163",
+      "name": "网易新闻",
+      "url_template": "https://search.163.com/?q={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".item", ".search-item", ".news-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".desc", ".summary", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "ifeng",
+      "name": "凤凰网",
+      "url_template": "https://search.ifeng.com/search?q={keyword}&c=news",
+      "type": "list",
+      "selectors": {
+        "container": [".news-item", ".search-result-item", ".result-item"],
+        "title": [".title a", "h3 a", "h4 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "cctv",
+      "name": "央视新闻",
+      "url_template": "https://search.cctv.com/search.php?qtext={keyword}",
+      "type": "special",
+      "selectors": {
+        "container": [".list_item", ".result_item", ".search_item"],
+        "title": [".title a", "h3 a", "a.title"],
+        "summary": [".desc", ".summary", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "huanqiu",
+      "name": "环球网",
+      "url_template": "https://search.huanqiu.com/?q={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-item", ".result-item", ".news-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "xinhua",
+      "name": "新华网",
+      "url_template": "https://so.news.cn/getNews?keyword={keyword}&curPage=1&sortField=0&searchFields=1&lang=zh",
+      "type": "api_json",
+      "selectors": {
+        "container": [],
+        "title": [],
+        "summary": [],
+        "link": []
+      },
+      "enabled": true
+    },
+    {
+      "id": "people",
+      "name": "人民网",
+      "url_template": "http://search.people.com.cn/people/search?keyword={keyword}&site=people",
+      "type": "list",
+      "selectors": {
+        "container": [".fr", ".result-item", ".search-item"],
+        "title": [".fl a", "h3 a", ".title a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".fl a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "guancha",
+      "name": "观察者网",
+      "url_template": "https://search.guancha.cn/?q={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search-item", ".result-item", ".news-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "thepaper",
+      "name": "澎湃新闻",
+      "url_template": "https://www.thepaper.cn/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".search_item", ".news-item", ".result-item"],
+        "title": [".news_title a", "h3 a", ".title a"],
+        "summary": [".news_txt", ".summary", ".desc"],
+        "link": [".news_title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "chinanews",
+      "name": "中国新闻网",
+      "url_template": "https://www.chinanews.com/search?keyword={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".news-item", ".search-result-item", ".result-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "cankaoxiaoxi",
+      "name": "参考消息",
+      "url_template": "https://search.cankaoxiaoxi.com/?q={keyword}",
+      "type": "special",
+      "selectors": {
+        "container": [".result-item", ".news-item", ".search-item"],
+        "title": [".title a", "h3 a", "h2 a"],
+        "summary": [".summary", ".desc", "p"],
+        "link": [".title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "baidu",
+      "name": "百度新闻",
+      "url_template": "https://news.baidu.com/ns?word={keyword}",
+      "type": "list",
+      "selectors": {
+        "container": [".result", ".news-item", "li"],
+        "title": [".news-title a", "h3 a", ".c-title a"],
+        "summary": [".c-summary", ".c-abstract", ".summary"],
+        "link": [".news-title a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    },
+    {
+      "id": "toutiao",
+      "name": "今日头条",
+      "url_template": "https://so.toutiao.com/search?keyword={keyword}&type=news",
+      "type": "list",
+      "selectors": {
+        "container": [".result-content", ".search-result-item", ".cs-view-block"],
+        "title": [".text-ellipsis a", "h3 a", ".title a"],
+        "summary": [".desc", ".summary", ".content"],
+        "link": [".text-ellipsis a[href]", "h3 a[href]"]
+      },
+      "enabled": true
+    }
+  ],
+  "global": {
+    "timeout_per_source": 10000,
+    "user_agents": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15"
+    ]
+  }
+}

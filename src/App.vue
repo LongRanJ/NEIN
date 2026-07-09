@@ -9,6 +9,7 @@
       <div v-else-if="pageStore.currentPage === 'data'"><DataPage /></div>
       <div v-else-if="pageStore.currentPage === 'localSearch'"><LocalSearchPage /></div>
       <div v-else-if="pageStore.currentPage === 'aiSearch'"><AiSearchPage /></div>
+      <div v-else-if="pageStore.currentPage === 'newsReport'"><NewsReportPage /></div>
     </main>
     <AppFooter />
     <AiAssistant :header-height="headerHeight" />
@@ -24,6 +25,7 @@ import NewsPage from './components/NewsPage.vue'
 import DataPage from './components/DataPage.vue'
 import LocalSearchPage from './components/LocalSearchPage.vue'
 import AiSearchPage from './components/AiSearchPage.vue'
+import NewsReportPage from './components/NewsReportPage.vue'
 import AppFooter from './components/AppFooter.vue'
 import AiAssistant from './components/AiAssistant.vue'
 
