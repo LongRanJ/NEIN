@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// 脚本：通过 MIMO 大模型修正超时/失败的新闻源 URL
-// 输入：JSON string { "failedSources": ["源名称", ...], "keyword": "关键词" }
-// 输出：更新 api/config/sources.json 中对应源的 url_template
+// 脚本：修正超时/失败的新闻源 URL
+// 策略：MIMO 生成候选 URL → 逐个验证 → 更新 sources.json
+// 对每个源尝试多种搜索 URL 模式，直到找到可用的
 
 import { readFileSync, writeFileSync } from 'fs'
 import { dirname, join } from 'path'
@@ -23,51 +23,93 @@ if (!inputRaw) {
 }
 
 let input
-try {
-  input = JSON.parse(inputRaw)
-} catch {
-  console.error('Invalid JSON input')
-  process.exit(1)
-}
+try { input = JSON.parse(inputRaw) } catch { console.error('Invalid JSON'); process.exit(1) }
 
 const { failedSources, keyword = '新能源' } = input
-if (!failedSources || failedSources.length === 0) {
-  console.log('No failed sources to fix')
-  process.exit(0)
-}
+if (!failedSources?.length) { console.log('No failed sources'); process.exit(0) }
 
 // ─── 读取 sources.json ───────────────────────────────────
 
 const sourcesPath = join(ROOT, 'api', 'config', 'sources.json')
 const config = JSON.parse(readFileSync(sourcesPath, 'utf-8'))
 
-// ─── 调用 MIMO 分析并修正 URL ────────────────────────────
+// ─── 候选 URL 模式（不依赖 MIMO，直接穷举） ─────────────
 
-async function fixUrls(sources, keyword) {
+const SEARCH_PATTERNS = [
+  'https://{domain}/search?keyword={keyword}',
+  'https://{domain}/search?q={keyword}',
+  'https://{domain}/search?word={keyword}',
+  'https://{domain}/search/{keyword}',
+  'https://{domain}/?s={keyword}',
+  'https://{domain}/news?keyword={keyword}',
+  'https://www.baidu.com/s?wd=site:{domain}+{keyword}',
+  'https://www.bing.com/search?q=site:{domain}+{keyword}',
+]
+
+function getDomain(urlTemplate) {
+  try {
+    const m = urlTemplate.match(/https?:\/\/([^/]+)/)
+    return m ? m[1].replace('www.', '') : ''
+  } catch { return '' }
+}
+
+function buildCandidateUrls(domain, keyword) {
+  const kw = encodeURIComponent(keyword)
+  return SEARCH_PATTERNS.map(p =>
+    p.replace('{domain}', domain).replace('{keyword}', kw)
+  )
+}
+
+// ─── 验证 URL 是否返回有效内容 ────────────────────────────
+
+async function verifyUrl(url) {
+  try {
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 6000)
+
+    const resp = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'text/html,application/xhtml+xml,*/*',
+        'Accept-Language': 'zh-CN,zh;q=0.9'
+      },
+      signal: controller.signal,
+      redirect: 'follow'
+    })
+    clearTimeout(timeoutId)
+
+    if (!resp.ok) return false
+    const html = await resp.text()
+    // 页面需要有基本的 HTML 结构和一定长度
+    if (html.length < 1000) return false
+    // 检查是否包含搜索相关的关键词（中文页面）
+    const hasChinese = /[\u4e00-\u9fff]/.test(html)
+    const hasKeyword = html.includes(keyword) || html.includes(decodeURIComponent(keyword))
+    return hasChinese || hasKeyword
+  } catch {
+    return false
+  }
+}
+
+// ─── 调用 MIMO 获取 URL 建议（容错处理） ──────────────────
+
+async function getMimoSuggestions(failedSources, keyword) {
   if (!MIMO_API_KEY) {
-    console.error('MIMO_API_KEY not set')
-    process.exit(1)
+    console.log('MIMO_API_KEY not set, skipping MIMO suggestions')
+    return []
   }
 
-  const sourceList = sources.map(s => {
-    return `- ${s.name} (id: ${s.id})，当前URL: ${s.url_template}`
-  }).join('\n')
+  const sourceList = failedSources.map(s => `- ${s.name} (当前URL: ${s.url_template})`).join('\n')
 
-  const prompt = `你是网页爬虫专家。以下新闻网站的搜索URL已失效（超时或无法访问），请为每个网站找出正确的搜索URL格式。
+  const prompt = `以下新闻网站的搜索URL失效了，请给出每个网站正确的搜索URL。
 
 要求：
-1. 搜索关键词用 {keyword} 占位
-2. URL 必须是该网站的真实搜索页面
-3. 优先使用站内搜索，其次用搜索引擎 site: 限定
-4. 只返回 JSON 数组，格式：[{"id":"源id","name":"源名称","url_template":"修正后的URL"}]
-5. 如果某个网站确实无法找到可用搜索URL，跳过该条
+- 用 {keyword} 作为搜索关键词占位符
+- 给出你最有把握的URL
+- 每行一个，格式：源名称 | https://xxx/search?q={keyword}
 
-需要修正的源：
-${sourceList}
-
-搜索关键词参考：${keyword}
-
-请逐个分析每个网站，给出修正后的搜索URL。只返回 JSON，不要其他文字。`
+源列表：
+${sourceList}`
 
   try {
     const resp = await fetch(MIMO_API_URL, {
@@ -79,11 +121,11 @@ ${sourceList}
       body: JSON.stringify({
         model: 'mimo-v2.5',
         messages: [
-          { role: 'system', content: '你是 URL 分析专家。只返回 JSON 数组，不要其他文字。' },
+          { role: 'system', content: '你是URL分析专家。每行给出一个URL，格式：名称 | URL。不要其他内容。' },
           { role: 'user', content: prompt }
         ],
         temperature: 0.1,
-        max_tokens: 3000
+        max_tokens: 2000
       })
     })
 
@@ -94,58 +136,23 @@ ${sourceList}
 
     const data = await resp.json()
     const content = data.choices?.[0]?.message?.content || ''
-    console.log('MIMO raw response (first 500 chars):', content.slice(0, 500))
+    console.log('MIMO response:', content.slice(0, 500))
 
-    // 去除 markdown 代码块标记
-    let cleaned = content.replace(/```(?:json)?\s*/gi, '').replace(/```/g, '').trim()
-
-    // 尝试提取 JSON 数组
-    let jsonMatch = cleaned.match(/\[[\s\S]*?\]/)
-    if (!jsonMatch) {
-      // 再试一次：可能 JSON 被包裹在其他文本中
-      jsonMatch = cleaned.match(/\[[\s\S]*\]/)
-    }
-    if (!jsonMatch) {
-      console.error('Failed to parse MIMO response as JSON. Content:', cleaned.slice(0, 300))
-      return []
+    // 解析 "名称 | URL" 格式（一行一个）
+    const results = []
+    for (const line of content.split('\n')) {
+      const match = line.match(/^(.+?)\s*[|｜]\s*(https?:\/\/\S+)/)
+      if (match) {
+        const name = match[1].trim().replace(/^[-•*]\s*/, '')
+        const url = match[2].trim()
+        results.push({ name, url_template: url })
+      }
     }
 
-    try {
-      return JSON.parse(jsonMatch[0])
-    } catch (parseErr) {
-      console.error('JSON parse error:', parseErr.message, 'Raw:', jsonMatch[0].slice(0, 300))
-      return []
-    }
+    return results
   } catch (err) {
     console.error('MIMO call failed:', err.message)
     return []
-  }
-}
-
-// ─── 验证 URL 是否可访问 ─────────────────────────────────
-
-async function verifyUrl(url) {
-  try {
-    const testUrl = url.replace('{keyword}', encodeURIComponent('新能源'))
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 8000)
-
-    const resp = await fetch(testUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,*/*'
-      },
-      signal: controller.signal,
-      redirect: 'follow'
-    })
-    clearTimeout(timeoutId)
-
-    if (!resp.ok) return false
-    const html = await resp.text()
-    // HTML 太短说明页面无效
-    return html.length > 500
-  } catch {
-    return false
   }
 }
 
@@ -154,53 +161,67 @@ async function verifyUrl(url) {
 async function main() {
   console.log(`Fixing ${failedSources.length} sources for keyword: ${keyword}`)
 
-  // 找到失败源的配置
-  const sourcesToFix = config.sources.filter(s =>
-    failedSources.includes(s.name)
-  )
-
-  if (sourcesToFix.length === 0) {
-    console.log('No matching sources found in config')
+  const sourcesToFix = config.sources.filter(s => failedSources.includes(s.name))
+  if (!sourcesToFix.length) {
+    console.log('No matching sources found')
     process.exit(0)
   }
 
-  console.log(`Found ${sourcesToFix.length} sources to fix: ${sourcesToFix.map(s => s.name).join(', ')}`)
+  console.log(`Found ${sourcesToFix.length} sources to fix`)
 
-  // 调用 MIMO 获取修正后的 URL
-  const fixedUrls = await fixUrls(sourcesToFix, keyword)
-  console.log(`MIMO returned ${fixedUrls.length} fixed URLs`)
+  // 第一步：调 MIMO 获取建议
+  const mimoSuggestions = await getMimoSuggestions(sourcesToFix, keyword)
+  console.log(`MIMO returned ${mimoSuggestions.length} suggestions`)
 
   let updatedCount = 0
 
-  for (const fix of fixedUrls) {
-    if (!fix.url_template || !fix.id) continue
+  for (const source of sourcesToFix) {
+    console.log(`\n--- Fixing: ${source.name} ---`)
+    const domain = getDomain(source.url_template)
+    if (!domain) {
+      console.log(`  ❌ Cannot extract domain from: ${source.url_template}`)
+      continue
+    }
 
-    // 验证新 URL
-    console.log(`Verifying: ${fix.name} -> ${fix.url_template}`)
-    const isValid = await verifyUrl(fix.url_template)
+    // 收集候选 URL：MIMO 建议 + 穷举模式
+    const candidates = []
 
-    if (isValid) {
-      // 更新配置
-      const source = config.sources.find(s => s.id === fix.id)
-      if (source) {
-        const oldUrl = source.url_template
-        source.url_template = fix.url_template
-        console.log(`✅ Fixed: ${fix.name}`)
-        console.log(`   Old: ${oldUrl}`)
-        console.log(`   New: ${fix.url_template}`)
+    // MIMO 建议的 URL
+    const mimoMatch = mimoSuggestions.find(s =>
+      source.name.includes(s.name) || s.name.includes(source.name)
+    )
+    if (mimoMatch) {
+      candidates.push(mimoMatch.url_template)
+    }
+
+    // 穷举搜索模式
+    candidates.push(...buildCandidateUrls(domain, keyword))
+
+    // 逐个验证
+    let found = false
+    for (const url of candidates) {
+      console.log(`  Testing: ${url}`)
+      const isValid = await verifyUrl(url)
+      if (isValid) {
+        console.log(`  ✅ Found working URL: ${url}`)
+        source.url_template = url
         updatedCount++
+        found = true
+        break
       }
-    } else {
-      console.log(`❌ Skipped: ${fix.name} (new URL also unreachable)`)
+    }
+
+    if (!found) {
+      console.log(`  ❌ No working URL found for ${source.name}`)
     }
   }
 
-  // 写回 sources.json
+  // 写回
   if (updatedCount > 0) {
     writeFileSync(sourcesPath, JSON.stringify(config, null, 2) + '\n')
-    console.log(`\nUpdated ${updatedCount} source(s) in sources.json`)
+    console.log(`\n✅ Updated ${updatedCount} source(s)`)
   } else {
-    console.log('\nNo sources were updated')
+    console.log('\n❌ No sources were updated')
   }
 }
 
