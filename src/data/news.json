@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T01:58:32.494Z",
+  "lastUpdated": "2026-07-09T05:53:25.007Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,153 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-qlai6o",
+      "title": "国晟环球（铁岭）固态电池产业链AI智能制造项目首线设备顺利搬入 - 国际储能网",
+      "summary": "国晟环球（铁岭）固态电池产业链AI智能制造项目首线设备顺利搬入 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13b3B6VTdaSFIwcFdNRFd3Qnl4a2dhT0twVFZrTUZEb2VYNjlJQXg5UWhRd0I0U2VvdHpxNm5lQUdMTTZ0cTZKNDBWbFFobWpJdUFKQW5ZeGc3R0VSZEZTRA?oc=5",
+      "publishedAt": "2026-07-09",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "国晟环球（铁岭）固态电池产业链AI智能制造项目首线设备顺利搬"
+      }
+    },
+    {
+      "id": "gn-755e2a",
+      "title": "青海德令哈托素储能电站工程并网 - 碳索储能网",
+      "summary": "青海德令哈托素储能电站工程并网 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TcmZoTkZsY05fd0ZobmpmdVc5dnFRSFQ3NUlSd3BDMnVaRW94MXBYN3dWdkxtWmN2bHA3ZV9kTjVrT2ZMLVZJanVBRzJtVm5uNWhCQ2dkbnZfbDU5RnBFdQ?oc=5",
+      "publishedAt": "2026-07-09",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "青海德令哈托素储能电站工程并网 - 碳索储能网"
+      }
+    },
+    {
+      "id": "gn-g7h5dy",
+      "title": "希腊新能源储能项目进展缓慢 - 国际储能网",
+      "summary": "希腊新能源储能项目进展缓慢 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uMGotd1ZIel9tcnN4RTRBYS1IQ05CTTVBdjBTYkl3NENLV29XWHF1bzNOV0JSdEkxS3NrT25KY3RGazQ1NVkwc0l5ZWFxYkdyTUpEUDRGeDMzaDBPME9vUw?oc=5",
+      "publishedAt": "2026-07-09",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "希腊新能源储能项目进展缓慢 - 国际储能网"
+      }
+    },
+    {
+      "id": "rss-5vzot0",
+      "title": "自研焊接具身大脑模型，以“智能焊工”切入工业制造具身智能赛道，「昇视唯盛」完成数亿元B轮融资｜36氪首发",
+      "summary": "36氪获悉，聚焦工业制造领域的具身智能机器人企业「昇视唯盛」（3Srobotics）正式宣布完成数亿元B轮融资，本轮融资由上海半导体产投、金桥基金领投，零一创投、新鼎资本、中关鼎华及老股东微光创投持续加码跟投。资金将主要用于焊接具身智能大脑与自主小脑运动控制系统的迭代升级，扩大自有智造工厂产能，扩充研发与市场服务团队，加速产品全国多行业规模化落地。 昇视唯盛成立于2020年，2023年获得国家高新技术企业认证，2024年获得上海市专精特新中小企业、上海市智能机器人标杆企业。本轮融资完成标志昇视唯盛依托“自主大脑+自主小脑+自研硬件量产”三级全栈自研体系迈入规模化高速发展新阶段，以可量产、可自主",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3887871679347208?f=rss",
+      "publishedAt": "2026-07-09",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "地点": "上海",
+        "主要事件": "自研焊接具身大脑模型，以“智能焊工”切入工业制造具身智能赛道"
+      }
+    },
+    {
+      "id": "rss-c5a85",
+      "title": "天赐材料回应“固态电池技术突破”小作文：五年内影响有限",
+      "summary": "据媒体报道，昨日一份关于\"固态电池技术交流会纪要\"在投资者圈中广泛传播，新一代固态电池技术有望实现电解液、隔膜等传统锂电材料的全面替代，甚至提出电解液行业或将被“完全淘汰”，隔膜等材料亦将被替代。\"我们不认为是这样。\"天赐材料董秘在电话采访中明确否认固态电池冲击论调。其表示，液态电池每年的销售增量和应用场景仍然非常好。“我们认为，固态电池在5年内不会有非常大的占比，这一判断是与宁德时代的共识。（界面）",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/newsflashes/3887984247454210?f=rss",
+      "publishedAt": "2026-07-09",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "宁德时代"
+        ],
+        "主要事件": "天赐材料回应“固态电池技术突破”小作文：五年内影响有限"
+      }
+    },
+    {
+      "id": "rss-rppzr4",
+      "title": "三星 Galaxy Z Fold8 Ultra 折叠手机渲染图曝光：主打紫色",
+      "summary": "IT之家 7 月 9 日消息，科技媒体 Android Headline 昨日（7 月 8 日）发布博文，在分享 Galaxy Z Flip8 折叠手机渲染图后，再次分享了一组渲染图，展示三星 Galaxy Z Fold8 Ultra 手机渲染图。颜色方面，三星 Galaxy Z Fold8 Ultra 会有白色、黑色和紫色三种颜色，而绿色版将作为线上专属颜色发售。在整体视觉方面，紫色版预估会成为 2026 年主打颜色，视觉上较深，黑色则更接近灰色。外观方面，三星 Galaxy Z Fold8 Ultra 沿用 Galaxy Z Fold7 设计，机身外侧保留纵向三摄模组，包括 1 颗 200",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/974/474.htm",
+      "publishedAt": "2026-07-09",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "三星 Galaxy Z Fold8 Ultra 折叠手机渲染"
+      }
+    },
+    {
+      "id": "rss-pchvs5",
+      "title": "7 月 16 日见，新一代理想 L6 座舱及“沙丘黄”车色公布",
+      "summary": "IT之家 7 月 9 日消息，今天上午，理想汽车宣布：新一代理想 L6 产品发布会定档 7 月 16 日 19:30。与此同时，官方公布了新车的“沙丘黄”车色，并放出了座舱官图。新车长宽高为 4935/1960/1735mm，轴距为 2920mm，与在售车型保持一致。车内依然搭载 1.5T 涡轮增压增程器，发动机最大功率 113 千瓦，同时升级了 51 度容量电池。新车内饰基本延续现款车型布局，手机无线充电区域稍稍下移，车内大屏调整为横贯中控、副驾的一体式，整体依旧主打简约风格。同时，新车在门板等处设置了氛围灯。新款车型前脸延续家族式贯穿灯带，不过前包围区取消一体式贯穿设计，下部格栅的尺寸也进",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/974/424.htm",
+      "publishedAt": "2026-07-09",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "理想"
+        ],
+        "主要事件": "7 月 16 日见，新一代理想 L6 座舱及“沙丘黄”车色公"
+      }
+    },
+    {
+      "id": "rss-e0iji7",
+      "title": "雷蛇推出微软 XBOX / 索尼 PlayStation 款战锤狂鲨 V3 X 极速版 TWS 耳机",
+      "summary": "IT之家 7 月 9 日消息，Razer（雷蛇）今年 4 月推出了标准款式的战锤狂鲨 Hammerhead V3 X HyperSpeed 极速版游戏 TWS 耳机。而在昨日，该企业又追加推出了拥有主题设计的微软 XBOX / 索尼 PlayStation 联名认证款产品。战锤狂鲨 V3 X 极速版 for XBOX / PlayStation 具备双模连接能力，既支持标准蓝牙 5.3 也可通过 HyperSpeed 2.4GHz 技术实现游戏级低延迟。而在 2.4GHz 模式下，这款 TWS 耳机的耳机盒同时也是信号接收器。这一对耳机新品拥有 IPX4 防水，支持多平台沉浸式空间音频，允许直",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/974/396.htm",
+      "publishedAt": "2026-07-09",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "雷蛇推出微软 XBOX / 索尼 PlayStation 款"
+      }
+    },
+    {
+      "id": "rss-cmh9ic",
+      "title": "赵长江：我们为智界 RX 规划了超 20 种车色，会把最受欢迎的颜色给大家选择",
+      "summary": "IT之家 7 月 9 日消息，今天（9 日）上午，智界汽车执行董事及执行副总裁赵长江在微博发文透露：“我们为智界 RX 规划了超 20 种车色，经过多轮调研会把最受欢迎的颜色给大家选择。”据IT之家了解，智界 RX 搭载“创新 L 形”星眸大灯和贯穿式环形星钻尾灯，宣称具有“极致”轮高比和悬浮式车身架构，全车 10 处气动设计布局。新车还将提供 20-22 英寸多款不同样式轮毂，并可选红、灰、黄等颜色的刹车卡钳。动力方面，智界 RX 具有“满级机械素质”，搭载全新华为途灵平台，并首发华为智擎新一代高性能电驱，为智界 RX 驾驶特性带来专属调校。同时，新车还将拥有华为巨鲸电池平台、四激光雷达、华",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/974/368.htm",
+      "publishedAt": "2026-07-09",
+      "keywords": [
+        "三元锂",
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "赵长江：我们为智界 RX 规划了超 20 种车色，会把最受欢"
+      }
+    },
     {
       "id": "rss-jqtwl8",
       "title": "36氪首发 | 物理AI公司获晶科能源、国投创新等数亿融资，要做全球能源基础设施“大脑”",
@@ -105,6 +252,58 @@
           "上汽"
         ],
         "主要事件": "消息称下一代凯迪拉克 Optiq 将采用上汽平台，放弃原有奥"
+      }
+    },
+    {
+      "id": "gn-fg20v4",
+      "title": "陈立泉坚守五十载让中国锂电池领跑世界 - 科学网—新闻",
+      "summary": "陈立泉坚守五十载让中国锂电池领跑世界 科学网—新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vcXRLYUVkOWMxM3U5c0l0LUhGMGpsR3ZraVptUkhnRjZuWWw5aHZuVG4wejZNYmVzd2V1aGs1djFmSWJqamhnQlJOdmtIaTlNTEVqSG1kR1pCb3JsV3BzVDBqekQ?oc=5",
+      "publishedAt": "2026-07-08",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "陈立泉坚守五十载让中国锂电池领跑世界 - 科学网—新闻"
+      }
+    },
+    {
+      "id": "gn-kc7wlg",
+      "title": "别克直给800V划新安全线 快充电芯温度打到55℃ - 汽车之家",
+      "summary": "别克直给800V划新安全线 快充电芯温度打到55℃ 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iRFc5eFU0YzVHNUp4MjgxMDA2OEp3anUtZE55ZGZ4bnB6TUdhZDFhZ2VHWUlycEVTZkItSU13U3ZnQkpYUllsY2xSQ3VVaTdUMDNIOGpzd0RIM0k?oc=5",
+      "publishedAt": "2026-07-08",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "别克直给800V划新安全线 快充电芯温度打到55℃ - 汽车"
+      }
+    },
+    {
+      "id": "gn-i8ugw4",
+      "title": "高安全 + 长续航 + 超快充，比亚迪做到了不可能三角 - 汽车之家",
+      "summary": "高安全 + 长续航 + 超快充，比亚迪做到了不可能三角 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5VaFRuUU9hNDk4V0ZuTUl1WFZRVUo4bmVsaDA0QjE5R2FQMU5hZTdLVS1udUlDV0hrRE51TmMwOFAxYlNtNkEtOWo1MjlEUEVUX2l2ck5ia3hMcnhyeVE?oc=5",
+      "publishedAt": "2026-07-08",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "高安全 + 长续航 + 超快充，比亚迪做到了不可能三角 - "
       }
     },
     {
@@ -432,6 +631,22 @@
           "奔驰"
         ],
         "主要事件": "全新奔驰纯电 GLC SUV 车型上市：复古盾格栅、680k"
+      }
+    },
+    {
+      "id": "gn-o9qmtj",
+      "title": "广东清能氢能项目落户吕梁 资源之城转型再添“氢”动力 - chinanews.com.cn",
+      "summary": "广东清能氢能项目落户吕梁 资源之城转型再添“氢”动力 chinanews.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8zZWJYaTZEZlZkellUbENBVnJFWHczZnM1MGxLUmZnMUFvYTRra0hjTDJhRDJzMXBwWW1jSFl3LXdXMm5zQkxhdTVrQ2lVYW9kN3lUV0N1cGF1elV4a0V3aDUyRWRhVGxMMmc?oc=5",
+      "publishedAt": "2026-07-07",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "广东清能氢能项目落户吕梁 资源之城转型再添“氢”动力 - c"
       }
     },
     {
@@ -1146,6 +1361,22 @@
       }
     },
     {
+      "id": "gn-5vlt61",
+      "title": "磷酸铁锂价格翻倍，买车要多掏钱？ - jwview.com",
+      "summary": "磷酸铁锂价格翻倍，买车要多掏钱？ jwview.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE40S0c4NnZlcEVRRXhnMEtONTlESVBZVVJHYUhPMVJmTEg0SllHSUtTMkdfQVk2aUlydEtydG93aEV2VmRRcGZOT1dTakxjRk9IYjRsZlg1dFFsdjI1bHZVcU5WMGktdTQ?oc=5",
+      "publishedAt": "2026-06-24",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸铁锂价格翻倍，买车要多掏钱？ - jwview.com"
+      }
+    },
+    {
       "id": "gn-qv7y5k",
       "title": "“充电 9 分钟，续航近千公里”，新能源车怎么做到“充电和加油一样快” ？ - thepaper.cn",
       "summary": "“充电 9 分钟，续航近千公里”，新能源车怎么做到“充电和加油一样快” ？ thepaper.cn",
@@ -1159,6 +1390,40 @@
       "importance": "medium",
       "tags": {
         "主要事件": "“充电 9 分钟，续航近千公里”，新能源车怎么做到“充电和加"
+      }
+    },
+    {
+      "id": "gn-8jc1gt",
+      "title": "“闪充时代”进一步巩固磷酸铁锂主导地位 - 中国有色网",
+      "summary": "“闪充时代”进一步巩固磷酸铁锂主导地位 中国有色网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0eGpPMWYtaTBKeU5WWWZMcHJralFkOUozQlhieUFhWEdnSV9OMFBEMlBOVUhoU0FHVndLakdGX1JNbUZMYXdTNTRKcHNQQkI4V1B3TW9wRndLVDAx?oc=5",
+      "publishedAt": "2026-06-18",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "“闪充时代”进一步巩固磷酸铁锂主导地位 - 中国有色网"
+      }
+    },
+    {
+      "id": "gn-u2v7kh",
+      "title": "一文揭秘新能源车“锁电”真相 - 中国能源新闻网",
+      "summary": "一文揭秘新能源车“锁电”真相 中国能源新闻网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5VWjMtd0sxRzJ6RVpZQVVwN0g2MVEwc2RxRFBUcVZRWjdyaFdGckxXZkhQWGxLTXhVYjhjNURMX0ZDWTFOR043WldiZFA2bEZuS09CWDFOWEwxcERtUThWMEt4TXpQNlAwenNhdzRPTFkwY0hMbFl6Vg?oc=5",
+      "publishedAt": "2026-05-11",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "一文揭秘新能源车“锁电”真相 - 中国能源新闻网"
       }
     },
     {
@@ -1207,6 +1472,25 @@
       "importance": "medium",
       "tags": {
         "主要事件": "三元锂成本失控，高端电动车还会继续青睐吗？ - 36 Kr"
+      }
+    },
+    {
+      "id": "gn-evuzfn",
+      "title": "理想、保时捷接连起火，但关注不该停留于「三元锂」 - 爱范儿",
+      "summary": "理想、保时捷接连起火，但关注不该停留于「三元锂」 爱范儿",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1WRE1UX2FBSnd6M1pfUEQ1NjhKT09ORlFyeWtXUzRYOWVyZ0tMc1pmdlhSQlRvUTRnZlNWNExmdVNlLVk?oc=5",
+      "publishedAt": "2025-11-10",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "安全事件",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "理想"
+        ],
+        "主要事件": "理想、保时捷接连起火，但关注不该停留于「三元锂」 - 爱范儿"
       }
     }
   ]
