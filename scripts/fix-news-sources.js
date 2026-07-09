@@ -60,37 +60,6 @@ function buildCandidateUrls(domain, keyword) {
   )
 }
 
-// ─── 验证 URL 是否返回有效内容 ────────────────────────────
-
-async function verifyUrl(url) {
-  try {
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 6000)
-
-    const resp = await fetch(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,*/*',
-        'Accept-Language': 'zh-CN,zh;q=0.9'
-      },
-      signal: controller.signal,
-      redirect: 'follow'
-    })
-    clearTimeout(timeoutId)
-
-    if (!resp.ok) return false
-    const html = await resp.text()
-    // 页面需要有基本的 HTML 结构和一定长度
-    if (html.length < 1000) return false
-    // 检查是否包含搜索相关的关键词（中文页面）
-    const hasChinese = /[\u4e00-\u9fff]/.test(html)
-    const hasKeyword = html.includes(keyword) || html.includes(decodeURIComponent(keyword))
-    return hasChinese || hasKeyword
-  } catch {
-    return false
-  }
-}
-
 // ─── 调用 MIMO 获取 URL 建议（容错处理） ──────────────────
 
 async function getMimoSuggestions(failedSources, keyword) {
@@ -197,19 +166,44 @@ async function main() {
     // 穷举搜索模式
     candidates.push(...buildCandidateUrls(domain, keyword))
 
-    // 逐个验证
+    // 并行验证所有候选 URL，取第一个成功的
     let found = false
-    for (const url of candidates) {
-      console.log(`  Testing: ${url}`)
-      const isValid = await verifyUrl(url)
-      if (isValid) {
-        console.log(`  ✅ Found working URL: ${url}`)
-        source.url_template = url
-        updatedCount++
-        found = true
-        break
-      }
+    const controllers = candidates.map(() => new AbortController())
+
+    const verifyPromises = candidates.map(async (url, i) => {
+      try {
+        const resp = await fetch(url, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'text/html,*/*',
+            'Accept-Language': 'zh-CN,zh;q=0.9'
+          },
+          signal: controllers[i].signal,
+          redirect: 'follow'
+        })
+        if (!resp.ok) return null
+        const html = await resp.text()
+        if (html.length < 1000) return null
+        const hasChinese = /[\u4e00-\u9fff]/.test(html)
+        const hasKw = html.includes(keyword) || html.includes(decodeURIComponent(keyword))
+        if (hasChinese || hasKw) return url
+      } catch {}
+      return null
+    })
+
+    // 等待第一个成功的结果
+    try {
+      const result = await Promise.any(verifyPromises)
+      console.log(`  ✅ Found working URL: ${result}`)
+      source.url_template = result
+      updatedCount++
+      found = true
+    } catch {
+      // 所有 URL 都失败了
     }
+
+    // 取消剩余请求
+    controllers.forEach(c => c.abort())
 
     if (!found) {
       console.log(`  ❌ No working URL found for ${source.name}`)
