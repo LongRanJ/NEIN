@@ -37,43 +37,26 @@ export const useNewsReportStore = defineStore('newsReport', () => {
     overview.value = ''
     suggestedKeywords.value = []
 
-    return new Promise((resolve) => {
-      const evtSource = new EventSource(`/api/news-search/stream?keyword=${encodeURIComponent(q)}`)
+    try {
+      const resp = await fetch('/api/news-search', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ keyword: q })
+      })
 
-      evtSource.onmessage = (e) => {
-        try {
-          const data = JSON.parse(e.data)
-
-          if (data.type === 'complete') {
-            newsList.value = data.data || []
-            sourceStatus.value = data.sourceStatus || {}
-            evtSource.close()
-            isSearching.value = false
-            resolve(data)
-          } else if (data.type === 'error') {
-            error.value = data.message
-            evtSource.close()
-            isSearching.value = false
-            resolve(null)
-          } else {
-            // 单个源状态更新
-            sourceStatus.value = {
-              ...sourceStatus.value,
-              [data.source]: data.status
-            }
-          }
-        } catch {
-          // 解析失败，忽略
-        }
+      if (!resp.ok) {
+        const errData = await resp.json().catch(() => ({}))
+        throw new Error(errData.error || `请求失败: ${resp.status}`)
       }
 
-      evtSource.onerror = () => {
-        error.value = '连接中断，请重试'
-        evtSource.close()
-        isSearching.value = false
-        resolve(null)
-      }
-    })
+      const data = await resp.json()
+      newsList.value = data.data || []
+      sourceStatus.value = data.sourceStatus || {}
+    } catch (err) {
+      error.value = err.message
+    } finally {
+      isSearching.value = false
+    }
   }
 
   // ─── MIMO 内容增强 ────────────────────────────────────

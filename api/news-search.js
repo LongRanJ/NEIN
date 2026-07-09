@@ -340,17 +340,22 @@ async function scrapeSource(source, keyword, sendStatus) {
 export default async function handler(req, res) {
   // CORS
   res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS')
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type')
 
   if (req.method === 'OPTIONS') return res.status(200).end()
-  if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' })
 
-  const keyword = req.query.keyword?.trim()
+  // 支持 GET (SSE) 和 POST (JSON) 两种方式
+  const keyword = req.method === 'GET'
+    ? req.query.keyword?.trim()
+    : req.body?.keyword?.trim()
+
   if (!keyword) return res.status(400).json({ error: '请输入搜索关键词' })
   if (keyword.length > 100) return res.status(400).json({ error: '关键词过长' })
 
-  // 检查缓存
+  const isSSE = req.query.stream === '1' || req.method === 'GET'
+
+  // 缓存命中时，直接返回 JSON（两种模式通用）
   const cached = getFromCache(keyword)
   if (cached) {
     res.setHeader('Content-Type', 'application/json')
@@ -364,14 +369,21 @@ export default async function handler(req, res) {
     })
   }
 
-  // SSE 响应头
-  res.setHeader('Content-Type', 'text/event-stream')
-  res.setHeader('Cache-Control', 'no-cache')
-  res.setHeader('Connection', 'keep-alive')
-  res.setHeader('X-Accel-Buffering', 'no')
+  // SSE 模式：设置流式响应头
+  if (isSSE) {
+    res.setHeader('Content-Type', 'text/event-stream')
+    res.setHeader('Cache-Control', 'no-cache')
+    res.setHeader('Connection', 'keep-alive')
+    res.setHeader('X-Accel-Buffering', 'no')
+  }
+
+  const collectedStatus = {}
 
   const sendEvent = (data) => {
-    res.write(`data: ${JSON.stringify(data)}\n\n`)
+    collectedStatus[data.source] = data.status
+    if (isSSE) {
+      res.write(`data: ${JSON.stringify(data)}\n\n`)
+    }
   }
 
   const sendStatus = (source, status, count) => {
@@ -381,7 +393,6 @@ export default async function handler(req, res) {
   try {
     const sources = sourcesConfig.sources.filter(s => s.enabled)
 
-    // 全局超时 25 秒
     const globalTimeout = new Promise(resolve => {
       setTimeout(() => resolve('timeout'), 25000)
     })
@@ -393,12 +404,15 @@ export default async function handler(req, res) {
     const result = await Promise.race([scrapeAll, globalTimeout])
 
     if (result === 'timeout') {
-      sendEvent({ type: 'error', message: '搜索超时' })
-      res.end()
+      if (isSSE) {
+        sendEvent({ type: 'error', message: '搜索超时' })
+        res.end()
+      } else {
+        res.status(504).json({ success: false, error: '搜索超时' })
+      }
       return
     }
 
-    // 收集所有成功的结果
     const allItems = []
     const sourceStatus = {}
 
@@ -412,25 +426,34 @@ export default async function handler(req, res) {
       }
     })
 
-    // 去重 + 排序
     const deduplicated = sortByRelevance(dedup(allItems), keyword)
-
-    // 写入缓存
     setCache(keyword, { newsList: deduplicated, sourceStatus })
 
-    // 推送完成事件
-    sendEvent({
-      type: 'complete',
-      total: allItems.length,
-      deduplicated: deduplicated.length,
-      keyword,
-      data: deduplicated,
-      sourceStatus
-    })
-
-    res.end()
+    if (isSSE) {
+      sendEvent({
+        type: 'complete',
+        total: allItems.length,
+        deduplicated: deduplicated.length,
+        keyword,
+        data: deduplicated,
+        sourceStatus
+      })
+      res.end()
+    } else {
+      res.status(200).json({
+        success: true,
+        keyword,
+        data: deduplicated,
+        total: deduplicated.length,
+        sourceStatus
+      })
+    }
   } catch (err) {
-    sendEvent({ type: 'error', message: `搜索失败: ${err.message}` })
-    res.end()
+    if (isSSE) {
+      sendEvent({ type: 'error', message: `搜索失败: ${err.message}` })
+      res.end()
+    } else {
+      res.status(500).json({ success: false, error: `搜索失败: ${err.message}` })
+    }
   }
 }
