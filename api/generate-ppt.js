@@ -21,8 +21,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    // 动态导入 pptxgenjs（ESM 兼容）
-    const PptxGenJS = (await import('pptxgenjs')).default
+    // 动态导入 pptxgenjs（兼容 CJS/ESM）
+    let PptxGenJS
+    try {
+      PptxGenJS = (await import('pptxgenjs')).default
+    } catch {
+      PptxGenJS = require('pptxgenjs')
+    }
     const pptx = new PptxGenJS()
 
     // 16:9 宽屏
