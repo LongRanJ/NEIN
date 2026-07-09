@@ -196,28 +196,79 @@ ${items.map((item, i) => `${i+1}. [${item.source}] ${item.title} - ${item.summar
     if (selectedItems.value.length === 0) { error.value = '请先选择新闻'; return }
     isGenerating.value = true
     error.value = ''
+
     try {
+      // MIMO 内容增强
       const enhanced = await enhanceContent()
-      const slides = selectedItems.value.map((item, i) => ({
-        title: item.title, summary: item.summary,
-        bullets: enhanced?.enhanced?.find(e => e.index === i)?.bullets || [],
-        source: item.source, url: item.url
-      }))
-      const resp = await fetch('/api/generate-ppt', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ keyword: keyword.value, overview: enhanced?.overview || '', slides })
+
+      // 前端生成 PPT（pptxgenjs 原生支持浏览器）
+      const PptxGenJS = (await import('pptxgenjs')).default
+      const pptx = new PptxGenJS()
+      pptx.layout = 'LAYOUT_WIDE'
+
+      const today = new Date().toISOString().split('T')[0]
+      const slides = selectedItems.value
+
+      // 主题色
+      const BG = '0F1729'
+      const PRIMARY = '38BDF8'
+      const GREEN = '22C55E'
+      const WHITE = 'FFFFFF'
+      const LIGHT = 'E2E8F0'
+      const MUTED = '94A3B8'
+
+      // 封面
+      const cover = pptx.addSlide()
+      cover.background = { color: BG }
+      cover.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
+      cover.addText(`${keyword.value} - 新闻简报`, { x: 1, y: 1.8, w: 11, h: 1.5, fontSize: 40, color: WHITE, bold: true })
+      cover.addText(`生成日期：${today}`, { x: 1, y: 3.5, w: 11, h: 0.6, fontSize: 18, color: MUTED })
+      if (enhanced?.overview) {
+        cover.addText(enhanced.overview, { x: 1, y: 4.3, w: 11, h: 1.2, fontSize: 14, color: LIGHT, wrap: true })
+      }
+      cover.addText('NEIN 新能源行业资讯平台', { x: 1, y: 6.2, w: 11, h: 0.4, fontSize: 11, color: MUTED })
+
+      // 内容页
+      slides.forEach((item, i) => {
+        const s = pptx.addSlide()
+        s.background = { color: BG }
+        s.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
+        s.addText(`#${i + 1}`, { x: 0.5, y: 0.3, w: 1, h: 0.5, fontSize: 16, color: PRIMARY, bold: true })
+        s.addText(item.title, { x: 0.5, y: 0.9, w: 12, h: 0.9, fontSize: 26, color: WHITE, bold: true, wrap: true })
+        s.addShape(pptx.ShapeType.rect, { x: 0.5, y: 1.9, w: 2, h: 0.04, fill: { type: 'solid', color: PRIMARY } })
+
+        const bullets = enhanced?.enhanced?.find(e => e.index === i)?.bullets
+        if (bullets?.length) {
+          s.addText(bullets.map(b => `•  ${b}`).join('\n'), { x: 0.5, y: 2.2, w: 12, h: 3.2, fontSize: 16, color: LIGHT, wrap: true, valign: 'top', lineSpacing: 28 })
+        } else if (item.summary) {
+          s.addText(item.summary, { x: 0.5, y: 2.2, w: 12, h: 3.2, fontSize: 16, color: LIGHT, wrap: true, valign: 'top', lineSpacing: 26 })
+        }
+
+        s.addText(item.source ? `来源：${item.source}` : '', { x: 0.5, y: 5.6, w: 6, h: 0.35, fontSize: 11, color: MUTED })
+        if (item.url) s.addText(`原文链接：${item.url}`, { x: 0.5, y: 6.0, w: 12, h: 0.35, fontSize: 9, color: PRIMARY })
+        s.addText(`${i + 1} / ${slides.length}`, { x: 11, y: 6.8, w: 2, h: 0.3, fontSize: 9, color: MUTED, align: 'right' })
       })
-      if (!resp.ok) { const e = await resp.json().catch(() => ({})); throw new Error(e.error || '生成失败') }
-      const blob = await resp.blob()
+
+      // 封底
+      const back = pptx.addSlide()
+      back.background = { color: BG }
+      back.addShape(pptx.ShapeType.rect, { x: 0, y: 0, w: '100%', h: 0.06, fill: { type: 'solid', color: PRIMARY } })
+      back.addText('感谢阅读', { x: 1, y: 2.2, w: 11, h: 1.5, fontSize: 44, color: WHITE, bold: true, align: 'center' })
+      back.addText('由 NEIN 新能源行业资讯平台自动生成', { x: 1, y: 4, w: 11, h: 0.6, fontSize: 16, color: MUTED, align: 'center' })
+
+      // 下载
+      const blob = await pptx.write({ outputType: 'blob' })
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
       a.download = `${keyword.value.replace(/[\\/:*?"<>|]/g, '_')}_新闻简报.pptx`
       document.body.appendChild(a); a.click(); document.body.removeChild(a)
       URL.revokeObjectURL(url)
-    } catch (err) { error.value = err.message }
-    finally { isGenerating.value = false }
+    } catch (err) {
+      error.value = `PPT生成失败: ${err.message}`
+    } finally {
+      isGenerating.value = false
+    }
   }
 
   // ─── 选择 ────────────────────────────────────────────
