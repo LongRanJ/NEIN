@@ -23,7 +23,7 @@ jobs:
           node-version: "24"
       - name: Fix URLs
         env:
-          MIMO_API_KEY: ***
+          MIMO_API_KEY: ${{ inputs.mimo_key }}
         run: node scripts/fix-news-sources.js '${{ inputs.failed_sources }}'
       - name: Commit and push
         run: |
