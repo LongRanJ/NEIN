@@ -24,13 +24,16 @@ jobs:
       - run: npm ci
       - name: Fix URLs
         env:
-          MIMO_API_KEY: ${{ inputs.mimo_key }}
+          MIMO_API_KEY: PLACEH…_KEY
         run: node scripts/fix-news-sources.js '${{ inputs.failed_sources }}'
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add api/config/sources.json
+          git stash
           git pull --rebase origin main
+          git stash pop
           git add api/config/sources.json
           git diff --cached --quiet || git commit -m "fix: auto-correct news source URLs"
           git push
