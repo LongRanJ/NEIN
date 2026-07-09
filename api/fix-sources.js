@@ -30,6 +30,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'Accept': 'application/vnd.github+json',
+        'Content-Type': 'application/json',
         'Authorization': `Bearer ${githubToken}`,
         'X-GitHub-Api-Version': '2022-11-28'
       },
@@ -52,7 +53,7 @@ export default async function handler(req, res) {
 
     const errText = await resp.text().catch(() => '')
     console.error('GitHub API error:', resp.status, errText)
-    return res.status(502).json({ error: `GitHub API 错误: ${resp.status}` })
+    return res.status(502).json({ error: `GitHub API 错误: ${resp.status}`, detail: errText })
 
   } catch (err) {
     console.error('Fix trigger error:', err.message)
