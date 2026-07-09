@@ -1,16 +1,15 @@
 // Vercel Serverless Function - 15源新闻搜索 + MIMO智能兜底
-// SSE 实时推送每个源的抓取状态
-// 环境变量：MIMO_API_KEY
+// 支持 POST (JSON) 和 GET+SSE 两种模式
+// 依赖：cheerio, MIMO_API_KEY 环境变量
 
-import { createRequire } from 'module'
-import { fileURLToPath } from 'url'
-import { dirname, join } from 'path'
 import { readFileSync } from 'fs'
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
+import * as cheerio from 'cheerio'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// 读取新闻源配置
 const sourcesConfig = JSON.parse(
   readFileSync(join(__dirname, 'config', 'sources.json'), 'utf-8')
 )
@@ -18,7 +17,7 @@ const sourcesConfig = JSON.parse(
 // ─── 缓存 ───────────────────────────────────────────────
 
 const cache = new Map()
-const CACHE_TTL = 30 * 60 * 1000 // 30 分钟
+const CACHE_TTL = 30 * 60 * 1000
 const CACHE_MAX = 100
 
 function getCacheKey(keyword) {
@@ -45,7 +44,7 @@ function setCache(keyword, data) {
   cache.set(key, { data, timestamp: Date.now() })
 }
 
-// ─── 去重（SequenceMatcher 相似度） ──────────────────────
+// ─── 去重（SequenceMatcher 相似度 ≥ 0.6） ───────────────
 
 function similarity(a, b) {
   if (a === b) return 1
@@ -73,73 +72,98 @@ function dedup(items) {
 
 function sortByRelevance(items, keyword) {
   return items.sort((a, b) => {
-    const countA = (a.title.match(new RegExp(keyword, 'g')) || []).length
-    const countB = (b.title.match(new RegExp(keyword, 'g')) || []).length
+    const countA = (a.title.match(new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length
+    const countB = (b.title.match(new RegExp(keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length
     return countB - countA
   })
 }
 
-// ─── HTML 解析（CSS选择器 + meta 兜底） ──────────────────
+// ─── 随机 UA ─────────────────────────────────────────────
 
-function extractBySelectors(html, selectors) {
+function randomUA() {
+  const agents = sourcesConfig.global.user_agents
+  return agents[Math.floor(Math.random() * agents.length)]
+}
+
+// ─── cheerio 选择器提取（按源配置） ──────────────────────
+
+function extractByCheerio(html, selectors) {
+  const $ = cheerio.load(html)
   const results = []
-  const containers = selectors.container || []
-  const titleSels = selectors.title || []
-  const summarySels = selectors.summary || []
-  const linkSels = selectors.link || []
-
-  // 简化：用正则模拟选择器提取（Vercel Node.js 无 DOM 环境）
-  // 提取所有 <a> 标签及其上下文
-  const linkRegex = /<a[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi
   const seen = new Set()
-  let match
 
-  while ((match = linkRegex.exec(html)) !== null) {
-    const url = match[1]
-    const titleText = match[2].replace(/<[^>]+>/g, '').trim()
+  // 尝试所有标题选择器
+  for (const sel of selectors.title) {
+    $(sel).each((_, el) => {
+      const title = $(el).text().trim()
+      if (!title || title.length < 5) return
+      const key = title.slice(0, 20)
+      if (seen.has(key)) return
+      seen.add(key)
 
-    // 过滤非新闻链接
-    if (!titleText || titleText.length < 5) continue
-    if (seen.has(titleText.slice(0, 20))) continue
-    if (url.startsWith('javascript:') || url === '#') continue
-    if (url.includes('login') || url.includes('register')) continue
+      // 提取链接
+      const linkEl = $(el).closest('a').length ? $(el).closest('a') : $(el).find('a').first()
+      let url = linkEl.attr('href') || ''
+      if (url.startsWith('//')) url = 'https:' + url
+      if (url && !url.startsWith('http')) url = ''
+      if (!url) {
+        // 尝试链接选择器
+        for (const lSel of selectors.link) {
+          const found = $(lSel).filter((_, e) => $(e).text().trim().includes(title.slice(0, 15)))
+          if (found.length) {
+            url = found.first().attr('href') || ''
+            if (url.startsWith('//')) url = 'https:' + url
+            if (url && !url.startsWith('http')) url = ''
+            if (url) break
+          }
+        }
+      }
 
-    seen.add(titleText.slice(0, 20))
+      // 提取摘要
+      let summary = ''
+      // 优先 meta description
+      const metaDesc = $('meta[name="description"]').attr('content')
+      if (metaDesc && results.length === 0) {
+        summary = metaDesc.trim().slice(0, 150)
+      }
+      // 从选择器提取
+      if (!summary) {
+        for (const sSel of selectors.summary) {
+          if (sSel.startsWith('meta')) continue
+          const parent = $(el).closest('.news-item, .list-item, .result, .search-item, .article-item, .card, li, div')
+          const descEl = parent.find(sSel).first()
+          if (descEl.length) {
+            summary = descEl.text().trim().replace(/\s+/g, ' ').slice(0, 150)
+            if (summary) break
+          }
+        }
+      }
+      // 最后兜底：取父元素的文本
+      if (!summary) {
+        const parent = $(el).closest('div, li, article')
+        const fullText = parent.text().replace(title, '').trim().replace(/\s+/g, ' ')
+        summary = fullText.slice(0, 150)
+      }
 
-    // 提取摘要：从链接周围的文本
-    const contextStart = Math.max(0, match.index - 300)
-    const contextEnd = Math.min(html.length, match.index + match[0].length + 500)
-    const context = html.substring(contextStart, contextEnd)
-    const summaryText = context.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
-    const summary = summaryText.length > 150 ? summaryText.slice(0, 150) + '...' : summaryText
-
-    // 处理相对链接
-    let fullUrl = url
-    if (url.startsWith('//')) fullUrl = 'https:' + url
-    else if (url.startsWith('/')) fullUrl = '' // 需要基URL，暂时跳过
-
-    if (!fullUrl.startsWith('http')) continue
-
-    results.push({
-      title: titleText,
-      summary,
-      url: fullUrl,
-      source: ''
+      results.push({ title, summary, url, source: '' })
     })
+    if (results.length > 0) break // 命中一个选择器就够了
   }
 
   return results
 }
 
-function extractFromMeta(html) {
-  const results = []
-  const metaDesc = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']+)["']/i)
-  const ogTitle = html.match(/<meta[^>]*property=["']og:title["'][^>]*content=["']([^"']+)["']/i)
+// ─── meta description 兜底 ──────────────────────────────
 
-  if (ogTitle && ogTitle[1]) {
+function extractFromMeta(html) {
+  const $ = cheerio.load(html)
+  const results = []
+  const ogTitle = $('meta[property="og:title"]').attr('content')
+  const metaDesc = $('meta[name="description"]').attr('content')
+  if (ogTitle && ogTitle.trim().length > 3) {
     results.push({
-      title: ogTitle[1].trim(),
-      summary: metaDesc ? metaDesc[1].trim().slice(0, 150) : '',
+      title: ogTitle.trim(),
+      summary: metaDesc ? metaDesc.trim().slice(0, 150) : '',
       url: '',
       source: ''
     })
@@ -221,10 +245,9 @@ async function generateNewSelectors(html, sourceName) {
 
 返回 JSON 格式：
 {
-  "container": ["选择器1", "选择器2"],
   "title": ["选择器1", "选择器2"],
-  "summary": ["选择器1", "选择器2"],
-  "link": ["选择器1", "选择器2"]
+  "link": ["选择器1", "选择器2"],
+  "summary": ["选择器1", "选择器2"]
 }
 
 只返回 JSON，不要其他文字。来源：${sourceName}
@@ -248,32 +271,57 @@ ${html.slice(0, 6000)}`
   }
 }
 
+// ─── HTTP 请求（带重试） ─────────────────────────────────
+
+async function fetchWithRetry(url, options, maxRetries = 1) {
+  let lastError
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), options.timeout || 10000)
+
+      const resp = await fetch(url, {
+        ...options,
+        signal: controller.signal,
+        headers: {
+          ...options.headers,
+          'User-Agent': randomUA()
+        }
+      })
+
+      clearTimeout(timeoutId)
+
+      // 403/429 时重试一次
+      if ((resp.status === 403 || resp.status === 429) && attempt < maxRetries) {
+        continue
+      }
+
+      return resp
+    } catch (err) {
+      lastError = err
+      if (attempt < maxRetries && err.name === 'AbortError') continue
+      throw err
+    }
+  }
+  throw lastError
+}
+
 // ─── 单源爬虫 ────────────────────────────────────────────
 
 async function scrapeSource(source, keyword, sendStatus) {
   const url = source.url_template.replace('{keyword}', encodeURIComponent(keyword))
-  const ua = sourcesConfig.global.user_agents[
-    Math.floor(Math.random() * sourcesConfig.global.user_agents.length)
-  ]
 
   sendStatus(source.name, 'loading', 0)
 
   try {
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), sourcesConfig.global.timeout_per_source)
-
-    const resp = await fetch(url, {
+    const resp = await fetchWithRetry(url, {
       headers: {
-        'User-Agent': ua,
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
-        'Referer': 'https://www.google.com/'
+        'Referer': new URL(url).origin + '/'
       },
-      signal: controller.signal,
-      redirect: 'follow'
+      timeout: sourcesConfig.global.timeout_per_source
     })
-
-    clearTimeout(timeoutId)
 
     if (!resp.ok) {
       sendStatus(source.name, 'error', 0)
@@ -283,25 +331,9 @@ async function scrapeSource(source, keyword, sendStatus) {
     const html = await resp.text()
     let items = []
 
-    // 第1层：CSS 选择器提取
-    if (source.type === 'api_json') {
-      // 新华网 API：直接解析 JSON
-      try {
-        const jsonData = JSON.parse(html)
-        const newsItems = jsonData?.content || jsonData?.data || jsonData?.results || []
-        items = (Array.isArray(newsItems) ? newsItems : []).slice(0, 10).map(item => ({
-          title: (item.title || '').replace(/<[^>]+>/g, '').trim(),
-          summary: (item.summary || item.desc || item.digest || '').replace(/<[^>]+>/g, '').trim().slice(0, 150),
-          url: item.url || item.linkUrl || '',
-          source: source.name
-        })).filter(i => i.title.length >= 5)
-      } catch {
-        // JSON 解析失败，跳过
-      }
-    } else {
-      items = extractBySelectors(html, source.selectors)
-      items.forEach(item => { item.source = source.name })
-    }
+    // 第1层：cheerio 选择器提取（按源配置）
+    items = extractByCheerio(html, source.selectors)
+    items.forEach(item => { item.source = source.name })
 
     // 第2层：meta description 提取
     if (items.length === 0) {
@@ -314,12 +346,16 @@ async function scrapeSource(source, keyword, sendStatus) {
       sendStatus(source.name, 'llm_fallback', 0)
       items = await llmExtract(html, source.name)
       items.forEach(item => { item.source = item.source || source.name })
-    }
 
-    // 自愈：如果选择器失败但 LLM 成功，生成新选择器缓存（异步，不阻塞）
-    if (items.length > 0 && source.type !== 'api_json') {
-      // 这里可以将新选择器写入缓存供下次使用
-      // 暂时记录日志
+      // 自愈：LLM 成功则生成新选择器（异步，不阻塞返回）
+      if (items.length > 0) {
+        generateNewSelectors(html, source.name).then(newSelectors => {
+          if (newSelectors) {
+            // 可以将新选择器写入缓存供下次使用
+            console.log(`[${source.name}] Generated new selectors via LLM`)
+          }
+        }).catch(() => {})
+      }
     }
 
     sendStatus(source.name, items.length > 0 ? 'success' : 'empty', items.length)
@@ -335,7 +371,7 @@ async function scrapeSource(source, keyword, sendStatus) {
   }
 }
 
-// ─── SSE 主处理函数 ──────────────────────────────────────
+// ─── 主处理函数 ──────────────────────────────────────────
 
 export default async function handler(req, res) {
   // CORS
@@ -345,7 +381,6 @@ export default async function handler(req, res) {
 
   if (req.method === 'OPTIONS') return res.status(200).end()
 
-  // 支持 GET (SSE) 和 POST (JSON) 两种方式
   const keyword = req.method === 'GET'
     ? req.query.keyword?.trim()
     : req.body?.keyword?.trim()
@@ -355,10 +390,9 @@ export default async function handler(req, res) {
 
   const isSSE = req.query.stream === '1' || req.method === 'GET'
 
-  // 缓存命中时，直接返回 JSON（两种模式通用）
+  // 检查缓存
   const cached = getFromCache(keyword)
   if (cached) {
-    res.setHeader('Content-Type', 'application/json')
     return res.status(200).json({
       success: true,
       keyword,
@@ -369,7 +403,7 @@ export default async function handler(req, res) {
     })
   }
 
-  // SSE 模式：设置流式响应头
+  // SSE 模式
   if (isSSE) {
     res.setHeader('Content-Type', 'text/event-stream')
     res.setHeader('Cache-Control', 'no-cache')
@@ -380,7 +414,7 @@ export default async function handler(req, res) {
   const collectedStatus = {}
 
   const sendEvent = (data) => {
-    collectedStatus[data.source] = data.status
+    if (data.source) collectedStatus[data.source] = data.status
     if (isSSE) {
       res.write(`data: ${JSON.stringify(data)}\n\n`)
     }
@@ -393,8 +427,9 @@ export default async function handler(req, res) {
   try {
     const sources = sourcesConfig.sources.filter(s => s.enabled)
 
+    // 全局超时 30 秒
     const globalTimeout = new Promise(resolve => {
-      setTimeout(() => resolve('timeout'), 25000)
+      setTimeout(() => resolve('timeout'), 30000)
     })
 
     const scrapeAll = Promise.allSettled(
@@ -404,15 +439,17 @@ export default async function handler(req, res) {
     const result = await Promise.race([scrapeAll, globalTimeout])
 
     if (result === 'timeout') {
+      const msg = '搜索超时'
       if (isSSE) {
-        sendEvent({ type: 'error', message: '搜索超时' })
+        sendEvent({ type: 'error', message: msg })
         res.end()
       } else {
-        res.status(504).json({ success: false, error: '搜索超时' })
+        res.status(504).json({ success: false, error: msg })
       }
       return
     }
 
+    // 收集结果
     const allItems = []
     const sourceStatus = {}
 
@@ -426,7 +463,10 @@ export default async function handler(req, res) {
       }
     })
 
+    // 去重 + 排序
     const deduplicated = sortByRelevance(dedup(allItems), keyword)
+
+    // 写入缓存
     setCache(keyword, { newsList: deduplicated, sourceStatus })
 
     if (isSSE) {
@@ -449,11 +489,12 @@ export default async function handler(req, res) {
       })
     }
   } catch (err) {
+    const msg = `搜索失败: ${err.message}`
     if (isSSE) {
-      sendEvent({ type: 'error', message: `搜索失败: ${err.message}` })
+      sendEvent({ type: 'error', message: msg })
       res.end()
     } else {
-      res.status(500).json({ success: false, error: `搜索失败: ${err.message}` })
+      res.status(500).json({ success: false, error: msg })
     }
   }
 }
