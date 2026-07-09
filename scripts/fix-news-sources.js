@@ -94,13 +94,28 @@ ${sourceList}
 
     const data = await resp.json()
     const content = data.choices?.[0]?.message?.content || ''
-    const jsonMatch = content.match(/\[[\s\S]*\]/)
+    console.log('MIMO raw response (first 500 chars):', content.slice(0, 500))
+
+    // 去除 markdown 代码块标记
+    let cleaned = content.replace(/```(?:json)?\s*/gi, '').replace(/```/g, '').trim()
+
+    // 尝试提取 JSON 数组
+    let jsonMatch = cleaned.match(/\[[\s\S]*?\]/)
     if (!jsonMatch) {
-      console.error('Failed to parse MIMO response as JSON')
+      // 再试一次：可能 JSON 被包裹在其他文本中
+      jsonMatch = cleaned.match(/\[[\s\S]*\]/)
+    }
+    if (!jsonMatch) {
+      console.error('Failed to parse MIMO response as JSON. Content:', cleaned.slice(0, 300))
       return []
     }
 
-    return JSON.parse(jsonMatch[0])
+    try {
+      return JSON.parse(jsonMatch[0])
+    } catch (parseErr) {
+      console.error('JSON parse error:', parseErr.message, 'Raw:', jsonMatch[0].slice(0, 300))
+      return []
+    }
   } catch (err) {
     console.error('MIMO call failed:', err.message)
     return []

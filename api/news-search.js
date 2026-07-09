@@ -154,10 +154,14 @@ async function llmExtract(htmlFragment, sourceName) {
     if (!resp.ok) return []
     const data = await resp.json()
     const content = data.choices?.[0]?.message?.content || ''
-    const jsonMatch = content.match(/\[[\s\S]*\]/)
+    // 去除 markdown 代码块
+    const cleaned = content.replace(/```(?:json)?\s*/gi, '').replace(/```/g, '').trim()
+    const jsonMatch = cleaned.match(/\[[\s\S]*?\]/)
     if (!jsonMatch) return []
-    const parsed = JSON.parse(jsonMatch[0])
-    return Array.isArray(parsed) ? parsed.filter(i => i.title?.length >= 3).slice(0, 10) : []
+    try {
+      const parsed = JSON.parse(jsonMatch[0])
+      return Array.isArray(parsed) ? parsed.filter(i => i.title?.length >= 3).slice(0, 10) : []
+    } catch { return [] }
   } catch { return [] }
 }
 
