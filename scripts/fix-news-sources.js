@@ -42,8 +42,14 @@ const SEARCH_PATTERNS = [
   'https://{domain}/search/{keyword}',
   'https://{domain}/?s={keyword}',
   'https://{domain}/news?keyword={keyword}',
-  'https://www.baidu.com/s?wd=site:{domain}+{keyword}',
+  'https://www.{domain}/search?keyword={keyword}',
+  'https://www.{domain}/search?q={keyword}',
+]
+
+// 搜索引擎兜底（只在所有自身 URL 都失败后使用）
+const FALLBACK_PATTERNS = [
   'https://www.bing.com/search?q=site:{domain}+{keyword}',
+  'https://www.baidu.com/s?wd=site:{domain}+{keyword}',
 ]
 
 function getDomain(urlTemplate) {
@@ -55,9 +61,48 @@ function getDomain(urlTemplate) {
 
 function buildCandidateUrls(domain, keyword) {
   const kw = encodeURIComponent(keyword)
-  return SEARCH_PATTERNS.map(p =>
+  const ownUrls = SEARCH_PATTERNS.map(p =>
     p.replace('{domain}', domain).replace('{keyword}', kw)
   )
+  const fallbackUrls = FALLBACK_PATTERNS.map(p =>
+    p.replace('{domain}', domain).replace('{keyword}', kw)
+  )
+  return { ownUrls, fallbackUrls }
+}
+
+async function verifyUrl(url, expectedDomain) {
+  try {
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 6000)
+
+    const resp = await fetch(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'Accept': 'text/html,*/*',
+        'Accept-Language': 'zh-CN,zh;q=0.9'
+      },
+      signal: controller.signal,
+      redirect: 'follow'
+    })
+    clearTimeout(timeoutId)
+
+    if (!resp.ok) return false
+    const html = await resp.text()
+    if (html.length < 1000) return false
+
+    // 验证：最终 URL 必须属于目标域名（不能是搜索引擎）
+    const finalUrl = resp.url || url
+    const finalDomain = new URL(finalUrl).hostname.replace('www.', '')
+    if (!finalDomain.includes(expectedDomain) && !expectedDomain.includes(finalDomain)) {
+      return false
+    }
+
+    const hasChinese = /[\u4e00-\u9fff]/.test(html)
+    const hasKeyword = html.includes(keyword) || html.includes(decodeURIComponent(keyword))
+    return hasChinese || hasKeyword
+  } catch {
+    return false
+  }
 }
 
 // ─── 调用 MIMO 获取 URL 建议（容错处理） ──────────────────
@@ -152,58 +197,58 @@ async function main() {
       continue
     }
 
-    // 收集候选 URL：MIMO 建议 + 穷举模式
+    // 收集候选 URL
     const candidates = []
 
     // MIMO 建议的 URL
     const mimoMatch = mimoSuggestions.find(s =>
       source.name.includes(s.name) || s.name.includes(source.name)
     )
-    if (mimoMatch) {
-      candidates.push(mimoMatch.url_template)
-    }
+    if (mimoMatch) candidates.push({ url: mimoMatch.url_template, isFallback: false })
 
-    // 穷举搜索模式
-    candidates.push(...buildCandidateUrls(domain, keyword))
+    // 穷举网站自身搜索模式
+    const { ownUrls, fallbackUrls } = buildCandidateUrls(domain, keyword)
+    ownUrls.forEach(u => candidates.push({ url: u, isFallback: false }))
 
-    // 并行验证所有候选 URL，取第一个成功的
     let found = false
-    const controllers = candidates.map(() => new AbortController())
 
-    const verifyPromises = candidates.map(async (url, i) => {
-      try {
-        const resp = await fetch(url, {
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'Accept': 'text/html,*/*',
-            'Accept-Language': 'zh-CN,zh;q=0.9'
-          },
-          signal: controllers[i].signal,
-          redirect: 'follow'
-        })
-        if (!resp.ok) return null
-        const html = await resp.text()
-        if (html.length < 1000) return null
-        const hasChinese = /[\u4e00-\u9fff]/.test(html)
-        const hasKw = html.includes(keyword) || html.includes(decodeURIComponent(keyword))
-        if (hasChinese || hasKw) return url
-      } catch {}
-      return null
-    })
-
-    // 等待第一个成功的结果
-    try {
-      const result = await Promise.any(verifyPromises)
-      console.log(`  ✅ Found working URL: ${result}`)
-      source.url_template = result
-      updatedCount++
-      found = true
-    } catch {
-      // 所有 URL 都失败了
+    // 第一轮：验证网站自身的搜索 URL（必须属于目标域名）
+    for (const { url } of candidates.filter(c => !c.isFallback)) {
+      const isValid = await verifyUrl(url, domain)
+      if (isValid) {
+        console.log(`  ✅ Found working URL: ${url}`)
+        source.url_template = url
+        updatedCount++
+        found = true
+        break
+      }
     }
 
-    // 取消剩余请求
-    controllers.forEach(c => c.abort())
+    // 第二轮：搜索引擎兜底（不再验证域名）
+    if (!found) {
+      console.log(`  ⚠️ Site URLs failed, trying search engine fallbacks...`)
+      for (const fbUrl of fallbackUrls) {
+        try {
+          const controller = new AbortController()
+          const timeoutId = setTimeout(() => controller.abort(), 6000)
+          const resp = await fetch(fbUrl, {
+            headers: { 'User-Agent': 'Mozilla/5.0', 'Accept': 'text/html' },
+            signal: controller.signal, redirect: 'follow'
+          })
+          clearTimeout(timeoutId)
+          if (resp.ok) {
+            const html = await resp.text()
+            if (html.length > 1000) {
+              console.log(`  ⚠️ Using search engine fallback: ${fbUrl}`)
+              source.url_template = fbUrl
+              updatedCount++
+              found = true
+              break
+            }
+          }
+        } catch {}
+      }
+    }
 
     if (!found) {
       console.log(`  ❌ No working URL found for ${source.name}`)
