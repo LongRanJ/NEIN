@@ -26,7 +26,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const resp = await fetch('https://api.github.com/repos/LongRanJ/NEIN/actions/workflows/fix-news-sources.yml/dispatches', {
+    const resp = await fetch('https://api.github.com/repos/LongRanJ/NEIN/actions/workflows/fix-sources.yml/dispatches', {
       method: 'POST',
       headers: {
         'Accept': 'application/vnd.github+json',
