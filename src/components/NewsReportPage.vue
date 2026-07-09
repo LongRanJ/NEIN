@@ -8,7 +8,7 @@
           @click="store.showSourceDropdown = !store.showSourceDropdown"
           class="flex items-center gap-2 px-3 py-2 rounded-lg bg-bg-deep border border-border text-sm text-text-secondary hover:border-primary/30 transition-all"
         >
-          <span>来源 ({{ store.selectedSources.length }}/{{ store.availableSources.length }})</span>
+          <span>来源 ({{ store.selectedSources.size }}/{{ store.allSources.length || store.targetSources.length }})</span>
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </button>
         <!-- 下拉面板 -->
