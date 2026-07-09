@@ -7,6 +7,10 @@ on:
         description: 'JSON with failedSources array and optional keyword'
         required: true
         type: string
+      mimo_key:
+        description: 'MIMO API Key (passed from Vercel)'
+        required: true
+        type: string
 
 jobs:
   fix-sources:
@@ -26,7 +30,7 @@ jobs:
 
       - name: Fix broken source URLs
         env:
-          MIMO_API_KEY: ${{ secrets.MIMO_API_KEY }}
+          MIMO_API_KEY: *** inputs.mimo_key }}
         run: node scripts/fix-news-sources.js '${{ inputs.failed_sources }}'
 
       - name: Commit and push changes

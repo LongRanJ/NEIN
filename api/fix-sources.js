@@ -1,5 +1,5 @@
 // Vercel Serverless Function - 触发 GitHub Actions 修正新闻源链接
-// 环境变量：GITHUB_TOKEN（需要 repo 权限的 Personal Access Token）
+// 环境变量：GITHUB_TOKEN, MIMO_API_KEY（均从 Vercel 环境读取）
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*')
@@ -20,6 +20,11 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: '服务端未配置 GITHUB_TOKEN' })
   }
 
+  const mimoKey = process.env.MIMO_API_KEY
+  if (!mimoKey) {
+    return res.status(500).json({ error: '服务端未配置 MIMO_API_KEY' })
+  }
+
   try {
     const resp = await fetch('https://api.github.com/repos/LongRanJ/NEIN/actions/workflows/fix-news-sources.yml/dispatches', {
       method: 'POST',
@@ -31,7 +36,8 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         ref: 'main',
         inputs: {
-          failed_sources: JSON.stringify({ failedSources, keyword: keyword || '' })
+          failed_sources: JSON.stringify({ failedSources, keyword: keyword || '' }),
+          mimo_key: mimoKey
         }
       })
     })
