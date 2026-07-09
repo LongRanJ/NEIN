@@ -14,27 +14,53 @@
         <!-- 下拉面板 -->
         <div
           v-if="store.showSourceDropdown"
-          class="absolute top-full left-0 mt-1 z-50 w-64 max-h-72 overflow-y-auto rounded-lg bg-bg-deep border border-border shadow-xl"
+          class="absolute top-full left-0 mt-1 z-50 w-72 max-h-80 overflow-y-auto rounded-lg bg-bg-deep border border-border shadow-xl"
         >
-          <div class="p-2 border-b border-border flex items-center justify-between">
+          <div class="p-2 border-b border-border flex items-center gap-2">
+            <button @click="store.selectTargetOnly()" class="text-xs text-primary-light hover:underline">仅目标源</button>
+            <span class="text-xs text-text-muted">|</span>
             <button @click="store.selectAllSources()" class="text-xs text-primary-light hover:underline">全选</button>
+            <span class="text-xs text-text-muted">|</span>
             <button @click="store.clearSources()" class="text-xs text-accent-amber hover:underline">清空</button>
           </div>
-          <div class="p-1">
+          <!-- 目标来源 -->
+          <div v-if="targetWithResults.length > 0" class="p-1">
+            <div class="px-2 py-1 text-xs text-text-muted font-medium">目标来源</div>
             <label
-              v-for="src in store.availableSources"
+              v-for="src in targetWithResults"
               :key="src"
               class="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-bg-card cursor-pointer transition-colors"
             >
               <input
                 type="checkbox"
-                :checked="store.selectedSources.includes(src)"
+                :checked="store.selectedSources.has(src)"
                 @change="store.toggleSource(src)"
                 class="accent-primary w-3.5 h-3.5"
               />
               <span class="text-xs text-text-secondary">{{ src }}</span>
-              <span v-if="store.resultSources.includes(src)" class="ml-auto w-1.5 h-1.5 rounded-full bg-accent-green" title="有搜索结果"></span>
+              <span class="ml-auto text-xs text-text-muted">{{ store.sourceCount[src] || 0 }}</span>
             </label>
+          </div>
+          <!-- 其他来源 -->
+          <div v-if="otherWithResults.length > 0" class="p-1 border-t border-border">
+            <div class="px-2 py-1 text-xs text-text-muted font-medium">其他来源</div>
+            <label
+              v-for="src in otherWithResults"
+              :key="src"
+              class="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-bg-card cursor-pointer transition-colors"
+            >
+              <input
+                type="checkbox"
+                :checked="store.selectedSources.has(src)"
+                @change="store.toggleSource(src)"
+                class="accent-primary w-3.5 h-3.5"
+              />
+              <span class="text-xs text-text-secondary">{{ src }}</span>
+              <span class="ml-auto text-xs text-text-muted">{{ store.sourceCount[src] || 0 }}</span>
+            </label>
+          </div>
+          <div v-if="store.allSources.length === 0" class="p-3 text-xs text-text-muted text-center">
+            暂无来源数据
           </div>
         </div>
       </div>
@@ -213,6 +239,15 @@ const quickQuestions = [
   '储能行业政策',
   '新能源汽车补贴'
 ]
+
+// 目标来源（有结果的）
+import { computed } from 'vue'
+const targetWithResults = computed(() =>
+  store.targetSources.filter(s => store.sourceCount[s])
+)
+const otherWithResults = computed(() =>
+  store.otherSources.filter(s => store.sourceCount[s])
+)
 </script>
 
 <style scoped>

@@ -21,9 +21,11 @@ export const useNewsReportStore = defineStore('newsReport', () => {
   const hasSearched = ref(false)
   const overview = ref('')
 
-  // 来源选择（默认全选15个目标源）
-  const availableSources = TARGET_SOURCES
-  const selectedSources = ref([...TARGET_SOURCES])
+  // 来源管理
+  const targetSources = TARGET_SOURCES
+  const otherSources = ref([])     // 搜索后动态更新
+  const sourceCount = ref({})       // 每个来源的文章数
+  const selectedSources = ref(new Set()) // 选中的来源（Set）
   const showSourceDropdown = ref(false)
 
   // 时间范围
@@ -38,13 +40,20 @@ export const useNewsReportStore = defineStore('newsReport', () => {
     { label: '近30天', days: 30 }
   ]
 
+  // 所有可选来源（目标优先，其他按数量排序）
+  const allSources = computed(() => {
+    const target = targetSources.filter(s => sourceCount.value[s])
+    const other = otherSources.value.filter(s => sourceCount.value[s])
+    return [...target, ...other]
+  })
+
   // 过滤后的结果
   const newsList = computed(() => {
     let list = rawData.value
 
-    // 来源过滤
-    if (selectedSources.value.length > 0) {
-      list = list.filter(item => selectedSources.value.includes(item.source))
+    // 来源过滤：只显示选中的来源
+    if (selectedSources.value.size > 0) {
+      list = list.filter(item => selectedSources.value.has(item.source))
     }
 
     // 时间过滤
@@ -67,10 +76,7 @@ export const useNewsReportStore = defineStore('newsReport', () => {
   )
 
   // 统计实际出现的来源
-  const resultSources = computed(() => {
-    const set = new Set(rawData.value.map(n => n.source))
-    return [...set]
-  })
+  const resultSources = computed(() => Object.keys(sourceCount.value))
 
   // ─── 时间预设 ─────────────────────────────────────────
 
@@ -101,17 +107,21 @@ export const useNewsReportStore = defineStore('newsReport', () => {
   // ─── 来源操作 ─────────────────────────────────────────
 
   function toggleSource(src) {
-    const idx = selectedSources.value.indexOf(src)
-    if (idx >= 0) selectedSources.value.splice(idx, 1)
-    else selectedSources.value.push(src)
+    const s = new Set(selectedSources.value)
+    s.has(src) ? s.delete(src) : s.add(src)
+    selectedSources.value = s
   }
 
   function selectAllSources() {
-    selectedSources.value = [...availableSources]
+    selectedSources.value = new Set(allSources.value)
   }
 
   function clearSources() {
-    selectedSources.value = []
+    selectedSources.value = new Set()
+  }
+
+  function selectTargetOnly() {
+    selectedSources.value = new Set(targetSources.filter(s => sourceCount.value[s]))
   }
 
   // ─── 搜索 ────────────────────────────────────────────
@@ -143,6 +153,14 @@ export const useNewsReportStore = defineStore('newsReport', () => {
       const data = await resp.json()
       rawData.value = data.data || []
       overview.value = data.overview || ''
+
+      // 更新来源信息
+      if (data.sources) {
+        sourceCount.value = data.sources.count || {}
+        otherSources.value = data.sources.other || []
+        // 默认选中目标来源
+        selectedSources.value = new Set(data.sources.target || [])
+      }
     } catch (err) {
       error.value = err.message
     } finally {
@@ -223,11 +241,11 @@ ${items.map((item, i) => `${i+1}. [${item.source}] ${item.title} - ${item.summar
   return {
     keyword, rawData, newsList, selectedIds,
     isSearching, isGenerating, error, hasSearched, overview,
-    availableSources, selectedSources, showSourceDropdown,
+    targetSources, otherSources, sourceCount, selectedSources, showSourceDropdown, allSources,
     startDate, endDate, activePreset, presets,
     selectedItems, allSelected, resultSources,
     setPreset, setDateRange, clearDateRange,
-    toggleSource, selectAllSources, clearSources,
+    toggleSource, selectAllSources, clearSources, selectTargetOnly,
     search, generatePpt,
     toggleSelect, toggleSelectAll, clearSelect, reset
   }
