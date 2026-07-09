@@ -4,13 +4,52 @@ import { useNewsStore } from './news'
 import { useTimeFilterStore } from './timeFilter'
 import { useRealtimeSearchStore } from './realtimeSearch'
 
+const CONFIG_KEY = 'nein_ai_config'
 const HISTORY_KEY = 'nein_ai_history'
 
 export const useAiStore = defineStore('ai', () => {
+  // Config
+  const mode = ref('mimo') // 'mimo' | 'external' | 'internal'
+  const externalApiUrl = ref('')
+  const externalApiKey = ref('')
+  const externalModel = ref('')
+  const internalApiUrl = ref('')
+  const internalApiKey = ref('')
+  const internalModel = ref('')
+
   // Chat state
   const messages = ref([])
   const isLoading = ref(false)
   const isOpen = ref(false)
+
+  // Load config
+  function loadConfig() {
+    try {
+      const saved = localStorage.getItem(CONFIG_KEY)
+      if (saved) {
+        const cfg = JSON.parse(saved)
+        mode.value = cfg.mode || 'mimo'
+        externalApiUrl.value = cfg.externalApiUrl || ''
+        externalApiKey.value = cfg.externalApiKey || ''
+        externalModel.value = cfg.externalModel || ''
+        internalApiUrl.value = cfg.internalApiUrl || ''
+        internalApiKey.value = cfg.internalApiKey || ''
+        internalModel.value = cfg.internalModel || ''
+      }
+    } catch (e) { /* ignore */ }
+  }
+
+  function saveConfig() {
+    localStorage.setItem(CONFIG_KEY, JSON.stringify({
+      mode: mode.value,
+      externalApiUrl: externalApiUrl.value,
+      externalApiKey: externalApiKey.value,
+      externalModel: externalModel.value,
+      internalApiUrl: internalApiUrl.value,
+      internalApiKey: internalApiKey.value,
+      internalModel: internalModel.value
+    }))
+  }
 
   function loadHistory() {
     try {
@@ -20,8 +59,7 @@ export const useAiStore = defineStore('ai', () => {
   }
 
   function saveHistory() {
-    const toSave = messages.value.slice(-50)
-    localStorage.setItem(HISTORY_KEY, JSON.stringify(toSave))
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(messages.value.slice(-50)))
   }
 
   function clearHistory() {
@@ -29,21 +67,31 @@ export const useAiStore = defineStore('ai', () => {
     localStorage.removeItem(HISTORY_KEY)
   }
 
-  // 获取当前数据范围内的新闻（时间筛选 + 搜索结果）
+  // URL 自动补全
+  function normalizeApiUrl(url) {
+    if (!url) return url
+    url = url.trim().replace(/\/+$/, '') // 去掉末尾斜杠
+    // 如果已经以 /chat/completions 结尾，不处理
+    if (url.endsWith('/chat/completions')) return url
+    // 如果以 /v1 结尾，补 /chat/completions
+    if (url.endsWith('/v1')) return url + '/chat/completions'
+    // 如果以 /v1/ 开头但不是 chat，补 chat/completions
+    if (/\/v1\/?$/.test(url)) return url + '/chat/completions'
+    // 其他情况，补 /v1/chat/completions
+    return url + '/v1/chat/completions'
+  }
+
+  // 获取数据范围内的新闻
   function getScopedArticles() {
     const newsStore = useNewsStore()
     const timeFilter = useTimeFilterStore()
     const rtStore = useRealtimeSearchStore()
 
-    // 时间筛选范围内的新闻
     const timeFiltered = newsStore.articles.filter(a =>
       a.publishedAt >= timeFilter.startDate && a.publishedAt <= timeFilter.endDate
     )
-
-    // 用户AI搜索到的新闻
     const searchResults = rtStore.results || []
 
-    // 合并去重
     const seen = new Set()
     const combined = []
     for (const a of [...searchResults, ...timeFiltered]) {
@@ -53,7 +101,6 @@ export const useAiStore = defineStore('ai', () => {
         combined.push(a)
       }
     }
-
     return combined
   }
 
@@ -91,35 +138,21 @@ ${articleList}
     saveHistory()
 
     try {
-      const apiMessages = [
-        { role: 'system', content: buildSystemPrompt() },
-        ...messages.value.slice(-10)
-      ]
+      let reply = ''
 
-      const resp = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: apiMessages,
-          model: 'mimo-v2.5-pro',
-          temperature: 0.7,
-          max_tokens: 2000
-        })
-      })
-
-      if (!resp.ok) {
-        const errData = await resp.json().catch(() => ({}))
-        throw new Error(errData.error || `请求失败: ${resp.status}`)
+      if (mode.value === 'mimo') {
+        reply = await callViaBackend(userMessage)
+      } else if (mode.value === 'external') {
+        reply = await callDirect(externalApiUrl.value, externalApiKey.value, externalModel.value, userMessage)
+      } else {
+        reply = await callDirect(internalApiUrl.value, internalApiKey.value, internalModel.value, userMessage)
       }
-
-      const data = await resp.json()
-      const reply = data.content || '未收到有效回复'
 
       messages.value.push({ role: 'assistant', content: reply })
     } catch (err) {
       messages.value.push({
         role: 'assistant',
-        content: `⚠️ 请求失败：${err.message}\n\n请检查后端 API 配置是否正确。`
+        content: `⚠️ 请求失败：${err.message}`
       })
     } finally {
       isLoading.value = false
@@ -127,10 +160,66 @@ ${articleList}
     }
   }
 
+  // MIMO 模式：通过后端 API 调用
+  async function callViaBackend(userMessage) {
+    const apiMessages = [
+      { role: 'system', content: buildSystemPrompt() },
+      ...messages.value.slice(-10)
+    ]
+
+    const resp = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: apiMessages })
+    })
+
+    if (!resp.ok) {
+      const errData = await resp.json().catch(() => ({}))
+      throw new Error(errData.error || `请求失败: ${resp.status}`)
+    }
+
+    const data = await resp.json()
+    return data.content || '未收到有效回复'
+  }
+
+  // 外部/内部模型：直接调用（自动补全 URL）
+  async function callDirect(apiUrl, apiKey, model, userMessage) {
+    const fullUrl = normalizeApiUrl(apiUrl)
+    if (!fullUrl) throw new Error('请先配置 API URL')
+
+    const body = {
+      model: model || 'default',
+      messages: [
+        { role: 'system', content: buildSystemPrompt() },
+        ...messages.value.slice(-10)
+      ],
+      temperature: 0.7,
+      max_tokens: 2000
+    }
+
+    const headers = { 'Content-Type': 'application/json' }
+    if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`
+
+    const resp = await fetch(fullUrl, { method: 'POST', headers, body: JSON.stringify(body) })
+
+    if (!resp.ok) {
+      const errText = await resp.text().catch(() => '')
+      throw new Error(`API 错误 ${resp.status}: ${errText.slice(0, 200)}`)
+    }
+
+    const data = await resp.json()
+    return data.choices?.[0]?.message?.content || '未收到有效回复'
+  }
+
   // Init
+  loadConfig()
   loadHistory()
 
+  watch([mode, externalApiUrl, externalApiKey, externalModel, internalApiUrl, internalApiKey, internalModel], saveConfig)
+
   return {
+    mode, externalApiUrl, externalApiKey, externalModel,
+    internalApiUrl, internalApiKey, internalModel,
     messages, isLoading, isOpen,
     sendMessage, clearHistory
   }

@@ -123,3 +123,11 @@ function isPresetActive(days) {
     && timeFilter.endDate === now.toISOString().split('T')[0]
 }
 </script>
+
+<style>
+/* 日期选择器日历图标改为白色 */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+</style>

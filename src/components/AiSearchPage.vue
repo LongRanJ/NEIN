@@ -100,8 +100,8 @@
           <span class="shrink-0 px-2 py-0.5 rounded text-xs bg-accent-green/20 text-accent-green">AI 搜索</span>
         </div>
         <div class="mt-2 flex items-center gap-2 text-xs text-text-muted flex-wrap">
-          <span>📰 {{ item.source || '未知来源' }}</span>
-          <span v-if="item.date">· 📅 {{ item.date }}</span>
+          <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ item.source || '未知来源' }}</span>
+          <span v-if="item.date">· <span class="inline-flex items-center gap-1"><span v-html="icons.calendar"></span>{{ item.date }}</span></span>
           <span v-if="item.url">· <a :href="item.url" target="_blank" class="text-primary-light hover:underline">查看原文</a></span>
         </div>
         <div v-if="item.keywords?.length" class="mt-2 flex flex-wrap gap-1">

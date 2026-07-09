@@ -51,9 +51,9 @@
           <span class="shrink-0 px-2 py-0.5 rounded text-xs" :class="importanceClass(article.importance)">{{ importanceLabel(article.importance) }}</span>
         </div>
         <div class="mt-2 flex items-center gap-2 text-xs text-text-muted">
-          <span>📰 {{ article.source }}</span>
+          <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ article.source }}</span>
           <span>·</span>
-          <span>📅 {{ article.publishedAt }}</span>
+          <span class="inline-flex items-center gap-1"><span v-html="icons.calendar"></span>{{ article.publishedAt }}</span>
           <template v-if="isArticleUrl(article.sourceUrl)">
             <span>·</span>
             <a :href="article.sourceUrl" target="_blank" class="text-primary-light hover:underline">查看原文</a>

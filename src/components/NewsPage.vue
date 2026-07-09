@@ -51,43 +51,36 @@
         :style="{ animationDelay: `${index * 0.05}s` }"
         @click="selectedArticle = article"
       >
-        <!-- Header -->
         <div class="flex items-start justify-between gap-3">
           <h4 class="text-base font-semibold text-white leading-snug flex-1">
-            <span v-if="article.importance === 'high'" class="text-accent-amber mr-1">🔥</span>
             {{ article.title }}
           </h4>
-          <span
-            class="shrink-0 px-2 py-0.5 rounded text-xs font-medium"
-            :class="importanceClass(article.importance)"
-          >{{ importanceLabel(article.importance) }}</span>
+          <span class="shrink-0 px-2 py-0.5 rounded text-xs font-medium" :class="importanceClass(article.importance)">{{ importanceLabel(article.importance) }}</span>
         </div>
 
-        <!-- Summary -->
         <p class="mt-2 text-sm text-text-secondary leading-relaxed line-clamp-2">{{ article.summary }}</p>
 
         <!-- Tags -->
         <div v-if="article.tags" class="mt-2 flex flex-wrap gap-1.5">
-          <span v-if="article.tags.地点" class="px-2 py-0.5 rounded text-xs bg-primary/10 text-primary-light">📍 {{ article.tags.地点 }}</span>
-          <span v-if="article.tags.涉及企业?.length" class="px-2 py-0.5 rounded text-xs bg-accent-green/10 text-accent-green">🏢 {{ article.tags.涉及企业.slice(0, 3).join('、') }}</span>
+          <span v-if="article.tags.地点" class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-primary/10 text-primary-light"><span v-html="icons.location"></span>{{ article.tags.地点 }}</span>
+          <span v-if="article.tags.涉及企业?.length" class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs bg-accent-green/10 text-accent-green"><span v-html="icons.building"></span>{{ article.tags.涉及企业.slice(0, 3).join('、') }}</span>
         </div>
 
         <!-- Meta -->
         <div class="mt-3 flex items-center gap-2 text-xs text-text-muted flex-wrap">
-          <span>📰 {{ article.source }}</span>
+          <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ article.source }}</span>
           <span>·</span>
-          <span>📅 {{ article.publishedAt }}</span>
-          <span v-if="isArticleUrl(article.sourceUrl)">·</span>
-          <a v-if="isArticleUrl(article.sourceUrl)" :href="article.sourceUrl" target="_blank" @click.stop class="text-primary-light hover:underline">查看原文</a>
-          <span v-if="article.keywords?.length">·</span>
-          <span v-for="kw in article.keywords" :key="kw" class="text-primary-light">{{ kw }}</span>
+          <span class="inline-flex items-center gap-1"><span v-html="icons.calendar"></span>{{ article.publishedAt }}</span>
+          <template v-if="isArticleUrl(article.sourceUrl)">
+            <span>·</span>
+            <a :href="article.sourceUrl" target="_blank" @click.stop class="text-primary-light hover:underline">查看原文</a>
+          </template>
         </div>
       </div>
     </div>
 
     <!-- 空状态 -->
     <div v-if="displayArticles.length === 0" class="text-center py-16 text-text-muted">
-      <div class="text-4xl mb-3">📭</div>
       <p class="text-lg">当前时间范围内没有资讯</p>
       <p class="text-sm mt-1">请尝试调整时间筛选器或切换关键词</p>
     </div>
@@ -97,21 +90,21 @@
       <div v-if="selectedArticle" class="fixed inset-0 z-[100] flex items-center justify-center p-4" @click.self="selectedArticle = null">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="selectedArticle = null"></div>
         <div class="relative glass rounded-2xl p-6 max-w-2xl w-full max-h-[80vh] overflow-y-auto animate-fade-in">
-          <button @click="selectedArticle = null" class="absolute top-4 right-4 text-text-muted hover:text-white">✕</button>
+          <button @click="selectedArticle = null" class="absolute top-4 right-4 text-text-muted hover:text-white" v-html="icons.close"></button>
           <h2 class="text-xl font-bold text-white pr-8">{{ selectedArticle.title }}</h2>
           <div class="mt-2 flex items-center gap-2 text-xs text-text-muted">
-            <span>📰 {{ selectedArticle.source }}</span>
+            <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ selectedArticle.source }}</span>
             <span>·</span>
-            <span>📅 {{ selectedArticle.publishedAt }}</span>
+            <span class="inline-flex items-center gap-1"><span v-html="icons.calendar"></span>{{ selectedArticle.publishedAt }}</span>
             <span>·</span>
             <span :class="importanceClass(selectedArticle.importance)">{{ importanceLabel(selectedArticle.importance) }}</span>
           </div>
           <p class="mt-4 text-sm text-text-secondary leading-relaxed">{{ selectedArticle.summary }}</p>
           <div v-if="selectedArticle.tags" class="mt-4 space-y-1">
-            <p v-if="selectedArticle.tags.时间" class="text-xs text-text-muted">🕐 {{ selectedArticle.tags.时间 }}</p>
-            <p v-if="selectedArticle.tags.地点" class="text-xs text-text-muted">📍 {{ selectedArticle.tags.地点 }}</p>
-            <p v-if="selectedArticle.tags.主要事件" class="text-xs text-text-muted">📌 {{ selectedArticle.tags.主要事件 }}</p>
-            <p v-if="selectedArticle.tags.涉及企业?.length" class="text-xs text-text-muted">🏢 {{ selectedArticle.tags.涉及企业.join('、') }}</p>
+            <p v-if="selectedArticle.tags.时间" class="flex items-center gap-1.5 text-xs text-text-muted"><span v-html="icons.clock"></span>{{ selectedArticle.tags.时间 }}</p>
+            <p v-if="selectedArticle.tags.地点" class="flex items-center gap-1.5 text-xs text-text-muted"><span v-html="icons.location"></span>{{ selectedArticle.tags.地点 }}</p>
+            <p v-if="selectedArticle.tags.主要事件" class="flex items-center gap-1.5 text-xs text-text-muted"><span v-html="icons.pin"></span>{{ selectedArticle.tags.主要事件 }}</p>
+            <p v-if="selectedArticle.tags.涉及企业?.length" class="flex items-center gap-1.5 text-xs text-text-muted"><span v-html="icons.building"></span>{{ selectedArticle.tags.涉及企业.join('、') }}</p>
           </div>
           <div class="mt-4 flex flex-wrap gap-1.5">
             <span v-for="kw in selectedArticle.keywords" :key="kw" class="px-2 py-0.5 rounded text-xs bg-primary/10 text-primary-light">{{ kw }}</span>
@@ -154,36 +147,24 @@ async function triggerUpdate() {
     updateMsg.value = '⚠️ 网络错误：' + err.message
   } finally {
     isUpdating.value = false
-    // 5秒后自动隐藏提示
     setTimeout(() => { updateMsg.value = '' }, 5000)
   }
 }
 
-const formattedTime = computed(() => {
-  const d = new Date(store.lastUpdated)
-  return d.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
-})
-
 const displayArticles = computed(() => store.keywordFiltered)
 
 function importanceClass(imp) {
-  return {
-    high: 'bg-accent-amber/20 text-accent-amber',
-    medium: 'bg-primary/20 text-primary-light',
-    low: 'bg-text-muted/20 text-text-muted'
-  }[imp] || ''
+  return { high: 'bg-accent-amber/20 text-accent-amber', medium: 'bg-primary/20 text-primary-light', low: 'bg-text-muted/20 text-text-muted' }[imp] || ''
 }
 
 function importanceLabel(imp) {
   return { high: '重要', medium: '关注', low: '一般' }[imp] || ''
 }
 
-// 判断 URL 是否是具体文章链接（不是仅域名）
 function isArticleUrl(url) {
   if (!url) return false
   try {
     const u = new URL(url)
-    // 路径长度 > 1 表示有具体路径（不只是 /）
     return u.pathname.length > 1
   } catch {
     return false
