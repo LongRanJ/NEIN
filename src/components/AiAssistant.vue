@@ -85,6 +85,21 @@
             <p class="text-xs text-text-muted">自动使用后端配置的 MIMO API，无需手动设置</p>
           </div>
 
+          <!-- Context limit -->
+          <div class="mt-3">
+            <h4 class="text-xs font-medium text-text-secondary mb-2">AI 上下文新闻条数</h4>
+            <div class="flex items-center gap-2">
+              <input
+                v-model.number="aiStore.aiContextLimit"
+                type="range"
+                min="10" max="200" step="10"
+                class="flex-1 accent-primary"
+              />
+              <span class="text-xs text-primary font-medium w-8 text-right">{{ aiStore.aiContextLimit }}</span>
+            </div>
+            <p class="text-xs text-text-muted mt-1">注入 system prompt 的最大新闻条数，越大上下文越全但 token 越多</p>
+          </div>
+
           <!-- External model settings -->
           <div v-if="aiStore.mode === 'external'" class="space-y-2 mt-3">
             <input v-model="aiStore.externalApiUrl" placeholder="API URL（如 https://api.deepseek.com）" class="w-full px-2 py-1.5 rounded bg-bg-deep border border-border text-xs text-text-primary focus:outline-none focus:border-primary" />

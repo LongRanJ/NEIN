@@ -94,10 +94,10 @@ function dedup(items) {
 
 // ─── MIMO 筛选排序 ──────────────────────────────────────
 
-async function mimoFilter(keyword, items, apiKey) {
+async function mimoFilter(keyword, items, apiKey, candidateLimit = 80) {
   if (items.length === 0) return { results: [], overview: '' }
 
-  const candidates = items.slice(0, 40)
+  const candidates = items.slice(0, candidateLimit)
 
   const prompt = `你是新能源行业资讯分析助手。从以下新闻中筛选与"${keyword}"最相关的结果。
 
@@ -182,16 +182,17 @@ export default async function handler(req, res) {
   if (req.method === 'OPTIONS') return res.status(200).end()
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const { keyword } = req.body
+  const { keyword, candidateLimit } = req.body
   if (!keyword?.trim()) return res.status(400).json({ error: '请输入搜索关键词' })
   if (keyword.length > 100) return res.status(400).json({ error: '关键词过长' })
+  const limit = Math.min(Math.max(parseInt(candidateLimit) || 80, 20), 150)
 
   const apiKey = process.env.MIMO_API_KEY
 
   try {
     // 第一步：从 Google News RSS 抓取真实新闻
-    console.log(`Searching Google News RSS for: ${keyword}`)
-    const rawItems = await fetchGoogleNews(keyword, 30)
+    console.log(`Searching Google News RSS for: ${keyword}, candidateLimit: ${limit}`)
+    const rawItems = await fetchGoogleNews(keyword, Math.min(limit, 50))
     console.log(`Found ${rawItems.length} raw items from Google News RSS`)
 
     // 去重
@@ -211,7 +212,7 @@ export default async function handler(req, res) {
     let overview = ''
 
     if (apiKey) {
-      const filtered = await mimoFilter(keyword, uniqueItems, apiKey)
+      const filtered = await mimoFilter(keyword, uniqueItems, apiKey, limit)
       results = filtered.results
       overview = filtered.overview
     }
