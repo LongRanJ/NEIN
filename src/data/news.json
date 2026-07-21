@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-20T05:26:58.073Z",
+  "lastUpdated": "2026-07-21T04:56:02.649Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,337 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-kjdxvo",
+      "title": "又一潜在独角兽落子蓉城！ - 搜狐网",
+      "summary": "又一潜在独角兽落子蓉城！ 搜狐网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdG1nNDB6WEpPU2hTYThzczFlTVdDNXBvdHJpOHBLM3QtSjV3RnIzRmxXZXVhVE1RUVVBM05JUTNXNWJPLU44SWRIQVJuTFJ4SGdOOGc1ZzBnem5DZUVxbElZNUVrNnFJemtRakNLNmFOUTVHcERzSHFPVTg3WnlfNTIwSkpnM1Yt?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "又一潜在独角兽落子蓉城！ - 搜狐网"
+      }
+    },
+    {
+      "id": "gn-w0ut6f",
+      "title": "比亚迪第二代刀片电池及闪充技术重大创新成果，获工信部点赞_投资者网_媒体广场_财经 - 证券之星",
+      "summary": "比亚迪第二代刀片电池及闪充技术重大创新成果，获工信部点赞_投资者网_媒体广场_财经 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rcWlVOU9INW16NjlpMW5HVXFReHJFd1VSMWVzRHFfUU9YQVk1aUJsNHFXbmJWMzkyYW5ybjBEd1VqbWZCZkltNFVLR0hDLXpoaXQ3dzRBc1hqbjROMDlveA?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪第二代刀片电池及闪充技术重大创新成果，获工信部点赞_投"
+      }
+    },
+    {
+      "id": "gn-dxcxzc",
+      "title": "比亚迪携手越南FUTA共建新能源汽车生态，中国方案加速落地越南 - 手机网易网",
+      "summary": "比亚迪携手越南FUTA共建新能源汽车生态，中国方案加速落地越南 手机网易网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBRbDVIdW9Qbm5ocXlWaDVnQ1p5ODBzdVduU2dLcDNmTllPTVVUbmhscVRiTkVXS0s1bVZLeUNBVFQtc3piMnBHU3ZjTHhBZno3cndfRVhILWZkcHBLRmJMN0hn?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪携手越南FUTA共建新能源汽车生态，中国方案加速落地越"
+      }
+    },
+    {
+      "id": "gn-gj2i1u",
+      "title": "新能源汽车租赁划算吗？3个维度说清价格、保险与避坑指南+FAQ - 新浪网",
+      "summary": "新能源汽车租赁划算吗？3个维度说清价格、保险与避坑指南+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE0zWXY3cUt2eWhvTVNORkJqaV9yblZvUy1wNHd1aUw0My03cDQ1aFpNcHNtanRHS19qUHdzem4zMkhFaXlKZVVMRlpqRE8yTk9xWV9rRWxQY21RZ2dTRVg5NUd2VHhJVTNEUEU3RjVZenQ1UQ?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车租赁划算吗？3个维度说清价格、保险与避坑指南+FA"
+      }
+    },
+    {
+      "id": "gn-wh3h2q",
+      "title": "全球能源转型中的中国变量：厦门港储能出口破百亿 - 见道网",
+      "summary": "全球能源转型中的中国变量：厦门港储能出口破百亿 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5DMm91WEg2TlExSU5xNnI3NF9EbjZ3NGUwZXIwZmlTdGZlSkNVS3ZhMmJiVHo0NEdDNjNoTzZuczlfZkNWSlpzRktQeXNZWEtsWmpmVQ?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "全球能源转型中的中国变量：厦门港储能出口破百亿 - 见道网"
+      }
+    },
+    {
+      "id": "gn-omls4h",
+      "title": "柬埔寨100MW/200MWh储能电站并网 - 国际储能网",
+      "summary": "柬埔寨100MW/200MWh储能电站并网 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzWXpwTjQ1aXd3MzFqMG04Nmo0enZlQllxN0I2RlA4OFZFU3dzN2p6akx1cnV6RDJfQmtWbm0xblNaal82ZWZVdHIyRFlUQk9CVFNJb0tYSjVJb0tXeTJFek53?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "柬埔寨100MW/200MWh储能电站并网 - 国际储能网"
+      }
+    },
+    {
+      "id": "gn-utcj20",
+      "title": "涉及华能、中国能建、内蒙古能源集团、安徽能源集团等！本周6个氢能招中标信息【氢能项目·周分析】 - 国际氢能网",
+      "summary": "涉及华能、中国能建、内蒙古能源集团、安徽能源集团等！本周6个氢能招中标信息【氢能项目·周分析】 国际氢能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9abWQxbVlHd0I2V3d3eGh6bFc3Q2d1MkNqdDVadkRfeV9PcUVnWEcxWTUyQXBkZ2t4OU54a1g5ZV9NZ3U5dkxsNUI4U1pQOV9LMG8wN0pn?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "涉及华能、中国能建、内蒙古能源集团、安徽能源集团等！本周6个"
+      }
+    },
+    {
+      "id": "rss-6ql8be",
+      "title": "上市前夜 | “喜羊羊”老板二冲港股IPO，奥动新能源近三年半亏掉14.7亿",
+      "summary": "本文约2800字，建议阅读6分钟 作者 | 彭孝秋 编者按：《上市前夜》栏目聚焦企业冲刺资本市场的关键时刻。每一份招股书里，都藏着一家企业上市前的野心、周期与隐忧。这是第七期——奥动新能源。 7月19日，奥动新能源再��向港交所主板递交上市申请，独家保荐人为招银国际。事实上，这已是奥动新能源的第二次递表，首次递表在2025年12月12日，但6个月未通过聆讯就失效了。 有意思的是这家公司实控人——奥动新能源董事长、总经理蔡东青，今年57岁，1997年创办了奥飞娱乐（002292.SZ）并任董事长兼总经理至今，奥飞娱乐出品过《喜羊羊与灰太狼》。2016年6月，他与换电技术老兵张建平共同创办奥动新能",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3904781968508550?f=rss",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "时间": "2025年12月12",
+        "主要事件": "上市前夜 | “喜羊羊”老板二冲港股IPO，奥动新能源近三年"
+      }
+    },
+    {
+      "id": "rss-jeec5l",
+      "title": "小米 REDMI Watch 6 Active / Lite 两款智能手表渲染图曝光",
+      "summary": "IT之家 7 月 21 日消息，科技媒体 91Mobile 昨日（7 月 20 日）发布博文，分享了一组图片，展示了小米 REDMI Watch 6 Active 和 REDMI Watch 6 Lite 两款智能手表。定位方面，两款智能手表均走性价比路线，主要面向基本健康和健身追踪需求的用户。小米 REDMI Watch 6 Active相比较小米 REDMI Watch 6（2.07 英寸，432 x 514 像素），小米 REDMI Watch 6 Active 的屏幕尺寸更小，采用 1.85 英寸 AMOLED 面板，分辨率为 390 × 450 像素。功能方面，小米 REDMI Wa",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/456.htm",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米 REDMI Watch 6 Active / Lite"
+      }
+    },
+    {
+      "id": "rss-jdujk8",
+      "title": "小米平板 9 通过 3C 认证：9720mAh 大电池 + 45W 快充头，骁龙 8 系处理器",
+      "summary": "IT之家 7 月 21 日消息，小米有一款型号为 M656BA 的平板电脑于 7 月 17 日通过国家 3C 认证，@数码闲聊站 称其为小米平板 9。这款平板电脑由西安比亚迪电子有限公司集贤分公司代工，标配 45W 快充头（数码闲聊站称其 55W，疑似笔误）。另外，此前泄露的代码显示该机采用了 9720mAh 大电池，搭载高通骁龙 8s Gen4 处理器。小米平板 9/Pro 预计将与小米 18 系列新机一同发布，敬请期待。IT之家后续将保持关注。相关阅读：《小米平板 9 标准版曝光：高通骁龙 8s Gen4 芯片，9720mAh 电池》",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/455.htm",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "西安",
+        "涉及企业": [
+          "比亚迪",
+          "小米"
+        ],
+        "主要事件": "小米平板 9 通过 3C 认证：9720mAh 大电池 + "
+      }
+    },
+    {
+      "id": "rss-iwsx61",
+      "title": "智界 V9 累计交付突破 10000 台，号称“新能源 MPV 最快破万”",
+      "summary": "IT之家 7 月 21 日消息，智界汽车执行董事及执行副总裁赵长江今天（21 日）上午宣布，截至 7 月 20 日，智界 V9 累计交付突破 10000 台，创下新能源 MPV 最快破万纪录，整车成交均价 50 万元。据IT之家了解，智界 V9 于 5 月 15 日上市，售价区间 38.98 万-51.98 万元，尺寸为 5359×2009×1879mm、轴距达 3250mm，拥有辉光紫、雪域白、深海蓝、鎏金黑四款外观配色，以及绒霞紫、韶华杏、赤茶橘三款内饰配色。新车全系标配 38 个传感器，是行业首款搭载 896 线激光雷达的 MPV。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/445.htm",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "智界 V9 累计交付突破 10000 台，号称“新能源 MP"
+      }
+    },
+    {
+      "id": "rss-hvypeu",
+      "title": "小米 349 元米家智能冲牙器 Pro 开售：第二代可旋转多效喷嘴，配彩屏支持 App 智连",
+      "summary": "IT之家 7 月 21 日消息，小米官方今日宣布“米家智能冲牙器 Pro”正式开售，定价为 399 元，首发价 349 元，京东叠加九折券后 303.11 元。京东米家智能冲牙器 Pro 未来暮色智能大彩屏、双模块水箱一机两用伞射水流更护龈券后 303.11 元领 0.9 元券2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。数码补贴：点此领券手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。家电补贴：点此领券多类家电支持 8.5 折政府补贴，单品至高补贴 1500 元。欢迎下载最会买 App",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/420.htm",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米 349 元米家智能冲牙器 Pro 开售：第二代可旋转多"
+      }
+    },
+    {
+      "id": "rss-hg0o7d",
+      "title": "我国将建超 3000 个电动重卡充换电站，安排 220 亿元支持老旧营运货车报废更新",
+      "summary": "IT之家 7 月 21 日消息，据央视新闻，交通运输部安全总监兼运输服务司司长蔡团结今天（21 日）在国新办新闻发布会上说，聚焦国家高速公路、普通国省道货运繁忙路段，京津冀、长三角、粤港澳大湾区、成渝地区等城市群都市圈，货运枢纽、港口、矿区、厂区、园区等重要节点，建设 3000 个以上电动重卡充换电站，推进补能设施“连点成线组网”。IT之家从新闻发布会获悉，我国 2026 年继续实施老旧营运货车报废更新行动，安排 220 亿元超长期特别国债支持老旧营运货车报废更新，重点支持更新为新能源重卡，通过“两新”政策加力促进新能源重卡市场消费。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/412.htm",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "我国将建超 3000 个电动重卡充换电站，安排 220 亿元"
+      }
+    },
+    {
+      "id": "gn-wuaplj",
+      "title": "百亿材料龙头，拟斥资240亿元扩产 - 21财经",
+      "summary": "百亿材料龙头，拟斥资240亿元扩产 21财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUXFZX3p3cm1JYXp6SkhFbHE5a2NiaVIyakJOc0pLR3RKS3V4ME0tVjFoT0liVDhmMFQ1NlkzWFM5YzBnYm1XbURuOHpIclFnRnNmZDUyN0poNkN3UzZSTDZBVV9tYnVTM1VweVpiT2M1M05GdC1lcm9senJUNjBscjdRVkxWaUFRV0hlWQ?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "百亿材料龙头，拟斥资240亿元扩产 - 21财经"
+      }
+    },
+    {
+      "id": "gn-be0n1o",
+      "title": "中科院士陈军突破：400瓦时固态电池或将终结油车时代 - 手机网易网",
+      "summary": "中科院士陈军突破：400瓦时固态电池或将终结油车时代 手机网易网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ONmNEaWttWDJYd05TTkdYXzVDcDRtZ2JJbk4yWmRlVFd1MTN5WUNHSmNYMUthbFlnU1gwdElEV19ET0p1YmpJYjFBY0hRQUloUkt0eDk5bUVnY2ZXX1hKXzVn?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "中科院士陈军突破：400瓦时固态电池或将终结油车时代 - 手"
+      }
+    },
+    {
+      "id": "gn-wfbeq",
+      "title": "500MW/2000MWh！又一储能大项目启动 - 碳索储能网",
+      "summary": "500MW/2000MWh！又一储能大项目启动 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4ySDViXzdHX1lRbS0tMmhNM0hHUTFXelRpbXZrbm9IRS1IMmw5Z2JEMzVqWWZQenJ0TWgwM3Zhdk1sbmdTSzV4amREYlZsc1J2UG1vSlBjRFFsWkVKcjlEMw?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "500MW/2000MWh！又一储能大项目启动 - 碳索储能"
+      }
+    },
+    {
+      "id": "gn-k51zxq",
+      "title": "解码2026湖北经济期中卷︱一块电池，在湖北新“长”出百亿元产值- 湖北日报新闻客户端 - 湖北日报传媒集团",
+      "summary": "解码2026湖北经济期中卷︱一块电池，在湖北新“长”出百亿元产值- 湖北日报新闻客户端 湖北日报传媒集团",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1XTnZyTkV5N1ZmYzZNakZaVHVjN2lPbGg5c3I0amxTUW82TnJJeXFfZE9oaFQ2OTZ2Y2Z3QjV1U05keHdpb1VoaklFcWJvaGFGQ1hsY2NxSVQ?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "解码2026湖北经济期中卷︱一块电池，在湖北新“长”出百亿元"
+      }
+    },
+    {
+      "id": "gn-l4ulk7",
+      "title": "6月新型储能新增装机4.37GW/11.54GWh！山东功率第一，西藏能量第一 - cnesa.org",
+      "summary": "6月新型储能新增装机4.37GW/11.54GWh！山东功率第一，西藏能量第一 cnesa.org",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Zcm5JeHQ1WURJNmpVaVNOUmRFNC1kbnZja1kzUFBuZkJfREdfSEVGMkFHYkFjXzJGS3o4WGFVNkFucC1CU2p2MmN2ZTNxTEdKVWRIbi0tV3ZFbkRObktDaTUyRmQ0N3NHc2JrVVhkaw?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "6月新型储能新增装机4.37GW/11.54GWh！山东功率"
+      }
+    },
+    {
+      "id": "gn-lkaip7",
+      "title": "中联重科成立新能源科技公司，锂电氢能多元协同打造高端装备绿色化范本 - 证券时报",
+      "summary": "中联重科成立新能源科技公司，锂电氢能多元协同打造高端装备绿色化范本 证券时报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBhOTIzZVJQcHY5aFBXbnB4QWRNMlZiRm1iYnM5eklESnFFNHpnWHFJaml1UThIenhmVmVOTlJsQnRXYXpKTUl4cm4xN2d2WFpZNFQ1SVdUY3VSMXF0?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "中联重科成立新能源科技公司，锂电氢能多元协同打造高端装备绿色"
+      }
+    },
+    {
+      "id": "rss-blkuvj",
+      "title": "氪星晚报｜SpaceX将“星舰”第13次试飞推迟至7月23日；马斯克称特斯拉FSD会模仿驾驶风格；我国人形机器人整机产品超全球半数",
+      "summary": "大公司： 摩根士丹利成为华尔街AI债务交易头号银行 摩根士丹利已崛起为华尔街构建人工智能（AI）繁荣背后融资架构的主导力量，设计了新的债务和股权融资模式，为数据中心的大规模建设输送数百亿美元资金。据业内高管称，自去年以来，该行已成为主导顾问，牵头了规模最大、最具创新性的AI基础设施融资交易。 三星电子晶圆代工正评估将美国泰勒厂的初期生产规模扩大至原计划的2倍 据报道，三星电子晶圆代工正评估将美国泰勒厂的初期生产规模扩大至原计划的2倍。 马斯克称特斯拉FSD会模仿驾驶风格 7月20日，埃隆·马斯克已确认特斯拉FSD（Full Self-Driving）软件正在从过去的“通用型、一套方案适用于所有",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3903710346790535?f=rss",
+      "publishedAt": "2026-07-20",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "美国",
+        "涉及企业": [
+          "特斯拉"
+        ],
+        "主要事件": "氪星晚报｜SpaceX将“星舰”第13次试飞推迟至7月23日"
+      }
+    },
     {
       "id": "gn-cdonh",
       "title": "龙岩上杭：十年筑一链 - 央视网",
@@ -168,6 +499,41 @@
       }
     },
     {
+      "id": "gn-43pow",
+      "title": "广汽新能源转型中的全固态电池技术进展如何？ - 新浪网",
+      "summary": "广汽新能源转型中的全固态电池技术进展如何？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5sQlNEX1lkdWpka1ZTYmVaZnMzemh1OGZCQXRTU0F5LVBBcGhKdGxKZDJ5ekxRV1VWalhVZS1oWXdPdGx3TGpMdjZURU5MUjJocXZsbTNCODZFM1NzaWktQzhKSUpMSTI4ZFpfV29EdzVqZw?oc=5",
+      "publishedAt": "2026-07-19",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "广汽"
+        ],
+        "主要事件": "广汽新能源转型中的全固态电池技术进展如何？ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-di2fs",
+      "title": "新能源汽车电池寿命多久？实测数据告诉你8年不是终点+FAQ - 新浪网",
+      "summary": "新能源汽车电池寿命多久？实测数据告诉你8年不是终点+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9hWFBlcEowcmhfN19vU0Z4T18zMnVCQkNBM2YxRnRLLUN0SzlFc0J0VGxrOGtQaTh5UUpoTS1DSkxXNWE0QTZPbUI1TFZUU2w4RndORXNBZ1F5emZmTHZJek9ka2xqSFhjR09KZm5sNnlmQQ?oc=5",
+      "publishedAt": "2026-07-19",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车电池寿命多久？实测数据告诉你8年不是终点+FAQ "
+      }
+    },
+    {
       "id": "gn-9f8ql4",
       "title": "钠离子电池、固态电池、燃料电池在未来的市场前景如何？ - 新浪汽车",
       "summary": "钠离子电池、固态电池、燃料电池在未来的市场前景如何？ 新浪汽车",
@@ -310,6 +676,22 @@
           "小米"
         ],
         "主要事件": "小米汽车回应澎程为何要用 76kWh 大电池，称源于做增程产"
+      }
+    },
+    {
+      "id": "gn-tra1xk",
+      "title": "240亿元！磷酸铁锂龙头，大投资 - 21财经",
+      "summary": "240亿元！磷酸铁锂龙头，大投资 21财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVUFYeVltbGV1Z0cwYVJHZzhMY0pMcHpVcGdEV1ZIOVBvUU1EcDZzN3Z4ZGlDbVFSZmtYeVBfTUJ4NEczNFVadUhhM2otN291Nk5fUmlBZHhsaUdEeGxGNTlsSU9LdVBPa2NseGNsODRSejNkRzZXaVZwTWpxNDlyV0swRFdEVk94UlRUaw?oc=5",
+      "publishedAt": "2026-07-18",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "240亿元！磷酸铁锂龙头，大投资 - 21财经"
       }
     },
     {
@@ -566,6 +948,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "OPPO 新机 PMW110 入网，疑似归属 Find X1"
+      }
+    },
+    {
+      "id": "gn-elhj9a",
+      "title": "5年新增80万吨磷酸铁锂产能 湖南裕能拟斥资240亿元投建矿化一体产业项目 | 速读公告 - 东方财富",
+      "summary": "5年新增80万吨磷酸铁锂产能 湖南裕能拟斥资240亿元投建矿化一体产业项目 | 速读公告 东方财富",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBub2dqOEVxNXdMenVWOHpQY2RtTjdDSHlXZzBycjNsZ0I3Y3JIdnB5VFN6Nld2Rmp2UWNZQm1XLXBRbWNwVkptMGU2WHpUMU54LUdVMXp5MnFCZVliM3BhYg?oc=5",
+      "publishedAt": "2026-07-17",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "5年新增80万吨磷酸铁锂产能 湖南裕能拟斥资240亿元投建矿"
       }
     },
     {
