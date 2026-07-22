@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-21T04:56:02.649Z",
+  "lastUpdated": "2026-07-22T04:55:41.334Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,426 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-4jis77",
+      "title": "1元/Wh的固态电池，国轩高科做到了——金石全固态+G垣智慧电池双线出击链博会 - 电子工程专辑",
+      "summary": "1元/Wh的固态电池，国轩高科做到了——金石全固态+G垣智慧电池双线出击链博会 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44NUdyaG1yMVp5ckJJaFAxQUtzVGJaRGpkckhNdU1nRVdjcnRCU1U3aFhRZG5ORHQ1bmNKSnZjNUJoaHFONlE2NUtQcE02UnN1Y1Br?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "国轩高科"
+        ],
+        "主要事件": "1元/Wh的固态电池，国轩高科做到了——金石全固态+G垣智慧"
+      }
+    },
+    {
+      "id": "gn-c53vwv",
+      "title": "COMSOL 出席全国储能工程大会，以多物理场仿真技术助力能源行业发展 - 中华网生活",
+      "summary": "COMSOL 出席全国储能工程大会，以多物理场仿真技术助力能源行业发展 中华网生活",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBQS3ZUeEJUblREbUNCNzVxRzV5NlhRUVpLdTkyMmJKbDE5cFVkdzN3SFhTaTJwd0F5Zk1NMnByYTVIN293V2pJNXg1b0c3Q0NmWjVwYkZYTEpkYzR1RXF5UDdsbw?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "COMSOL 出席全国储能工程大会，以多物理场仿真技术助力能"
+      }
+    },
+    {
+      "id": "gn-iug6xf",
+      "title": "油车还能坚挺多久？中科院士陈军：已研发出400瓦时-Kg固态电池 - 手机网易网",
+      "summary": "油车还能坚挺多久？中科院士陈军：已研发出400瓦时-Kg固态电池 手机网易网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FRmo4LWJSaGYxbmlOOS1VZjRpM1RWcW1YZnY3YWwyVjV4b2lSanEzbG1qNS1SQXNUZ29JeUotcE1MV0RlT0psbUpyeTB5R1NVMWYwTHlCT0ozTFBhbTBPT1R3?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "油车还能坚挺多久？中科院士陈军：已研发出400瓦时-Kg固态"
+      }
+    },
+    {
+      "id": "gn-1r1pla",
+      "title": "工信部点赞比亚迪闪充！真正的技术竞争，不该靠自媒体带节奏！ - 新浪网",
+      "summary": "工信部点赞比亚迪闪充！真正的技术竞争，不该靠自媒体带节奏！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9FZURBRjVZaDZOajVOdzVlT2VpdjJ3aEo3WHZTXzNSd0lVNTUwbWV0RU55VmJhWFR5eU8xSnN1eVRkdEU4UmZPbDZfclFoTWRFb3dKY01LNWNKMkdZYXlDRmRka0M4UnlBMnJkWWhVOGpKYzVxYjhIUXo3QkRVdw?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "工信部点赞比亚迪闪充！真正的技术竞争，不该靠自媒体带节奏！ "
+      }
+    },
+    {
+      "id": "gn-yp5vs6",
+      "title": "小鹏汽车和大众汽车的超快充技术有哪些优势？ - 新浪网",
+      "summary": "小鹏汽车和大众汽车的超快充技术有哪些优势？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5LeHNCM2RmMG9OdUFTai10R1hweTNCLXItZkNFNTlqQVhxNVcyckhRX1ByeDVCS3k0VHBUeW1wRUJnVW5QWXdWWk5qUVN6c0gxSFU1bEx1MmxKalJjcjY2aTZQM3lKRzU5VnZINHNEa21SZw?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "大众",
+          "小鹏"
+        ],
+        "主要事件": "小鹏汽车和大众汽车的超快充技术有哪些优势？ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-r7x7f0",
+      "title": "智利官宣2026电力招标，全面放开新能源储能！ - 碳索储能网",
+      "summary": "智利官宣2026电力招标，全面放开新能源储能！ 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE85Ym9NN3ltcTB5a21NZGtNbDlybllleFdXcFA1bkEzSkxMTF9Vc1BIZUVGWTY1bFYxMlQyci0xd0xlVkxJc1ZCNEpPa1pWeGhMS0hkNXN3anlRRUtYN19mNw?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "智利官宣2026电力招标，全面放开新能源储能！ - 碳索储能"
+      }
+    },
+    {
+      "id": "gn-nsgxo9",
+      "title": "一块电池，如何在湖北新“长”出百亿元产值？ - 荆楚网",
+      "summary": "一块电池，如何在湖北新“长”出百亿元产值？ 荆楚网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE4wMDVncG5ESkQxNC11OV82RUljWW84M3NyNXNWZzdmamtDbUFHbWpNcGtERDQwakNYQW1RRWlRRjNjZXhvcUNJMTN4ZUNXM0p5TUtWZjVRek5CQ2NKbTlBMTRvRE5wMXhsZFNTaFJJN19Bdw?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "一块电池，如何在湖北新“长”出百亿元产值？ - 荆楚网"
+      }
+    },
+    {
+      "id": "gn-i89fpy",
+      "title": "山东发布新能源场景建设方案，首批67个项目同步落地 - 国际风力发电网",
+      "summary": "山东发布新能源场景建设方案，首批67个项目同步落地 国际风力发电网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1LTVJBVFBKNTkydVFuN0xPc19ZS1d4UzFPdkp2NzhfbWt5cG9iMWZjajJDZFdVWW1JOURUQUQteW1CVEQzQi1LbXpqVUxKWnd5SDJZZEVYZzlWUQ?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "山东发布新能源场景建设方案，首批67个项目同步落地 - 国际"
+      }
+    },
+    {
+      "id": "gn-896oll",
+      "title": "大幅减亏近九成！这家巨头储能业务“扛大旗” - 世纪新能源网",
+      "summary": "大幅减亏近九成！这家巨头储能业务“扛大旗” 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBLenN2V3BxbVlPeXUydDJ2MkdKR0RwREpnV3ZJOTVWVElSd1RHVEJVNmpwWjhzaGkySnNNUlZockpiWlJvMlBMRmNUUEpVcFR3UjhCOA?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "大幅减亏近九成！这家巨头储能业务“扛大旗” - 世纪新能源网"
+      }
+    },
+    {
+      "id": "rss-jj19e2",
+      "title": "中石油在延安成立新能源公司，注册资本9000万",
+      "summary": "36氪获悉，天眼查App显示，近日，中石油长庆（志丹县）新能源有限公司成立，法定代表人为丁阳，注册资本9000万人民币，经营范围含发电技术服务、太阳能发电技术服务、风力发电技术服务、储能技术服务、站用加氢及储氢设施销售、新兴能源技术研发等。股东信息显示，该公司由中石油太湖（北京）投资有限公司全资持股。",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/newsflashes/3906308761572488?f=rss",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "北京",
+        "主要事件": "中石油在延安成立新能源公司，注册资本9000万"
+      }
+    },
+    {
+      "id": "rss-lqwjov",
+      "title": "小米旗下瀚星创投入股星利行新能源科技公司",
+      "summary": "36氪获悉，天眼查App显示，近日，浙江星利行新能源科技有限公司发生工商变更，新增小米旗下瀚星创业投资有限公司为股东，同时，注册资本由1亿人民币增至1.3亿人民币。该公司成立于2026年2月，法定代表人为沈豪，经营范围含新兴能源技术研发、汽车零配件零售、新能源汽车电附件销售等，现由浙江金瑞汽车销售服务有限公司及上述新增股东共同持股。",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/newsflashes/3906278408934531?f=rss",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米旗下瀚星创投入股星利行新能源科技公司"
+      }
+    },
+    {
+      "id": "rss-nlst3b",
+      "title": "三星首款 AI 眼镜 Galaxy Glasses 曝光：骁龙 AR1 Gen1 芯片，满电续航 9 小时",
+      "summary": "IT之家 7 月 22 日消息，德国科技媒体 WinFuture 昨日（7 月 21 日）发布博文，报道称在 Galaxy Unpacked 活动中，三星将会公布其首款 AI 智能眼镜细节。消息称这款智能眼镜上市后名为 Galaxy Glasses，由三星、谷歌、沃比帕克（Warby Parker，时尚品牌）和镜特梦（Gentle Monster，主营太阳镜、光学眼镜及眼镜夹片）合作开发。芯片方面，三星 Galaxy Glasses 将配备高通骁龙 AR1 Gen1 芯片，该芯片配有 4 个 Arm 核心，最高主频 1.9GHz，支持 60Hz 刷新率下显示输出 1280 x 1280 像素，",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/993.htm",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "德国",
+        "主要事件": "三星首款 AI 眼镜 Galaxy Glasses 曝光：骁"
+      }
+    },
+    {
+      "id": "rss-lbbo35",
+      "title": "中汽协付炳锋：车型同质化问题越发严重，车企应回归理性竞争",
+      "summary": "IT之家 7 月 22 日消息，在今天（22 日）的 2026 中国汽车论坛上，中国汽车工业协会副会长兼秘书长付炳锋表示，当前全球汽车产业格局深度调整，发展环境更加复杂多变，汽车行业既面临低碳新规、地缘政治带来的外部冲击，也遭受国内竞争加剧、关键核心技术亟待突破、产能结构性调整等内部考验。付炳锋称，这些转型过程中暴露出来的新问题、新表现、新挑战，已成为新时期汽车行业亟待突破的问题。今年上半年，超过 500 款新车投向市场，多数车企追求“大而全”的产品布局，车型同质化问题愈发严重，规划战略目标激进，引发行业普遍的经营焦虑。付炳锋呼吁，企业竞争要守住底线、回归理性，要深耕差异化赛道，找准自身定位，",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/948.htm",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "中汽协付炳锋：车型同质化问题越发严重，车企应回归理性竞争"
+      }
+    },
+    {
+      "id": "rss-l7h3xm",
+      "title": "“行走的 iMac”：苹果专利探索便携方案，可拆卸扩展坞 / 折叠式提手",
+      "summary": "IT之家 7 月 22 日消息，科技媒体 AppleInsider 昨日（7 月 21 日）发布博文，挖掘发现苹果最新获批的设计专利，勾勒了未来的 iMac 设计，配备可拆卸扩展坞 / 折叠式提手。该专利编号 US-12687885-B2，名为《低轮廓计算机支架》，苹果提出了多种让 iMac 更易于移动的方法。其中一类方案就是为 iMac 设计功能扩展坞。这一扩展坞除支撑屏幕外，可集成设备充电器、线缆管理组件或计算机核心硬件。IT之家附上相关图片如下：苹果甚至设想支架成为完整电脑，屏幕仅作为显示器，两者通过类似 iPad 的智能连接器进行数据和电力传输。专利还设想了另一种精简方案，在 iMac",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/941.htm",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“行走的 iMac”：苹果专利探索便携方案，可拆卸扩展坞 /"
+      }
+    },
+    {
+      "id": "rss-ktq93l",
+      "title": "小米首款新国标移动电源全渠道开售：20000mAh 22.5W 充电宝自带线，149 元",
+      "summary": "IT之家 7 月 22 日消息，小米首款新国标移动电源小米充电宝自带线 20000 22.5W 今日全渠道开售（部分渠道早在 6 月已经开售），售价 149 元。京东小米（MI）【按新国标设计】小米（MI）小米自带线充电宝 20000 22.5W 2026 版 深灰色大容量出行便捷可充 iPad149 元直达链接2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。数码补贴：点此领券手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。家电补贴：点此领券多类家电支持 8.5 折政府补贴，单品至高补贴 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/937.htm",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米首款新国标移动电源全渠道开售：20000mAh 22.5"
+      }
+    },
+    {
+      "id": "rss-jsw1ce",
+      "title": "全新深蓝 S05 官宣，激光雷达、智驾小蓝灯上车",
+      "summary": "IT之家 7 月 22 日消息，今天上午，长安深蓝汽车宣布：全新深蓝 S05 即将登场。新车定位“全球时尚激光智能 SUV”，预告图显示，新车将配备激光雷达、智驾小蓝灯，智能辅助驾驶预计将迎来明显升级。除此之外，官方暂未披露新车的详细配置信息。IT之家汇总现款深蓝 S05 主要信息如下：深蓝 S05 长宽高分别为 4620 / 1900 / 1600mm，轴距 2880mm，提供流光银、星辰蓝、月晖白、苍穹黑、荧月灰五款配色。深蓝 S05 提供纯电动和增程式动力两种版本，其中增程款有着 4.35L / 100km 的馈电油耗，200km 的纯电续航里程（CLTC）以及 1234km 的综合续航",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/979/912.htm",
+      "publishedAt": "2026-07-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "长安"
+        ],
+        "主要事件": "全新深蓝 S05 官宣，激光雷达、智驾小蓝灯上车"
+      }
+    },
+    {
+      "id": "gn-l6998",
+      "title": "湖南裕能拟斥资240亿元扩产 前两日刚宣布涨价2000元/吨 - 东方财富",
+      "summary": "湖南裕能拟斥资240亿元扩产 前两日刚宣布涨价2000元/吨 东方财富",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IMF9MeFdHYTVVZFhCQlBZYV81aHRESmt1QU0xeTJ3VEdQaTdFTC1RTFZwRG9LVVJ5cjI3ZmMzNGxtd0pZX1FpMzdaa3lIakthUlNZdzRWcGs0b1JQdXlSQkdZcmF2QQ?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "湖南裕能拟斥资240亿元扩产 前两日刚宣布涨价2000元/吨"
+      }
+    },
+    {
+      "id": "gn-7ihdr4",
+      "title": "新能源汽车的电池寿命一般有多长？ - 新浪网",
+      "summary": "新能源汽车的电池寿命一般有多长？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHeGxQcDhUWFpBbTdMY1pLWS1vRkUyZ1hFZjNCRXJTZjV3OU0yWmYyWWMzTEJFVWYzNDd1TXp5Nl91Z1d0ZVUzOFpQcWNJb3FuM0pmVFlSSTZ1Y25fYThNRkZvZ2h1QzFxUGlMc3lRVWlYUQ?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车的电池寿命一般有多长？ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-7grehb",
+      "title": "12小时2.2万台！蜂巢能源磷酸铁锂方壳电池助长城H10成“方盒子”新王 - 电池中国网",
+      "summary": "12小时2.2万台！蜂巢能源磷酸铁锂方壳电池助长城H10成“方盒子”新王 电池中国网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xeFNLMzE0T3h5OEpBSHBVRUc4RTRmOXFZak9sTnNRQzI0VWJyX2hmd1N5THFoSHJFaWlhajR2aDRxUU5BOFJHOTNUTGY1M2ZvcjQ2TnpR?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "蜂巢能源"
+        ],
+        "主要事件": "12小时2.2万台！蜂巢能源磷酸铁锂方壳电池助长城H10成“"
+      }
+    },
+    {
+      "id": "gn-g0olie",
+      "title": "比亚迪第二代刀片电池及闪充技术获肯定 - 中国财富网",
+      "summary": "比亚迪第二代刀片电池及闪充技术获肯定 中国财富网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5kZkdsQ2k0RFF5RGNoWGs4eHVSbHgzYVlVUjBTVzdGQ1ZzVzVMeWtJX0Jxd0VCWlNYMU9TZVhHNERISkRIT3p5VGF6bWR3Y0s5SGtTSlFjclpwZE1EaGtJRzNBVHF4X1BzS0RyMkhR?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪第二代刀片电池及闪充技术获肯定 - 中国财富网"
+      }
+    },
+    {
+      "id": "gn-75owkk",
+      "title": "跟长征十号乙并列成为大国重器，比亚迪闪充技术这牌面服不？ - 汽车之家",
+      "summary": "跟长征十号乙并列成为大国重器，比亚迪闪充技术这牌面服不？ 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5kWDhrNGxBM3hBUmVoLThJeG1ib3Jhb2h4T212R3VUbkItazBnZUprLUt6ZHVTWEJ1NGx1aFJwekVmWldTemVnOHpUTVVGN2ZzM3R1X1dyd1k3NVE?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "跟长征十号乙并列成为大国重器，比亚迪闪充技术这牌面服不？ -"
+      }
+    },
+    {
+      "id": "gn-58r8an",
+      "title": "新能源汽车维修迎新国标，8月1日起实施，电车开始有统一安全底线 - Sohu",
+      "summary": "新能源汽车维修迎新国标，8月1日起实施，电车开始有统一安全底线 Sohu",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOajZ0OU9uNU1RN0NSN0FFa2RXSHV5YVFXYm5jUkY0QWdKRWVnWFU5N09pMDhzbGZSdGdJSUFsOGF2S0VKamVGWVpKSFFEbWhqc0pva0NtaFpPS1NEYXp3cnpKczBMUC1zaHh2ZGtPd05qMGd0THF0ZjBWdWVIVVVrMGE3RV9TZDFqYk96aQ?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "新能源汽车维修迎新国标，8月1日起实施，电车开始有统一安全底"
+      }
+    },
+    {
+      "id": "gn-38nsbf",
+      "title": "实现全产业链集群化发展，湖南新能源对非产业联盟成立 - 华声在线",
+      "summary": "实现全产业链集群化发展，湖南新能源对非产业联盟成立 华声在线",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5PYUZxMGgtS1JheWd2M29hU0FNa2Jsc1NEYWR5Zl9hS3VrU0t6a281MU9qMHo3MExveTVremtQaWRJTnpPN1R5M3hxNVZ0T2lsV1ROM1JkNjhKelJSUE84?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "实现全产业链集群化发展，湖南新能源对非产业联盟成立 - 华声"
+      }
+    },
+    {
+      "id": "gn-2kpqzu",
+      "title": "厦门造氢能客车加速落地 - 投资厦门",
+      "summary": "厦门造氢能客车加速落地 投资厦门",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE52a3FKTTJsSE00NXVXMW5pbGlYV0dWdkRuZVRsS2VtX0xOV0xXajlORFpCVU1zTnZmQktINGVJWmJzSDBEbGltN3pONXZPOXc5RTZCd05JWkZHNzIwR0E?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "厦门造氢能客车加速落地 - 投资厦门"
+      }
+    },
+    {
+      "id": "rss-egqo50",
+      "title": "圆桌论坛：夏天周而复始·VC3.0| 36氪WAVES2026新浪潮",
+      "summary": "“2026年，创投圈的浪潮再次翻涌：AI从技术概念走进产业深水区，硬科技创业从“小众赛道” 变成“主流共识”，年轻的创业者们正在用代码和双手，重新定义中国创新的未来坐标。 每一年，由36氪 · 暗涌主办的WAVES大会，都是中国创投圈的年度风向标。今年的 WAVES 2026以“今年盛夏”为主题，落地广州番禺良仓新造创意园，在两天的时间里，我们汇聚了顶级投资人、产业领袖、新锐创业者，用14场深度圆桌、数十场独立演讲，拆解 AI、硬科技、出海、医疗等核心赛道的底层逻辑，见证那些“少数人” 的坚持，如何汇聚成改变行业的浪潮。” 冯大刚｜36氪CEO（圆桌主持人） 王啸｜九合创投 创始人 刘缨｜软银",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3905169127114368?f=rss",
+      "publishedAt": "2026-07-21",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "广州、中国",
+        "主要事件": "圆桌论坛：夏天周而复始·VC3.0| 36氪WAVES202"
+      }
+    },
     {
       "id": "gn-kjdxvo",
       "title": "又一潜在独角兽落子蓉城！ - 搜狐网",
