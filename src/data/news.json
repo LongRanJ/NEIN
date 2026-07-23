@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-22T04:55:41.334Z",
+  "lastUpdated": "2026-07-23T05:12:51.920Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,305 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-e4c6w8",
+      "title": "240亿！贵州瓮安建新能源电池全产业链 - 见道网",
+      "summary": "240亿！贵州瓮安建新能源电池全产业链 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBib0l5bktUQnFBXzlMVFpGVlpXdzFab1JiSVRQb0pCZEZGUDgzWDZpMnZJclB2bWpiV29PcmYySExSNzhMWElzd0NiRWNaVTVEWl81Vw?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "240亿！贵州瓮安建新能源电池全产业链 - 见道网"
+      }
+    },
+    {
+      "id": "gn-2vblgb",
+      "title": "15亿元！含3GWh固态电池包制造！卫蓝新能源甘肃庆阳项目开建 - 新浪网",
+      "summary": "15亿元！含3GWh固态电池包制造！卫蓝新能源甘肃庆阳项目开建 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQld4c3FLZm9TR2toYW9zdWt6a09MLXp1Q2lKWWRiZkdYeWxyTjJrZ3R5RVVPV2hWN2NPQWl1WDNGbVlISS1namlJWkNFUll5Qko0WWlUOWNYSE5SVXAzLUpiQ2lSdUdFZjJuZjNVUTZyRU5URms4Tmo5cllPMWxwdE9mX19YV2NnTVQ2YjEzdHU0OEI1dzFPVHNJSzc5b2p1cUtiQ0R5ZXF4aGwtaElxTGlhWFVFWkRPNHlHQmNmWU85NVdGdFFNRjk4UkpMeGNlZGZhRTNOU1BIdG44?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "15亿元！含3GWh固态电池包制造！卫蓝新能源甘肃庆阳项目开"
+      }
+    },
+    {
+      "id": "gn-9rop7i",
+      "title": "布局固态电池+AI储能，卫蓝新能源旗下公司揭牌 - 粉体网",
+      "summary": "布局固态电池+AI储能，卫蓝新能源旗下公司揭牌 粉体网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9jVVBCVFBET1A3R19UZTZLQlhja1M2SFdCSm96WkJoVnhtb2FtcUdqeW8wSk9tVFhHUHNWOXloZ1JiU1ZXY2pyQWdmNS1yNHhL?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "布局固态电池+AI储能，卫蓝新能源旗下公司揭牌 - 粉体网"
+      }
+    },
+    {
+      "id": "gn-5p36xp",
+      "title": "国新办发布会点赞：比亚迪这场技术突破，为什么是国家级认可？ - 手机网易网",
+      "summary": "国新办发布会点赞：比亚迪这场技术突破，为什么是国家级认可？ 手机网易网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE03RXVwZmdLd0plWDhUUk9nTk5CSE1qNDc5N3RHUWFvU1lwend4bS1xX2M2Z0VOb3pCMkswbWo5VUQ0S3lxY3liZUliN3dETjY2T3gzV1ZNNWU3QmdqQXYtU2JB?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "国新办发布会点赞：比亚迪这场技术突破，为什么是国家级认可？ "
+      }
+    },
+    {
+      "id": "gn-wwdu2q",
+      "title": "总投资21亿元项目落地石总场北泉镇！钧达储能项目今日正式破土动工 - 碳索储能网",
+      "summary": "总投资21亿元项目落地石总场北泉镇！钧达储能项目今日正式破土动工 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9Pdms2Q0tyVkNkRmhFRU5Na05wR2d3dzdjQmhTT01pVDh2b05YZE14T0NVbjVvbDFnTW9uZGZwZ1l3VlREZEkwVkRLampGNEZyOHMwcUhaY3Nxdy1laU1qQQ?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "储能"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "总投资21亿元项目落地石总场北泉镇！钧达储能项目今日正式破土"
+      }
+    },
+    {
+      "id": "gn-5l7w4o",
+      "title": "多条限高、被执行超亿元，雄川氢能深陷债务危机！ - 世纪新能源网",
+      "summary": "多条限高、被执行超亿元，雄川氢能深陷债务危机！ 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBmWm1DN0FXV2dSc2NRMndNQzE3UU1ybFF1RlVOTXVoVzI2Zi1DWVZMOUNtMFlPZGgwOFNFRjdXQVd5UWZNM3M1RFVwdlNiSkh4SWZSOA?oc=5",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "多条限高、被执行超亿元，雄川氢能深陷债务危机！ - 世纪新能"
+      }
+    },
+    {
+      "id": "rss-f9b0e9",
+      "title": "自驾新能源汽车跨境遭远程锁车超 30 小时，车主称事前未提醒",
+      "summary": "IT之家 7 月 23 日消息，有网友近日在社交平台发布视频称，自己在跨境自驾的途中，其新能源汽车被厂家远程锁车机系统，车辆近乎沦为仅能开动的“半废品”，旅途行程受阻。据封面新闻 7 月 22 日报道，车主刘先生表示，自己汽车的车机被厂家远程锁了 30 多个小时，期间，车辆智能功能瘫痪，甚至无法解锁储物箱拿个人资料证件及加油。刘先生表示，自己原计划利用暑假假期，带孩子自驾穿越中亚，并游历欧洲多国。可刚驶出新疆霍尔果斯口岸进入哈萨克斯坦第二天，即 7 月 16 日，自己新能源汽车的车机系统，就被厂家远程锁住。刘先生还称，自己购车仅半年，当初正是看中了车辆外观和丰富的智能功能。出发前，他曾到门店进",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/980/546.htm",
+      "publishedAt": "2026-07-23",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "欧洲",
+        "主要事件": "自驾新能源汽车跨境遭远程锁车超 30 小时，车主称事前未提醒"
+      }
+    },
+    {
+      "id": "rss-11yckf",
+      "title": "攻击鲨预告 RS6 ULTRA 鼠标：PAW3955 传感器，磁吸换电系统",
+      "summary": "IT之家 7 月 23 日消息，ATTACK SHARK（攻击鲨）美国当地时间 21 日宣布将推出 RS6 ULTRA 鼠标。这一型号搭载磁吸式热插拔电池系统，8kHz 高回报率“鲨鱼鳍”2.4GHz 无线信号接收器兼具备用电池充电功能。RS6 ULTRA 基于 Nordic nRF54L15 主控和原相 PAW3955 传感器，外壳为挖孔复合碳纤维材质，配备 CNC 金属滚轮和阳极氧化组件。其拥有可调节传感器定位系统，按键延迟低至 0.168mm，1kHz 回报率下无线续航可达 800hr。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/980/456.htm",
+      "publishedAt": "2026-07-23",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "美国",
+        "主要事件": "攻击鲨预告 RS6 ULTRA 鼠标：PAW3955 传感器"
+      }
+    },
+    {
+      "id": "rss-cmq0t",
+      "title": "九号推出 Mz3 系列新国标电自：12 英寸满盘电机，RideyFUN 智驾系统",
+      "summary": "IT之家 7 月 23 日消息，九号公司今日宣布，全新九号 Mz3 系列电动自行车 7 月 23 日 10:00 开启预约，价格及详细参数暂未公布。京东九号（Ninebot）【新国标电自】Mz3 30 1 分钱预约 0.01 元直达链接2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。数码补贴：点此领券手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。家电补贴：点此领券多类家电支持 8.5 折政府补贴，单品至高补贴 1500 元。欢迎下载最会买 App - 好货好价，高额返利，1 毛钱也能提现",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/980/427.htm",
+      "publishedAt": "2026-07-23",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "九号推出 Mz3 系列新国标电自：12 英寸满盘电机，Rid"
+      }
+    },
+    {
+      "id": "rss-19mdmh",
+      "title": "诺基亚 Lumia 复刻：HMD Touch AI 小触屏手机发布，469 元",
+      "summary": "IT之家 7 月 23 日消息，诺基亚手机官方公众号今日宣布推出一款诺基亚 Lumia 复刻机型 —— HMD Touch AI 小触屏，首发价 469 元，现已开启预售。这款手机的外观复刻了经典的 Lumia 设计，可选多彩配色，支持 4G 全网通，搭载豆包 AI 大模型和纯净系统防沉迷功能，还可以用支付宝。这款手机搭载 3.2 英寸触摸屏，前后 200 万像素摄像头，宣称“自带复古 CCD 氛围感”，内置 1950mAh 电池，支持双卡双待 4G 全网通。京东 HMD Touch AI 小触屏 469 元直达链接",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/980/409.htm",
+      "publishedAt": "2026-07-23",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "诺基亚 Lumia 复刻：HMD Touch AI 小触屏手"
+      }
+    },
+    {
+      "id": "rss-cowhgl",
+      "title": "特斯拉 2026 年 Q2 详细报告：营收同比增长 26%，马斯克称正打造史无前例的先进基础设施建设能力",
+      "summary": "IT之家 7 月 23 日消息，特斯拉今日发布 2026 年第二季度财报。本季度特斯拉全球共生产纯电动车超 45.1 万辆，同比增长约 10%；交付量超 48 万辆，同比增长约 25%。Model Y 在多个市场蝉联销冠；上海超级工厂 6 月交付电动车超 8.9 万辆，同比增长 24.4%，创年内新高；上半年共交付近 46.8 万辆，同比增长 28.4%。得益于车辆交付量增加与其他业务增长，特斯拉第二季度总营收同比增长 26%，达到 282 亿美元（IT之家注：现汇率约合 1912.39 亿元人民币）。截至第二季度，特斯拉辅助驾驶全球付费用户已达 148 万，北美市场辅助驾驶选装率创历史新高，",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/980/375.htm",
+      "publishedAt": "2026-07-23",
+      "keywords": [
+        "磷酸铁锂",
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "上海、北美",
+        "涉及企业": [
+          "特斯拉"
+        ],
+        "主要事件": "特斯拉 2026 年 Q2 详细报告：营收同比增长 26%，"
+      }
+    },
+    {
+      "id": "gn-o3f32f",
+      "title": "宁德时代比亚迪奇瑞广汽押注固态电池谁的路线更靠谱 - 汽车之家",
+      "summary": "宁德时代比亚迪奇瑞广汽押注固态电池谁的路线更靠谱 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92U053UTVYUWVuMW1VVXRjcmdWWFpvX3NFNzAybkFEVXlGNllQYVhFNUVfM0VnNUVoWnAxeHZxMjYza2RTTGJra1FabE9SNl9fU0tEdHJncldoelE?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "比亚迪",
+          "广汽"
+        ],
+        "主要事件": "宁德时代比亚迪奇瑞广汽押注固态电池谁的路线更靠谱 - 汽车之"
+      }
+    },
+    {
+      "id": "gn-vrl5tc",
+      "title": "埃安、中创新航回应存争议，戳破了新能源事故责权划分的多少隐情？ - 手机网易网",
+      "summary": "埃安、中创新航回应存争议，戳破了新能源事故责权划分的多少隐情？ 手机网易网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LRFVSTGZtTDFGNmtIcDhoLU5HT19jbUtkOWR2cnhHVjY1OTNBRzFfamVYS1BXSXduem5ZX19fWlJndWJIQmxCcGtjMDJxQnNXODZPdUJ0TWQ4SWUyN3RxZHJ3?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "中创新航"
+        ],
+        "主要事件": "埃安、中创新航回应存争议，戳破了新能源事故责权划分的多少隐情"
+      }
+    },
+    {
+      "id": "gn-78ywlf",
+      "title": "《新能源决策参考》！ - 新浪网",
+      "summary": "《新能源决策参考》！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GQkx3NkREVTdHeGFCNjAyMFpRampBbEpoTkt2RmFCbmtWTzFtX0RaSTdYdktwLWpmZ3hQSjJKdWVGdEc2LVpEUDkyOTNsQXhHT0hrYVF0c3FnZEU1YjZsdEkzc05zMzE0TDdDRDZ2U1hkQQ?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "《新能源决策参考》！ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-eeozyu",
+      "title": "从“风光大旗”到“储能枢纽”，达茂草原崛起“储能集群” - 央广网",
+      "summary": "从“风光大旗”到“储能枢纽”，达茂草原崛起“储能集群” 央广网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xbWFPbzR3Mlo1eFNCdGJtX3UwYmhFcEN5YjZfZGpDcnVUMFRwVTNxUWd5Mk1TdTFZMHZSRHE0Q2dReGtDdXVYN2FJX3dSWmYxRzBDcDVLaXhvTW1VSTdDeDctcF80Q0VZSEE?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "从“风光大旗”到“储能枢纽”，达茂草原崛起“储能集群” - "
+      }
+    },
+    {
+      "id": "gn-bi8xrx",
+      "title": "厦门造氢能客车加速落地 用绿色智造书写发展新篇 - 中国产业发展促进会氢能分会",
+      "summary": "厦门造氢能客车加速落地 用绿色智造书写发展新篇 中国产业发展促进会氢能分会",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iNFJ5UGZhRDVBZXQ5Y0tHa3VzTkxXOWs2M3pMeWV4T283V1NqNTgwSXNVX0RONTBVaEo2SnJiaThwTExuc3g3OHNtTzhiVGN2TG1qb0V3?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "厦门造氢能客车加速落地 用绿色智造书写发展新篇 - 中国产业"
+      }
+    },
+    {
+      "id": "gn-btz9e",
+      "title": "注资3亿！中联重科构建锂电氢能全产业链闭环 - icswb.com",
+      "summary": "注资3亿！中联重科构建锂电氢能全产业链闭环 icswb.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rRFZmTXZ3VWxRUjk1a1dpVjZOcjZ0aS1zbVM2MVhBTUtGZm55TGxfTENTREVTLUNGYjVuZFNNS0FNRmxpUTVENTRFMGpCbzBNdm1zcXpLc0FBd0JHdWRjUA?oc=5",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "注资3亿！中联重科构建锂电氢能全产业链闭环 - icswb."
+      }
+    },
+    {
+      "id": "rss-2rduaw",
+      "title": "氪星晚报 ｜苹果iPhone18系列已量产；小红书回应IPO传闻：相关信息均不属实；明治将在华牛奶业务转让给澳亚集团",
+      "summary": "大公司： 小马智行与京东养车达成战略合作 36氪获悉，7月21日，小马智行与京东养车达成战略合作，双方将围绕自动驾驶车辆维保服务及供应链协同等领域展开深度合作，共同打造面向自动驾驶车队的标准化、规模化运维服务体系。这是自动驾驶公司首次与全国性汽车后市场服务平台建立全面战略合作。 益生股份：2026年上半年净利润3.08亿元，同比增长4897.29% 36氪获悉，益生股份公告，2026年上半年营收16.97亿元，同比增长28.44%；净利润3.08亿元，同比增长4897.29%。公司经董事会审议通过的利润分配预案为：以实施权益分派股权登记日的公司总股本扣除回购专用���券账户中的回购股份为基数，",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3906606931907971?f=rss",
+      "publishedAt": "2026-07-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "氪星晚报 ｜苹果iPhone18系列已量产；小红书回应IPO"
+      }
+    },
     {
       "id": "gn-4jis77",
       "title": "1元/Wh的固态电池，国轩高科做到了——金石全固态+G垣智慧电池双线出击链博会 - 电子工程专辑",
@@ -287,6 +586,39 @@
           "长安"
         ],
         "主要事件": "全新深蓝 S05 官宣，激光雷达、智驾小蓝灯上车"
+      }
+    },
+    {
+      "id": "gn-fnnaxs",
+      "title": "新能源车推荐中，磷酸铁锂和三元锂电池怎么选？ - 新浪网",
+      "summary": "新能源车推荐中，磷酸铁锂和三元锂电池怎么选？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE02V2NLVmVjQmN3VjRpY0NkOS1MaExxUjNQSUQ4c1I3WjdSc3pnNFNzV2FaOFU4LW9hLWEySFRjLTY1VXB4YThHajNBOXVGa1ZybzM2YXpHc3VfdHp0eHJjTFFRc21IVmMtOFN5azFnbGVxZw?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源车推荐中，磷酸铁锂和三元锂电池怎么选？ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-rnjv8c",
+      "title": "注资100万元！中国能建成立新能源公司，含氢能业务 - 国际氢能网",
+      "summary": "注资100万元！中国能建成立新能源公司，含氢能业务 国际氢能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1QTdBSFVPMGZNMTQ0dzZXeVJ3SWJURm56UUlHVEplaE1UZ2J5QUJoTG5BTmhIUTVmN0w2X29VUDh2RzZPbm5FTUZaN2FDdWVLazA3U193?oc=5",
+      "publishedAt": "2026-07-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "注资100万元！中国能建成立新能源公司，含氢能业务 - 国际"
       }
     },
     {
@@ -661,6 +993,40 @@
       }
     },
     {
+      "id": "gn-qjikhk",
+      "title": "拓展数据中心+储能、云储能、移动式储能等创新场景！山东发布22项新能源重点场景建设任务 - cnesa.org",
+      "summary": "拓展数据中心+储能、云储能、移动式储能等创新场景！山东发布22项新能源重点场景建设任务 cnesa.org",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBEVmtpLWtxWVJtTUx2dFYtcHl1M2xKYWxScjNGc2NzXy1SOVNMNG9NREV3N29DbUJPeXhyakR2bzE2SEtYVGo5ZFBPWTJLWlFWOFpWRVF2VDRzNDBBWllXS0tVZVl6ZWc?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "拓展数据中心+储能、云储能、移动式储能等创新场景！山东发布2"
+      }
+    },
+    {
+      "id": "gn-cz3dot",
+      "title": "中国工业新闻网 2026-07-20 19:23 - 中国工业新闻网",
+      "summary": "中国工业新闻网 2026-07-20 19:23 中国工业新闻网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJVjd6czdwUFpLT3F1ZUhYS3JMY0IweVBTUEJERDhfeGdCeU9kNVB1SDM1VGFHcW5odkcwWlVYenNIdE0wQ0xWQ3hSbDJmRHJ2YkQwel9oYlVLQ1U?oc=5",
+      "publishedAt": "2026-07-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "时间": "2026-07-20",
+        "地点": "中国",
+        "主要事件": "中国工业新闻网 2026-07-20 19:23 - 中国工"
+      }
+    },
+    {
       "id": "gn-wuaplj",
       "title": "百亿材料龙头，拟斥资240亿元扩产 - 21财经",
       "summary": "百亿材料龙头，拟斥资240亿元扩产 21财经",
@@ -916,6 +1282,22 @@
       "tags": {
         "地点": "北京、韩国",
         "主要事件": "8点1氪丨长鑫科技中签号出炉：共约770.22万个；西班牙1"
+      }
+    },
+    {
+      "id": "gn-26kngk",
+      "title": "蹲点调查｜十年筑一链- 经济 - 东南网",
+      "summary": "蹲点调查｜十年筑一链- 经济 东南网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WVHcwcExWc1B1Ylhrd0F6b0JWNGdQRnpPbkZCdUFxbGVqU3V3c2wwci05dHBBNmxseUZMblRaTl9yR3cwdy03NnI4NTR2NUZETTFhWkRzeU9FQ2xoOU5zZjdiT3dkQQ?oc=5",
+      "publishedAt": "2026-07-19",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "蹲点调查｜十年筑一链- 经济 - 东南网"
       }
     },
     {
@@ -1368,6 +1750,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "OPPO 新机 PMW110 入网，疑似归属 Find X1"
+      }
+    },
+    {
+      "id": "gn-lwor9l",
+      "title": "湖南裕能拟在贵州瓮安投资约240亿建设矿化一体新能源电池材料循环产业项目 - 观点网",
+      "summary": "湖南裕能拟在贵州瓮安投资约240亿建设矿化一体新能源电池材料循环产业项目 观点网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5BcERnYndOMFo4cld5THJfNlVBaEJmMTdPUEVKQUs2LW9Ra3p5amU2czQxRGk4MlVyRjktZ0NRMTdjYUdjZUdBMElweWtwQQ?oc=5",
+      "publishedAt": "2026-07-17",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "湖南裕能拟在贵州瓮安投资约240亿建设矿化一体新能源电池材料"
       }
     },
     {
