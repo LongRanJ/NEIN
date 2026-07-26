@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-25T04:53:43.065Z",
+  "lastUpdated": "2026-07-26T05:18:43.569Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,213 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-w2q8w1",
+      "title": "电池技术布局哪些企业有潜力？ - 搜狐网",
+      "summary": "电池技术布局哪些企业有潜力？ 搜狐网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSHROX0tiTVdGVzBKN3NyaUhjdnUyY184UlVXWDFsbFY1UXBYMjBfVENLVG8yeTZEc3Zfd2J2c3BNZWdYVW5ZX3JXQmRBb1dNZDdJckNndFlNN2ZUSmltMFVtLU8xbllyWDNrWGRmaVgwU3BjY2ZVMThiS3BNcHdBbm5hTEtnWnZY?oc=5",
+      "publishedAt": "2026-07-26",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "电池技术布局哪些企业有潜力？ - 搜狐网"
+      }
+    },
+    {
+      "id": "gn-hpo988",
+      "title": "新能源市场太卷了！钠电池量产上车，磷酸铁锂慌了？ - 网通社",
+      "summary": "新能源市场太卷了！钠电池量产上车，磷酸铁锂慌了？ 网通社",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PUUNHOE9uU2laRTgyS2VHMURGRWNmQVZzZ2dMakRoVkNQLTRzUC16dkJvek9sWjRldUNhWG1SQWttR2Z0LUJwdUJzV21OTFVnNm13RTFHSWV4Vk0?oc=5",
+      "publishedAt": "2026-07-26",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源市场太卷了！钠电池量产上车，磷酸铁锂慌了？ - 网通社"
+      }
+    },
+    {
+      "id": "gn-3o9nlx",
+      "title": "贝肯能源筹划易主，交易对手方为新能源储能领域 - 中国基金报",
+      "summary": "贝肯能源筹划易主，交易对手方为新能源储能领域 中国基金报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1vWE0wMXl1VzFock1fanZ0NnZtejNXOU9KbGV3ZzAtWjQxVXlMVVpTc2dOcDcxNmN3bHVoMnNRX1dxOTlNRjN0eFpGakhUMUJDWEJSQzE4c2F2eUFnRXl1NDFzTWRaVk80cTNmOU1FQVhaQXNTSUVZTG9n?oc=5",
+      "publishedAt": "2026-07-26",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "贝肯能源筹划易主，交易对手方为新能源储能领域 - 中国基金报"
+      }
+    },
+    {
+      "id": "rss-1vkl17",
+      "title": "vivo X300 E 手机现身中国电信终端产品库：骁龙 8 Gen5 处理器、7200mAh 电池，明日预售",
+      "summary": "IT之家 7 月 26 日消息，型号为 V2612A 的 vivo X300 E 手机已现身中国电信终端产品库，拥有 8GB+256GB、12GB+256GB、12GB+512GB 三种规格版本，产品零售价格尚未公布。相关页面显示，vivo X300 E 手机配备 6.59 英寸居中单挖孔屏（从四边等窄的设计来看，预计是 OLED 屏幕），采用直角边框设计，机身底部有卡槽 / 充电接口 / 扬声器开孔。该机还提供月光白 (白)、日光橙、辰夜黑三种配色可选。该机前置 5000 万像素镜头、后置 5000 万像素 + 5000 万像素 + 800 万像素镜头组合，AP 型号为 SM8845（骁龙 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/981/682.htm",
+      "publishedAt": "2026-07-26",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "vivo X300 E 手机现身中国电信终端产品库：骁龙 8"
+      }
+    },
+    {
+      "id": "rss-1h9xlt",
+      "title": "华为李小龙：有些手机其实不是故意锁容量不让消费者用，而是因为设计时就没考虑低压下工作",
+      "summary": "IT之家 7 月 26 日消息，关于手机电池锁容的话题今日再度引发网友热议，华为终端 BG CTO 李小龙今日发文，解释了“电池锁容”的问题：有些手机其实不是故意锁容量不让消费者用，而是因为这些手机设计时就没考虑低压下工作，而当前的高硅电池和传统石墨电池相比，在低压下仍然能释放出不少容量。手机提前关机，这些容量就用不到了。据IT之家此前报道，李小龙曾在今年 2 月发布视频，科普了“电池容量真的是标多少用多少吗？”这一问题。李小龙介绍称，关机电压的高低非常关键，好比在水杯底部装一个放水的阀门，如果关机电压高于终止电压，电池容量就无法完全被释放，而顺利倒出的“水量”就可以看作手机真正可以使用的容量",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/981/677.htm",
+      "publishedAt": "2026-07-26",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华为李小龙：有些手机其实不是故意锁容量不让消费者用，而是因为"
+      }
+    },
+    {
+      "id": "rss-lwjl",
+      "title": "比亚迪迪空间预热人形机器人，八月初亮相",
+      "summary": "IT之家 7 月 26 日消息，“比亚迪迪空间 | 郑州馆”微信公众号昨日发布人形机器人悬念海报，暗示机器人产品将于八月初首次面向公众亮相。IT之家注意到，比亚迪高层此前已对外释放过明确信号。上个月比亚迪执行副总裁李柯表示，希望未来每家比亚迪门店都能部署机器人，并能够向顾客介绍和演示车辆。李柯表示，面向家庭和服务行业的人形机器人将成为比亚迪的一个巨大市场。“我的目标是在每家门店放两三台机器人。机器人可以为顾客讲解，也可以活跃气氛，甚至能够展示和演示车辆。”李柯预计，机器人销售顾问有望在未来一两年具备实际应用条件。不过，展厅机器人虽然可以参与销售，却无法取代人类销售与顾客之间的“情感联系”。“我",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/981/642.htm",
+      "publishedAt": "2026-07-26",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪迪空间预热人形机器人，八月初亮相"
+      }
+    },
+    {
+      "id": "rss-1phqb",
+      "title": "极氪发布境外自驾车机问题优化说明：上线“跨境守护”快速解锁入口",
+      "summary": "IT之家 7 月 26 日消息，极氪今日发布《关于境外自驾车机提示及后续优化的说明》，称此次涉事用户车机相关问题已解决，并公布多项紧急优化方案，平衡车辆防盗安全与用户跨境出行体验。有极氪车主近日在社交平台发布视频称，自己在跨境自驾的途中，其新能源汽车被厂家远程锁车机系统，车辆近乎沦为仅能开动的“半废品”，车辆智能功能瘫痪，甚至无法解锁储物箱拿个人资料证件及加油，致其旅途行程受阻。对此，极氪方面此前表示，该机制为行业内普遍采用的防盗防损措施，旨在保障车主财产安全，同时符合各国法规要求及车辆进出口管理秩序，防范因走私、盗抢等导致的车辆安全风险。该保护机制不会对车辆动力、制动等核心行驶系统产生任何影",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/981/640.htm",
+      "publishedAt": "2026-07-26",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "极氪发布境外自驾车机问题优化说明：上线“跨境守护”快速解锁入"
+      }
+    },
+    {
+      "id": "rss-h3qcf",
+      "title": "消息称影石 Insta360 X6 全景相机本月末发布，实拍图曝光",
+      "summary": "IT之家 7 月 26 日消息，消息人士 Igor Bogdanov 前天在 X 平台发文，曝光影石 Insta360 X6 全景相机的包装盒渲染图。从图片中我们可以看到，这款相机在录制 8K 30 FPS 全景视频时，最长续航可达 140 分钟。支持 PureVideo 视频模式，可提升低光环境下的画质表现，配备升级版可换镜头方案。与此同时，Reddit 用户 u/FunnySushi1738 也发布了一组 Insta360 X6 的实拍照片。显示该机的机身高度略高于 GoPro Max 360，其外形相比上代产品 Insta360 X5 机身更短。此外，这款相机的电池容量是 2600mAh",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/981/633.htm",
+      "publishedAt": "2026-07-26",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "消息称影石 Insta360 X6 全景相机本月末发布，实拍"
+      }
+    },
+    {
+      "id": "gn-vzd0gf",
+      "title": "企业追投56亿元！成都邛崃这一锂电池隔膜项目产能将突破100亿平方米 - 四川新闻",
+      "summary": "企业追投56亿元！成都邛崃这一锂电池隔膜项目产能将突破100亿平方米 四川新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1VbmN4OHlNb1dLb0hyUU1iVV9acXVFY1B2dEV3N1ZLczlnNmlPVXpFNjNoSDEtbVg4VTZ2U2pqWEJSLTNyamZfY1RjQldFSTExZ2t2YkR6UTVNYUNVZnNHdEFnaw?oc=5",
+      "publishedAt": "2026-07-25",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "地点": "成都",
+        "主要事件": "企业追投56亿元！成都邛崃这一锂电池隔膜项目产能将突破100"
+      }
+    },
+    {
+      "id": "gn-vje60d",
+      "title": "新能源汽车电池寿命多久？8-15年是底线，3个维度说清+FAQ - 新浪网",
+      "summary": "新能源汽车电池寿命多久？8-15年是底线，3个维度说清+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5hTkpqamNWeWlwTmxfZUFSRS1BdGp3QlVSaG94bUVEendyM0p4aDdWV1hWYS04RlFDam9jWVRxY19WOENMVmRtS013RWVqOVpubjhYVng0SzN1YUdNN0RJMU5ySzhoQnBEMmZkby1sRFRDUQ?oc=5",
+      "publishedAt": "2026-07-25",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车电池寿命多久？8-15年是底线，3个维度说清+FA"
+      }
+    },
+    {
+      "id": "gn-8stxkt",
+      "title": "新能源汽车买保险别踩坑!2026最新投保全攻略 - 新浪网",
+      "summary": "新能源汽车买保险别踩坑!2026最新投保全攻略 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9meHJ3OEZReUZvZVJoeXRia1pGblQtdm9yTnFObGFydkxVMkFXSmZ1VkdHU0dYdklOR1VhVnQtVF9MYTdBcUFwTVNkbjBOUG9mc3doUC03X0p2ekYzUi10RVp2bG43QVFLRGhUVkN1eER0UQ?oc=5",
+      "publishedAt": "2026-07-25",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车买保险别踩坑!2026最新投保全攻略 - 新浪网"
+      }
+    },
+    {
+      "id": "gn-g2ebc8",
+      "title": "活力中国调研行丨以AI撬动光储充新蓝海，中国智造赋能全球能源转型 - 中国科技网",
+      "summary": "活力中国调研行丨以AI撬动光储充新蓝海，中国智造赋能全球能源转型 中国科技网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4xSy1pVE5UUURjbTV1MzFtaHFVRU1oMmtlRXl1U2dlbl9ENF9JWmxMSVJsd0NOSmh3VzNDdXpyZ1lpUDgwZzJzXzRWc01oeXZkSXg2LVVYZGVTaDZvR2JGZHZCTzhneTVuUW9udVJROVQ?oc=5",
+      "publishedAt": "2026-07-25",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "活力中国调研行丨以AI撬动光储充新蓝海，中国智造赋能全球能源"
+      }
+    },
+    {
+      "id": "rss-trv7eb",
+      "title": "《2026能源产业生态报告》发布 风电光伏装机超越火电",
+      "summary": "记者今天（25日）从中国企业改革与发展研究会获悉，《2026能源产业生态报告》正式发布。报告显示，“十四五”时期，我国风电光伏装机历史性超越火电，核能、生物质能领域领跑全球。“十四五”期间，我国能源产业实现安全保供与绿色低碳转型双向协同发展。2025年全国能源重点项目投资额首超3.5万亿元，同比增长近11%。新能源产业实现跨越式发展，2020至2025年风电光伏装机从5.3亿千瓦增至18.4亿千瓦。核电运行装机总量稳居全球第一，生物质能发电装机连续7年规模全球第一。（央视新闻）",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/newsflashes/3910816808457602?f=rss",
+      "publishedAt": "2026-07-25",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "《2026能源产业生态报告》发布 风电光伏装机超越火电"
+      }
+    },
     {
       "id": "gn-8rtnr3",
       "title": "新能源车用固态电池为什么更有投资价值？ - Sohu",
@@ -175,6 +382,22 @@
       "tags": {
         "地点": "美国",
         "主要事件": "全球首个室温量子材料问世，可自动区分并传输不同量子态光"
+      }
+    },
+    {
+      "id": "gn-yrfk5t",
+      "title": "买新能源汽车还要等固态电池吗？ - 汽车之家",
+      "summary": "买新能源汽车还要等固态电池吗？ 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8taE5hRVJrZjdRU3d3R0hVVDhrN2FleHJZMXAwaVJzUmRMLUhPeXl5dUQ2aktTMWppTGNScE5qVDhjWFctWHpjMWNySkxVM21vRVhUTWNtalYzSms?oc=5",
+      "publishedAt": "2026-07-24",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "买新能源汽车还要等固态电池吗？ - 汽车之家"
       }
     },
     {
