@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T04:51:26.498Z",
+  "lastUpdated": "2026-07-29T04:56:31.659Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,264 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-ybiacf",
+      "title": "突破固态电池量产瓶颈！湖口纯锂新能源全固态电池项目 9 月底试产，两期总产能 6GWh - 电子工程专辑",
+      "summary": "突破固态电池量产瓶颈！湖口纯锂新能源全固态电池项目 9 月底试产，两期总产能 6GWh 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uV3AwYUs1MWJnOFZ6WlY4N0V1OVMwRTNRMlQtRm4xQXFSQ3VsSmZNYXd2QnZqLTBlVDV4cjdrWnlqRlNTdDE4NTlkLUdNMlFpQ1RJ?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "突破固态电池量产瓶颈！湖口纯锂新能源全固态电池项目 9 月底"
+      }
+    },
+    {
+      "id": "gn-obsb8j",
+      "title": "新能源市场太卷了！红旗12C超快充3分41秒充70%，补能焦虑终结？ - 网通社",
+      "summary": "新能源市场太卷了！红旗12C超快充3分41秒充70%，补能焦虑终结？ 网通社",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEQ0N5T2pSTzltbXQwWHc1QWZ5SjNIMTBlTDl2X0F2b3VzelZiaGZCTWNfMVk3N0lZVTgxbmdMVlJRc2xzTHNCa0FLSHpLTWFQelFRUXJBUDVla2c?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源市场太卷了！红旗12C超快充3分41秒充70%，补能焦"
+      }
+    },
+    {
+      "id": "gn-yz49o9",
+      "title": "强强联合｜国兴能与中建三局华南投资分公司达成多方位深度战略合作 - 碳索储能网",
+      "summary": "强强联合｜国兴能与中建三局华南投资分公司达成多方位深度战略合作 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5oZHJqR19IUE5pSUktWnBYZjEtTms2czliVV9wOUxDQm1aTXdGM3JWMXZqNHBRbHZMdkhiMlZJTWlGNW1BVU16ZTlTVTA4NDJyNk9qWXRlS2FkN2J6RnRQNA?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "强强联合｜国兴能与中建三局华南投资分公司达成多方位深度战略合"
+      }
+    },
+    {
+      "id": "gn-ohdy9o",
+      "title": "储能新势力签订25GWh储能电芯大单 - 见道网",
+      "summary": "储能新势力签订25GWh储能电芯大单 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8zMjdFRzRGRERucFNEXzNuendkVnZCV280MzNnMDRORFg1Ry1Lek5GYVFfaFg2LTZXVnRqNzcxT2NZR0NLVWJJVHlyQXJDc2pwWHFUUw?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "储能新势力签订25GWh储能电芯大单 - 见道网"
+      }
+    },
+    {
+      "id": "gn-u31tqd",
+      "title": "钠离子电池大规模量产进入倒计时 - finance.sina.com.cn",
+      "summary": "钠离子电池大规模量产进入倒计时 finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOLXJLYnFieWU4M0F5MlNLVVZRUHZIOHFoVVpGQXF3WXlLLVM3bUhqbjR1dmFfeVRFYkx6TDFucGozeFExTVk5Q3pzQ1BqekxabWI0MTE1WlRpdTRRd0Jsck9JNndlRXlBalAwa2wtdHIzT0VfZ28tbTlKMEhfbjVWUllnVXFLcjFyZEVoU0RB?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "钠离子电池大规模量产进入倒计时 - finance.sina"
+      }
+    },
+    {
+      "id": "gn-sr05jc",
+      "title": "中气电力装备有限公司与中铁十四局集团签订战略合作协议！聚力深耕储能领域 - 国际储能网",
+      "summary": "中气电力装备有限公司与中铁十四局集团签订战略合作协议！聚力深耕储能领域 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ONlN1cWV3VmdTNXhTcmpGWk5DaDE0dmppdWMtUXVXaXA5dXVQZnc2VDFZeUpmN2FFazdaVy1ROWtvNUZnemEyZTNBUFhiSDRfSVBrS3FyTUZ4OFJzRU1mUA?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "中气电力装备有限公司与中铁十四局集团签订战略合作协议！聚力深"
+      }
+    },
+    {
+      "id": "gn-in1bgu",
+      "title": "海珀特H49氢能重卡产线升级改造投产 - 国际充换电网",
+      "summary": "海珀特H49氢能重卡产线升级改造投产 国际充换电网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9BOFZRLUNqejJvempBU0g5T2wzX2pPQTNUSFE1YkN4REh4T3Q3bVNsYXpMaXRxSEdoNmtSSUJqUGI2Zm5obXppVkx5NmJnVHYwSlpIRGdxaw?oc=5",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "海珀特H49氢能重卡产线升级改造投产 - 国际充换电网"
+      }
+    },
+    {
+      "id": "rss-75dfq5",
+      "title": "珂芝推出 229 元三模机械键盘 Z75：8000mAh 大电池，MDA 高度键帽 + RGB 背光",
+      "summary": "IT之家 7 月 29 日消息，珂芝新上架了一款三模无线机械键盘，型号为 Z75，预售价 229~279 元。京东珂芝（KZZI）Z75 三模无线机械键盘 生椰拿铁轴 82 键电竞游戏键盘客制化键盘蓝牙有线 Gasket 麻将音冰川蓝 RGB 环诺 229 元直达链接2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。数码补贴：点此领券手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 6000 元的产品至高立减 500 元。家电补贴：点此领券多类家电支持 8.5 折政府补贴，单品至高补贴 1500 元。欢迎下载最会买 App - 好货",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/983/017.htm",
+      "publishedAt": "2026-07-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "珂芝推出 229 元三模机械键盘 Z75：8000mAh 大"
+      }
+    },
+    {
+      "id": "rss-784eoy",
+      "title": "1 个充电桩 8 个码、扫码堪比开盲盒，央广网起底公共充电桩乱象",
+      "summary": "IT之家 7 月 29 日消息，央广网今日发文，起底新能源汽车充电站出现的“一桩多码”乱象。报道称，陕西西安多位新能源车主反映，原本应便捷高效的充电体验，正被充电桩上密密麻麻的不同二维码所困扰。“一桩多码”“同桩不同价”，让许多车主扫码充电成了“开盲盒”；而众多掺杂其间的广告码、钓鱼码，又让车主们扫码充电时俨然成了“扫雷”行动。报道提到，西安一处充电站的所有充电桩机身均被小广告层层覆盖，几乎遍布机身各处。这些五颜六色的小广告贴纸上大多附带二维码，多为两类：贷款码和广告码，包括“信用借款”“钣金喷漆”“租车服务”等。这些小广告，让原本正常服务于车主的操作界面和官方二维码淹没其中，使人眼花缭乱。扫",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/983/012.htm",
+      "publishedAt": "2026-07-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "西安",
+        "主要事件": "1 个充电桩 8 个码、扫码堪比开盲盒，央广网起底公共充电桩"
+      }
+    },
+    {
+      "id": "rss-78o7ab",
+      "title": "奇瑞纵横 F700 皮卡车型 8 月 6 日上市，预售价 36.49 万元",
+      "summary": "IT之家 7 月 29 日消息，奇瑞纵横品牌旗下首款全领域豪华越野皮卡纵横 F700 将于 8 月 6 日上市。该车此前已开启预售，预售价 36.49 万元。纵横 F700 定位豪华硬派越野皮卡，尺寸为 5495×2050×1985mm、轴距 3350mm，车宽超过 2 米；配备 15.6 英寸中控屏和 35.4 英寸天际屏组合，搭载纵横 OS 交互系统，支持双屏联动。这款新车搭载鲲鹏超能混动 CDM-O 系统，搭载 2.0TD 混动专用发动机，支持 800V 快充，综合功率高达 904 马力，CLTC 综合续航 1300km。奇瑞纵横 F700 皮卡还配备双叉臂独立悬架、高强度一体大梁，可缓",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/983/011.htm",
+      "publishedAt": "2026-07-29",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "奇瑞纵横 F700 皮卡车型 8 月 6 日上市，预售价 3"
+      }
+    },
+    {
+      "id": "rss-797zvo",
+      "title": "小跑车 SC-01 明年登陆英国，主打“莲花本该造出的车”",
+      "summary": "IT之家 7 月 29 日消息，据外媒 Autocar 当地时间 28 日报道，由冯晓彤创办的“工匠派”开发、江铃集团新能源生产的小跑车 SC-01，将以中国首款“中置布局”跑车的身份于 2027 年 4 月登陆英国，号称是“莲花本该造出的车”。SC-01 已经在中国上市，并已进入意大利等海外市场。该车后续将推出右舵版，英国市场起售价约为 5 万英镑（IT之家注：现汇率约合 45 万元人民币）。曾在宝马、宾利、迈凯伦和 RML 担任高管的马克 · 科顿取得了 SC-01 在英国的进口权，并接近敲定三家经销商合作伙伴，由经销商负责销售和维修 SC-01，其他合作伙伴则负责分销、融资和售后服务。科",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/983/010.htm",
+      "publishedAt": "2026-07-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "宝马",
+          "宝马"
+        ],
+        "主要事件": "小跑车 SC-01 明年登陆英国，主打“莲花本该造出的车”"
+      }
+    },
+    {
+      "id": "rss-gi8twf",
+      "title": "7999 元起，华硕灵耀 14/16 Air 笔记本电脑新增 16GB 内存型号",
+      "summary": "IT之家 7 月 29 日消息，华硕近半个月来陆续上架了多款搭载 16GB 内存的笔记本电脑，还有 8GB 内存的无双 7X 台式机和破晓迷你主机。IT之家汇总如下：灵耀 14 Air 2026 锐龙版：AMD 锐龙 AI 7 H 445、16GB+1TB：9999 元灵耀 14 Air 2026 酷睿版：英特尔酷睿 Ultra 7 356H、16GB+1TB：9999 元灵耀 14 Air 骁龙版：高通骁龙 X2 Elite、32GB+1TB：12999 元灵耀 16 Air 骁龙版：高通骁龙 X2、16GB+1TB：7999 元无畏 Pro16 锐龙版：AMD 锐龙 AI 9 H 465、",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/982/993.htm",
+      "publishedAt": "2026-07-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "7999 元起，华硕灵耀 14/16 Air 笔记本电脑新增"
+      }
+    },
+    {
+      "id": "gn-a1ka96",
+      "title": "磷酸铁锂扩产潮涌 头部玩家强势加码 - caiwennews.com",
+      "summary": "磷酸铁锂扩产潮涌 头部玩家强势加码 caiwennews.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBCUnl0QUdtTl9HaDloSEpEY19Fa2tvbHlKd0ZMSW5DWVkycnJOZ1BvaTNBdWVNYUMtVDBLN0ZmVnVOX2NOZ21yNTk4NWVtNmY2aVh2SFJJOEYwLTRq?oc=5",
+      "publishedAt": "2026-07-28",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸铁锂扩产潮涌 头部玩家强势加码 - caiwennews"
+      }
+    },
+    {
+      "id": "gn-hnpfan",
+      "title": "中国具身机器人可20秒内扑灭新能源汽车锂电池明火 - cb.com.cn",
+      "summary": "中国具身机器人可20秒内扑灭新能源汽车锂电池明火 cb.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43VlF2NTRTV044dmNHaXNQQUVOWXhfNHRYUGJoNDdVNlhmMlNQYzVTS2FIc3VPY05oY0lUSmJlRGV2c3dpTU5LMERRUUd4dVFhdWZFTE9VWC12RGJhS0pXNV9n?oc=5",
+      "publishedAt": "2026-07-28",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "中国具身机器人可20秒内扑灭新能源汽车锂电池明火 - cb."
+      }
+    },
+    {
+      "id": "gn-juc24b",
+      "title": "“十五五”氢能产业发展方向的思考 - 经济形势报告网",
+      "summary": "“十五五”氢能产业发展方向的思考 经济形势报告网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBqS3hwanpSQ0RkZUI3UG5YN21WOXhtM3p2d2NXc0FqSW1hd09vVE9NdGpLeWc5eldlaUFQZWlsYVdyMkhQanUyRjhjRWkxSzhMZUdyQ3hmR1M5UU1uRnd5cVlqaXJMOHdWTjJMMQ?oc=5",
+      "publishedAt": "2026-07-28",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“十五五”氢能产业发展方向的思考 - 经济形势报告网"
+      }
+    },
+    {
+      "id": "rss-n0pnhg",
+      "title": "沃尔沃中国全面\"吉利化\"，首款超豪轿车对标尊界S800｜36氪独家",
+      "summary": "从北京奔驰转战沃尔沃，段建军履新中国区总裁兼CEO尚不足百日，便已挂帅推进品牌首款D级轿车项目。 36氪从多个产业人士处获悉，沃尔沃正在筹备推出全新D级超豪华旗舰轿车，这款新车的内部代号为“561”。知情人士表示，新车定位对标尊界S800，将超越在售S90车型，成为沃尔沃规格最高的轿车产品。 今年5月，段建军从北京奔驰转战沃尔沃，全面接管产研供销体系。过去13年间，他曾让奔驰S级与迈巴赫在中国D级轿车市场建立起近乎垄断的优势。 沃尔沃内部代号为“561”的D级轿车项目，是这位\"豪华车操盘手\"履新后的首场硬仗。这款车的成败，将影响他交给沃尔沃的第一份答卷成色。 36氪了解到，这款新车拟定为中国专",
+      "source": "36氪",
+      "sourceUrl": "https://36kr.com/p/3913637793059968?f=rss",
+      "publishedAt": "2026-07-28",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "北京、中国",
+        "涉及企业": [
+          "吉利",
+          "奔驰"
+        ],
+        "主要事件": "沃尔沃中国全面\"吉利化\"，首款超豪轿车对标尊界S800｜36"
+      }
+    },
     {
       "id": "gn-ifsrgw",
       "title": "15 亿投资落地甘肃庆阳！卫蓝新能源 3GWh 固态电池工厂开工，正式进军电动重卡赛道 - 电子工程专辑",
@@ -260,6 +518,58 @@
       "importance": "medium",
       "tags": {
         "主要事件": "联想来酷斗战者公布战 7000P 锐龙版游戏本：8940HX"
+      }
+    },
+    {
+      "id": "gn-srw4ra",
+      "title": "价格暴涨，再投300亿！供不应求引发锂电池材料扩产大战 - QQ News",
+      "summary": "价格暴涨，再投300亿！供不应求引发锂电池材料扩产大战 QQ News",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xSmstSENsX3FoQ1NZcy1raVBDX3IwQVRMVTV4cVRSdDdzd3JIckxmMmI2STNLeTRnZFZncU5YM1NKVVZMMzVTOXlINk13a1BkdXROY3JR?oc=5",
+      "publishedAt": "2026-07-27",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "价格暴涨，再投300亿！供不应求引发锂电池材料扩产大战 - "
+      }
+    },
+    {
+      "id": "gn-pait0c",
+      "title": "新能源车最大焦虑，被广汽丰田解决了！ - 新浪网",
+      "summary": "新能源车最大焦虑，被广汽丰田解决了！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9IcnV5VGt0b0Q2ejdHLTFBczBFa0tWZUhPVEY3ajBtX2Rfb0ttZk14OUQzbXd0RkVqQmw1akZVaE1jTTdvV1k1WGVLYVk4RkVmbVpIcmtxcWdjeGZKRmhsWEcyQmpsME04SGx0Tldtd3QwUQ?oc=5",
+      "publishedAt": "2026-07-27",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "丰田",
+          "广汽"
+        ],
+        "主要事件": "新能源车最大焦虑，被广汽丰田解决了！ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-1or1rm",
+      "title": "万明忠出席2026甘肃新能源装备产业和氢能低碳技术创新发展大会并作主旨报告 - 碳索储能网",
+      "summary": "万明忠出席2026甘肃新能源装备产业和氢能低碳技术创新发展大会并作主旨报告 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aTEljX3kzMWt0cVpqRmVRVFpFXy1VNWxYXzlidGxXb0JqUDMxU21fanJOV3ZlaHRyMnRyYVA4QWJqN1ZjMHg3YUpxeG9Ga3c0ZFlrcUU1eXRpamtIOGhR?oc=5",
+      "publishedAt": "2026-07-27",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "万明忠出席2026甘肃新能源装备产业和氢能低碳技术创新发展大"
       }
     },
     {
