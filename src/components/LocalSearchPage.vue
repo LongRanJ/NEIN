@@ -26,7 +26,7 @@
         <button
           v-if="localQuery"
           @click="localQuery = ''"
-          class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-white"
+          class="absolute right-2 top-1/2 -translate-y-1/2 text-text-muted hover:text-text-primary"
         >✕</button>
         <span
           v-else
@@ -45,7 +45,7 @@
       >
         <div class="flex items-start justify-between gap-3">
           <div class="flex-1">
-            <h4 class="text-sm font-medium text-white" v-html="highlight(article.title, localQuery)"></h4>
+            <h4 class="text-sm font-medium text-text-primary" v-html="highlight(article.title, localQuery)"></h4>
             <p class="mt-1 text-xs text-text-secondary line-clamp-2" v-html="highlight(article.summary, localQuery)"></p>
           </div>
           <span class="shrink-0 px-2 py-0.5 rounded text-xs" :class="importanceClass(article.importance)">{{ importanceLabel(article.importance) }}</span>

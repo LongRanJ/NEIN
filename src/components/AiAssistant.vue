@@ -20,13 +20,13 @@
         <div class="flex items-center justify-between px-4 py-3 border-b border-border shrink-0">
           <div class="flex items-center gap-2">
             <span class="inline-flex text-primary" v-html="icons.ai"></span>
-            <h3 class="text-sm font-semibold text-white">AI 资讯助手</h3>
+            <h3 class="text-sm font-semibold text-text-primary">AI 资讯助手</h3>
           </div>
           <div class="flex items-center gap-1">
             <!-- 信息按钮 - 悬停浮窗 -->
             <div class="relative group">
               <button
-                class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
+                class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-bg-card transition-all"
                 v-html="icons.info"
               ></button>
               <!-- 浮窗 -->
@@ -42,19 +42,19 @@
             <!-- 设置按钮 -->
             <button
               @click="showSettings = !showSettings"
-              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
+              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-bg-card transition-all"
               v-html="icons.settings"
             ></button>
             <!-- 清空对话 -->
             <button
               @click="aiStore.clearHistory()"
-              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
+              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-bg-card transition-all"
               v-html="icons.trash"
             ></button>
             <!-- 关闭按钮 -->
             <button
               @click="aiStore.isOpen = false"
-              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-white hover:bg-bg-card transition-all"
+              class="w-7 h-7 rounded-lg flex items-center justify-center text-text-muted hover:text-text-primary hover:bg-bg-card transition-all"
               title="关闭助手"
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>

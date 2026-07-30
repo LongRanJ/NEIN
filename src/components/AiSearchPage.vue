@@ -17,7 +17,7 @@
         <button
           v-if="visibleCount < rtStore.availableSources.length"
           @click="visibleCount = rtStore.availableSources.length"
-          class="shrink-0 px-2 py-1.5 rounded-lg text-xs text-text-muted hover:text-white border border-border hover:border-primary/30 transition-all"
+          class="shrink-0 px-2 py-1.5 rounded-lg text-xs text-text-muted hover:text-text-primary border border-border hover:border-primary/30 transition-all"
           title="展开全部"
         >···</button>
         <button
@@ -35,7 +35,7 @@
             <button
               @click="rtStore.resultLimit = n; customCount = ''"
               class="px-2 py-1 rounded text-xs transition-all"
-              :class="rtStore.resultLimit === n && !customCount ? 'bg-primary text-white' : 'text-text-muted hover:text-white hover:bg-bg-card'"
+              :class="rtStore.resultLimit === n && !customCount ? 'bg-primary text-white' : 'text-text-muted hover:text-text-primary hover:bg-bg-card'"
             >{{ n }}</button>
           </template>
           <div class="relative">
@@ -94,7 +94,7 @@
       >
         <div class="flex items-start justify-between gap-3">
           <div class="flex-1">
-            <h4 class="text-sm font-medium text-white">{{ item.title }}</h4>
+            <h4 class="text-sm font-medium text-text-primary">{{ item.title }}</h4>
             <p class="mt-1 text-xs text-text-secondary line-clamp-2">{{ item.summary }}</p>
           </div>
           <span class="shrink-0 px-2 py-0.5 rounded text-xs bg-accent-green/20 text-accent-green">AI 搜索</span>

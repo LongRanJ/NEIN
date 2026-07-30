@@ -7,7 +7,7 @@
           <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent-green flex items-center justify-center text-white font-bold text-base shrink-0">
             N
           </div>
-          <h1 class="text-sm sm:text-base font-bold text-white leading-tight truncate">
+          <h1 class="text-sm sm:text-base font-bold text-text-primary leading-tight truncate">
             NEIN
             <span class="hidden sm:inline text-xs font-normal text-text-secondary ml-1">新能源行业资讯平台</span>
           </h1>
@@ -21,7 +21,7 @@
               :key="preset.days"
               @click="timeFilter.setPreset(preset.days)"
               class="px-2.5 py-1 rounded text-xs transition-all"
-              :class="isPresetActive(preset.days) ? 'bg-primary text-white' : 'text-text-muted hover:text-white hover:bg-bg-card'"
+              :class="isPresetActive(preset.days) ? 'bg-primary text-white' : 'text-text-muted hover:text-text-primary hover:bg-bg-card'"
             >{{ preset.label }}</button>
           </div>
 
@@ -60,7 +60,7 @@
             class="flex items-center gap-1.5 px-4 py-2 text-sm font-medium transition-all border-b-2"
             :class="pageStore.currentPage === tab.key
               ? 'border-primary text-primary-light'
-              : 'border-transparent text-text-muted hover:text-white hover:border-border'"
+              : 'border-transparent text-text-muted hover:text-text-primary hover:border-border'"
           >
             <span class="inline-flex" v-html="tab.icon"></span>
             <span>{{ tab.label }}</span>

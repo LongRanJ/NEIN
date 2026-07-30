@@ -52,7 +52,7 @@
         @click="selectedArticle = article"
       >
         <div class="flex items-start justify-between gap-3">
-          <h4 class="text-base font-semibold text-white leading-snug flex-1">
+          <h4 class="text-base font-semibold text-text-primary leading-snug flex-1">
             {{ article.title }}
           </h4>
           <span class="shrink-0 px-2 py-0.5 rounded text-xs font-medium" :class="importanceClass(article.importance)">{{ importanceLabel(article.importance) }}</span>
@@ -90,8 +90,8 @@
       <div v-if="selectedArticle" class="fixed inset-0 z-[100] flex items-center justify-center p-4" @click.self="selectedArticle = null">
         <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="selectedArticle = null"></div>
         <div class="relative glass rounded-2xl p-6 max-w-2xl w-full max-h-[80vh] overflow-y-auto animate-fade-in">
-          <button @click="selectedArticle = null" class="absolute top-4 right-4 text-text-muted hover:text-white" v-html="icons.close"></button>
-          <h2 class="text-xl font-bold text-white pr-8">{{ selectedArticle.title }}</h2>
+          <button @click="selectedArticle = null" class="absolute top-4 right-4 text-text-muted hover:text-text-primary" v-html="icons.close"></button>
+          <h2 class="text-xl font-bold text-text-primary pr-8">{{ selectedArticle.title }}</h2>
           <div class="mt-2 flex items-center gap-2 text-xs text-text-muted">
             <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ selectedArticle.source }}</span>
             <span>·</span>

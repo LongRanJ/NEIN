@@ -22,6 +22,9 @@
   --chart-grid: #E2E8F0;
   --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.06);
   --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
+  --status-error: #dc2626;
+  --status-success: #16a34a;
+  --btn-active-text: #FFFFFF;
 }
 
 /* 暗色主题 */
@@ -44,6 +47,9 @@
   --chart-grid: #1E293B;
   --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
   --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.5);
+  --status-error: #f87171;
+  --status-success: #4ade80;
+  --btn-active-text: #FFFFFF;
 }
 
 @theme {
@@ -70,11 +76,25 @@ html {
 }
 
 body {
-  background-color: var(--bg-deep);
   color: var(--text-primary);
   font-family: var(--font-sans);
   line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+/* 浅色主题：底部浅灰到顶部浅蓝渐变 */
+body, #app {
+  min-height: 100vh;
+}
+body {
+  background: linear-gradient(180deg, #dbeafe 0%, #f1f5f9 40%, #f8fafc 100%);
+  background-attachment: fixed;
+}
+
+/* 暗色主题：纯色 */
+[data-theme="dark"] body {
+  background: #0F172A;
+  background-attachment: fixed;
 }
 
 /* ─── 自定义滚动条 ─── */
@@ -127,6 +147,43 @@ body {
   border: 1px solid var(--glass-border);
 }
 
+/* ─── 浅色主题文字颜色覆盖 ─── */
+
+/* 按钮激活态白字保持 */
+[data-theme="light"] .bg-primary,
+[data-theme="light"] .bg-sky-500,
+[data-theme="light"] .bg-sky-600 {
+  color: var(--btn-active-text) !important;
+}
+
+/* 状态色加深（浅色背景下对比度） */
+[data-theme="light"] .text-red-400 {
+  color: var(--status-error);
+}
+[data-theme="light"] .text-green-400 {
+  color: var(--status-success);
+}
+[data-theme="light"] .hover\:text-red-300:hover {
+  color: #b91c1c;
+}
+[data-theme="light"] .bg-red-500\/10 {
+  background-color: rgba(220, 38, 38, 0.08);
+}
+[data-theme="light"] .border-red-500\/30 {
+  border-color: rgba(220, 38, 38, 0.25);
+}
+[data-theme="light"] .bg-green-500\/10 {
+  background-color: rgba(22, 163, 74, 0.08);
+}
+[data-theme="light"] .border-green-500\/30 {
+  border-color: rgba(22, 163, 74, 0.25);
+}
+
+/* hover:text-white → 跟随主题 */
+[data-theme="light"] .hover\:text-white:hover {
+  color: var(--text-primary);
+}
+
 /* ─── Tag 样式 ─── */
 
 .keyword-tag {
@@ -145,7 +202,7 @@ body {
 
 [data-theme="light"] .keyword-tag:hover,
 [data-theme="light"] .keyword-tag.active {
-  color: var(--bg-deep);
+  color: var(--btn-active-text);
 }
 
 /* ─── 卡片 ─── */

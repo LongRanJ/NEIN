@@ -72,7 +72,7 @@
           :key="p.days"
           @click="store.setPreset(p.days)"
           class="px-2.5 py-1 rounded text-xs transition-all"
-          :class="store.activePreset === p.days ? 'bg-primary text-white' : 'text-text-muted hover:text-white hover:bg-bg-card'"
+          :class="store.activePreset === p.days ? 'bg-primary text-white' : 'text-text-muted hover:text-text-primary hover:bg-bg-card'"
         >{{ p.label }}</button>
       </div>
 
@@ -122,7 +122,7 @@
         <button
           @click="store.generatePpt()"
           :disabled="store.selectedItems.length === 0 || store.isGenerating"
-          class="px-3 py-2 rounded-lg bg-sky-500 text-white text-sm hover:bg-sky-600 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
+          class="px-3 py-2 rounded-lg bg-primary text-white text-sm hover:bg-primary-dark disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
         >
           <span v-if="store.isGenerating" class="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
           <span v-html="icons.report"></span>
@@ -192,7 +192,7 @@
               <svg v-if="store.selectedIds.has(i)" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
             <div class="flex-1 min-w-0">
-              <h4 class="text-sm font-medium text-white leading-snug">{{ item.title }}</h4>
+              <h4 class="text-sm font-medium text-text-primary leading-snug">{{ item.title }}</h4>
               <p class="mt-1 text-xs text-text-secondary line-clamp-2">{{ item.summary }}</p>
               <div class="mt-1.5 flex items-center gap-2 text-xs text-text-muted flex-wrap">
                 <span class="inline-flex items-center gap-1"><span v-html="icons.source"></span>{{ item.source }}</span>
