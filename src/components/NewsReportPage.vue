@@ -257,11 +257,7 @@ const otherWithResults = computed(() =>
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.date-input {
-  color-scheme: dark;
-}
 .date-input::-webkit-calendar-picker-indicator {
-  filter: invert(0.8);
   cursor: pointer;
 }
 </style>

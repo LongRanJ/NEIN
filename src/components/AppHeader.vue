@@ -41,14 +41,12 @@
             />
           </div>
 
-          <a
-            href="https://github.com/LongRanJ/NEIN"
-            target="_blank"
-            rel="noopener"
-            class="w-8 h-8 rounded-lg bg-bg-card border border-border flex items-center justify-center text-text-secondary hover:text-white hover:border-primary transition-all"
-            title="GitHub"
-            v-html="icons.github"
-          ></a>
+          <button
+            @click="themeStore.toggle()"
+            class="w-8 h-8 rounded-lg bg-bg-card border border-border flex items-center justify-center text-text-secondary hover:text-primary-light hover:border-primary transition-all"
+            :title="themeStore.theme === 'dark' ? '切换到浅色模式' : '切换到暗色模式'"
+            v-html="themeStore.theme === 'dark' ? icons.sun : icons.moon"
+          ></button>
         </div>
       </div>
 
@@ -85,11 +83,13 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { usePageStore } from '../stores/page'
 import { useTimeFilterStore } from '../stores/timeFilter'
 import { useNewsStore } from '../stores/news'
+import { useThemeStore } from '../stores/theme'
 import { icons } from '../assets/icons'
 
 const pageStore = usePageStore()
 const timeFilter = useTimeFilterStore()
 const newsStore = useNewsStore()
+const themeStore = useThemeStore()
 
 const headerRef = ref(null)
 const headerHeight = ref(80)
@@ -116,7 +116,7 @@ const tabs = [
   { key: 'data', label: '数据统计', icon: icons.chart },
   { key: 'localSearch', label: '本地检索', icon: icons.search, desc: '在已有新闻库中搜索' },
   { key: 'aiSearch', label: 'AI实时搜索', icon: icons.ai, desc: 'RSS 实时抓取 + 智能筛选' },
-  { key: 'newsReport', label: '资讯&报告', icon: icons.report, desc: '15源新闻搜索 + PPT生成' }
+  // { key: 'newsReport', label: '资讯&报告', icon: icons.report, desc: '15源新闻搜索 + PPT生成' }
 ]
 
 const tabDesc = computed(() => {
@@ -140,12 +140,7 @@ function isPresetActive(days) {
 </script>
 
 <style>
-/* 日期选择器暗色主题 */
-.date-input {
-  color-scheme: dark;
-}
 .date-input::-webkit-calendar-picker-indicator {
-  filter: invert(0.8);
   cursor: pointer;
 }
 </style>

@@ -63,7 +63,7 @@
         </div>
 
         <!-- Settings panel -->
-        <div v-if="showSettings" class="px-4 py-3 border-b border-border bg-bg-deep/50 shrink-0 overflow-y-auto max-h-64">
+        <div v-if="showSettings" class="px-4 py-3 border-b border-border bg-bg-deep shrink-0 overflow-y-auto max-h-64">
           <h4 class="text-xs font-medium text-text-secondary mb-2">AI 模式</h4>
           <div class="space-y-2 mb-3">
             <label class="flex items-center gap-2 cursor-pointer">
@@ -147,7 +147,7 @@
               class="max-w-[85%] rounded-xl px-3 py-2 text-sm leading-relaxed"
               :class="msg.role === 'user' ? 'chat-bubble-user' : 'chat-bubble-ai'"
             >
-              <div v-html="renderMarkdown(msg.content)" class="prose prose-invert prose-sm max-w-none"></div>
+              <div v-html="renderMarkdown(msg.content)" class="prose prose-sm max-w-none"></div>
             </div>
           </div>
 
@@ -249,12 +249,12 @@ watch(() => aiStore.messages.length, () => nextTick(scrollToBottom))
 }
 
 :deep(.prose) {
-  --tw-prose-body: #E2E8F0;
-  --tw-prose-headings: #E2E8F0;
-  --tw-prose-links: #38BDF8;
-  --tw-prose-bold: #E2E8F0;
-  --tw-prose-code: #38BDF8;
-  --tw-prose-bullets: #94A3B8;
+  --tw-prose-body: var(--text-primary);
+  --tw-prose-headings: var(--text-primary);
+  --tw-prose-links: var(--primary-light);
+  --tw-prose-bold: var(--text-primary);
+  --tw-prose-code: var(--primary-light);
+  --tw-prose-bullets: var(--text-secondary);
 }
 :deep(.prose p) {
   margin: 0.4em 0;

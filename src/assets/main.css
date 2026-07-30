@@ -1,51 +1,101 @@
 @import "tailwindcss";
 
+/* ─── CSS 变量定义 ─── */
+
+/* 浅色主题（默认） */
+:root {
+  --bg-deep: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F1F5F9;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --border: #E2E8F0;
+  --primary: #0284C7;
+  --primary-light: #0EA5E9;
+  --primary-dark: #0369A1;
+  --accent-green: #059669;
+  --accent-amber: #D97706;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(226, 232, 240, 0.8);
+  --chart-label: #475569;
+  --chart-grid: #E2E8F0;
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 暗色主题 */
+[data-theme="dark"] {
+  --bg-deep: #0F172A;
+  --bg-card: #1E293B;
+  --bg-card-hover: #334155;
+  --text-primary: #E2E8F0;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --border: #334155;
+  --primary: #0EA5E9;
+  --primary-light: #38BDF8;
+  --primary-dark: #0284C7;
+  --accent-green: #10B981;
+  --accent-amber: #F59E0B;
+  --glass-bg: rgba(30, 41, 59, 0.8);
+  --glass-border: rgba(51, 65, 85, 0.5);
+  --chart-label: #94A3B8;
+  --chart-grid: #1E293B;
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
 @theme {
-  --color-primary: #0EA5E9;
-  --color-primary-light: #38BDF8;
-  --color-primary-dark: #0284C7;
-  --color-accent-green: #10B981;
-  --color-accent-amber: #F59E0B;
-  --color-bg-deep: #0F172A;
-  --color-bg-card: #1E293B;
-  --color-bg-card-hover: #334155;
-  --color-text-primary: #E2E8F0;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
-  --color-border: #334155;
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent-green: var(--accent-green);
+  --color-accent-amber: var(--accent-amber);
+  --color-bg-deep: var(--bg-deep);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
   --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
 
-/* Base styles */
+/* ─── 基础样式 ─── */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--color-bg-deep);
-  color: var(--color-text-primary);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
   font-family: var(--font-sans);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Custom scrollbar */
+/* ─── 自定义滚动条 ─── */
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-bg-deep);
+  background: var(--bg-deep);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-text-muted);
+  background: var(--text-muted);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-secondary);
+  background: var(--text-secondary);
 }
 
-/* Animations */
+/* ─── 动画 ─── */
+
 @keyframes fade-in {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -69,43 +119,71 @@ body {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
-/* Glass effect */
+/* ─── Glass 效果 ─── */
+
 .glass {
-  background: rgba(30, 41, 59, 0.8);
+  background: var(--glass-bg);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
+  border: 1px solid var(--glass-border);
 }
 
-/* Tag styles */
+/* ─── Tag 样式 ─── */
+
 .keyword-tag {
   @apply px-3 py-1.5 rounded-full text-sm font-medium cursor-pointer transition-all duration-200 border;
   background: rgba(14, 165, 233, 0.1);
   border-color: rgba(14, 165, 233, 0.3);
-  color: var(--color-primary-light);
+  color: var(--primary-light);
 }
 .keyword-tag:hover,
 .keyword-tag.active {
   background: rgba(14, 165, 233, 0.25);
-  border-color: var(--color-primary);
+  border-color: var(--primary);
   color: white;
   transform: translateY(-1px);
 }
 
-/* Card hover */
+[data-theme="light"] .keyword-tag:hover,
+[data-theme="light"] .keyword-tag.active {
+  color: var(--bg-deep);
+}
+
+/* ─── 卡片 ─── */
+
 .news-card {
   @apply transition-all duration-300;
 }
 .news-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-card-hover);
 }
 
-/* AI chat bubble */
+/* ─── AI 聊天气泡 ─── */
+
 .chat-bubble-ai {
   background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(16, 185, 129, 0.1));
-  border-left: 3px solid var(--color-primary);
+  border-left: 3px solid var(--primary);
 }
 .chat-bubble-user {
   background: rgba(14, 165, 233, 0.2);
-  border-left: 3px solid var(--color-accent-green);
+  border-left: 3px solid var(--accent-green);
+}
+
+[data-theme="light"] .chat-bubble-ai {
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.08), rgba(5, 150, 105, 0.06));
+}
+[data-theme="light"] .chat-bubble-user {
+  background: rgba(2, 132, 199, 0.12);
+}
+
+/* ─── 日期选择器 ─── */
+
+.date-input {
+  color-scheme: dark;
+}
+[data-theme="light"] .date-input {
+  color-scheme: light;
+}
+[data-theme="light"] .date-input::-webkit-calendar-picker-indicator {
+  filter: none;
 }
