@@ -8,17 +8,17 @@
   --bg-card: #FFFFFF;
   --bg-card-hover: #F1F5F9;
   --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #94A3B8;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
   --border: #E2E8F0;
   --primary: #0284C7;
   --primary-light: #0EA5E9;
   --primary-dark: #0369A1;
   --accent-green: #059669;
   --accent-amber: #D97706;
-  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-bg: rgba(255, 255, 255, 0.9);
   --glass-border: rgba(226, 232, 240, 0.8);
-  --chart-label: #475569;
+  --chart-label: #334155;
   --chart-grid: #E2E8F0;
   --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.06);
   --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -87,7 +87,7 @@ body, #app {
   min-height: 100vh;
 }
 body {
-  background: linear-gradient(180deg, #93c5fd 0%, #cbd5e1 40%, #e2e8f0 100%);
+  background: linear-gradient(180deg, #60a5fa 0%, #94a3b8 40%, #cbd5e1 100%);
   background-attachment: fixed;
 }
 
