@@ -3,25 +3,25 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <!-- 关键词分布 -->
       <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📊 关键词分布</h4>
+        <h4 class="text-sm font-medium text-text-secondary mb-3 flex items-center gap-1.5"><span v-html="icons.pie"></span>关键词分布</h4>
         <div ref="keywordChartRef" class="w-full h-56"></div>
       </div>
 
       <!-- 来源分布 -->
       <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📰 来源分布</h4>
+        <h4 class="text-sm font-medium text-text-secondary mb-3 flex items-center gap-1.5"><span v-html="icons.bar"></span>来源分布</h4>
         <div ref="sourceChartRef" class="w-full h-56"></div>
       </div>
 
       <!-- 资讯时间线 -->
       <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">📈 资讯时间线</h4>
+        <h4 class="text-sm font-medium text-text-secondary mb-3 flex items-center gap-1.5"><span v-html="icons.trend"></span>资讯时间线</h4>
         <div ref="timelineChartRef" class="w-full h-56"></div>
       </div>
 
       <!-- 重要性分布 -->
       <div class="glass rounded-xl p-4">
-        <h4 class="text-sm font-medium text-text-secondary mb-3">⚠️ 重要性分布</h4>
+        <h4 class="text-sm font-medium text-text-secondary mb-3 flex items-center gap-1.5"><span v-html="icons.alert"></span>重要性分布</h4>
         <div ref="importanceChartRef" class="w-full h-56"></div>
       </div>
     </div>
@@ -34,6 +34,7 @@ import * as echarts from 'echarts'
 import { useNewsStore } from '../stores/news'
 import { useAiStore } from '../stores/ai'
 import { useThemeStore } from '../stores/theme'
+import { icons } from '../assets/icons'
 
 const store = useNewsStore()
 const aiStore = useAiStore()
