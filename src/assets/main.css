@@ -87,7 +87,7 @@ body, #app {
   min-height: 100vh;
 }
 body {
-  background: linear-gradient(180deg, #bfdbfe 0%, #e2e8f0 40%, #f1f5f9 100%);
+  background: linear-gradient(180deg, #dbeafe 0%, #f1f5f9 40%, #f8fafc 100%);
   background-attachment: fixed;
 }
 
