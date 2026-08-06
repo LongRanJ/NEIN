@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T04:52:32.109Z",
+  "lastUpdated": "2026-08-06T04:52:50.138Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,208 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-ffl8uc",
+      "title": "新源智储助力中亚新能源高质量发展丨哈萨克斯坦首个储能项目完成并网调试 - 碳索储能网",
+      "summary": "新源智储助力中亚新能源高质量发展丨哈萨克斯坦首个储能项目完成并网调试 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NQ1lCMHZTWFhvY0ZjTjBvckRBTURFYWlUcXNXLTI4dFI3Rmx0ME1KTzVNMEhZV0pRQXhRY1ZjRmxwQ3d6WmZSbDBNQ3hmU3pxQ2JwdS16ajREenpvbHg0VQ?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新源智储助力中亚新能源高质量发展丨哈萨克斯坦首个储能项目完成"
+      }
+    },
+    {
+      "id": "gn-2dpdfl",
+      "title": "美克生能源加速电网侧储能布局，丹阳项目开工助力新能源消纳 - 见道网",
+      "summary": "美克生能源加速电网侧储能布局，丹阳项目开工助力新能源消纳 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1XV1dkaXliV0RhdktteUlZWG03Wk04QWFYdmpDY3BTanBOajFDc3BwYjFWbTZYOVdEVU9ZUTF6VS1TeW5UX01OVjFXV2JJalZkUjRyVA?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "美克生能源加速电网侧储能布局，丹阳项目开工助力新能源消纳 -"
+      }
+    },
+    {
+      "id": "gn-6j9mvp",
+      "title": "深能鄂托克旗风光制氢项目成功产氢 - 见道网",
+      "summary": "深能鄂托克旗风光制氢项目成功产氢 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBYRnozWmh2OFZEc2ZzUjZfQ3I2S2lRZ2dMandhR0pQcGptdHZaaHd1QWdoUHRqMUVPbzVtSmI0T3hiUnl0MjhMcUdES1l0ajlnbXh0cA?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "深能鄂托克旗风光制氢项目成功产氢 - 见道网"
+      }
+    },
+    {
+      "id": "rss-wfe9sa",
+      "title": "宝马 3 系中国累计销量突破 200 万辆，新世代 i3 成都车展亮相",
+      "summary": "IT之家 8 月 6 日消息，宝马中国今日宣布，BMW 3 系中国累计销量突破 200 万辆，新世代 BMWi3 将在成都车展正式全面亮相。IT之家注意到，宝马 3 系是宝马公司生产的中型豪华运动轿车，自 1975 年推出以来历经七代革新，全球累计销量超千万辆，被誉为品牌最具代表性的车型。2026 年 3 月 3 日，宝马集团宣布 2026 款宝马 3 系等马年版车型正式上市，售价 31.8 万元起。此前消息显示，宝马新 3 系在设计风格上仍会保留 Neue Klasse 时代的基本前脸，大灯和双肾格栅可能略有不同，该车继续使用升级后的 CLAR 平台。不过内饰预计会与 i3 和 iX3 保持",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/406.htm",
+      "publishedAt": "2026-08-06",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "地点": "成都、中国",
+        "涉及企业": [
+          "宝马",
+          "宝马"
+        ],
+        "主要事件": "宝马 3 系中国累计销量突破 200 万辆，新世代 i3 成"
+      }
+    },
+    {
+      "id": "rss-lzusin",
+      "title": "曝中创新航在 AION S“电池鼓包”风波后，内部紧急开展技术改革",
+      "summary": "IT之家 8 月 6 日消息，近期，广汽埃安 AION S 系列车型搭载的中创新航 177Ah 磷酸铁锂电池因批量鼓包变形，将中创新航推上舆论的“风口浪尖”。中创新航 7 月 18 日晚发布公告，称关注到搭载该公司电池的部分广汽埃安 AION S 车辆在特定工况下出现电池系统故障。车主如遇到电池系统故障，可直接到该公司服务网点享受免费检测，并根据检测结果按标准享受免费电池系统维修及维保专属服务。据未来汽车 Daily 今日报道，除了对涉事产品启用售后机制外，中创新航近期也在内部进行着一轮以“质量安全”为先的技术改革。报道援引知情人士消息称，中创新航内部已经对制程溯源、验证体系、组织与客关机制等",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/395.htm",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "中创新航",
+          "广汽"
+        ],
+        "主要事件": "曝中创新航在 AION S“电池鼓包”风波后，内部紧急开展技"
+      }
+    },
+    {
+      "id": "rss-lyr7bx",
+      "title": "小米 REDMI 17 入门级 5G 手机开售，售价 999 元起",
+      "summary": "IT之家 8 月 6 日消息，REDMI 已上架发售旗下新款入门级 5G 智能手机 REDMI 17 5G，该机以 6.9 英寸高刷大屏、6300mAh 超大电池以及轻薄机身设计为核心卖点，售价 999 元起。屏幕方面，REDMI 17 5G 配备一块 6.9 英寸 HD LCD 显示屏，分辨率为 1600×720，支持 120Hz 高刷新率与 240Hz 触控采样率，峰值亮度可达 800nits。护眼层面，该屏幕采用全 DC 调光方案，并通过了三重 TÜV 莱茵护眼认证，有效降低频闪与蓝光对眼睛的影响。此外，该机升级支持湿手触控 2.0，在手指沾水的情况下仍可正常操作，配合侧边指纹识别方案，",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/393.htm",
+      "publishedAt": "2026-08-06",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米 REDMI 17 入门级 5G 手机开售，售价 999"
+      }
+    },
+    {
+      "id": "rss-l3yq3p",
+      "title": "受台风“白海豚”影响，奇瑞捷豹路虎神行者 8 预售发布会计划由 8 月 10 日调整至 14 日",
+      "summary": "IT之家 8 月 6 日消息，今日，FREELANDER 神行者全球 CMO @周文-神行者 发文称，原定于 8 月 10 日的神行者 8 预售发布会，受台风“白海豚”天气过境影响，我们出于对全员出行及活动安全的综合考量，计划调整至 8 月 14 日正式开启。IT之家注意到，由奇瑞 × 捷豹路虎合作打造的 FREELANDER 神行者品牌 7 月 30 日宣布，旗下首车 —— 神行者 8 的首台量产车正式下线。新车原定于 8 月 10 日开启预售。神行者 8 整车设计语言延续 Concept 97 概念车风格，主打硬朗大气的造型、简洁有力的车身线条。该车尺寸为 5,118 (5,185)×20",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/379.htm",
+      "publishedAt": "2026-08-06",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "受台风“白海豚”影响，奇瑞捷豹路虎神行者 8 预售发布会计划"
+      }
+    },
+    {
+      "id": "rss-kmx3pi",
+      "title": "东风日产 NX7 车型亮相，配激光雷达、半隐藏式门把手",
+      "summary": "IT之家 8 月 6 日消息，东风日产 NX7 车型今日正式亮相，公布了产品外观设计。从图中可以看到，东风日产 NX7 是一款 SUV 车型，整体造型比 NX8 更运动、年轻化一些，车顶配有激光雷达。该车没有采用贯穿式行车灯，车门处配备半隐藏式门把手，车头和尾部的日产标志都可以发光。从命名来看，日产 NX7 预计和 NX8 为同一系列，有望推出纯电、增程双版本，价格也有望降低，IT之家将关注后续发布信息。作为参考，东风日产 NX8 于今年 4 月 8 日正式上市，官方指导价区间 15.99-20.99 万元。该车采用 800V 碳化硅平台，并搭载宁德时代磷酸铁锂电池，支持 5C 超快充技术，长",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/369.htm",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "磷酸铁锂",
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代"
+        ],
+        "主要事件": "东风日产 NX7 车型亮相，配激光雷达、半隐藏式门把手"
+      }
+    },
+    {
+      "id": "gn-oi0dng",
+      "title": "再走长征路｜“亚洲磷仓”亮出锂电雄心：贵州瓮安加速掘金新能源蓝海 - cb.com.cn",
+      "summary": "再走长征路｜“亚洲磷仓”亮出锂电雄心：贵州瓮安加速掘金新能源蓝海 cb.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80YWNDakFyNlBjd2xsSXpfa3ZTYzE5Z19BeUFfWlZDd2s1bGlHenIxTE5IaUM4MVpxYm1tVjRXcDZXb2dfckNXcWFuODZWVmd5Y2RFVnc4czRrOE9RTVdV?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "再走长征路｜“亚洲磷仓”亮出锂电雄心：贵州瓮安加速掘金新能源"
+      }
+    },
+    {
+      "id": "gn-ybj7hw",
+      "title": "2026H1全球锂电池负极出货排行榜TOP10 - 手机新浪网",
+      "summary": "2026H1全球锂电池负极出货排行榜TOP10 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFB0RVVfTDBDZ3JlbW02Rk4tcU1ocWxFbFdBRC1kTjFLdnhYRkZIMU1hbEVSem9rWGlaSkZydUdqVHFvOTBtQUV5WU1nNXlPYUQ1SnBnWmJMVHJqckJTdUhqNGpzNC0tMW56TmtCclpGX3Exdw?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "市场动态",
+      "importance": "high",
+      "tags": {
+        "主要事件": "2026H1全球锂电池负极出货排行榜TOP10 - 手机新浪"
+      }
+    },
+    {
+      "id": "gn-wrlqp",
+      "title": "8月5日柘中股份涨停：新能源汽车，磷酸铁锂，智能电网概念热股_个股掘金 - 证券之星",
+      "summary": "8月5日柘中股份涨停：新能源汽车，磷酸铁锂，智能电网概念热股_个股掘金 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBrU00wM0xnTUxvYUlsRWVxeFhvc2Y2YWw3d2lQdUMtRWtubTFQc3NwLVJUd0xacnhqc0lTY0lEZVA4QmVMekU5Unc2YUFkcnl3MC1CNEV3eVlycVBJcDJEdHR3?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "8月5日柘中股份涨停：新能源汽车，磷酸铁锂，智能电网概念热股"
+      }
+    },
+    {
+      "id": "gn-2xf9wq",
+      "title": "广东清能氢能项目落户吕梁 - sx.news.cn",
+      "summary": "广东清能氢能项目落户吕梁 sx.news.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5LMVc3SkFGNHNhZmw5ODk5U0xETDFaMWlrSmdkem01NVBweDVNUjRMNWgzT3JfQ1VUX05ZUThFeUM4TXBFc3Utelk2SG43U3lkLTloWVFHWm56M3NsRnJ4dnIzTzJSa2U4VGdKcGh3NkdkdWZJYUNySlZR?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "广东清能氢能项目落户吕梁 - sx.news.cn"
+      }
+    },
     {
       "id": "gn-gb9h8t",
       "title": "固态电池技术为什么让新能源车更值钱？ - 搜狐网",
@@ -112,6 +314,38 @@
       "importance": "medium",
       "tags": {
         "主要事件": "Sharkoon 推出 PureWriter W100 键盘"
+      }
+    },
+    {
+      "id": "gn-pbnb7j",
+      "title": "硫化物全固态电池实车测试告捷 - stdaily.com",
+      "summary": "硫化物全固态电池实车测试告捷 stdaily.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0NWZGY0JnRTFOUlR6U2ljZWprWHJHcnRsNkRsY0NQSE1vbnRsMW1oWElxd2JRa3VzU2hXR00zTUMtMUpoVk5ZMUEtWFB2VjRQV2xNSGVXWjhwb0ZWeUN1X2VMb0daVENYV3JScTFIYVQ?oc=5",
+      "publishedAt": "2026-08-04",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "硫化物全固态电池实车测试告捷 - stdaily.com"
+      }
+    },
+    {
+      "id": "gn-vblwwi",
+      "title": "超快充技术新能源汽车值得买吗？极氪009/问界M9充电9分钟，但76℃高温让寿命成隐患 - 新浪财经",
+      "summary": "超快充技术新能源汽车值得买吗？极氪009/问界M9充电9分钟，但76℃高温让寿命成隐患 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSklna0NzekJzaTlQdllVRjF1ZlR2VHBZWDY4NnR3cHFfX3NabEpYOGtwbEV5dVpXQVpWdk9kWmhGbzBZOHFWcy1NSDcwLUpJRmc4akNfN2p0QWRqYm5qRjNITUFuOXl6LXVIUWpSWGNVam5TOTMxNEpPMWROcGlYbGxJMDE?oc=5",
+      "publishedAt": "2026-08-04",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术新能源汽车值得买吗？极氪009/问界M9充电9分钟"
       }
     },
     {
@@ -459,6 +693,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "联想来酷斗战者战 7000X 轻薄游戏本上市，首发 + 国补"
+      }
+    },
+    {
+      "id": "gn-bo9ivg",
+      "title": "超快充技术优缺点分析 - 手机新浪网",
+      "summary": "超快充技术优缺点分析 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUOGNZa3VQbkVvankzVWpHMHRSMldXdTY0TnE5MUtQcU1kNDE5V2VNendraDFzU2cxNEZiSDFVZjREamZVNGxDb0JJZ1Z3RFV2VUg0MlZTWDFiVDR6Q1Rpb201WE5VTEhRSUxtR2lEbXpWdw?oc=5",
+      "publishedAt": "2026-08-03",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术优缺点分析 - 手机新浪网"
       }
     },
     {
@@ -948,6 +1198,22 @@
       "tags": {
         "地点": "美国",
         "主要事件": "戴尔创始人迈克尔 · 戴尔分享 42 年前公司首份季度财报："
+      }
+    },
+    {
+      "id": "gn-t8i92x",
+      "title": "明天氢能： 新示范期的机遇与挑战 - en.gasgoo.com",
+      "summary": "明天氢能： 新示范期的机遇与挑战 en.gasgoo.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1aTVhJNlZiYlQ0OEhUX2VDWUkzN2ZSWmtsRmNTWTBFOEkwSXdxbzJxUjFFUnRBRUhkQWRNQXN0SDJ0QUhXNnJhMzJSZG0yTzFo?oc=5",
+      "publishedAt": "2026-08-01",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "明天氢能： 新示范期的机遇与挑战 - en.gasgoo.c"
       }
     },
     {
@@ -10918,6 +11184,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "三元锂成本失控，高端电动车还会继续青睐吗？ - 36 Kr"
+      }
+    },
+    {
+      "id": "gn-nwzg32",
+      "title": "看清九大认知偏差，破解新能源汽车安全认知误区核心症结 - 新京报",
+      "summary": "看清九大认知偏差，破解新能源汽车安全认知误区核心症结 新京报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE50cTNtQllHUEdQZ1lQSmRicjhaTE03ZDMzOF9vcVRkWkxBd0pXYThJRXlzNlltQkdsVEJzb3ZSNGc4Rk9xQlJDa3Ytek5tZUNCYVI5QThheVpwLTdDUWFVZHBn?oc=5",
+      "publishedAt": "2026-01-26",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "看清九大认知偏差，破解新能源汽车安全认知误区核心症结 - 新"
       }
     },
     {
