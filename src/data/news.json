@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T04:52:50.138Z",
+  "lastUpdated": "2026-08-07T04:17:08.755Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,285 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-9t7yt0",
+      "title": "高安全、长寿命、低成本，九江湖口全固态储能电池项目9月底试生产 - 凤凰网江西",
+      "summary": "高安全、长寿命、低成本，九江湖口全固态储能电池项目9月底试生产 凤凰网江西",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5lSldua3p6TjFMcnMzSm1pVVdaNER5NnU3LXBobkNmWkMtUVJicUtMTUVxVkhSRFpUVjZhYmQ1TkREZ2FUd25ya3FB?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "高安全、长寿命、低成本，九江湖口全固态储能电池项目9月底试生"
+      }
+    },
+    {
+      "id": "gn-k573iv",
+      "title": "总投资超90亿！多地固态电池项目加速落地 - 见道网",
+      "summary": "总投资超90亿！多地固态电池项目加速落地 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6Ni1TLVJnVkNVMnlrYXpjY0cxNHlkMnpHR25mSTVLVEF2U3VMS0puYjBmNl92UWJ6clRmNS1Fa3lTNEVCc2FibkJnT3lmS1RDSlNZMQ?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "总投资超90亿！多地固态电池项目加速落地 - 见道网"
+      }
+    },
+    {
+      "id": "gn-8vdp1i",
+      "title": "【深圳特区报】新能源汽车有了“移动充电宝” 不仅能自动驾驶，还能实现“桩找车”给车充电 - sohu.com",
+      "summary": "【深圳特区报】新能源汽车有了“移动充电宝” 不仅能自动驾驶，还能实现“桩找车”给车充电 sohu.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcktXSDdtTERyMjliMmw1THRMLUFkWHVEaHR4Y2NlbS1rOWZkclpOS1VOcUw3cGlUQVlCajYybW04WGNIYU0wYnlKbWVRQVFORzY4U3FTR0lsMTdNN1VPdks1RV83OFdEVG9lajdNdkZqOTVGZmRZR2IxWm5JSlZfdXVXaGtCOVJiT2cwTg?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "深圳",
+        "主要事件": "【深圳特区报】新能源汽车有了“移动充电宝” 不仅能自动驾驶，"
+      }
+    },
+    {
+      "id": "gn-pyfdhb",
+      "title": "7月储能政策：储能正式进入“十五五”时间 虚拟电厂与绿电直连成热点 - gdshe.org",
+      "summary": "7月储能政策：储能正式进入“十五五”时间 虚拟电厂与绿电直连成热点 gdshe.org",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1xem9QZ0FvT3ZyaHY3WURPQWNaWV9Vd0JONHBNT2t4dVUwNWdaa1R1SjJwSHBkUjVuQ2hkZVJKNFpFNm44blNURURsQ1FsSXNXbVE?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "政策法规",
+      "importance": "high",
+      "tags": {
+        "主要事件": "7月储能政策：储能正式进入“十五五”时间 虚拟电厂与绿电直连"
+      }
+    },
+    {
+      "id": "gn-m657ij",
+      "title": "戈壁储能新标杆！新疆第四师73团300MW/1200MWh共享储能项目一次并网送电成功 - 国际储能网",
+      "summary": "戈壁储能新标杆！新疆第四师73团300MW/1200MWh共享储能项目一次并网送电成功 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9UMnY0Wml5TVJQMU1kOE5pNVdwRGM3VGh4NXJ6bkVKaHBmbkc3Q2tDYTRiWDBrSUFZRERwbGw2MzBMb1B6dXVqeWduUi1MRVJ0bHlZUUtJeUIxQW5vdF9yZ2p3?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "戈壁储能新标杆！新疆第四师73团300MW/1200MWh共"
+      }
+    },
+    {
+      "id": "gn-v3gzxj",
+      "title": "拿下阿联酋巨型储能大单！比亚迪浩瀚落地全球首座全天候吉瓦级新能源电站 - 碳索储能网",
+      "summary": "拿下阿联酋巨型储能大单！比亚迪浩瀚落地全球首座全天候吉瓦级新能源电站 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qdmRvRkJTNHhRQ3VpUU5uOFJrMDBldUVXeHhPVHNlR3NSUEFydHVyMTBqYjVkNUdnWW9MXzg3THlXdDhtWDFra1N4SlN4bUVDc0FiSjlIZFJmZFhTMmp6QQ?oc=5",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "拿下阿联酋巨型储能大单！比亚迪浩瀚落地全球首座全天候吉瓦级新"
+      }
+    },
+    {
+      "id": "rss-zcycmv",
+      "title": "国家能源局：加大关键电力装备自主研发，推动电力芯片、特高压组部件等关键技术突破",
+      "summary": "IT之家 8 月 7 日消息，国家能源局今日印发《电力安全生产“十五五”行动计划》。到 2030 年，电力安全治理体系和治理能力现代化建设取得明显进展，电力安全生产责任全面落实，电力安全风险分级管控和隐患排查治理双重预防机制有效运转，重大灾害防范和应急处置能力显著增强，电力建设施工作业风险有效管控，以科技为核心的本质安全建设全面推进，推动实现从“要我安全”向“我要安全”转变，电力安全生产形势持续稳定。IT之家注意到，其中提出，加强“人工智能 +”安全治理，创新设备高精度故障预测及健康管理方法，推动人工智能技术嵌入智能安全工器具，研究基于人工智能大模型的电力安全生产辅助决策技术。加大关键电力装备",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/922.htm",
+      "publishedAt": "2026-08-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "国家能源局：加大关键电力装备自主研发，推动电力芯片、特高压组"
+      }
+    },
+    {
+      "id": "rss-ze1xtl",
+      "title": "上汽大众 ID. ERA 5S 轿车官宣 8 月 11 日预售，配备行云智行高阶辅助驾驶",
+      "summary": "IT之家 8 月 7 日消息，上汽大众今日宣布，ID. ERA 5S 将于 8 月 11 日正式开启预售。▲ 都市金工信部申报信息显示，上汽大众 ID. ERA 5S 尺寸为长 4836mm、宽 1880mm、高 1505mm，轴距为 2766mm。动力方面，新车将搭载 1.5T 插电混动系统，其中发动机最大净功率为 77kW，驱动电机额定功率为 57.6kW，峰值功率为 130kW。▲ 风尚青据IT之家此前报道，上汽大众已经公布了新车的五款外观颜色（都市金、风尚青、前卫黑、天际灰、摩登白）与两款内饰颜色“浮光”和“掠影”。新车采用环抱一体式布局，车内饰条与隐藏式出风口、侧窗开关与门拉手、手机",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/920.htm",
+      "publishedAt": "2026-08-07",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "大众",
+          "上汽"
+        ],
+        "主要事件": "上汽大众 ID. ERA 5S 轿车官宣 8 月 11 日预"
+      }
+    },
+    {
+      "id": "rss-od9y91",
+      "title": "一汽-大众捷达 M6 内饰官图发布，品牌首款纯电轿车",
+      "summary": "IT之家 8 月 7 日消息，一汽-大众旗下捷达 M6 内饰官图今日发布，该车是捷达品牌首款纯电轿车。从官方海报看，该车采用了简约风格的内饰设计，配备全液晶仪表 + 大尺寸悬浮中控屏组合，搭配双辐多功能方向盘，提供隐藏式氛围灯、手机无线充电面板、全景天幕等配置。座椅方面，新车前排座椅可完全放平，能够与后排座椅形成“大床模式”。IT之家注意到，一汽-大众捷达 M6 纯电动轿车于上个月在工信部发布第 409 批《道路机动车辆生产企业及产品公告》中公示。该车车身尺寸为长 4806 mm、宽 1868 或 1895 mm、高 1500 mm，轴距 2820 mm，前轮距 1625 mm，后轮距 162",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/896.htm",
+      "publishedAt": "2026-08-07",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "大众"
+        ],
+        "主要事件": "一汽-大众捷达 M6 内饰官图发布，品牌首款纯电轿车"
+      }
+    },
+    {
+      "id": "rss-nvoj9h",
+      "title": "赠 2 个月超级大会员升级包：B站大会员 112 元发车，平台补贴随时结束",
+      "summary": "B站大会员年卡原价 233 元，天猫超级 88 大促期间，直降至 118 元。今日叠加下方优惠，实付 112.15 元即可入手 + 赠 2 个月超级大会员升级包（电视端可用）：点击下方卡片 → 下滑到宝贝详情页再点击下方淘金币大额抵扣横幅实付 112.15 元即可入手，宝贝页面显示原价，下单页面显示优惠价哦：天猫哔哩哔哩 大会员年卡赠 2 个月超级大会员升级包淘金币抵扣后 112.15 元直达链接关于超级大会员升级包会员权益天猫哔哩哔哩 大会员年卡赠 2 个月超级大会员升级包淘金币抵扣后 112.15 元直达链接",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/986/885.htm",
+      "publishedAt": "2026-08-07",
+      "keywords": [],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "赠 2 个月超级大会员升级包：B站大会员 112 元发车，平"
+      }
+    },
+    {
+      "id": "gn-c2s27d",
+      "title": "硬核突破！中科源本硫化物全固态电池通过220℃热箱严苛考验 - 国际充换电网",
+      "summary": "硬核突破！中科源本硫化物全固态电池通过220℃热箱严苛考验 国际充换电网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82bU5fRlJPM1dSalBoYU5HR2pORkJpaXkta1hKek1hRXZhS21qQUFxdFlmbDdNTFlJbFAxUFJIR0ZIQzUzR09Ddk91QklGQVd5UHRnT1AwYw?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "硬核突破！中科源本硫化物全固态电池通过220℃热箱严苛考验 "
+      }
+    },
+    {
+      "id": "gn-qos79p",
+      "title": "韩国株式会社梨树精细化学到访SMM参观交流 共探固态电池产业合作机遇 - 上海有色金属",
+      "summary": "韩国株式会社梨树精细化学到访SMM参观交流 共探固态电池产业合作机遇 上海有色金属",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE93dy1BalJKWjgzQTRkZThTNHZPbnM4ZUxHc3U0ZGY3MFFiY1RZVWxpeEREcm9lMTc5cjFPaUdPX3k0SDZSa2RyeURB?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "上海、韩国",
+        "主要事件": "韩国株式会社梨树精细化学到访SMM参观交流 共探固态电池产业"
+      }
+    },
+    {
+      "id": "gn-x113sj",
+      "title": "超快充技术新能源汽车 - 新浪财经",
+      "summary": "超快充技术新能源汽车 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1ZYWVjVG11Q3ZUMHg0VC1kVG9lOUVrUWJ0YmRLSUszWncyeTZ3NUxOYmVCdUttTzhtTlJ4ZDU0LXp3bUM3MW9mUkdMYjE5b3cyTEVXamsweFhvcUNMNXNMX3FiQjN4WkhSelgyTXBnUzBhb21mRm5xbjFJMWY1QQ?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术新能源汽车 - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-35vecs",
+      "title": "超快充技术优缺点分析 - 新浪财经",
+      "summary": "超快充技术优缺点分析 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBiSXRrUjdPai1kTzJFdFphLUVEZzBCeVpqVW01NWhwQkdFMktTTDNZMGQ5bHc3NXJGclRfa2w0cTlpRUZNa1pfQ0xudWd3cWFYSWQ2N3Bkd0ZvRkdnLTg4VFhHZ3MtMkZwVTFZaDVFX21TZG5fYTktVlBiSDJWUQ?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术优缺点分析 - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-hgs00w",
+      "title": "5000万千瓦车网互动目标下，新能源汽车如何变身“储能池” - 新京报",
+      "summary": "5000万千瓦车网互动目标下，新能源汽车如何变身“储能池” 新京报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5aSmlLb05tcHAxcjdhdWMtNThyaXJ5T3ZhUFFMU2lDRU1VQkdVQV8walNZM3NjNWxveC1oU0ZxS1JLczFzTWxNLTlqY25MSjdidTBPX2FXZ0pIX1pIU3Q4RTVlUWo?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "5000万千瓦车网互动目标下，新能源汽车如何变身“储能池” "
+      }
+    },
+    {
+      "id": "gn-rmqruh",
+      "title": "动力储能供不应求，如何影响新材料的市场走向？这场产业大会有答案 - 四川新闻",
+      "summary": "动力储能供不应求，如何影响新材料的市场走向？这场产业大会有答案 四川新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fLUE2Wng2NnYzTkd2aUNBRi05VGU0anBBR0VDdF9lNjhfaVlTLWRBazhpVjJhN0pNSFZVWmxXaGdQWW1PVGF4MV91MDlwdUk1QzJHOUZ6Z28wWUU2d1BnWFk0MA?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "储能"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "动力储能供不应求，如何影响新材料的市场走向？这场产业大会有答"
+      }
+    },
+    {
+      "id": "gn-r2jpz5",
+      "title": "四川氢能交通再迎利好：高速免费 + 氢走廊扩容 - 中国产业发展促进会氢能分会",
+      "summary": "四川氢能交通再迎利好：高速免费 + 氢走廊扩容 中国产业发展促进会氢能分会",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OMm5yRGhJRHJhNUFCRE5GT1JydEh0eVdxZjJIV0trY1dMVjdWbkFURDREZm8xQlYxSVh1S1ZQLWdYc1hoOTc5MzJhWk5XdEZFaTFqQUd3?oc=5",
+      "publishedAt": "2026-08-06",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "四川氢能交通再迎利好：高速免费 + 氢走廊扩容 - 中国产业"
+      }
+    },
     {
       "id": "gn-ffl8uc",
       "title": "新源智储助力中亚新能源高质量发展丨哈萨克斯坦首个储能项目完成并网调试 - 碳索储能网",
@@ -159,6 +438,38 @@
           "宁德时代"
         ],
         "主要事件": "东风日产 NX7 车型亮相，配激光雷达、半隐藏式门把手"
+      }
+    },
+    {
+      "id": "gn-ssyzyu",
+      "title": "磷酸铁锂半年涨价过半，新能源电动车会贵多少？ - 新浪财经",
+      "summary": "磷酸铁锂半年涨价过半，新能源电动车会贵多少？ 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE56NjZsMGpxUVFkdFhVaW14NmcxVHdRWGJNd3BkUjNzTmZkUTdreTJqSlhXMnE5VC04dnBmTTUzbHNLOUZBWUxYM2hXOGU3a2NNb0IzSW5jbVp2U0JTa1l4LU91azNSOVhON0R1Y09tQQ?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸铁锂半年涨价过半，新能源电动车会贵多少？ - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-nt07n3",
+      "title": "广东清能氢能项目落户吕梁 - 新华网山西",
+      "summary": "广东清能氢能项目落户吕梁 新华网山西",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYzE0bFpUOEs5THM3Z05xSW1nUENfcmRzcDFTMUxYUkFuMlZxX2VNcXAzblJWaUtaSHBHZEFJWVBldDVKdFBiRm1MTGs1NFRHbE9wd3I0d0h3YzRMOVVDbDVIM3BMc2VnaDBDS2JHWkRINElGbDBSNmlWTVo4YTduRzJ3?oc=5",
+      "publishedAt": "2026-08-05",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "广东清能氢能项目落户吕梁 - 新华网山西"
       }
     },
     {
@@ -314,6 +625,23 @@
       "importance": "medium",
       "tags": {
         "主要事件": "Sharkoon 推出 PureWriter W100 键盘"
+      }
+    },
+    {
+      "id": "gn-pbnb7j",
+      "title": "硫化物全固态电池实车测试告捷 - 中国科技网",
+      "summary": "硫化物全固态电池实车测试告捷 中国科技网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA0NWZGY0JnRTFOUlR6U2ljZWprWHJHcnRsNkRsY0NQSE1vbnRsMW1oWElxd2JRa3VzU2hXR00zTUMtMUpoVk5ZMUEtWFB2VjRQV2xNSGVXWjhwb0ZWeUN1X2VMb0daVENYV3JScTFIYVQ?oc=5",
+      "publishedAt": "2026-08-04",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "硫化物全固态电池实车测试告捷 - 中国科技网"
       }
     },
     {
@@ -693,6 +1021,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "联想来酷斗战者战 7000X 轻薄游戏本上市，首发 + 国补"
+      }
+    },
+    {
+      "id": "gn-bo9ivg",
+      "title": "超快充技术优缺点分析 - 新浪网",
+      "summary": "超快充技术优缺点分析 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBUOGNZa3VQbkVvankzVWpHMHRSMldXdTY0TnE5MUtQcU1kNDE5V2VNendraDFzU2cxNEZiSDFVZjREamZVNGxDb0JJZ1Z3RFV2VUg0MlZTWDFiVDR6Q1Rpb201WE5VTEhRSUxtR2lEbXpWdw?oc=5",
+      "publishedAt": "2026-08-03",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术优缺点分析 - 新浪网"
       }
     },
     {
