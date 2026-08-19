@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T02:45:40.769Z",
+  "lastUpdated": "2026-08-19T02:48:08.032Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,281 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-2d6qp",
+      "title": "固态电池 IPO 潮来袭，行业盈利拐点未至 - 电子工程专辑",
+      "summary": "固态电池 IPO 潮来袭，行业盈利拐点未至 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wSW1RNHZ1a1lzdnJ1MDdkZVpZakZjQ2cxSVJ5bEZIQk5pNVI1Q2FvN2w0Vm9QSHRVNWEyaWFnaGpjUzhmQzdQOFh4QU1sVmhCRXY0?oc=5",
+      "publishedAt": "2026-08-19",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "固态电池 IPO 潮来袭，行业盈利拐点未至 - 电子工程专辑"
+      }
+    },
+    {
+      "id": "gn-g21ysc",
+      "title": "10万内新能源车的闪充技术实际体验如何？ - 手机新浪网",
+      "summary": "10万内新能源车的闪充技术实际体验如何？ 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XcXFHR2RoTHZrd0R1QnNpbEtZRE9PM2tLbUNGbmRWT0FwQ01fQW5iU1RQVXRJWmNmajRsZzQ3R0RmY3B3YmJxcjhYMkJqZ1l5ZVdGekx3UVFQR1ZoT1hBeHBQamdaeW0yNXYyVmdVaHUwdDBIT1JjekhXSmtfT3M?oc=5",
+      "publishedAt": "2026-08-19",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "10万内新能源车的闪充技术实际体验如何？ - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-rfydcm",
+      "title": "视频｜快充速度与电池安全一直是新能源汽车行业难题，吉利用颠覆性技术给出自己的解法。 - cb.com.cn",
+      "summary": "视频｜快充速度与电池安全一直是新能源汽车行业难题，吉利用颠覆性技术给出自己的解法。 cb.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jNnZZY3NiZS11Nm5EUmhkdldsaGI0QTAtMVYxa29MaFcwckViVE11Q0NmbVE3WHdaNXZ4Vlg5SHVaYjdZNjZPSmJnUFBqU1dCeDY1T0liSlVHMWI3S19wMg?oc=5",
+      "publishedAt": "2026-08-19",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "视频｜快充速度与电池安全一直是新能源汽车行业难题，吉利用颠覆"
+      }
+    },
+    {
+      "id": "gn-np0sny",
+      "title": "【能源透视局】8月锂电池排产突破300GWh，电芯涨价潮来了——锂电储能凭什么成为新能源“最强引擎”？ - finance.sina.com.cn",
+      "summary": "【能源透视局】8月锂电池排产突破300GWh，电芯涨价潮来了——锂电储能凭什么成为新能源“最强引擎”？ finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNdEtJVHJNTXFVT283NWZDRVNhUW4zUmxGMDVIRFRXN1g3Y3hTd25kYmxQVmZFU2dsdVpXcVZxUzEyTlhQT1hHMmVsWE5ESnE5YVJPVjVWbDZ2RDlBaHBJXy1SSDlrTjdCbGlhSWczSGVaNlZvUVpVcnRLWTBsX3oxRWRjc2l0cXpRaW5ORzQwaXF6bEJBc242NEkyR3pqVE0xdWoySDNkYmJsRmpKWkhIbnREVWdaNjM0T1ZOaHdhUkVrZmFTbXpBUDdDT3lOTklfb2lMQTF3WHlNbC1a?oc=5",
+      "publishedAt": "2026-08-19",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "【能源透视局】8月锂电池排产突破300GWh，电芯涨价潮来了"
+      }
+    },
+    {
+      "id": "rss-w5wlza",
+      "title": "罗技 G PRO X3 SUPERSTRIKE 鼠标泄露：HERO 2 48K 传感器，续航 +50%",
+      "summary": "IT之家 8 月 19 日消息，德媒 WinFuture 在当地时间 18 日的文章中分享了泄露的罗技 G PRO X3 SUPERSTRIKE 鼠标官网宣传资料。这一鼠标在依旧配备 HITS 触觉感应触发系统的同时还得到了一系列改进。罗技 G PRO X3 SUPERSTRIKE 基于 NxLOGI 芯片组，提供较上代产品提升 50% 的 135+ hr 续航、稳定的 8kHz 轮询无线连接；搭载升级后的 HERO 2 48K 传感器，支持 48000 cpi / DPI 分辨率、90G 加速度、930ips 追踪速率。这款鼠标拥有更好的平衡性，美国版本质量 59g、EMEA 版本质量则是和",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/991/451.htm",
+      "publishedAt": "2026-08-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "美国",
+        "主要事件": "罗技 G PRO X3 SUPERSTRIKE 鼠标泄露：H"
+      }
+    },
+    {
+      "id": "rss-wkr201",
+      "title": "小米 Xiaomi 蓝牙音箱磁吸版发售：重约 95g、可当手机支架，132 元",
+      "summary": "IT之家 8 月 19 日消息，小米旗下 Xiaomi 蓝牙音箱磁吸版现已在小米有品（点此前往）发售，定价 199 元，首发价 132 元。这款音箱重约 95g，底部内置磁吸环，既是磁吸音箱，也是手机支架，适配苹果 MagSafe 生态；内置霍尔磁吸感应，支持吸附自动开机。这款音箱搭载 1.5 英寸 3W 全频喇叭，表面采用细腻编织网布，底部还有 RGB 环形灯带；两台可组成立体声，最高可串联 10 台；支持 IP67 级防尘防水，电池容量 650mAh。IT之家附详细参数如下：",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/991/445.htm",
+      "publishedAt": "2026-08-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米 Xiaomi 蓝牙音箱磁吸版发售：重约 95g、可当手"
+      }
+    },
+    {
+      "id": "rss-wmy8dh",
+      "title": "HMD 诺基亚 125 4G 2nd Edition 功能机曝光：2.4 英寸面板、30 万像素前后摄像头",
+      "summary": "IT之家 8 月 19 日消息，消息源 smashx_60 发文，曝光了 HMD 旗下诺基亚 125 4G 2nd Edition 功能机，该机规格与 HMD 此前推出的诺基亚 210 4G AI 手机大致相同。该机可选深蓝 / 银色两种配色，手机正面配备一块 320x240 分辨率 2.4 英寸 LCD 面板，匹配 30 万像素自拍摄像头和 30 万像素后摄，同时提供了 LED 闪光灯。该机配备 64MB RAM 和 128MB 存储空间，支持 microSD 扩展，搭载 S30+ 系统，内置 1450mAh 电池。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/991/441.htm",
+      "publishedAt": "2026-08-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "HMD 诺基亚 125 4G 2nd Edition 功能机"
+      }
+    },
+    {
+      "id": "rss-x2w9ky",
+      "title": "中汽协：新能源汽车月度新车销量占比首次超过 60%",
+      "summary": "IT之家 8 月 19 日消息，据中国汽车工业协会分析，2026 年 7 月，新能源汽车出口占比连续两个月超过 50%；新能源汽车月度新车销量占比首次超过 60%、累计占比首次超过 50%。IT之家从报告获悉，2026 年 7 月，新能源汽车产销分别完成 157.6 万辆和 156.1 万辆，同比分别增长 26.8% 和 23.7%。2026 年 1-7 月，新能源汽车产销分别完成 901.4 万辆和 900.7 万辆，同比分别增长 9.5% 和 9.6%。2026 年 7 月，新能源汽车国内销量 100.8 万辆，环比下降 10%，同比下降 2.8%。2026 年 1-7 月，新能源汽车国内",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/991/433.htm",
+      "publishedAt": "2026-08-19",
+      "keywords": [],
+      "category": "市场动态",
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "中汽协：新能源汽车月度新车销量占比首次超过 60%"
+      }
+    },
+    {
+      "id": "rss-x3g26b",
+      "title": "三星 Galaxy S26 FE 手机宣传图曝光：7 年安卓系统更新、4900mAh 电池、Exynos 2500 芯片",
+      "summary": "IT之家 8 月 19 日消息，科技媒体 Android Headline 昨日（8 月 18 日）发布博文，分享了一组宣传图，展示了三星 Galaxy S26 FE 手机。颜色方面，本次曝光的宣传图展示了 Blueberry（蓝莓色）、Graphite（石墨色）和 Pistachio（开心果色）3 种配色。外观方面，手机正面采用平面屏幕，前置摄像头位于屏幕中央的打孔区域。屏幕边框整体较窄，且两侧边框接近等宽，但下巴部分更宽一些。机身中框采用平直设计，背板同样保持平面结构。机身采用铝制边框，屏幕由 Gorilla Glass Victus+ 玻璃保护。后置摄像头共有 3 颗，垂直排列，并置于摄",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/991/432.htm",
+      "publishedAt": "2026-08-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "三星 Galaxy S26 FE 手机宣传图曝光：7 年安卓"
+      }
+    },
+    {
+      "id": "gn-wt5fdb",
+      "title": "2026成都车展：固态电池真的能解决新能源汽车的痛点？ - finance.sina.com.cn",
+      "summary": "2026成都车展：固态电池真的能解决新能源汽车的痛点？ finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE95cEY2QnREOV9NbW1FbUczcTRTdURqYzAzZmlGS1BFbDZKajJLVmlEVko4ZXd4MEVUdUIzSllFYTgxLXdpRXVXMnVEMmdFaUp2NUNzMkFDaWJaTGlqMzdCSVZwcU9jQmFiRGU1Nkw3Q1JGd042RUN5eg?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "成都",
+        "主要事件": "2026成都车展：固态电池真的能解决新能源汽车的痛点？ - "
+      }
+    },
+    {
+      "id": "gn-iyna5o",
+      "title": "基于技术革新的新能源汽车补能方式概述 - 新浪新闻_手机新浪网",
+      "summary": "基于技术革新的新能源汽车补能方式概述 新浪新闻_手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBUWnZ2QzllaHY4UVF0RWI3VzhaLTFRN1Y0VW1Fa2pvWlRmUVJVLVdoZEYzdHNCczJTWmtaYzA5YUxUREJHN3g5UFkwc2RYcDU4dUQyMWk3M2JnZTdEREFtLXNsQmFhQmRRc1ZnTGV5R3BpOUUzZmc?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "基于技术革新的新能源汽车补能方式概述 - 新浪新闻_手机新浪"
+      }
+    },
+    {
+      "id": "gn-b7u5py",
+      "title": "省三年油钱不够修车一回，新能源维修账单曝光，一个卡扣13万？ - 汽车之家",
+      "summary": "省三年油钱不够修车一回，新能源维修账单曝光，一个卡扣13万？ 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1XVWczXzBlUEtoaHFWekF2bWNSVVZNcTZ0V2pKTE1QWHE2T29kN1E0bTNRa1c0N25YQTBLaTlKRVdwQlRjWHNldVFiVkowRXpwMWxSVEQ2TnhRd0k?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "省三年油钱不够修车一回，新能源维修账单曝光，一个卡扣13万？"
+      }
+    },
+    {
+      "id": "gn-giwddo",
+      "title": "三一斩获欧洲储能订单，加快海外新能源布局 - 华声在线",
+      "summary": "三一斩获欧洲储能订单，加快海外新能源布局 华声在线",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82U2ZqRmVhbW5QUk5VYnl4LWZqQ2htVlZUakNDdjA0SWs3S0x4VXEzVXZqZzltM24wbGdia2tkcTJqZVIwdHdMb2t4MXpJVDZsVi1QRDEzUVdQX0ZobXNj?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "地点": "欧洲",
+        "主要事件": "三一斩获欧洲储能订单，加快海外新能源布局 - 华声在线"
+      }
+    },
+    {
+      "id": "gn-dkuc26",
+      "title": "东莞理工学院新型储能产业学院、新能源电池研发中试实验实习实训平台揭牌成立 - 中国教育新闻网",
+      "summary": "东莞理工学院新型储能产业学院、新能源电池研发中试实验实习实训平台揭牌成立 中国教育新闻网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00VFZJX3Z4RTU5UlVwYnBuUlNvUHB6R1dSVEhKZUFIZTZjdGdxb1lHS3gycExoVnRUZWpzaWNlN04xdm4yRHUyR21SQzluT0dNeWJDVnBRVWVMdWdTTHJaM0RVVk1qY2tvYjNvWUN5bEkybHJK?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "东莞理工学院新型储能产业学院、新能源电池研发中试实验实习实训"
+      }
+    },
+    {
+      "id": "gn-k1qn9c",
+      "title": "2026年1-7月储能市场化与壁垒同步升温......｜新能源产研 - finance.sina.com.cn",
+      "summary": "2026年1-7月储能市场化与壁垒同步升温......｜新能源产研 finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1QakhUTThmc3RTbTM2MVJ0alVpZ1ZyUlQ5ODhZNUkzQWhMMnlFeGZKQ0dSSE1ReENZcjdwUzRIN3J5S3N1LUtLUml3enRKaF9mZmpEWWt5aWxjOGhGeXBrTkcwY2QzSVJZWW9aYTBJbw?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "储能"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "时间": "2026年1-7",
+        "主要事件": "2026年1-7月储能市场化与壁垒同步升温......｜新能"
+      }
+    },
+    {
+      "id": "gn-yz5h95",
+      "title": "《中国氢能发展报告（2026）》解读︱锚定规模化发展新阶段 筑牢氢能产业行稳致远根基 - 国际氢能网",
+      "summary": "《中国氢能发展报告（2026）》解读︱锚定规模化发展新阶段 筑牢氢能产业行稳致远根基 国际氢能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQeGNTa3UxUk8ycDF3Yi1aM2duT1BRdGREVk9rYXhqQVVsNzhTbEFJcm11LXdfS3ZqRXhjQTBlLTB5a3Exd1VDQ3c2aU1TbHpHYmI0OA?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "《中国氢能发展报告（2026）》解读︱锚定规模化发展新阶段 "
+      }
+    },
+    {
+      "id": "gn-feadv1",
+      "title": "“气”“氢”并举 绿能崛起——山西省非常规能源冲刺千亿级新赛道观察 - zhshbao.com",
+      "summary": "“气”“氢”并举 绿能崛起——山西省非常规能源冲刺千亿级新赛道观察 zhshbao.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBrcWVONlB5VGVtQXczZ05UTGRSejFUNXZzTEtwdjJVczJMQ3pjaHJ4RHY5dGh2aXd3Tkx1ZTNtRnNYUmVkcFp3ektqUlBrNUdnQS1sZ1BEaEtSdGw5MGc?oc=5",
+      "publishedAt": "2026-08-18",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "low",
+      "tags": {
+        "主要事件": "“气”“氢”并举 绿能崛起——山西省非常规能源冲刺千亿级新赛"
+      }
+    },
     {
       "id": "gn-ho1cwr",
       "title": "总投资 60 亿元！抢占固态电池产业风口，陀一固能重磅项目动工 - mcn.solarbe.com",
@@ -172,6 +447,76 @@
       "importance": "medium",
       "tags": {
         "主要事件": "商务部等 9 部门发文活跃县域消费，大力支持新能源汽车、绿色"
+      }
+    },
+    {
+      "id": "gn-64nj78",
+      "title": "点石成金，赛场破“锂”关 | 金泉新材料：乘“创客中国”东风，走绿色科创发展新道路 - 湖北省经济和信息化厅",
+      "summary": "点石成金，赛场破“锂”关 | 金泉新材料：乘“创客中国”东风，走绿色科创发展新道路 湖北省经济和信息化厅",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVQmVNRWk0QlpMMkVRUVdqQW1HaWJZM3VhWnNLOFJXb1lkdE53R1J1dXBVc3pGZHdIVC1ZWXZpb0Z5OUxKblJHZ2JBTHUzQjZQX04wZmlmWHdOZ0ZTZlpmZVpFdzZncy1JNW8yM3R3R3RtQQ?oc=5",
+      "publishedAt": "2026-08-17",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "点石成金，赛场破“锂”关 | 金泉新材料：乘“创客中国”东风"
+      }
+    },
+    {
+      "id": "gn-2x3ij4",
+      "title": "先进方形全固态电池中试产线启动建设 - 中国科技网",
+      "summary": "先进方形全固态电池中试产线启动建设 中国科技网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAtZzlQRVlYNUdPZmdsQnhUTENsenlNa1Q2NHNBdVpjYmRtNl9WVjhoMG05MkVucHJlUWdwbDlTdURuUTUwLXpic3FtT2tWSHlOeWo4c0hub1dNWTZHYzdHLTllQ3ZGUEx1UC0xWE9RSjA?oc=5",
+      "publishedAt": "2026-08-17",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "先进方形全固态电池中试产线启动建设 - 中国科技网"
+      }
+    },
+    {
+      "id": "gn-coy367",
+      "title": "2026款MG4新能源电池怎么选？磷酸铁锂还是半固态？实测续航530km一文看懂+FAQ - 手机新浪网",
+      "summary": "2026款MG4新能源电池怎么选？磷酸铁锂还是半固态？实测续航530km一文看懂+FAQ 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE8wNlVxdzhVZzFfODJWUHNfTTJEYU1XbVJLaXdvNFRvZTZRQUNnUXI5QjlwaE5DU01PNUZrS1VvcHJLOU5zNlpSemlyaUtubHZlOHpnR0dFTlA0aVgyOHlOZmtLdDUyV1BmTG1BUTBhMm4yUQ?oc=5",
+      "publishedAt": "2026-08-17",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026款MG4新能源电池怎么选？磷酸铁锂还是半固态？实测续"
+      }
+    },
+    {
+      "id": "gn-qnh8d6",
+      "title": "湘潭磷酸铁锂巨头赴港IPO，宁德时代、比亚迪是客户 - 36 Kr",
+      "summary": "湘潭磷酸铁锂巨头赴港IPO，宁德时代、比亚迪是客户 36 Kr",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9HM3U1cmZBeTBHUFEwWDJiYThfU3c1b0xhVFluY2F4Z0hSSGVYNktVelBLb1FodzFWUzRyVHdTa2xjZzZmeVFVMmNLOU9XQQ?oc=5",
+      "publishedAt": "2026-08-17",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "比亚迪"
+        ],
+        "主要事件": "湘潭磷酸铁锂巨头赴港IPO，宁德时代、比亚迪是客户 - 36"
       }
     },
     {
@@ -720,6 +1065,22 @@
       }
     },
     {
+      "id": "gn-32n9gp",
+      "title": "为什么越涨越抢货？要读懂磷酸铁锂涨价逻辑|ETF风向标 - 东方财富",
+      "summary": "为什么越涨越抢货？要读懂磷酸铁锂涨价逻辑|ETF风向标 东方财富",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcHl0aGdueHVzTkxaRDExdC12ZEs1ZlFkeTNUa3JieHZ1ZFllOWhtNmFPSGZsUnZLcFhjdnpNbzR5YzlUcTh6QU9EeGJ5VS1VNmxySU9POC00LWR5ZlRzaGVuQXBRNmo0bERSc3NTUGpOMGc4Nzc3eF9ldGdRc1RGdE9kR2UyTGhfaUFyRkdCcEV1T1ZtSktIMG12RHlVRG9WXzRFNXhyczljd3RpTFQyVnA0OA?oc=5",
+      "publishedAt": "2026-08-15",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "为什么越涨越抢货？要读懂磷酸铁锂涨价逻辑|ETF风向标 - "
+      }
+    },
+    {
       "id": "gn-rqhkvd",
       "title": "再签海外270亿大单，这家磷酸铁锂TOP7凭什么？ - QQ News",
       "summary": "再签海外270亿大单，这家磷酸铁锂TOP7凭什么？ QQ News",
@@ -875,6 +1236,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "消息称星途再调汇报线，奇瑞“海外掌门”张贵兵接棒李学用"
+      }
+    },
+    {
+      "id": "gn-m6kype",
+      "title": "超快充技术新能源汽车 - finance.sina.com.cn",
+      "summary": "超快充技术新能源汽车 finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fZjZHZmtHMDcwYjZsWTdObno3TjhXbzJfdUFGY2hvRmZSR0FtLUVEYnZPOFMyeGJqQzhWVzZablJobjhjTzRtWlEtQVNfOWJFWWZ0M2pGZGNobW1TQ2UyMWtaSW1ydFVKT3RvZXF3aWtDc2FQY3dvOVdzbnFuQQ?oc=5",
+      "publishedAt": "2026-08-14",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术新能源汽车 - finance.sina.com."
       }
     },
     {
