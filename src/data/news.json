@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21T02:53:09.660Z",
+  "lastUpdated": "2026-08-22T02:44:30.834Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,330 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-h7vy9o",
+      "title": "国科大多项硬核技术落地天津！全固态电池迈入中试量产阶段 - 电子工程专辑",
+      "summary": "国科大多项硬核技术落地天津！全固态电池迈入中试量产阶段 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5weTJSbUNNWXcydE1Ud3ZCSGc2bUJPX0NsNmFNblZrVWx5N2lpYVR0SHBvV2pvRHduVXJiOEpyM1h1SHZBZ2xGTGlIWi1wZndwR1dB?oc=5",
+      "publishedAt": "2026-08-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "国科大多项硬核技术落地天津！全固态电池迈入中试量产阶段 - "
+      }
+    },
+    {
+      "id": "gn-7ct0y7",
+      "title": "能源早报｜我国牵头固态电池首项国际标准正式立项；紫金矿业上半年净赚391.7亿元 - 搜狐网",
+      "summary": "能源早报｜我国牵头固态电池首项国际标准正式立项；紫金矿业上半年净赚391.7亿元 搜狐网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTHJpS2lsc1JuN19zMGR2Yzk0dTJtQzNlc3dpYS11bW1BVVkyWl9fQ3pwdjR6Y1d2ZzllSkRYcFVqZm5qeWd5VXl6OFRaMWpLeThlYm0wVGo0Z2h3UF9NRmVTVXVramVDN3NoaXpoQVk3UzNMRVhOUFlFMXlBTmRMa3lRaGw4Zk5v?oc=5",
+      "publishedAt": "2026-08-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "能源早报｜我国牵头固态电池首项国际标准正式立项；紫金矿业上半"
+      }
+    },
+    {
+      "id": "gn-yewfgj",
+      "title": "碳酸锂再度大涨！电池携手新能源车板块双双上攻 - 手机新浪网",
+      "summary": "碳酸锂再度大涨！电池携手新能源车板块双双上攻 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTEdFc0R1S3lNd2tZdU1RQ0xNRk1CWEprbHFESU8tbUl3aWRadFI1a1lmLTJiVGpsSkZpN0RFN0J2LWJjNmFCeW0tX2lmMWxuTUZjM1UxU3dIanZ3NmY4N0Q3bzBZNDVlTHBwQUlQU0I0ejB3djdKRFA2ay1FOEZDc2JlMA?oc=5",
+      "publishedAt": "2026-08-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "碳酸锂再度大涨！电池携手新能源车板块双双上攻 - 手机新浪网"
+      }
+    },
+    {
+      "id": "rss-a04oq1",
+      "title": "宝马新世代 BMW i3 更多规格公布：9 款车漆 + 4 款内饰，续航超 1000 公里",
+      "summary": "IT之家 8 月 22 日消息，8 月 21 日，2026 成都车展开幕，宝马新世代 BMW i3 纯电轿车公布更多细节信息。IT之家从官方介绍获悉，该车尺寸为 4864/1865/1490mm，轴距为 3005mm，配备数字天使光翼前脸、C 柱发光 M 标识、L 型光刃尾灯、全新半隐藏式门把手、前储备箱空间，提供磨砂空间银、空间银、曼岛绿、尤加利绿、勒卡斯泰莱蓝、火焰红、极昼灰、碳黑色、矿石白等 9 款车漆。座舱方面，该车采用环抱式瀑布氛围灯与灵动透光面板，提供座椅加热、通风、按摩等舒适配置；全景一体式防晒天幕，三层镀银低辐射，防晒率高达 99.9%；3005 毫米长轴距，加长轴距全部给到二",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/992/927.htm",
+      "publishedAt": "2026-08-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "成都",
+        "涉及企业": [
+          "宝马",
+          "宝马"
+        ],
+        "主要事件": "宝马新世代 BMW i3 更多规格公布：9 款车漆 + 4 "
+      }
+    },
+    {
+      "id": "rss-9z13jb",
+      "title": "iQOO Neo11 至尊版首销优惠价延续至 8 月 31 日，3399 元起",
+      "summary": "IT之家 8 月 22 日消息，iQOO Neo11 至尊版发布于 8 月 18 日，首销优惠价（原定 8 月 18-24 日）3399 元起：12GB+256GB 版本：3699 元，首销优惠价 3399 元，国补价 2899 元16GB+256GB 版本：4099 元，首销优惠价 3799 元，国补价 3299 元12GB+512GB 版本：4299 元，首销优惠价 3999 元，国补价 3499 元16GB+512GB 版本：4699 元，首销优惠价 4399 元，国补价 3899 元iQOO 旗舰系列产品经理王侃今日宣布，iQOO Neo11 至尊版首销优惠价延续到 8 月 31 日。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/992/925.htm",
+      "publishedAt": "2026-08-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "iQOO Neo11 至尊版首销优惠价延续至 8 月 31 "
+      }
+    },
+    {
+      "id": "rss-9yhaxy",
+      "title": "2028 款梅赛德斯-AMG E 63 纯电原型车曝光，配 YASA 轴向磁通电机",
+      "summary": "IT之家 8 月 22 日消息，汽车媒体 autoevolution 昨日（8 月 21 日）发布博文，分享了一组在德国纽博格林赛道抓拍到的路测图，展示了正在测试的 2028 款梅赛德斯-AMG E 63 原型车。外观方面，有别于此前偏圆润的 EQ 系列纯电车型，新车采用更传统的三厢车身。车身配备大倾角前风挡、长车头、清晰的尾厢盖和外扩轮拱，整体比例更接近豪华行政轿车。新车前脸采用较为直立的格栅区域，设计思路与纯电版 GLC 和 C-Class 相近。前保险杠下方设置低位进气口，用于向热交换器、前电驱单元和前制动器输送冷空气。前唇扰流板与 2 个导流翼片则有助于提升高速行驶时的车头稳定性。车身",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/992/924.htm",
+      "publishedAt": "2026-08-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "德国",
+        "主要事件": "2028 款梅赛德斯-AMG E 63 纯电原型车曝光，配 "
+      }
+    },
+    {
+      "id": "rss-9wtx5v",
+      "title": "我国高空风电领域重大工程突破，S4000 浮空风电系统完成全流程放飞验证",
+      "summary": "IT之家 8 月 22 日消息，据央视新闻今日报道，近日，我国高空风电领域取得重大工程突破。由我国自主研制的 S4000 浮空风力发电系统，在西北某试验基地顺利完成全流程放飞验证，标志着我国平流层高空风电技术正式从技术迭代走向工程化落地。IT之家获悉，本次试验完成升空、驻空、发电测试、平稳回收全流程考核，各项指标均达标，充分验证了系统在高海拔复杂极端环境下的可靠性。作为 S2000 机型的迭代升级产品，S4000 采用全新构型，综合性能全面提升，最大升空海拔可达 4000 米，适配国内绝大多数区域部署，可直接适配主流电网供电需求，设计使用寿命长达 20 年。目前，高空风电已纳入国家“十五五”可",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/992/921.htm",
+      "publishedAt": "2026-08-22",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "我国高空风电领域重大工程突破，S4000 浮空风电系统完成全"
+      }
+    },
+    {
+      "id": "rss-9j32bu",
+      "title": "奇瑞全新 QQ3 摩登版纯电小车开启预订，现款 5.89 万元起",
+      "summary": "IT之家 8 月 22 日消息，8 月 21 日，奇瑞全新 QQ3 摩登版纯电小车于 2026 成都车展开启“99 元抢鲜订”，预计将于近期上市。据介绍，该车提供摩登时代、安妮珍珠两款配色，采用复古外观设计，配备饼形轮毂、简约白色拉花，四周调整为与车身同色，细节精心加装镀铬饰条，白色保杠搭配镀铬装饰。座舱方面，该车座椅采用「千鸟格」设计，源自高定时装的经典纹理，撞色织带设计，顶棚由天鹅绒包覆。动力方面，新车预计采用后置后驱布局，提供最大功率 58 千瓦和 90 千瓦两种电机选择。匹配 29.48 千瓦时与 41.28 千瓦时两种规格的犀牛电池，CLTC 工况下纯电续航里程分别为 310 公里与",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/992/917.htm",
+      "publishedAt": "2026-08-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "成都",
+        "主要事件": "奇瑞全新 QQ3 摩登版纯电小车开启预订，现款 5.89 万"
+      }
+    },
+    {
+      "id": "gn-rkmdku",
+      "title": "青岛北部崛起电池材料产业高地：加快打造平度—莱西电池材料集聚区 - 青岛新闻网",
+      "summary": "青岛北部崛起电池材料产业高地：加快打造平度—莱西电池材料集聚区 青岛新闻网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SY3hXR28xNzZ0UlFMUDNDenhPNUJQYVl3SGVfWkxKSWlyVmhQdWVQMDVZM0NGRUx2ZkFrem1nLUxsdGZxdXJZelcwVXlsWEg2dTUwUnQ5OV80UC1CcWhSXy04ZTRqT1FKNW0wb0dRQjNiOENXcnc?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "青岛北部崛起电池材料产业高地：加快打造平度—莱西电池材料集聚"
+      }
+    },
+    {
+      "id": "gn-dg311a",
+      "title": "8月21日日科化学涨停：锂电池，碳基材料，新能源汽车概念热股_个股掘金 - 证券之星",
+      "summary": "8月21日日科化学涨停：锂电池，碳基材料，新能源汽车概念热股_个股掘金 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5UVHgwYnFnR1FiRHlWUmNUb1hFdTlwcjRqVnkxNTNkRHIyNTI4UHVtWlZ6Z2hKaVk0YnhLQjNoOXc1bFp3ZGxYUXF6UDd1ZTB6c1ZOaTkzSEJrTmtzOWtiSWhB?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "8月21日日科化学涨停：锂电池，碳基材料，新能源汽车概念热股"
+      }
+    },
+    {
+      "id": "gn-6leeol",
+      "title": "金龙羽：上半年营收稳定增长，固态电池布局迈入产业化关键期 - 东方财富",
+      "summary": "金龙羽：上半年营收稳定增长，固态电池布局迈入产业化关键期 东方财富",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nYmJMTHlQckJaNG5kcUhBUEFCSEI4cVVVNTJOQ0ZoNkI3dTdFcUhwcE5OMEU2NEZnRHpyczZsN1FJbVJhQnBTZlJGR3JseEFYcEU2YUVyZDJodGtLYnVhSQ?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "金龙羽：上半年营收稳定增长，固态电池布局迈入产业化关键期 -"
+      }
+    },
+    {
+      "id": "gn-r5th03",
+      "title": "啃下固态电池“材料关”，武汉这家企业跑出“加速度” - 湖北日报传媒集团",
+      "summary": "啃下固态电池“材料关”，武汉这家企业跑出“加速度” 湖北日报传媒集团",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5yckJqSFNOX2ppSEVqdDhBVXlhVGtlaEJoMTNPVW5SSmhvV05SVUhuWnFRcEhfVFp0QWlVdEZ6eGl2amlmSTliakFTOVI3M3U3VzlkWGg2dHU?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "武汉",
+        "主要事件": "啃下固态电池“材料关”，武汉这家企业跑出“加速度” - 湖北"
+      }
+    },
+    {
+      "id": "gn-yuka26",
+      "title": "我国牵头固态电池首项国际标准正式立项 推动新能源产业快速发展 - chinanews.com.cn",
+      "summary": "我国牵头固态电池首项国际标准正式立项 推动新能源产业快速发展 chinanews.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBkalpjbTJueC1hd0tyaU5qZmlSTDN5RE5iSjRDdGdIdnFMMHpvQ2ZqNWlwMld6c05qVGxoSTZfOHFBU1JSSjB3NXc4eWNYZVVBSVdSckF0S2NqU1dnb3N4Q0dnM20xTjJU?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "我国牵头固态电池首项国际标准正式立项 推动新能源产业快速发展"
+      }
+    },
+    {
+      "id": "gn-mrtt7h",
+      "title": "算电协同激活储能电力新场景-数智电力 - cpem.org.cn",
+      "summary": "算电协同激活储能电力新场景-数智电力 cpem.org.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1EZHptaG96WnBzYmhVX1FOVk5BQmY4WUJrQzIxMkF6TGhjYXpSa0kzZDZfLUxZRUI0dHRUVnR0ZF93WkdoUEZEcEVxMHJnUUhSdTVF?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "算电协同激活储能电力新场景-数智电力 - cpem.org."
+      }
+    },
+    {
+      "id": "gn-xnsjz",
+      "title": "近6GWh！阳光、华为等新签储能订单 - 电子工程专辑",
+      "summary": "近6GWh！阳光、华为等新签储能订单 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1UNXNQXzB3amttVExJYTZ2ZnpVVWMwOGFEYWFobDBRLTlSa3FWNWdVOHpjdHFLMTI1X0c1SUhGZUR5Si1GV2RodS13R19fUkVNaXhj?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "近6GWh！阳光、华为等新签储能订单 - 电子工程专辑"
+      }
+    },
+    {
+      "id": "gn-ydx4rs",
+      "title": "从“能用”到“好用” 大咖齐聚重庆共探氢能商用车高质量发展之路 - 新华网重庆",
+      "summary": "从“能用”到“好用” 大咖齐聚重庆共探氢能商用车高质量发展之路 新华网重庆",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5QekY4N1pLQnhzSm8xUmd2dzBpX2dNeWFqNWhSWWJzN3FCRmZjNWoyZGRSc2dkOHB1ZElEdHJPdFBRMnluQzQ3dkQ1UHgzRHNsazRtM3E5UkpMcWhSbmFIalRMTFBWa1hzclRMTzdUMFMtNHJENkE?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "重庆",
+        "主要事件": "从“能用”到“好用” 大咖齐聚重庆共探氢能商用车高质量发展之"
+      }
+    },
+    {
+      "id": "gn-bvb0lq",
+      "title": "政策红利叠加技术突破 业界共议氢能商用车“从能用到好用” - cq.chinanews.com.cn",
+      "summary": "政策红利叠加技术突破 业界共议氢能商用车“从能用到好用” cq.chinanews.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5fX2t0WlpwWmtTS1EtUjNNMmlBVTNBaUpabXhzMlRadzQyS3loSzItTm9qaUxSMFdMZHFBT3JkVXZTclJZcHZPMzZvU295bTFqZGljYWVJbTRxU3g3U0l1c0JVUXBreVcyWThz?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "政策红利叠加技术突破 业界共议氢能商用车“从能用到好用” -"
+      }
+    },
+    {
+      "id": "gn-r9g0dl",
+      "title": "瞄准西部氢能高地 重庆加速布局氢燃料电池商用车 - 华龙网",
+      "summary": "瞄准西部氢能高地 重庆加速布局氢燃料电池商用车 华龙网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5yaGNqTUozWlFfX0FQTFdCSnhhNHp2eVZ2NEExMjN2ejFqRndwWTFSLXJSQ2p0bmd1eklYQUM3TkZva1pVdHpKbEJNY1NTaHZaV21wZ1dlUnVCWFd1dUc2anI1YUlPVXA4OVBv?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "重庆",
+        "主要事件": "瞄准西部氢能高地 重庆加速布局氢燃料电池商用车 - 华龙网"
+      }
+    },
+    {
+      "id": "gn-ta11my",
+      "title": "深化氢电协同融合 助力新型能源体系建设——《中国氢能发展报告（2026）》解读 - ideacarbon.org",
+      "summary": "深化氢电协同融合 助力新型能源体系建设——《中国氢能发展报告（2026）》解读 ideacarbon.org",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAwTzlGRGs4eWJJbzNkWGdiMmlQWm4zQnB5UTR2aVZZOXVIbHV1MkpOQVZtaklrZnJXS2VrNUhnY1lTUHZiblB1TGt3WEkzZmVzdUJzc2VWNkhST1lLUlE?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "深化氢电协同融合 助力新型能源体系建设——《中国氢能发展报告"
+      }
+    },
+    {
+      "id": "gn-fpj1qn",
+      "title": "“十五五”财政加码支持氢能、新能源汽车等绿色产业 #氢能 #新能源汽 车#“十五五” #绿色发展 - 搜狐网",
+      "summary": "“十五五”财政加码支持氢能、新能源汽车等绿色产业 #氢能 #新能源汽 车#“十五五” #绿色发展 搜狐网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbkxmaDFON2MyU2gxOUVzVkpacmxxVVBfSjZxRTMzdGw1bWt5UDVHR2R3cjBDZlM4UHJZN3ZkX1BLMXpYa3dJN0VPeGlRVUs1by1QMV9LT09nRVlaNWFZZlZ5cEQzc0p4NjFIOVBYQXZVS2FGc0FQNG1zZDVRN2dJckp0V2tyalEybXl0SA?oc=5",
+      "publishedAt": "2026-08-21",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“十五五”财政加码支持氢能、新能源汽车等绿色产业 #氢能 #"
+      }
+    },
     {
       "id": "gn-s0k2kb",
       "title": "荣光新讯 | 决战“9·15”！荣光电力铸就储能标杆，盐池卓跃100MW/400MWh项目并网冲刺 - 碳索储能网",
@@ -135,6 +459,88 @@
       "importance": "medium",
       "tags": {
         "主要事件": "三星 Galaxy S26 FE 手机渲染图曝光，8 月 2"
+      }
+    },
+    {
+      "id": "gn-b2ndnv",
+      "title": "110亿元！磷酸铁锂赛道再迎两大重磅投资！ - 上海有色金属",
+      "summary": "110亿元！磷酸铁锂赛道再迎两大重磅投资！ 上海有色金属",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFB5dG91UFExU1M5LVlGQmUxWGVxdXkxM1FieC0yYjZCdkRZdjJ1dWg3RW56S2lRbmw5R0IzNzdfU2QxV2JYeHpWbkZ3?oc=5",
+      "publishedAt": "2026-08-20",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "上海",
+        "主要事件": "110亿元！磷酸铁锂赛道再迎两大重磅投资！ - 上海有色金属"
+      }
+    },
+    {
+      "id": "gn-etlxv0",
+      "title": "磷酸铁锂产量全省第一占比过半 - 新浪财经_金融信息服务商",
+      "summary": "磷酸铁锂产量全省第一占比过半 新浪财经_金融信息服务商",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYXpyYUozU1RqVFJSU2swTW52YmRYNXQtRnYzNzM4OVVOSTlaZTRSeGIxai1UODdmZDZ1Qjl1QUpOZjBPZHVmcGhqT1RFMVF5Wk9UOHhzNTlOMEFmLXZ2SDREM2JWc2kwb3JUdDdmOXp4QWpXeTcxX1JFZTR6Tk5XendidUxzWkpLRF9wN1VFMmViS3ZBNF9GSA?oc=5",
+      "publishedAt": "2026-08-20",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸铁锂产量全省第一占比过半 - 新浪财经_金融信息服务商"
+      }
+    },
+    {
+      "id": "gn-ybki4d",
+      "title": "超快充技术电动车 - 手机新浪网",
+      "summary": "超快充技术电动车 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBrelp3TF9XaGhzU3lzV3Q5NlJBaTc5UjJQdWRDb2VURG1Bc3RETTZyLVRQN0tBTWtsODJMQnZwSzhtU28wZnFkWFNMWDkxbjE0VjRrMHhPaEx3dGhacWZmd0NuLVlhekxUNWhMMU1raUJyUQ?oc=5",
+      "publishedAt": "2026-08-20",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术电动车 - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-xlmmmi",
+      "title": "全钒液流储能：筑牢“三北”风光新能源大基地的压舱石 - 国际储能网",
+      "summary": "全钒液流储能：筑牢“三北”风光新能源大基地的压舱石 国际储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NS3RrWkRsM1o0bmk1VUVic3JUVVo2T2dobFdHTWFDM3lYMHpBaTR4X3NaZ29TSERtUWZRWTRySF9Pc3pqTmZNc3Y4ZGVFN1hkcjM2b0ZUT0JHTGVCN3JxWUtB?oc=5",
+      "publishedAt": "2026-08-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "全钒液流储能：筑牢“三北”风光新能源大基地的压舱石 - 国际"
+      }
+    },
+    {
+      "id": "gn-o5r1jl",
+      "title": "AI数据中心加速建设推动北美储能市场价值放大 - 虎嗅",
+      "summary": "AI数据中心加速建设推动北美储能市场价值放大 虎嗅",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9MMDhsZExYMUVHQTBnVFNma0JJaTlIeEloYjF6YWRZWEx3TmNDWkh1UGg4Y0kybE9hdEhURVFtUHZfeTRaTlBfUk5RMlhva1FSYzJqYw?oc=5",
+      "publishedAt": "2026-08-20",
+      "keywords": [
+        "储能"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "北美",
+        "主要事件": "AI数据中心加速建设推动北美储能市场价值放大 - 虎嗅"
       }
     },
     {
@@ -415,6 +821,25 @@
           "小米"
         ],
         "主要事件": "小米米家多头筋膜枪 3 开启 0 元众测：25kg 推力，官"
+      }
+    },
+    {
+      "id": "gn-k6hr27",
+      "title": "2024款奔驰G级新能源的充电速度怎么样，快充需要多久？ - 太平洋汽车",
+      "summary": "2024款奔驰G级新能源的充电速度怎么样，快充需要多久？ 太平洋汽车",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lbGRaakRsc1ZIdDhJdklDRllfU3NuTzU2UUJqUm1IUmRid0VYd0ptbWZ1djd6dWV4QzVlMmVVN2FOTDhkU21nZTVKRi1leW5rQVR4eg?oc=5",
+      "publishedAt": "2026-08-19",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "奔驰"
+        ],
+        "主要事件": "2024款奔驰G级新能源的充电速度怎么样，快充需要多久？ -"
       }
     },
     {
