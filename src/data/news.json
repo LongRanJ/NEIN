@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T06:35:09.690Z",
+  "lastUpdated": "2026-09-07T06:42:47.071Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,233 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-94v3kd",
+      "title": "华西证券:《电力设备与新能源行业周观察：AI电力供应矛盾凸显，8月多家新能源车企销量环增》 - 发现报告",
+      "summary": "华西证券:《电力设备与新能源行业周观察：AI电力供应矛盾凸显，8月多家新能源车企销量环增》 发现报告",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9QNC1MX2hKemtkQmtxNnBnY3JoWGJ0eGNraGhnYjJrNEY1S0V0bWFCdWFwaXVVUTFqdUw1bTV6VlRCTDVOYUpGQzh1VmF0enRU?oc=5",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "华西证券:《电力设备与新能源行业周观察：AI电力供应矛盾凸显"
+      }
+    },
+    {
+      "id": "gn-5962x7",
+      "title": "东吴证券:《电力设备行业跟踪周报：AI基建需求旺盛、锂电储能估值低位》 - 发现报告",
+      "summary": "东吴证券:《电力设备行业跟踪周报：AI基建需求旺盛、锂电储能估值低位》 发现报告",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1KU1d3NHAyOEtfR0RVQ2VVXzIyUWVPOWUwQTN1WVgzN1ZDeXJvMHdFekNFUlpKR2RMMGRlTVg3ZkxsLTA0RzV6Wmp4cGF1bTNE?oc=5",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "东吴证券:《电力设备行业跟踪周报：AI基建需求旺盛、锂电储能"
+      }
+    },
+    {
+      "id": "gn-9a5pv9",
+      "title": "深化产业协同 共拓零碳未来｜常晟新能源与远景能源、山高热力集团达成全方位合作共识 - 碳索储能网",
+      "summary": "深化产业协同 共拓零碳未来｜常晟新能源与远景能源、山高热力集团达成全方位合作共识 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4tNjA1dFhRdkFuNFJZS0hnUU9VSHJVQ1MtdFhndHlCS0JFaDJsMThqaklOTFlLT0NDWmVtbURrRUVsRi1QbEExWmhYOXNKVjM1bzVlc1M2ekRSamdHd0ozWQ?oc=5",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "深化产业协同 共拓零碳未来｜常晟新能源与远景能源、山高热力集"
+      }
+    },
+    {
+      "id": "gn-cva7xl",
+      "title": "“绿”动长治 “智”造未来 - 长治市人民政府",
+      "summary": "“绿”动长治 “智”造未来 长治市人民政府",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA3dW5KVTZreUwzeW1icHlkdTZLREU0WGJhT25PcHNrWFQzSW91Wl9lVE5VdWRRNFFBSkJkR0gyLWJBUW9QcVZIRWRyUURrellpTlFzcmw3Qm94VzhRczZCUUZDMVN6SDhzb3lobktnbVNHUVk1cnBF?oc=5",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“绿”动长治 “智”造未来 - 长治市人民政府"
+      }
+    },
+    {
+      "id": "gn-1r9bqd",
+      "title": "跃升36位！新能安入选2026全球新能源企业500强，位列全球第197位 - 世纪新能源网",
+      "summary": "跃升36位！新能安入选2026全球新能源企业500强，位列全球第197位 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9LYi1VZkFSbElWdFFyYmQwQlA5TkktdE54OFdUZnRCNHBkM3ZiVDYwUTNja1lyX2U1LUFrVFlweXgzY2xVeVg3dk91MWprTm5iejZLaw?oc=5",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "主要事件": "跃升36位！新能安入选2026全球新能源企业500强，位列全"
+      }
+    },
+    {
+      "id": "rss-hcu0vq",
+      "title": "理想汽车：后续自研电池将全面搭载到所有车型，今年四季度推出 2026 款理想 i6",
+      "summary": "IT之家 9 月 7 日消息，理想汽车今日发文宣布，目前理想自研电池已经在理想 L8、理想 L6、理想 i8 上进行搭载，后续理想自研电池将全面搭载到理想所有的车型。其中，今年第四季度的理想自研电池搭载计划如下：新一代理想 MEGA新一代理想 MEGA 的首批交付采用的是宁德时代的 5C 三元锂电池。随着理想自研电池的生产准备完成，将全量切换为理想自研 5C 三元锂电池。由于新一代理想 MEGA 前几日的定单超出了我们的预期，宁德时代的 5C 三元锂电池储备也即将消耗完毕。从 9 月 7 日 15:00 及之后锁单的用户，将切换为理想自研 5C 三元锂电池，预计 11 月起开始交付。全新理想 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/999/239.htm",
+      "publishedAt": "2026-09-07",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "理想"
+        ],
+        "主要事件": "理想汽车：后续自研电池将全面搭载到所有车型，今年四季度推出 "
+      }
+    },
+    {
+      "id": "rss-hehent",
+      "title": "消息称一加 16 电池定版 9000mAh，系新一波旗舰手机最大容量",
+      "summary": "IT之家 9 月 7 日消息，据微博博主 @数码闲聊站 今日透露，加加 16（一加 16）电池定版是 9000mAh，是新一波旗舰手机的最大容量。据介绍，这台手机还用了 OPPO 聚能芯片，支持低压放电，不用担心锁容问题。该机预计还将拥有骁龙 8 Elite Extreme Gen6 芯片、2 亿像素大底影像、185Hz 超高刷游戏、独一档硬件级全局 165Hz 高刷体验、9K 大电池等，主打“全能旗舰”。结合IT之家此前援引博主消息，一加 16 预计将配备 200Mp 1/1.4\" 大底主摄、50Mp 3X 1/1.95\" 索尼潜望长焦以及全新 50Mp 超广角。另外，一加于 7 月 30 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/999/236.htm",
+      "publishedAt": "2026-09-07",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "消息称一加 16 电池定版 9000mAh，系新一波旗舰手机"
+      }
+    },
+    {
+      "id": "rss-hytsm6",
+      "title": "吉利熊猫卡丁宁德版上市，限时补贴价 4.39 万元",
+      "summary": "IT之家 9 月 7 日消息，吉利熊猫卡丁宁德版现已上市，限时补贴价 4.39 万元，即日起购车的用户还可享受首任非营运车主终身三电质保、便携式充电枪、2000 元超级置换金、4000 元限时现金补贴等礼品。IT之家了解到，吉利熊猫卡丁版提供淘气橙、竞速黑、狂飙灰、冒险白、飞驰粉等车色，内饰可选百分白、超加粉两种风格，采用都市卡丁风格外观，配备 LED 前大灯、风速宽体前后包围和原厂尾翼，体现速度感。同时，这款汽车配备 ESP 车身稳定控制系统，以及倒车影像、倒车雷达、陡坡缓降功能，标配主副驾双安全气囊。车机支持手机无线互联，还可实现手机 App 钥匙分享。该车还将搭载宁德时代电池，电池历经 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/999/220.htm",
+      "publishedAt": "2026-09-07",
+      "keywords": [],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宁德时代",
+          "吉利"
+        ],
+        "主要事件": "吉利熊猫卡丁宁德版上市，限时补贴价 4.39 万元"
+      }
+    },
+    {
+      "id": "rss-ibh29h",
+      "title": "中兴 U15 标准版随身 Wi-Fi 将于 9 月 10 日上市：内置 10000mAh 电池，提供 26 小时续航",
+      "summary": "IT之家 9 月 7 日消息，中兴发文，宣布将于 9 月 10 日 10:00 推出一款 U15 标准版随身 Wi-Fi，其内置 10000mAh 电池，提供 26 小时续航。官方同步放出了该机海报，可以看到该机整体采用科幻机甲风格装饰，整体质感较佳。目前官方尚未公布该机具体规格信息，预计该机可能是今年 6 月上市的 U15S 取消屏幕版本。作为参考，U15S 正面配备一块 1.44 英寸触摸屏面板，重约 237g。机身搭载中兴自研双核芯片 V3E-A53，内置双卡、支持双网任意切换，机身内置 10000mAh 电芯，支持 18W 快充，支持 QC / PD / PPS 等协议，同时支持电源直",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/999/218.htm",
+      "publishedAt": "2026-09-07",
+      "keywords": [],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "中兴 U15 标准版随身 Wi-Fi 将于 9 月 10 日"
+      }
+    },
+    {
+      "id": "rss-ido8mx",
+      "title": "智界 R7 焕新款实车内饰首曝：双联屏确认、鸿蒙智行专属 HarmonyOS 车机、换装 HUD 抬头显示",
+      "summary": "IT之家 9 月 7 日消息，博主 @未来的学习笔记 今日继续爆料，此次首曝了智界 R7 焕新款的实车内饰。画面显示，智界 R7 焕新款用上了流媒体后视镜，手机无线充电板、杯架等设计有所调整，并在扶手箱与无线充电板中间区域新增了一枚多功能旋钮。同时，空调出风口也改为可手动调节。另外，新车换装双联屏，并把远端屏改为了 HUD 抬头显示，系统也升级了鸿蒙智行专属 HarmonyOS 车机；车内扬声器也有提升，配有四个天空音。IT之家注意到，博主还展示了智界 R7 焕新款的氛围灯部分。与前代不同的是，新款车型的氛围灯有了漫反射效果，可以在车内形成更具氛围感的光路。据IT之家此前报道，华为常务董事、产",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/0/999/214.htm",
+      "publishedAt": "2026-09-07",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "智界 R7 焕新款实车内饰首曝：双联屏确认、鸿蒙智行专属 H"
+      }
+    },
+    {
+      "id": "gn-la8as5",
+      "title": "安徽池州新增年综合利用3.5万吨废旧锂电池资源循环项目！ - 新浪网",
+      "summary": "安徽池州新增年综合利用3.5万吨废旧锂电池资源循环项目！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE50NjlocjN5eWdmREVURHRiYWJfUUE2YTg4SGtUZjdIcXQwMmtYLWgxX29sdF9TWXN1djRYdFUyY21HaVVOemFNTjJxdnJsZzBvdWFHUVl5bXoyZVZEZW55bUdnczBrUFlxWW5PeGdYVTdubjdHN0J1SGdSWXMtY0U?oc=5",
+      "publishedAt": "2026-09-06",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "安徽池州新增年综合利用3.5万吨废旧锂电池资源循环项目！ -"
+      }
+    },
+    {
+      "id": "gn-1zmbxi",
+      "title": "新能源市场太卷了！固态电池国标落地+超充普及，2027年彻底告别续航焦虑？ - 网通社",
+      "summary": "新能源市场太卷了！固态电池国标落地+超充普及，2027年彻底告别续航焦虑？ 网通社",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5kZzdmNUhZSEFnb0VxYzE1ZEN6SV9qdm5XcHduSzAtQVM4NU8tdE44M2JGbVBJNEZPTmgwMjRmZ3BJSm92TEJWeG5udHBsVWNRRGtuTlVPUXBkWDRE?oc=5",
+      "publishedAt": "2026-09-06",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源市场太卷了！固态电池国标落地+超充普及，2027年彻底"
+      }
+    },
+    {
+      "id": "gn-euu6da",
+      "title": "超快充技术对汽车行业的影响有哪些？ - 新浪财经",
+      "summary": "超快充技术对汽车行业的影响有哪些？ 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRDZUdktnUjNYbk5uYVB5UG4tYW84SGJDeEY3RnY1Y2lObGNWZnNpRUNOWFNFN0RQZGNjcG85NEE4dVJaTXNDa1Z6aFFERUtBbk9DbDdpamZJajViVWNHMzdRZmppTWl1YXQwR291Y3RUYVBhVDNISUNrU0YtSnMwSzBaSmc?oc=5",
+      "publishedAt": "2026-09-06",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术对汽车行业的影响有哪些？ - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-vtp6ai",
+      "title": "超快充技术对电动车电池寿命有何影响？ - 新浪财经",
+      "summary": "超快充技术对电动车电池寿命有何影响？ 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxON3hPWWJMalA0YmF5LVBtY0RGNkRTbkR5Vy1VdUxTRXpXZGpmOXVoMmhLV0hLOGRiNGozVklxdV9FUHNlSUFKTTRFTzZjcko2bzVsMnZnN0VrLTNwTjFoR3IzTEtaUlJWTm5MZ1lDUFJvSjFOb3JUUUsyV2RqWW81a05Ra0o?oc=5",
+      "publishedAt": "2026-09-06",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术对电动车电池寿命有何影响？ - 新浪财经"
+      }
+    },
     {
       "id": "gn-y2ern",
       "title": "2026动力电池新叙事：电驱万物，AI赋能，固态仍需耐心丨行业风向标 - 钛媒体",
@@ -160,6 +387,41 @@
       "tags": {
         "地点": "欧洲",
         "主要事件": "可换电池版的欧版任天堂 Switch 2 游戏机悄然现身，重"
+      }
+    },
+    {
+      "id": "gn-g96ivk",
+      "title": "聊彩大港澳登录网站解读新能源新国标：拟规定电池报警5分钟内不起火爆炸及踏板误踩抑制等关键技术要求 - 体坛",
+      "summary": "聊彩大港澳登录网站解读新能源新国标：拟规定电池报警5分钟内不起火爆炸及踏板误踩抑制等关键技术要求 体坛",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1US0VZTEdDazhaeVd2WUIzaHlPMUZXUnFkRDk3SHkzZmJRdmlWTVBUcDRxSkZ5MGFxWlpraE8zdDZNVC0xX3RZeFpnWUwyVmpqZEZRM2kyWTRqS0w2MlE?oc=5",
+      "publishedAt": "2026-09-05",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "聊彩大港澳登录网站解读新能源新国标：拟规定电池报警5分钟内不"
+      }
+    },
+    {
+      "id": "gn-vf9qvi",
+      "title": "华能集团、华为数字能源达成“乐动体育足球新闻F联合创新”合作，联办氢能操作系统专题论坛 - 体坛",
+      "summary": "华能集团、华为数字能源达成“乐动体育足球新闻F联合创新”合作，联办氢能操作系统专题论坛 体坛",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1qQzAxWDZOTDNESnNNY3BrRFlFX1NyMzJXdVg4MFlodVR1V280dlBIczFJSUJhOEpJcDc0NS1yMVVIaXAyeEFTRE9GR1Z0NXpiUVJTYUdB?oc=5",
+      "publishedAt": "2026-09-05",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华能集团、华为数字能源达成“乐动体育足球新闻F联合创新”合作"
       }
     },
     {
