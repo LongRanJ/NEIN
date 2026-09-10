@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T06:49:48.707Z",
+  "lastUpdated": "2026-09-10T06:44:51.205Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,334 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-zhaxzy",
+      "title": "日本松下能源开发耐150℃全固态电池 年内启动样品出货 - 维度网",
+      "summary": "日本松下能源开发耐150℃全固态电池 年内启动样品出货 维度网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5pbWV6VHdmb2dJTFZwbnhYblFDVXczRXVmbWZncmtOTy1neEhoeHVfSVV1Z0tkSmVzQzhULXhEV2VFQjBjWE9veGhrRGhZZHEzRG13T0EzMV8?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "日本",
+        "涉及企业": [
+          "松下"
+        ],
+        "主要事件": "日本松下能源开发耐150℃全固态电池 年内启动样品出货 - "
+      }
+    },
+    {
+      "id": "gn-o85iby",
+      "title": "晋北基地820MW/3280MWh储能项目正式开工 - 碳索储能网",
+      "summary": "晋北基地820MW/3280MWh储能项目正式开工 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8wU1NKZDFEdGtHVVJUdkFLMWxVU0NxeHhzRjZreUZ0WFYwZTNZckdTT1FoWDBickJYeXlnREh5SUVLVV9SanFIWUQ5c1hhVTUtQVdWaHNLVTZYWmRDM3QwMg?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "晋北基地820MW/3280MWh储能项目正式开工 - 碳索"
+      }
+    },
+    {
+      "id": "gn-hkvphw",
+      "title": "储能救不了光伏巨头 | 产业家深度 - 投资界",
+      "summary": "储能救不了光伏巨头 | 产业家深度 投资界",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xMVpQbkh2VTRXMUJaUzhrdGFkTlMxMnFUeHQ5b2psZEVjYjRSNExDaXFldkc0NmliaU5fS1FLM2xPWWc3Qk1TeUpNSkRaQzlHMTVNOUhn?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "储能"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "储能救不了光伏巨头 | 产业家深度 - 投资界"
+      }
+    },
+    {
+      "id": "gn-sn4zce",
+      "title": "光伏装机首超煤电、储能景气延续，南方基金旗下新能源ETF南方(516160)跟踪标的指数昨日微涨0.12% - cls.cn",
+      "summary": "光伏装机首超煤电、储能景气延续，南方基金旗下新能源ETF南方(516160)跟踪标的指数昨日微涨0.12% cls.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBSMlVSS1NzaXVra3RkcS04VHBOSXBTN3pLdktpXzRFQVRoMENteXhjeHRXNlMwQUZsaHNiZE5ZOW1nSnB1Y3JuNQ?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "光伏装机首超煤电、储能景气延续，南方基金旗下新能源ETF南方"
+      }
+    },
+    {
+      "id": "gn-i5n2cp",
+      "title": "罗马尼亚能源新政背后的市场化逻辑与出海新机 - 见道网",
+      "summary": "罗马尼亚能源新政背后的市场化逻辑与出海新机 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wRU1wN3BoUlY0TnJnRzl0WlhvWWd4UUEtdmQtVWpRV3hLX2xzdU1PaHB4T0gtQ1NvU2ZmQXdwWXdSckFiSERnWW45SkhRMkkxTHRvRQ?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "储能"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "罗马尼亚能源新政背后的市场化逻辑与出海新机 - 见道网"
+      }
+    },
+    {
+      "id": "gn-z46zhm",
+      "title": "中氢新能技术有限公司董事长周明强 - 中华网",
+      "summary": "中氢新能技术有限公司董事长周明强 中华网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5QY1FrUjBoa2Rtc0xqbUNFeWhhbW1IQzduMENMWVo0X2JOM1Q4RnBYVUdFTGM1d055MjY5aU1XdjVNd1plMldmMXl1UW1SemxfTzVTWFJiSDVjNzd0eFE?oc=5",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "中氢新能技术有限公司董事长周明强 - 中华网"
+      }
+    },
+    {
+      "id": "rss-mgo9sw",
+      "title": "中汽协：8 月汽车国内销量环比增长 10.4%，同比下降 24.2%",
+      "summary": "IT之家 9 月 10 日消息，据中国汽车工业协会分析，8 月，多地汽车消费补贴持续升级，车企促销活动活跃，汽车产销环比增长、同比小幅下降。其中，国内市场继续承压，月度销量同比降幅连续 5 个月超过 20%；出口保持高速增长，月度出口量连续 3 个月超过 100 万辆，成为稳定行业大盘的关键增量；新能源汽车主导地位持续巩固，月度销量占比再创新高。中汽协数据显示，8 月汽车国内销量完成 170.1 万辆，环比增长 10.4%，同比下降 24.2%。其中，传统燃料汽车国内销量 58.4 万辆，环比增长 9.4%，同比下降 45.7%。我国新能源汽车主导地位持续巩固，成为稳定行业大盘的关键增量。数据",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/000/732.htm",
+      "publishedAt": "2026-09-10",
+      "keywords": [],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "中汽协：8 月汽车国内销量环比增长 10.4%，同比下降 2"
+      }
+    },
+    {
+      "id": "rss-nrykty",
+      "title": "全新 smart 精灵#2 开启盲订：10 月 12 日巴黎车展全球首发",
+      "summary": "IT之家 9 月 10 日消息，smart 中国今日宣布全新 smart 精灵#2 开启早鸟计划，支付 298 元订金即可提前锁定早鸟权益。据介绍，早鸟权益包含免费获得付费车色，以及优先进入首批试驾邀约名单，并有机会抽取价值至高 20000 元的大奖。全新 smart 精灵#2 将于 2026 巴黎车展上正式全球首发，并计划于 11 月中旬在国内上市。巴黎车展（IT之家注：10 月 12 日至 18 日）是全球历史最悠久的国际车展之一，本届为第 91 届。全新 smart 精灵#2 定位为双门双座微型纯电动车，可视作经典 smart fortwo 的纯电继任者。新车基于 smart 自研的 E",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/000/709.htm",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "全新 smart 精灵#2 开启盲订：10 月 12 日巴黎"
+      }
+    },
+    {
+      "id": "rss-y6y9i8",
+      "title": "119 元绿联 P5 自带线充电宝发布：10000mAh 22.5W，2026 新国标认证可上飞机",
+      "summary": "IT之家 9 月 10 日消息，绿联今日宣布推出 P5 自带线充电宝，为 2026 年首批新国标产品，提供 10000mAh 容量，支持 22.5W 快充，定价为 119 元，9 月 16 日开售。京东绿联【2026 年首批新国标】P5 充电宝 3C 认证可上飞机 10000mAh22.5W 自带线小巧便携适用苹果 18 华为小米 10000mAh｜22.5W｜流光银 2026 款新国标充电宝 119 元直达链接2026 年数码家电政府补贴持续进行中，IT 之家为大家汇总国补领券地址，买数码家电之前记得领取。数码补贴：点此领券手机 / 平板 / 3C 数码支持 8.5 折政府补贴，不超过 60",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/000/699.htm",
+      "publishedAt": "2026-09-10",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米",
+          "华为"
+        ],
+        "主要事件": "119 元绿联 P5 自带线充电宝发布：10000mAh 2"
+      }
+    },
+    {
+      "id": "rss-yse8nb",
+      "title": "3599 元，Unihertz Titan 2 Elite 全键盘 5G 智能手机国行发售",
+      "summary": "IT之家 9 月 10 日消息，Unihertz 旗下 Titan 2 Elite 全键盘手机今日正式在国内发售，预售价 3699 元，可领 100 元券，券后 3599 元。这款手机是 Titan 2 系列的升级版本，主打小巧机身、全键操控，配备实体全键盘设计，重量仅 163 克，机身尺寸 117.8 × 75 × 10.4 mm。手机提供黑色与橙色两种配色，机身采用航空级铝合金材料结合模内注塑工艺。屏幕方面，该机搭载 4.03 英寸 AMOLED 方形屏幕，分辨率 1080×1200 ，峰值亮度 1600 尼特，覆盖 100% DCI-P3 色域，支持 120Hz 刷新率、 2160Hz ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/000/681.htm",
+      "publishedAt": "2026-09-10",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "3599 元，Unihertz Titan 2 Elite "
+      }
+    },
+    {
+      "id": "rss-xuxwrh",
+      "title": "李想：理想汽车终于迈过三重难关，i9 将是第二代纯电平台的首发旗舰",
+      "summary": "IT之家 9 月 10 日消息，理想汽车 CEO 李想今日发文，称理想 i9 的到来，意味着理想汽车终于迈过了三重难关。第一，两条腿走路。过去总有人问，理想做增程成功了，做纯电行不行？现在，理想 i6 连续 7 个月稳居 20 万元以上所有车型销量前三，理想 i8 和新一代 MEGA 销量超预期，理想 i9 的加入将进一步完善纯电车型矩阵。同时，在全国最繁忙的 18 条国家级高速上，平均每 122 公里就有一座理想 5C 超充站。事实证明，只要理想坚持提供最好的用户体验，就能同时做好增程，做好纯电。第二，核心技术坚持自研并成功上车。近三年我们的研发投入每年均在百亿以上，并持续增长。我们逐步攻克",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/000/630.htm",
+      "publishedAt": "2026-09-10",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "理想"
+        ],
+        "主要事件": "李想：理想汽车终于迈过三重难关，i9 将是第二代纯电平台的首"
+      }
+    },
+    {
+      "id": "gn-jimx9f",
+      "title": "大龙年产10万吨高端锂电池材料智能制造项目即将完成场平 - 新浪网",
+      "summary": "大龙年产10万吨高端锂电池材料智能制造项目即将完成场平 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5JX1lQX0s0SERDTVJ4S093SHJWN1lQeEEzTzl0Ri1ac2p6NFUxV2xrcXBvTnA2YXgxbVZZcHZ6MGZ5bVlwVDFBalJqMTBOa1JZSUdOVGlwYzF2Y2d3dy13YTdzbmxjS3gybS1iVTM4UWRsZw?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "大龙年产10万吨高端锂电池材料智能制造项目即将完成场平 - "
+      }
+    },
+    {
+      "id": "gn-rngmok",
+      "title": "联得装备：在新能源设备领域已形成覆盖锂电池包蓝膜、固态/半固态电池超声焊接、切叠一体机等产品矩阵 - 东方财富",
+      "summary": "联得装备：在新能源设备领域已形成覆盖锂电池包蓝膜、固态/半固态电池超声焊接、切叠一体机等产品矩阵 东方财富",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1yOHYtNVJrNl9VYjlRQ0tmWE1sNWQwOUJGNVNVVUZmaE1JNTNRdUtGLWNQTnVCdU5WaFZHWTRSWUtwa3JLcjM2SGdkcVcwZldmV2xlN21qa2h1VlJHRWEzb1hHdkY?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "联得装备：在新能源设备领域已形成覆盖锂电池包蓝膜、固态/半固"
+      }
+    },
+    {
+      "id": "gn-xbvi8g",
+      "title": "鹏辉能源：有半固态电池技术及产品但暂未批量生产 - 观点网",
+      "summary": "鹏辉能源：有半固态电池技术及产品但暂未批量生产 观点网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5iUTBlbzlQQm95T3ZjaDRuSnI2NGNUV0RnaVNPUjhfXzhidVIwWFE4bkt2MklSY255SDhZN3JtX0dOOU42Z2Y0UUpmb19jcDdmenBiSnlzOVU0S0YwVVN0aw?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "鹏辉能源：有半固态电池技术及产品但暂未批量生产 - 观点网"
+      }
+    },
+    {
+      "id": "gn-gdvsqf",
+      "title": "超快充技术优缺点全解析：3分钟充满80%是福是祸？+FAQ - 新浪网",
+      "summary": "超快充技术优缺点全解析：3分钟充满80%是福是祸？+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1vNHY0MkYxeTgtQkJVcDZkZU1FUlZTUTlGb3ZqQlBUX2VjWkdGZjVTZFcyN0FjTDhnODNwcm1qcmxVVVJ2M1cwN3lnRkRFdkM1ZGt3dUNheFBKUUF0eXlLZHB4ZEg2UGJrSW1jdXN3TUVMVzFTTGxnV3Bja2ZoSGM?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超快充技术优缺点全解析：3分钟充满80%是福是祸？+FAQ "
+      }
+    },
+    {
+      "id": "gn-fzdma9",
+      "title": "充电速度快的B级新能源轿车推荐，秦MAX 900V闪充技术如何改写补能体验 - 新浪网",
+      "summary": "充电速度快的B级新能源轿车推荐，秦MAX 900V闪充技术如何改写补能体验 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOd01YTkp3T1FFSVN2el9BSnV5T1BJV2dEc2FWeHJMOXdIcmdaV09Xazk4WVhvcU5vUEFyVGRZVV9fV0RwaWJGRFAxVnRIYllRT0VOOHdkZjdpcV94QkE1bjBoUW11ZFNBQlFwTDlVN1UwQVlXS2hsTUdGUzJZSEw0NGVFM3d0MnUyQmp1cUxGUjZnUE9SaS1TSQ?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "充电速度快的B级新能源轿车推荐，秦MAX 900V闪充技术如"
+      }
+    },
+    {
+      "id": "gn-4rd8ry",
+      "title": "海博思创荣获2026年“质胜中国”高压级联储能技术创新奖 - 经济参考报",
+      "summary": "海博思创荣获2026年“质胜中国”高压级联储能技术创新奖 经济参考报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOR1lZbEpIdDZqaU1HQVBUYmtCa3RrN3UzaU5Mb1FEM1BsVUtuSEFzX25XeGR0Vjd5cW8yMGJPTUlyWVFTWmcyQTZuWUpjb3dmQlZjY2tTd3J5QjFzS2k2N1NoblVxbHppUm8yNEdfeS1tTVc2UkhlVXBvQWg1VnkzSQ?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "海博思创荣获2026年“质胜中国”高压级联储能技术创新奖 -"
+      }
+    },
+    {
+      "id": "gn-1rk1ch",
+      "title": "美锦能源9月9日回应氢能话题：参股企业骊能新能源碳纸产线投产进展以官方披露为准_公司新闻 - 证券之星",
+      "summary": "美锦能源9月9日回应氢能话题：参股企业骊能新能源碳纸产线投产进展以官方披露为准_公司新闻 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAzWDBYUFdSaGVNWU9ERVRwcU5UVEJTRFFwNHNvYzBOalUwVGZwYmFzT2IzVk5xRDZCcFJiNUNqMElfbVU3UU03TWs0OGN6ZG14d25sbTA0cW1Ubmxva1ZEVF9R?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "美锦能源9月9日回应氢能话题：参股企业骊能新能源碳纸产线投产"
+      }
+    },
+    {
+      "id": "gn-i6n003",
+      "title": "东风燃料电池载货底盘申报：氢能动力 能否抢占商用车赛道？ - 新浪网",
+      "summary": "东风燃料电池载货底盘申报：氢能动力 能否抢占商用车赛道？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB2em1JUzR2LU95Ti1McXF4N2F4cmc1MkJvZnlOamtJZUZSMTRzSXkzb2dGNWxIb09yRUlialMtQ1NiUk5XY05XazRLVnVsNVIwaTEwMUJVYnZGb3hWdGZJbjZUQnBNV1dxbGFTTXdoYlJqbjBoMVpZdw?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "东风燃料电池载货底盘申报：氢能动力 能否抢占商用车赛道？ -"
+      }
+    },
+    {
+      "id": "gn-n0lecp",
+      "title": "谋发展 抓项目 开新局｜一个“风光发电—直流离网—电解制氢”的零碳能源闭环，即将在松嫩平原上全线贯通 - 吉网",
+      "summary": "谋发展 抓项目 开新局｜一个“风光发电—直流离网—电解制氢”的零碳能源闭环，即将在松嫩平原上全线贯通 吉网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA0NjM4UV9qZmIxYWQ5U1JjV29MUi12dnA2bTJHcXhvc3laaWV5QlM4MS1tVWhHMDVnSEVPcVdvemdWLXVGdzFhYktRZUI3anlPdjhSTlYwdTN4QnpDdTVF?oc=5",
+      "publishedAt": "2026-09-09",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "谋发展 抓项目 开新局｜一个“风光发电—直流离网—电解制氢”"
+      }
+    },
     {
       "id": "gn-nm7vwd",
       "title": "“电子化学品+锂电池”概念：最正宗的15家公司（附名单） - Sohu",
@@ -20898,6 +21226,22 @@
       "tags": {
         "地点": "中国",
         "主要事件": "中国氢能产业已经跨越“死亡谷” - cast.org.cn"
+      }
+    },
+    {
+      "id": "gn-m4d8m8",
+      "title": "电报解读 - cls.cn",
+      "summary": "电报解读 cls.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBTc21obzRGazZ6NjVMYXNfR2lRVklrajVjd0xiMkRBYzlycERjVVVJSWFYX0lWVkIyNF9odmtxSzJNNEk0TjVZeQ?oc=5",
+      "publishedAt": "2026-06-21",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "电报解读 - cls.cn"
       }
     },
     {
