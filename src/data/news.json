@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T07:17:14.496Z",
+  "lastUpdated": "2026-09-15T06:52:16.073Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,382 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-lcqy6o",
+      "title": "我还挺期待比亚迪的固态电池技术突破！ - 新浪网",
+      "summary": "我还挺期待比亚迪的固态电池技术突破！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQW9OTFVIS0FLS2FIWDgxbE9rUzUzRHg3UEJhZzhqeW5ieFZfRFhFNmE0TzZwT193a19heFBLaE9aQTVOcnZ4Z2RrSkNSYTlHZ2lDUUdxaTJLVTk5NjBtUXd0blZ1bjhBdFZjVXRuODZFTTNKaXprYmVUc2l4S2NHLQ?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "我还挺期待比亚迪的固态电池技术突破！ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-n8y5q4",
+      "title": "高管直言燃油车没未来！比亚迪2027年推出固态电池，买车再等等？ - sohu.com",
+      "summary": "高管直言燃油车没未来！比亚迪2027年推出固态电池，买车再等等？ sohu.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdENQd19YczlVZUhQNmtzNUZUQjVrOWhSVTNNSXBEcTRwd2xzT2Y4SGJPYmJvaGNCZXhoenNxWEVMOWhVWksxbHBTckZYVFo3MHczWWRFSUlnUWZ3MURKWGNwb3BITnpURGlYT2ZkcXJ5WExNNkhVQkNBWGJ3RDZXTTNmbkVKTmMwaEljUg?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "高管直言燃油车没未来！比亚迪2027年推出固态电池，买车再等"
+      }
+    },
+    {
+      "id": "gn-cu5gns",
+      "title": "同样是900V级闪充，三款B级新能源轿车横评后，低温快充+越级空间兼得的是它 - 新浪汽车",
+      "summary": "同样是900V级闪充，三款B级新能源轿车横评后，低温快充+越级空间兼得的是它 新浪汽车",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mdkM0Z0h4bWRaRFdVeElYU2k2T0h1Y1NQb2ZpTm14M09aX1VIYXVocXQ5aE4xYkZsWFZndVNNb2dEVlpVUnJLQU9BcTMySm9ZcFZPQlhiR0o2NDB3dUdjLUZDemF5ZUN6aHJJSVNPOUxfZXNN?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "同样是900V级闪充，三款B级新能源轿车横评后，低温快充+越"
+      }
+    },
+    {
+      "id": "gn-9ckzzz",
+      "title": "横评三款充电快的B级新能源轿车，900V闪充5分钟充70%的只有这一台 - 新浪网",
+      "summary": "横评三款充电快的B级新能源轿车，900V闪充5分钟充70%的只有这一台 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VdW1IMGlVc3FHbjFydFE2ZGVWT0gyMDJobHg4Mk5DMmxSbF9RQ0hYOXNqNkdzR2JrZFhjVFhyWV9UUmJZck1IazJ6dHBpRzkyVTFNTDNoWXBVYjU2RWw2YjZaRk1DRnNSb3pNSFBfSVBKUQ?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "横评三款充电快的B级新能源轿车，900V闪充5分钟充70%的"
+      }
+    },
+    {
+      "id": "gn-efhfji",
+      "title": "三款充电快的B级新能源轿车横评，900V闪充+越级大空间还得看这一台 - 新浪汽车",
+      "summary": "三款充电快的B级新能源轿车横评，900V闪充+越级大空间还得看这一台 新浪汽车",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1wT2FLb001OVUyMVRnRC15RzdlSzF1ajhDWjBYazMwWllvdXhWTURKdHZWVlhzc0NuYVRlWkFIUFIyRXJkNXZXbDdHQWJGaGlnejhSWkRGYk5JVlBBanJEcmNRYVZGM0F5OE84LVItY2s3VG04?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "三款充电快的B级新能源轿车横评，900V闪充+越级大空间还得"
+      }
+    },
+    {
+      "id": "gn-z47p43",
+      "title": "罗庄独立储能电站一期正式商运，储能迈向价值运营 - 碳索储能网",
+      "summary": "罗庄独立储能电站一期正式商运，储能迈向价值运营 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA0T2xoZTVjdXBzWnNsRGQ5SzIwcjZGNnJ0V29ySVlMMnkteGRLY3kycmp3dWZkaDlfWjJWaGRlc0h4cEYxbGx1WnVVN0cwV3U2dTV6dFl3R2syTkVkbGJlVA?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "罗庄独立储能电站一期正式商运，储能迈向价值运营 - 碳索储能"
+      }
+    },
+    {
+      "id": "gn-rn3tig",
+      "title": "盾安环境：与格力钛新能源等就储能配套等领域建立战略合作 - 新浪网",
+      "summary": "盾安环境：与格力钛新能源等就储能配套等领域建立战略合作 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTE52eWd1X3VtQi1KRzN5bjlsalRCRE5McnB3S2NGUndlUDBqZTlvXzhUTUNuQnRJdlRHX28wc1ZObGRkb0l5MV9JOV9XeVFlb1J1VHBRRy1FT3lKNG1jd3l6bEtNS3p2aW5DSjRGQzdR?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "盾安环境：与格力钛新能源等就储能配套等领域建立战略合作 - "
+      }
+    },
+    {
+      "id": "gn-hsmdav",
+      "title": "罗马尼亚6.5亿欧元赋能新能源 - seetao.com",
+      "summary": "罗马尼亚6.5亿欧元赋能新能源 seetao.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE56YW1COGpDNktIUDU1S3hoQnI3WjA5TUxQYjE1Rl9LMThmbkdTLW1zUWtIVmV5TlFQcXFsVjMzbkVIcVBCTkZkX3NlSm5Kb0s1ZUFmaw?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "罗马尼亚6.5亿欧元赋能新能源 - seetao.com"
+      }
+    },
+    {
+      "id": "gn-4dmg7e",
+      "title": "锂电排产旺季来临，新能源板块企稳回升，南方基金旗下新能源ETF南方(516160)跟踪标的指数昨日收涨0.79% - Jiemian.com",
+      "summary": "锂电排产旺季来临，新能源板块企稳回升，南方基金旗下新能源ETF南方(516160)跟踪标的指数昨日收涨0.79% Jiemian.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB1VHVEUmhBcDdvOGhnUC13WkRWa0RUblZWRjRlbWloUWtJUzFfVGN0azNfd0hoLW8tOWVnMXBTdkV2ZFhTdHJWSF9mRlVHYUZwRmNreXlmTVU?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "锂电排产旺季来临，新能源板块企稳回升，南方基金旗下新能源ET"
+      }
+    },
+    {
+      "id": "gn-rx9bum",
+      "title": "十大能源装备央企“一把手”重磅发声：集体加码氢能 - 中国产业发展促进会氢能分会",
+      "summary": "十大能源装备央企“一把手”重磅发声：集体加码氢能 中国产业发展促进会氢能分会",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBybjl0U3FYSTlnVmlfWlhmb1B2WVAtOGp0Zm5LRVhXcjJsN1FIWGVNZ1lHeEVrR2ZTS1lEcWJKQjQ0aVE5U2hKVjF6aXFsTThRcmRoZldR?oc=5",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "十大能源装备央企“一把手”重磅发声：集体加码氢能 - 中国产"
+      }
+    },
+    {
+      "id": "rss-uyofpd",
+      "title": "沃尔沃卡车启动多款重型电动卡车量产，续航距离可达 700km",
+      "summary": "IT之家 9 月 15 日消息，Volvo Trucks（沃尔沃卡车）当地时间 14 日宣布，其 2026 年 4 月发布的新一代电动卡车现已在其瑞典哥德堡图韦工厂实现首批下线，开始向全球客户交付。沃尔沃卡车的新品阵容包括全新设计的 FH Aero Electric 以及新一代的 FH Electric、FM Electric、FMX Electric。其中 FH Aero Electric 凭借全新的电驱动桥技术实现了更大的电池容量，单次充电即可行驶 700km，同时支持 MW 级快速充电；FH Electric、FM Electric、FMX Electric 的续航则能达到 470km。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/002/544.htm",
+      "publishedAt": "2026-09-15",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "沃尔沃卡车启动多款重型电动卡车量产，续航距离可达 700km"
+      }
+    },
+    {
+      "id": "rss-uy4n40",
+      "title": "我国科学家验证新型水下太阳能电池，海面下 10 米正常充电",
+      "summary": "IT之家 9 月 15 日消息，9 月 11 日发表在《焦耳》（Joule）的论文中，云南大学携手西南联合研究生院，展示了一种可在南海 10 米水深运行的功能性水下太阳能电池。这一成果打破了此前的极限。早前水下太阳能收集尝试止步于不到两米深的浅水区，那里阳光仍然充足，但实际应用稀少。研究作者张文华（Wen-Hua Zhang）表示，关于水下太阳能电池的研究报道极少，且都聚焦于仅两米或更浅的极浅水域，这种情形远不能满足实际应用需求。最新研究的太阳能电池可在南海海面下 10 米处正常运行，可在水下工作两小时，可产生 324 兆瓦时的电能，足以给锂离子电池充电；若持续置于 10 米水深的环境中，其运",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/002/543.htm",
+      "publishedAt": "2026-09-15",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "我国科学家验证新型水下太阳能电池，海面下 10 米正常充电"
+      }
+    },
+    {
+      "id": "rss-u3c5vs",
+      "title": "李柯：比亚迪在欧洲销售的产品最终都将实现本地生产，首款重卡 ETT44 明年进入欧洲",
+      "summary": "IT之家 9 月 15 日消息，当地时间 9 月 14 日，比亚迪在德国汉诺威 IAA Transportation 2026 运输展上发布旗舰电动重卡 ETT 44。该车最高续航 600 公里，并支持 1.5 兆瓦闪充。比亚迪股份副总裁兼国际业务负责人李柯在此次车展上表示，比亚迪计划明年向欧洲市场推出首款重型卡车 ETT44，并最终在欧洲实现本地化生产。“长期来看，我们在欧洲销售的所有产品都将在本地生产。”比亚迪同时准备扩大在欧洲的乘用车制造布局。公司正在匈牙利塞格德建设工厂，计划明年开始量产。李柯表示，一旦将所有在欧销售产品转为本地生产，“我们就会成为一家欧洲公司。”李柯表示，比亚迪希望为",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/002/529.htm",
+      "publishedAt": "2026-09-15",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "德国、欧洲",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "李柯：比亚迪在欧洲销售的产品最终都将实现本地生产，首款重卡 "
+      }
+    },
+    {
+      "id": "rss-u0l6wz",
+      "title": "苹果 54 项 iOS / iPadOS 27 隐藏新功能 / 新特性汇总：打磨细节、聚焦 AI",
+      "summary": "IT之家 9 月 15 日消息，MacStories 主编费德里科 · 维蒂奇（Federico Viticci）今天（9 月 15 日）发布博文，梳理汇总了 54 条苹果 iOS / iPadOS 27 系统的隐藏新功能 / 新特性。整体体验方面，维蒂奇认为 iOS 27 不像 iOS 26 更新那样强调视觉变化，以提升性能表现和可靠性，以及打磨细节为主，并聚焦 AI 功能，在照片、Siri AI、备忘录、Safari 等方面，部分新功能 / 新特性可能会改变用户日常交互流程。IT之家翻译相关内容如下：一、Photos1、“相机胶卷”以筛选形式回归照片 App 的图库（Library）新增“",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/002/524.htm",
+      "publishedAt": "2026-09-15",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "苹果 54 项 iOS / iPadOS 27 隐藏新功能 "
+      }
+    },
+    {
+      "id": "rss-tl6yav",
+      "title": "岚图梦想家 9 车型 9 月 22 日上市：首搭虎踞 P 底盘，预售价 42.99 万元起",
+      "summary": "IT之家 9 月 15 日消息，在今日举行的岚图汽车虎踞智能底盘技术交流日上，岚图汽车宣布推出中国首个自主正向研发的旗舰 MPV 专属智能底盘 —— 虎踞 P 方案。岚图汽车董事长卢放同时宣布，岚图梦想家 9 将于 9 月 22 日正式上市，首搭岚图虎踞 P 底盘。岚图梦想家 9 已于 9 月 5 日开启预售，共推出 5 款车型，预售价 42.99 万元至 52.99 万元。开启预售 48 小时小订突破 30000 台。外观方面，新车配备 HUAWEI XPIXEL 双百万像素智慧投影大灯，前脸为扶摇直上龙鳞叠压式竖幅镀铬格栅，搭配鲲鹏展翅分体式贯穿大灯，内置北斗七星星芒灯光点阵。车身提供双拼",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/002/517.htm",
+      "publishedAt": "2026-09-15",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "岚图梦想家 9 车型 9 月 22 日上市：首搭虎踞 P 底"
+      }
+    },
+    {
+      "id": "gn-1uba91",
+      "title": "湖南省常德市新增年处理20000吨废锂电池正极材料项目！ - 新浪网",
+      "summary": "湖南省常德市新增年处理20000吨废锂电池正极材料项目！ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1UV3k3OW5lc01TSUxQcHhzUGV1Z0ttVS1SV1dhSlp2cVBRX1o4MzhXOFI3U0NqRWZyaUJaLTV2THNTU1RXVWpFVmYzWW1MWDlaQ0VHdEpYeUY5TVhfaW5BNUlVQ0RTOTVjQ3lub0p3X1RSZw?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "湖南省常德市新增年处理20000吨废锂电池正极材料项目！ -"
+      }
+    },
+    {
+      "id": "gn-guh68l",
+      "title": "2027固态电池量产！买电车要不要等等？ - 新浪汽车",
+      "summary": "2027固态电池量产！买电车要不要等等？ 新浪汽车",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02V2tNMTF6Y3hVQkNmVEdEdk0yWFFtdlRQaUtPc0w2dXZZRnFfNGM4aG4xcnVfNnBrTWsyOVpSaVhldmUyLTBRLVlnM0RuWlVkekxKTlZSVkluNVk3RUc4WDBoMW5rSFJkaEluNnFyY0Q3aExz?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2027固态电池量产！买电车要不要等等？ - 新浪汽车"
+      }
+    },
+    {
+      "id": "gn-tjann",
+      "title": "全球首个！固态电池要来了！ - 国际充换电网",
+      "summary": "全球首个！固态电池要来了！ 国际充换电网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9haUdMZk41Z2RwaEJUM0NyV0ZYVmswcU9HUjNlaHV4enROLVBrSGJzaDdVbG50WVVVamc3WGNrY3loekFTRk5zSUZjNVJnWnU5QmI5RXhJQQ?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "主要事件": "全球首个！固态电池要来了！ - 国际充换电网"
+      }
+    },
+    {
+      "id": "gn-590fjm",
+      "title": "比亚迪李云飞：以闪充技术破解充电痛点，引领新能源汽车迈入\"闪充时代 - aikahao.xcar.com.cn",
+      "summary": "比亚迪李云飞：以闪充技术破解充电痛点，引领新能源汽车迈入\"闪充时代 aikahao.xcar.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Wem40UXF3a3lkWm1PYl9BWnZGTm5Da1NJaVJDSjlQVjJiSDliWHlwV0R5c0pSVVVRR2M2RXlJNnRLWW9NMGR0Rm5NZUZ6OU1HSk5qTDhHZw?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪李云飞：以闪充技术破解充电痛点，引领新能源汽车迈入\"闪"
+      }
+    },
+    {
+      "id": "gn-njtkuk",
+      "title": "横评三款充电速度快的B级新能源轿车：900V闪充5分钟补能70%的标杆之作 - 新浪网",
+      "summary": "横评三款充电速度快的B级新能源轿车：900V闪充5分钟补能70%的标杆之作 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5hSEs0N0t4LXRNTzExMDZtbEYtZTF3a1RBclJQcVJLRmZIclRYQjA5dnBOcU5sb3BCMjJJSGxHQzNPS1dwTGlqZlczQ3N0UlFEUGNXY2N2RTd1eGVVQzc3OUhTU1diTEFjZll3RndoQzltMEVZUEdIcTJ3OWs4eTA?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "横评三款充电速度快的B级新能源轿车：900V闪充5分钟补能7"
+      }
+    },
+    {
+      "id": "gn-5gzroa",
+      "title": "用数据说话！测出储能产品“真本事” - 投资厦门",
+      "summary": "用数据说话！测出储能产品“真本事” 投资厦门",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14Ri1Td19sX0RpdkFkMGtrcUw1NDhqVnBPVHJKYm1pcXZlZW9CN1FzOHdBN3BKVk5TbzdrNTlVbEcteTJyZTh5dS11eEdaSmVCMWQ1QURDWlFabGw0YVE?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "储能"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "用数据说话！测出储能产品“真本事” - 投资厦门"
+      }
+    },
+    {
+      "id": "gn-lmtoct",
+      "title": "税助产业建圈强链 成都夯实新能源发展根基 - 每日经济新闻",
+      "summary": "税助产业建圈强链 成都夯实新能源发展根基 每日经济新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1XXy10VGxQZGhSWEhLQTBmZzVvTDdzdkM5dUxKUFZpcUtmMWpfWF9XM0ZMVG1JbFFBVHlXLURoMnBHOGV6V0dGMnFpdk0xcUhsNzhYYjIxRUxiUGUtel8wZFh6UHp1Zw?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "成都",
+        "主要事件": "税助产业建圈强链 成都夯实新能源发展根基 - 每日经济新闻"
+      }
+    },
+    {
+      "id": "gn-xtvphu",
+      "title": "将氢能产业打造为经济发展新动能 - 川观新闻",
+      "summary": "将氢能产业打造为经济发展新动能 川观新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yWTFQUGdsT0xNOElxbzFmNngzS1ppcFJ4Tm5mWW9PQU1PeElKdE5yS0JKN05GOTJ4YUdSY3JQdWdqS3pOb2RDSzYwUTRHdw?oc=5",
+      "publishedAt": "2026-09-14",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "将氢能产业打造为经济发展新动能 - 川观新闻"
+      }
+    },
     {
       "id": "gn-xa3uhz",
       "title": "充电速度横评：三款B级新能源轿车实测，900V闪充5分钟充70%的秦MAX赢在全域不衰减 - 新浪汽车",
@@ -22441,6 +22817,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "磷酸铁锂“爆单”了！价格翻倍、订单排到2027年、电池厂老板"
+      }
+    },
+    {
+      "id": "gn-lowwr3",
+      "title": "磷酸铁锂电池原材料价格上涨，成本稳定的燃油车或将触底反弹 - 车家号",
+      "summary": "磷酸铁锂电池原材料价格上涨，成本稳定的燃油车或将触底反弹 车家号",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9taHpmOWt4MWFtR1pFLUhGQlFyNzhzOS1HM0UzWVVRc29TenZUNUhQcndmMm1SdkVqSEZzdnk5YXhpNmltRkJXUHR3QXl3Q3prNElpVFdpbENnUWM?oc=5",
+      "publishedAt": "2026-05-15",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "磷酸铁锂电池原材料价格上涨，成本稳定的燃油车或将触底反弹 -"
       }
     },
     {
