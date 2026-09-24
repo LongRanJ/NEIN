@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T06:51:27.277Z",
+  "lastUpdated": "2026-09-24T06:51:40.471Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,303 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-mzq8bb",
+      "title": "零跑C11 2027款电池值得等吗？81.9kWh磷酸铁锂800V快充，15万级SUV天花板+FAQ - 手机新浪网",
+      "summary": "零跑C11 2027款电池值得等吗？81.9kWh磷酸铁锂800V快充，15万级SUV天花板+FAQ 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1zY19sVmNiZDVWYldnMEJwSU01cGlRV2VhMURUWjBreWFleGhWYXVpdThxTmQwUW9QUnM5SUJpcVBMN1JzNDhSRWVhRnJpbkhGXzA2WENYamkybkRsV1pF?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "零跑C11 2027款电池值得等吗？81.9kWh磷酸铁锂8"
+      }
+    },
+    {
+      "id": "gn-492rah",
+      "title": "单枪峰值功率达2.2兆瓦，吉利新一代AI补能技术“吉利智充”发布 - 汽车之家",
+      "summary": "单枪峰值功率达2.2兆瓦，吉利新一代AI补能技术“吉利智充”发布 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rcTlxak5ZeVh5a0RGSFU5LUZHU3BMY0dzT3RhQmlibDZuY3M4YVhhQUthbEc0VTVoaGx3NmZrdVNVYURUbjVYWE1hMENNWGpQUEJxU3QwVFNIb1U?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "单枪峰值功率达2.2兆瓦，吉利新一代AI补能技术“吉利智充”"
+      }
+    },
+    {
+      "id": "gn-1bajuj",
+      "title": "AI重构补能格局！吉利智充技术落地，破解快充安全与寿命行业难题 - 搜狐网",
+      "summary": "AI重构补能格局！吉利智充技术落地，破解快充安全与寿命行业难题 搜狐网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNbjNta2hUQ0tXMkNXd1p5M1JPaUlid3ZMMklucHUzdjdEbVNwUDlXWlRwSGFpTm15Q0g1aUlrRElUNFJ1SWN1ZVpBX1lfNnhXY2xNQWgwNUhTZmdxbDlSSldhdXZyaGZrYmJuQURxcEdyaTYzcWU1N185aE55TVNta2o5UnRsSk1SV0hCbQ?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "AI重构补能格局！吉利智充技术落地，破解快充安全与寿命行业难"
+      }
+    },
+    {
+      "id": "gn-dzohtl",
+      "title": "聚全链协同优势 筑开放共创新生态——记2026新能源电池产业发展大会 - 中华网",
+      "summary": "聚全链协同优势 筑开放共创新生态——记2026新能源电池产业发展大会 中华网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HM2VMZnpNZmpuczJZM3ZUeTNsa2ZaaGxmM2N1QjVRZnA2R1hxSVZqbTdfb3RTRXFvaUxUZGtNS0VTM1hyTDZKUzNMd25ZSTB4VVJraWxqNklObklmR1psb1JueU9Bd1FaYU5z?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "储能"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "聚全链协同优势 筑开放共创新生态——记2026新能源电池产业"
+      }
+    },
+    {
+      "id": "gn-om5mlm",
+      "title": "肇庆“决胜”新型储能- 21世纪经济报道 - ZAKER新闻",
+      "summary": "肇庆“决胜”新型储能- 21世纪经济报道 ZAKER新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9odEtRQTBHcmI5N2FQcVBzb1hmQzA2RVFVRjZkUVdzdmdjX0Z2M2w2UzJvT2gxaHotTTlZQTRYQjdNbDBoSGFCRHk4cHRsVjlZNm5WLXVnZFB6aVB2WVlhSHR4eVIzT3lPZF9MbWR3a1hrLThNLXZF?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "肇庆“决胜”新型储能- 21世纪经济报道 - ZAKER新闻"
+      }
+    },
+    {
+      "id": "gn-xnrkhj",
+      "title": "Scatec罗马尼亚首个储能项目获批落地 - 见道网",
+      "summary": "Scatec罗马尼亚首个储能项目获批落地 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBSMFBWZXFYMEV3RnNidU55RzBqQ1V6dUtCTHlaLTItQkg4T3JBd0JUZk9SblllRDNXTUozZWNFSUs1cE50a1N0WVNtUE43TTlLS283TA?oc=5",
+      "publishedAt": "2026-09-24",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "Scatec罗马尼亚首个储能项目获批落地 - 见道网"
+      }
+    },
+    {
+      "id": "rss-dpyubq",
+      "title": "宾利首款纯电 Torcal 发布：875 马力、零百加速最快 2.9 秒，WLTP 续航 600 公里",
+      "summary": "IT之家 9 月 24 日消息，科技媒体 Ars Technica 今天（9 月 24 日）发布博文，报道称宾利（Bentley）正式发布其首款纯电动车型 Torcal，该车将作为 2028 款车型于 2027 年年初上市。Torcal 车身尺寸小于添越（Bentayga），吸收 EXP 15 概念车的部分设计元素，前脸最具辨识度的是“悬浮钻石格栅”（Floating Diamond Grille），宾利用 76 颗手工装配的水晶状菱形元素，置于透明聚碳酸酯面板后方，并在解锁时呈现渐变点亮的欢迎灯效。车身侧面强调“长轴距、短前后悬、骄傲的前脸比例”，形成直立而优雅的姿态；腰线干净，减少多余折线",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/006/787.htm",
+      "publishedAt": "2026-09-24",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "主要事件": "宾利首款纯电 Torcal 发布：875 马力、零百加速最快"
+      }
+    },
+    {
+      "id": "rss-dmo2rk",
+      "title": "捷豹路虎召回 3 辆进口路虎卫士插混汽车，极端情况下可能电池起火",
+      "summary": "IT之家 9 月 24 日消息，IT之家从国家市场监督管理总局获悉，日前，捷豹路虎（宁波）贸易有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。召回编号 S2026M0120V：自即日起，召回 2021 年 5 月 25 日至 2021 年 7 月 1 日期间生产的部分进口 2022 款路虎卫士插电式混合动力汽车，共计 3 辆。本次召回范围内车辆的高压蓄电池可能出现热过载，极端情况下导致高压蓄电池起火，存在安全隐患。捷豹路虎（宁波）贸易有限公司将通过授权经销商为召回范围内的车辆免费更换高压蓄电池，以消除安全隐患。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/006/781.htm",
+      "publishedAt": "2026-09-24",
+      "keywords": [],
+      "category": "安全事件",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "捷豹路虎召回 3 辆进口路虎卫士插混汽车，极端情况下可能电池"
+      }
+    },
+    {
+      "id": "rss-cq87r9",
+      "title": "比亚迪第 2000 座闪充高速站正式落成：年度建设目标提前完成，创三项纪录",
+      "summary": "IT之家 9 月 24 日消息，比亚迪“闪充中国”战略今日（9 月 24 日）再迎关键里程碑，比亚迪第 2000 座闪充高速站在江苏扬州宝应服务区正式落成。至此，比亚迪闪充高速站年度建设目标提前完成，再度创下三项国内车企新纪录：高速充电站数量最多、高速充电站建站速度最快、高速充电站覆盖最广。比亚迪第 2000 座闪充高速站落地江苏扬州宝应服务区，是京沪高速的核心枢纽补能节点。该站点的落成投运，标志着京沪高速闪充站全线贯通。比亚迪闪充业务总经理王俊保表示，2000 座闪充高速站覆盖国家高速公路、省级高速公路及都市圈环线等全国 278 条高速公路。在京沪高速、京港澳高速、沈海高速、连霍高速等 22",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/006/764.htm",
+      "publishedAt": "2026-09-24",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪第 2000 座闪充高速站正式落成：年度建设目标提前完"
+      }
+    },
+    {
+      "id": "rss-b9fysl",
+      "title": "小米米家首款充电体脂秤“米家体脂秤 4 Pro”众筹：续航达 150 天，129 元",
+      "summary": "IT之家 9 月 24 日消息，米家体脂秤 4 Pro 现已在小米有品开启众筹，这是米家首款充电体脂秤，众筹价 129 元，活动时间为 9 月 23 日 10:00:00-9 月 30 日 9:59:59（点击前往）。IT之家从商品页面获悉，该产品新增身体数据趋势显示，秤面可直观对比上一次的测量数据。功能键集合了多项核心操作，短按一下，称重单位随心切换，更可进行设备首次激活、重置解绑等多种操作。新品采用 Type-C 充电，内置 450mAh 大容量锂电池，按每日测量 3 次计算，充满电可续航 150 天，告别干电池频繁拆装的麻烦。300x300mm 的 ITO 镀膜钢化玻璃取代传统电极片，测",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/006/731.htm",
+      "publishedAt": "2026-09-24",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米米家首款充电体脂秤“米家体脂秤 4 Pro”众筹：续航达"
+      }
+    },
+    {
+      "id": "rss-asy4zr",
+      "title": "奇瑞捷途旅行者 7 车型 10 月 10 日上市：燃油 / 插混可选，预售 14.99 万元起",
+      "summary": "IT之家 9 月 24 日消息，据易车今日报道，奇瑞捷途旅行者 7 将于 10 月 10 日正式上市。该车已于 9 月 23 日开启预售，共提供 7 款车型，预售价 14.99-17.99 万元。动力方面，该车提供 1.5T 汽油、2.0T 汽油以及 1.5T 插混三种动力。IT之家注意到，作为捷途旅行者的衍生车型，捷途旅行者 7 在外观上进行了多项细节调整。前脸部分，新车前格栅新增贯穿式饰条，品牌 LOGO 位置上移至前舱盖，前包围则改为与车身同色的设计，整体视觉效果更为精致。车身侧面与现款旅行者基本保持一致。车身尺寸方面，新车的长宽高分别为 4827mm、2006mm 和 1875mm，轴",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/006/722.htm",
+      "publishedAt": "2026-09-24",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "奇瑞捷途旅行者 7 车型 10 月 10 日上市：燃油 / "
+      }
+    },
+    {
+      "id": "gn-ij58bo",
+      "title": "超高镍固态 风起眉山 - 四川在线",
+      "summary": "超高镍固态 风起眉山 四川在线",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBpd093RTJBZjhhS1otajNVWU1mQjMxbElBaVFDZzdUWEtRaVhSLWJFSWlUbEMyNDZtaW9KSmdhd0xULXE5aU82Qmdlci1DWnktYkc2ZXlPSnhJR20ydGpwY2xUYlh3dw?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "超高镍固态 风起眉山 - 四川在线"
+      }
+    },
+    {
+      "id": "gn-6yglp5",
+      "title": "手握磷矿，磷化工龙头再度加码磷酸铁锂，年内投资近150亿 - thepaper.cn",
+      "summary": "手握磷矿，磷化工龙头再度加码磷酸铁锂，年内投资近150亿 thepaper.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBJUWRJa0dYSXpnRmRQa3FKRFFXUkxIRzVwTktlSEwzajNEbmNVOHZUdC0yYnI2U1hqd1F1M3NVV3BKSE1jUnpVWWQxaHBQRjZTdWRiVXVUSmZFdTJRY3NWTA?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "手握磷矿，磷化工龙头再度加码磷酸铁锂，年内投资近150亿 -"
+      }
+    },
+    {
+      "id": "gn-4mz9gn",
+      "title": "2026世界新能源汽车大会评出11项创新技术 - 新浪财经",
+      "summary": "2026世界新能源汽车大会评出11项创新技术 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBVT2RjY1lsOThpOFlyY1Z3QXg3VzJ2anllOEExYm9pVWswN1pTdVlHTWFiRmVLWWkyVUkzTTlnc2VjZEZGWWNlMnBYT01EdDdzR2FLQzRzcU5wREpOMUJ0LThzVEd4T0NiMUt4ZEZWdXp0X0hLRzBSdA?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026世界新能源汽车大会评出11项创新技术 - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-kpo1qa",
+      "title": "吉利智充技术发布，补能“更快更好更安全” - 手机新浪网",
+      "summary": "吉利智充技术发布，补能“更快更好更安全” 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzb1hKR3BDS0JxdE1kWkJ5LU1TdXd2Sk4zdWFEZThadExWRHhqbzlpeEg4b3ZmOFl0aEZfR3hRa3U0TTFnZ2VLd0tTVEpxZlZKVXR6X0QwcDZwM2NIaWRDNDhmdENTb2hjYXB2ZTFXWlI?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "吉利智充技术发布，补能“更快更好更安全” - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-ow49w4",
+      "title": "吉利发布新一代AI智充技术 快充安全两不误 - 中华网",
+      "summary": "吉利发布新一代AI智充技术 快充安全两不误 中华网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5zYlZWUXUzbnlFU3Y0dHR4bGRPNUZUXzZqQkM2cXlKdnFsYkx6cVNaRUhXLXNhbFpxLUdvZUYtNjN1endhMmRFVHBmNjZScXR2dV9ER3hPZzBHbXFSaHdtTmxJRE1nQXZMV05qSDZEUGs?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "吉利发布新一代AI智充技术 快充安全两不误 - 中华网"
+      }
+    },
+    {
+      "id": "gn-lr2mof",
+      "title": "基于世界模型的主动安全系统获评「国际新能源汽车创新技术」 - 新浪财经",
+      "summary": "基于世界模型的主动安全系统获评「国际新能源汽车创新技术」 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNN0VTeVp1RjBvcEpTb2hlYWtUZzQ4NXVYY3p2a080UWtaelMxOTJ2MXJpY3FxcUh1WHN4WlhvZzAxTzFzaGtnV3E0T0lrdDEzakdCZDhrTW42em9BaXdISHhRalFQVjA2QU1neWVlTmREN09hQTNvRXF6UUV3eVBWWlg0aGNNdVlCWHF2Qld4NU5PR296WHRncUJXc1M2YnkwN3FZUFRFQQ?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "技术突破",
+      "importance": "high",
+      "tags": {
+        "主要事件": "基于世界模型的主动安全系统获评「国际新能源汽车创新技术」 -"
+      }
+    },
+    {
+      "id": "gn-6f4i4h",
+      "title": "生产力局携辖下APAS举办全港首个氢燃料检测实验室开幕仪式 暨“2026新能源峰会” 完善氢能产业链配套 推动香港新能源与绿色转型发展 - 紫荆网",
+      "summary": "生产力局携辖下APAS举办全港首个氢燃料检测实验室开幕仪式 暨“2026新能源峰会” 完善氢能产业链配套 推动香港新能源与绿色转型发展 紫荆网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWEpDbW14cVFrSzZLaUMxcUx2bHVrVmsxUkstSjBnWHB3M0g3QS1Ec1c4MUVOSXJxQV9KT2lvVzJCWFlnY19yYmlKZmd5b0gtVW5iRlZKU0wtTUxKSWxwU1RRbW5Dak5NN1BfdFl5b0YzMW5ycTc4WEZJRnNGSldDLWI2cURZd3BkVGlldE1aVG5FUGFP?oc=5",
+      "publishedAt": "2026-09-23",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "生产力局携辖下APAS举办全港首个氢燃料检测实验室开幕仪式 "
+      }
+    },
     {
       "id": "gn-c70dpj",
       "title": "打通产学研堵点！东莞这场新能源沙龙解码锂电产业进阶新路径 - 21财经",
@@ -219,6 +516,39 @@
           "大众"
         ],
         "主要事件": "大众安徽：与众 07 全线复产，9 月末大批新车将抵达全国门"
+      }
+    },
+    {
+      "id": "gn-cgm7me",
+      "title": "事故车、泡水车、新能源三电纳入统一标尺，二手车国标大修，行业将迎哪些变局？ - 新浪财经",
+      "summary": "事故车、泡水车、新能源三电纳入统一标尺，二手车国标大修，行业将迎哪些变局？ 新浪财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9ndVlBSmwyUXFsTVh6c3gzaExPdDFmS0pUcDRDNUpfTWtFN0M5VUFSZGRZa1B6TXNvbWZaOVhWTkx4bmw1dkJqTlp1R1BoaG1wRHdhNE5COTRSVkJ4OUdWaVVMOWE3UW10cGJvMzRuN2JZVWduMmFELQ?oc=5",
+      "publishedAt": "2026-09-22",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "事故车、泡水车、新能源三电纳入统一标尺，二手车国标大修，行业"
+      }
+    },
+    {
+      "id": "gn-h5qece",
+      "title": "打造国家级示范标杆！大湾区氢能试点部署会召开 - 广州日报新花城",
+      "summary": "打造国家级示范标杆！大湾区氢能试点部署会召开 广州日报新花城",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNdktxZEpNRnFIamFqa0FySkF0ZnUwSzRzWjEtdVd5amlwNE54S2p1R1NCci0zLTEwR25mcDFockljUFpNa0dfQ0hmby1ZRUxxLV9EcWU1REUxZDVPNVB0aURyV2RNMTROTWtIbExYRDBGY0NZbHBjcndPUjRTdnI4SDJNZW51UTYxanc?oc=5",
+      "publishedAt": "2026-09-22",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "广州",
+        "主要事件": "打造国家级示范标杆！大湾区氢能试点部署会召开 - 广州日报新"
       }
     },
     {
@@ -557,6 +887,22 @@
       "importance": "high",
       "tags": {
         "主要事件": "消息称三星电子将为 Galaxy A 系列智能手机电池植入安"
+      }
+    },
+    {
+      "id": "gn-54bshw",
+      "title": "智界RX各版本电池全解析：81度磷酸铁锂/100度三元锂怎么选？+FAQ - 手机新浪网",
+      "summary": "智界RX各版本电池全解析：81度磷酸铁锂/100度三元锂怎么选？+FAQ 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWRHgxNnFfeDlfTWIzX2VrdG5scTdnWXVfejVsaVlrVWctbk1KS1R6b0VkQnhaMGVFcFFxSWh3ZWJUdEt6LXRHREwwWWJyTlFTNm9XRkdLWFQ5cnltdDJV?oc=5",
+      "publishedAt": "2026-09-21",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "智界RX各版本电池全解析：81度磷酸铁锂/100度三元锂怎么"
       }
     },
     {
