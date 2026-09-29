@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T07:50:03.934Z",
+  "lastUpdated": "2026-09-29T07:36:18.713Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,349 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-be90l6",
+      "title": "新型电池产业“十五五”规划：全固态电池2030年初步实现规模化应用_国内经济 - 证券之星",
+      "summary": "新型电池产业“十五五”规划：全固态电池2030年初步实现规模化应用_国内经济 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1hb2xNd2JGSTVjaUhDWGFHdnhZcURzSWsxT1VEQlpiSlBtVUJtZ1VLdW9LZTE5MnBucVdPTFp0N2JMdW1hZTlVdXBiRVRFckYyTlFCSFpqMG5CLUdEajZ0T2I4SFk?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新型电池产业“十五五”规划：全固态电池2030年初步实现规模"
+      }
+    },
+    {
+      "id": "gn-4vs8kt",
+      "title": "A股三大股指午后震荡盘整，地产爆发、万科涨停，固态电池拉升，恒科指跌近2%，科网股普遍下跌 - 华尔街见闻",
+      "summary": "A股三大股指午后震荡盘整，地产爆发、万科涨停，固态电池拉升，恒科指跌近2%，科网股普遍下跌 华尔街见闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vak9ObDVGSmlFSEhlSHlWcGh6bFdvYTEwREp5WWZGdF9GdUJ4Rlo2bDgydWt1R1ZaNll4TDh6TDNNWmJPVUtmc0NEZkNQUVhQdW1J?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "A股三大股指午后震荡盘整，地产爆发、万科涨停，固态电池拉升，"
+      }
+    },
+    {
+      "id": "gn-j28xvt",
+      "title": "涉及固态电池等领域！锂电装备上市公司拟募资22.63亿加码主业 - itdcw.com",
+      "summary": "涉及固态电池等领域！锂电装备上市公司拟募资22.63亿加码主业 itdcw.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84VmpxS3lidDFwWG1ldmRWcFp6cGlYaUxxTkJMeGhrUDFoOXhDX0hlM051NUk4ZEZfYVZNY1lqdUVqUEhlTXRGZU4wQWZlcDhqNEl0QTlNbXY1UDZGM1lDRw?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "涉及固态电池等领域！锂电装备上市公司拟募资22.63亿加码主"
+      }
+    },
+    {
+      "id": "gn-6n2fa4",
+      "title": "装机首次下滑，一场座谈会给储能行业划出三条新主线 - 碳索储能网",
+      "summary": "装机首次下滑，一场座谈会给储能行业划出三条新主线 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uY3o1WUtBVWJoa0M2TEJ2d1h4RF9CaEhtX2IzUGk5Q195YTFKYWx5SlItaUp1Q2RNQTQ2bjk4MG9hUXR5SVU4WThRTDNnQUtyUUt5Z2ttTnNRNFFfNURLQg?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "high",
+      "tags": {
+        "主要事件": "装机首次下滑，一场座谈会给储能行业划出三条新主线 - 碳索储"
+      }
+    },
+    {
+      "id": "gn-9ku8qz",
+      "title": "辽宁东港签约2.4亿元电网侧储能项目 - 见道网",
+      "summary": "辽宁东港签约2.4亿元电网侧储能项目 见道网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBaTW5nZTU5VW5JZVVpaVhUTl9VeUJjZ1dKbTJzTm9IcVQ1MWNFTm5rMzJVYUxjZXZYMEZld1ZrVjZSSHdUMkF5LVlETU1samc1dHl0SA?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "辽宁东港签约2.4亿元电网侧储能项目 - 见道网"
+      }
+    },
+    {
+      "id": "gn-i0ptkf",
+      "title": "全球降碳新答案：东风汽车带来可运营的氢能解决方案 - news.tom.com",
+      "summary": "全球降碳新答案：东风汽车带来可运营的氢能解决方案 news.tom.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5fanZQOUtnTnRHdlhRTVlGR1N0ZTg4c092RVQ2cVVya1MtcVV5VkpDUzRlQjVYb3d5YjhjUzdCcmxiSnhzd09lT0VYbzBNcDAzUXdTc1dB?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "主要事件": "全球降碳新答案：东风汽车带来可运营的氢能解决方案 - new"
+      }
+    },
+    {
+      "id": "gn-4hjqj7",
+      "title": "《大湾区氢能汽车高速公路通行费优惠及跨省互认倡议》发布：推动氢能汽车高速免费 - 世纪新能源网",
+      "summary": "《大湾区氢能汽车高速公路通行费优惠及跨省互认倡议》发布：推动氢能汽车高速免费 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE52ZkJBYUdOR3ZNWHZWRUFrUVE1N1NRTGctS2ItVV9nTjNId2xaRXlEbFFVOElOS2g0UkpKeXIxMzNsSi03U1FrcHdSbzlsc3pjU3Ziag?oc=5",
+      "publishedAt": "2026-09-29",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "《大湾区氢能汽车高速公路通行费优惠及跨省互认倡议》发布：推动"
+      }
+    },
+    {
+      "id": "rss-xvrnhh",
+      "title": "169 元：绿联 65W 旅行转换充电器开售，适用欧美日韩英港澳等地",
+      "summary": "IT之家 9 月 29 日消息，绿联 65W 旅行转换充电器现已开售，新品适配全球 200+ 国家或地区，支持 100V-240V 宽幅电压，售价 169 元。据介绍，这款充电器采用新一代 360° 无极旋转插脚，可在美规、澳规、欧规、英规之间自由切换，支持 100V-240V 宽幅电压，可在美国、日本、泰国、澳大利亚、新西兰、韩国、欧洲、英国、新加坡、香港特别行政区、澳门特别行政区等地使用。这款充电器配备 2C+1A 三接口设计，兼容 PD、PPS、QC、FCP、SCP 等协议，支持三台设备同时充电：其中两个 USB-C 接口单口输出最高 65W，USB-A 接口输出最高 22.5W。IT之",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/008/311.htm",
+      "publishedAt": "2026-09-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "美国、日本、韩国",
+        "主要事件": "169 元：绿联 65W 旅行转换充电器开售，适用欧美日韩英"
+      }
+    },
+    {
+      "id": "rss-xi0sng",
+      "title": "科技部：我国成为创新力上升最快的国家之一",
+      "summary": "IT之家 9 月 29 日消息，据央视新闻，在国务院新闻办公室今天（29 日）举行的“开局起步‘十五五’”系列主题新闻发布会上，科技部部长阴和俊介绍，过去五年，我国科技创新跃上新台阶，科技强国建设迈出坚实步伐，有力支撑高质量发展和民生改善。IT之家从发言获悉，2025 年全社会研发投入超过 3.92 万亿元，占 GDP 比重达 2.8%，首次超过经济合作与发展组织（OECD）成员国平均水平；PCT 国际专利申请量和高水平国际期刊论文数量连续多年保持世界第一；九章、天问、嫦娥等重大原创成果加速涌现，芯片攻关取得新突破，开源大模型领跑全球，新能源汽车、机器人等新兴产业蓬勃发展，创新药、农作物新品种",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/008/307.htm",
+      "publishedAt": "2026-09-29",
+      "keywords": [],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "科技部：我国成为创新力上升最快的国家之一"
+      }
+    },
+    {
+      "id": "rss-n3kwkj",
+      "title": "249 元：小米充电宝磁吸自带线 10000 45W 开售，2026 新国标认证",
+      "summary": "IT之家 9 月 29 日消息，小米充电宝磁吸自带线 10000 45W 现已在京东开售。新品主打 2026 新国标认证，配备全新安全电芯，支持智能管理，售价 249 元。据介绍，这款充电宝采用全新安全电芯，通过针刺、挤压、发热控制和热箱测试。支持有线连接电脑，查看每块电池信息和充电过程信息，亦支持查看异常充电记录。同时，该充电宝通过 16 项新国标认证测试。有线最高输出功率 45W，支持 20W 小米澎湃无线秒充。两个 USB-C 接口均支持为自身充电，输入功率最高可达 30W。该充电宝内置 2 块 5000mAh 高品质电芯，可为 iPhone 17 Pro 充电约 1.6 次。此外，该充",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/008/298.htm",
+      "publishedAt": "2026-09-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "249 元：小米充电宝磁吸自带线 10000 45W 开售，"
+      }
+    },
+    {
+      "id": "rss-mzqcf0",
+      "title": "比亚迪西安新能源汽车动力电池项目全面建成投产，系第二代刀片电池首批生产基地",
+      "summary": "IT之家 9 月 29 日消息，据“西安发布”，位于西咸新区秦汉新城的比亚迪新能源汽车动力电池项目（西咸基地）全面建成投产。作为比亚迪布局西北的核心电池枢纽，该基地的全面投产，标志着秦汉新城智能网联汽车产业迈入新阶段。该项目选址西咸新区 · 秦汉自动驾驶产业园，主要建设新能源汽车动力电池 Cell、Pack 生产线及相关生产生活配套。根据介绍，西咸基地不仅是第二代刀片电池的首批生产基地，也是闪充技术量产的核心载体，覆盖从电极制备到电芯成型、从模组组装到电池包集成再到系统测试的全流程，采用 MES 智能制造系统，实现智能化、高效化生产。项目全面投产，为西安比亚迪整车制造提供了本地化的核心电池配套",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/008/291.htm",
+      "publishedAt": "2026-09-29",
+      "keywords": [],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "地点": "西安",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪西安新能源汽车动力电池项目全面建成投产，系第二代刀片电"
+      }
+    },
+    {
+      "id": "rss-l4ng0y",
+      "title": "长安旗下两大品牌开启协同整合，深蓝邓承浩、阿维塔陈卓兼任 AD 协同发展部新职务",
+      "summary": "IT之家 9 月 29 日消息，据第一财经今日报道，9 月 28 日，长安汽车 AD（阿维塔和深蓝首字母）协同发展部的人事任命文件已下达，深蓝汽车董事长邓承浩兼任总经理，阿维塔科技总裁陈卓兼任常务副总经理。报道称，长安汽车通知成立 AD 协同发展部，定义为一级部门。在此一级部门之下，成立规划与合作部、市场产品部、人力共享中心、财务共享中心、综合部等多个二级部门，承接深蓝汽车、阿维塔委托的对应业务。长安汽车方面还建议，阿维塔成立造型设计、产品开发、平台技术等多个共享或协同中心，承接深蓝委托的相关业务；而深蓝汽车则是撤销多个业务单元及下设组织。据IT之家此前报道，长安汽车集团全球战略发布会于 4 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/008/253.htm",
+      "publishedAt": "2026-09-29",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "长安"
+        ],
+        "主要事件": "长安旗下两大品牌开启协同整合，深蓝邓承浩、阿维塔陈卓兼任 A"
+      }
+    },
+    {
+      "id": "gn-roqwth",
+      "title": "退役电池变“城市矿山” - 手机新浪网",
+      "summary": "退役电池变“城市矿山” 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9mak9mcU1PSEFkZTVpWTR0Z3dlM1JrTUdqZUMxX2J2OVJtWjh4RENpS2FjbjdKeWZ4YUtibkxRQnY0am05TEp5QkwyaG1oN1pHYVlwVVk3WkpsZHpKbjkyVlR4WUI5Q1hGMUFzVGttbmhVaXBEZFJRYm5LLUJvUEU?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "退役电池变“城市矿山” - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-h9wkaq",
+      "title": "高安全、大容量、超长循环寿命！手机、新能源汽车都将用上新型电池 - 川观新闻",
+      "summary": "高安全、大容量、超长循环寿命！手机、新能源汽车都将用上新型电池 川观新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5hODdLbmdlek9LalNBbjNKMGxGVUdIa3FJa29qNm9iVmFTQTROcWhYZG1LbDR6LUQ0RHBQSDRmeDdNWDJneGZmQWk5ZDFFQQ?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "高安全、大容量、超长循环寿命！手机、新能源汽车都将用上新型电"
+      }
+    },
+    {
+      "id": "gn-u9e7d6",
+      "title": "新型电池产业“十五五”规划发布 推进全固态电池、钠电池标准研制 - 21jingji.com",
+      "summary": "新型电池产业“十五五”规划发布 推进全固态电池、钠电池标准研制 21jingji.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOLUJjYTYzWmg0eWFmamlGSWxuOElRMVB5SHpLdEZVemlLNlo0c3Iyb0FGaXg0dU5SUWdIcmtyRXVWci1ld1VXdng3LWJSWEhwLWNHYjhxcEgybnFfRzRlekVQVGtVd015bUtidWpyUjBwS3JoTFpRbDZBUVlKdXBaUFRrTmlFWHg3MDVfUjQzQQ?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新型电池产业“十五五”规划发布 推进全固态电池、钠电池标准研"
+      }
+    },
+    {
+      "id": "gn-inodf9",
+      "title": "【正极材料周报】湖南裕能再扩海外磷酸铁锂产能！星恒电源于四川广元落地材料项目 - itdcw.com",
+      "summary": "【正极材料周报】湖南裕能再扩海外磷酸铁锂产能！星恒电源于四川广元落地材料项目 itdcw.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE55eDdkZUgtSTNvNEhNVjhhOUw3d1kyb0ZlNzRjcFRoVGhmZ1cxeVpHSzFoWWFwRENZeFAzMVpCZlFrY2labnhyZFd6OUJHdm9TTE5yVk43WVAzb1J3?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "【正极材料周报】湖南裕能再扩海外磷酸铁锂产能！星恒电源于四川"
+      }
+    },
+    {
+      "id": "gn-4oh7as",
+      "title": "快充、闪充、智充！充电技术卷没边了？理想推进15C超充电池研发 - 汽车之家",
+      "summary": "快充、闪充、智充！充电技术卷没边了？理想推进15C超充电池研发 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1yd2JzMXZCdGxpT0VGRHZKTGJEdi16SEtJRHRLV1NvNFJLRE1tUmJZUFZlbHZvblpCN3pUNHhIYTcwdGlNcV9aWGJoMnpsdmdvRWNMc053anZHYVVPU0E?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "理想"
+        ],
+        "主要事件": "快充、闪充、智充！充电技术卷没边了？理想推进15C超充电池研"
+      }
+    },
+    {
+      "id": "gn-k1y8pl",
+      "title": "吉利智充技术正式发布，重塑全球补能新标杆 - 手机新浪网",
+      "summary": "吉利智充技术正式发布，重塑全球补能新标杆 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1XWVlYSnlYdEZCSWptUHExNmkwNjZjRUtkNWo4azkzc0lqTGtrY3VwZFFfYTBSTTVkTlFWSFBreHlpaVgxT25kMFNIX2FWTVhSa0x6Wk9uYm9qMWhnck1qZ1BWMER3eDNwV1duMnNQaWJJdk5hMFV3S2Vjdnh4dw?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "吉利智充技术正式发布，重塑全球补能新标杆 - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-tbmv5c",
+      "title": "“电车买得起，修不起”，新能源汽车维修为何这么贵？ - finance.sina.com.cn",
+      "summary": "“电车买得起，修不起”，新能源汽车维修为何这么贵？ finance.sina.com.cn",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1vMVVPY1AzbEhFWGJPN0ZNNURkY29yMlZRcXBmQktoSUtGX29TaUFrWUlGWl9ZbXA5RnN5TThPdTY3MXNMWXJERURMRHJXdHBOQVQtMHR2T05sQXcyX3hQcjZNbUp6cWltTHlvMXFvd1d3dw?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“电车买得起，修不起”，新能源汽车维修为何这么贵？ - fi"
+      }
+    },
+    {
+      "id": "gn-ol8mcx",
+      "title": "新能源汽车“只换不修”何时休 维修贵难题待解 - 中华网",
+      "summary": "新能源汽车“只换不修”何时休 维修贵难题待解 中华网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9jWDUzR1I5MDVWU3RQdERtVkpQLUpoTFNWWHJseVdic1I5TW5aYTNZWV9ZbDlsMTVnOEJocEJzLU5TMW1FbTVCX0prdHlQMEVPdzVnX2QtZFBRWTdQdFFnZnVDMzM0UFUzSEc0S3pqNXY?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车“只换不修”何时休 维修贵难题待解 - 中华网"
+      }
+    },
+    {
+      "id": "gn-eyo0r5",
+      "title": "万亿之后，常州新能源正作答一道“未来之题” - 新华报业网",
+      "summary": "万亿之后，常州新能源正作答一道“未来之题” 新华报业网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ST0pYOXAtVU43NHJWZDBwQXFDcWFmOHZZdk9pM3gwbjFkd2ZGZUFzTW5qdGtvdVo3bjFNNGJrdUwyNmFVTjd3d3FNS1F5MzZIRFBJdlJoTFpqOGdtS3NJaHVVSlh4bHZlNmxj?oc=5",
+      "publishedAt": "2026-09-28",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "万亿之后，常州新能源正作答一道“未来之题” - 新华报业网"
+      }
+    },
     {
       "id": "gn-qb88qx",
       "title": "新能源市场太卷了！理想汽车推进15C超充与固态电池研发，补能焦虑要终结？ - 网通社",
@@ -317,6 +660,22 @@
           "华为"
         ],
         "主要事件": "鸿蒙智行智界 RX 正式上市，25.98 万-38.98 万"
+      }
+    },
+    {
+      "id": "gn-xp32ji",
+      "title": "七部门联合印发《新型电池产业发展“十五五”规划》 - 财联社",
+      "summary": "七部门联合印发《新型电池产业发展“十五五”规划》 财联社",
+      "source": "财联社",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9femJ0RVVWeWNBWkpRNjlsQjhiYUtKRlJSR3BVQ3RqWTc4aVBqOUo1WTJnSDVBZVh4bk5Qb0lHNjRwS0h6MkE?oc=5",
+      "publishedAt": "2026-09-27",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "七部门联合印发《新型电池产业发展“十五五”规划》 - 财联社"
       }
     },
     {
