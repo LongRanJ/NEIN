@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T08:37:14.080Z",
+  "lastUpdated": "2026-10-14T06:49:41.940Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,320 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-6sxob7",
+      "title": "巨湾技研吉瓦时级全固态电池产线竣工正式投产 - 观点网",
+      "summary": "巨湾技研吉瓦时级全固态电池产线竣工正式投产 观点网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9ic2RPd09EUHdQTS11YmZ5dHBMdnRrQXY5OWk3TXZpMTJaU2xRRWlPeHI3cG42LUIyWmV3NXFaY2lqUHpiOUhGVGJiTkdwWUR5RThZb2xuekhMaXU4THdUN1hR?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "巨湾技研吉瓦时级全固态电池产线竣工正式投产 - 观点网"
+      }
+    },
+    {
+      "id": "gn-oflahy",
+      "title": "巨湾技研吉瓦时级全固态电池产线正式投产 - 盖世汽车",
+      "summary": "巨湾技研吉瓦时级全固态电池产线正式投产 盖世汽车",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA2dlZodWNmTUVtY0dPRmxkakEydVl4RllGQ1o5MTczWWZjZmt1RDVRVlRZeVF4NUdGRFVxcWtMZUV6N0JPTHkwODlmQVNfTTVf?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "巨湾技研吉瓦时级全固态电池产线正式投产 - 盖世汽车"
+      }
+    },
+    {
+      "id": "gn-zap3ji",
+      "title": "电芯现场拆剪、安全测试亮相！首条全固态电池量产线在广州南沙投产 - 21财经",
+      "summary": "电芯现场拆剪、安全测试亮相！首条全固态电池量产线在广州南沙投产 21财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaDMtemF5OFFIV2NtcF96U1RrMTBDNUtYcUN3aXpUT3BPazcyV2tmY2stVXpkZUV5R21mbnFaY3N3VUhIUXNpNGY3c3didUNSNVFJQ1ZCdEU5LVJuNHZ3QkZUcHVDdlVMM0tQcVVQd29zckllU0plcHdVSlJvZ3E1ekJuWnMwUkFQUXIwTlhxYw?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "地点": "广州",
+        "主要事件": "电芯现场拆剪、安全测试亮相！首条全固态电池量产线在广州南沙投"
+      }
+    },
+    {
+      "id": "gn-dbk1cz",
+      "title": "又一个 10 亿级固态电池项目落地，背后是谁？ - 电子工程专辑",
+      "summary": "又一个 10 亿级固态电池项目落地，背后是谁？ 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9uVWdtQVFCWVRTdFcyTExubVRSa01LbkI3S2tBY1kxNmE1VmpCS2k2RnluNExMcnQ3UjE3amRLLVlRSEZfSTI4a2Z3bVRWdExsMU5j?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "又一个 10 亿级固态电池项目落地，背后是谁？ - 电子工程"
+      }
+    },
+    {
+      "id": "gn-359d00",
+      "title": "充电快的大五座SUV盘点，小鹏G9L 800V 5C超充值得优先看+怎么选 - 新浪网",
+      "summary": "充电快的大五座SUV盘点，小鹏G9L 800V 5C超充值得优先看+怎么选 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1sczItWkQyNEg1YnJJWXhpbGRhNFFyNkN5T1pVU2p4bmhYZUoyUTVNUHBmbkVOZHo5LUpadjR3ak1MYkJsMUdwclFWTEVGelFmbFpaRnZ2Um1wUHR6bng1ODFLb0tzVGFiMF8yWDVTUV81UQ?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小鹏"
+        ],
+        "主要事件": "充电快的大五座SUV盘点，小鹏G9L 800V 5C超充值得"
+      }
+    },
+    {
+      "id": "gn-1wfbts",
+      "title": "追逐“锂”想之光 智储点亮未来 - 东南网",
+      "summary": "追逐“锂”想之光 智储点亮未来 东南网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mUjZvUzJLZFJwLWdtZHZLaUIxSUtaRGpmTmFUVlFEZzBBdEJ4ZzB2cFNhLXZHU2JMN0VqNVNUUXZNX1RpamRQTXdIRmdtT2RGMHlfMlNXUXpEQmZwTTRtSA?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "追逐“锂”想之光 智储点亮未来 - 东南网"
+      }
+    },
+    {
+      "id": "gn-6yr46x",
+      "title": "重磅发文！内河船舶迎来氢能新赛道 - 碳索氢能网",
+      "summary": "重磅发文！内河船舶迎来氢能新赛道 碳索氢能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMc3FvRU1sY0JxRmxuX1lVMWF5aXlzS1dPSHlnR28weWRyUWRNcHNXY0FHWnZJOVNDTUFhQnpFMjY2M3Bsbl95SFRfTkhOaVFycVdxYTY5NGw4TG9WRVBZcQ?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "重磅发文！内河船舶迎来氢能新赛道 - 碳索氢能网"
+      }
+    },
+    {
+      "id": "rss-1oeazm",
+      "title": "比亚迪第二代海鸥车型 10 月 20 日上市：尺寸动力底盘全面升级",
+      "summary": "IT之家 10 月 14 日消息，比亚迪发布媒体邀请函，确认第二代海鸥将于 10 月 20 日在郑州赛车场正式上市。新车在内饰质感、空间表现与智能化配置上均进行了全面升级。此前 10 月 9 日，比亚迪汽车海洋网销售事业部总经理张卓宣布该车开启盲订，提供青柠绿、莓莓粉、芒芒橙、冰椰蓝、奶油白及芝麻灰六款外观配色。据工信部申报信息，第二代海鸥长宽高为 4205/1810/1570mm，轴距 2650mm，较现款车长增加 425mm、轴距加长 150mm，整体体量已接近比亚迪海豚。同时，其座椅布局由 4 座升级为 5 座，后排横向空间和腿部空间均有所改善。储物方面，新车新增 94L 前备箱，后备箱",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/012/865.htm",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪第二代海鸥车型 10 月 20 日上市：尺寸动力底盘全"
+      }
+    },
+    {
+      "id": "rss-1mqx7j",
+      "title": "7999 元：苹果 iPhone Duo 京东早鸟先享权益包开售，赠 999 元官方手机壳",
+      "summary": "iPhone Duo 定价 15999 元起，国行 10 月 16 日晚 8 点接受预购。京东今日开售“早鸟先享权益包”，价格 7999 元。除早鸟先享资格外 + 4 项补贴服务外，加赠 999 元原厂手机壳 + 329 元原厂充电头。京东 11.11 红包至高 26888 元无门槛可用，每天可抽一次：点此抽取。京东京东 iPhone Duo 早鸟先享权益包不支持退换 手机需另付款 7999 元直达链接需要注意的是：此权益下单后不支持退换iPhone Duo 仅支持 eSIM早鸟机需激活后签收早鸟权益支持 256G 与 512G 机型下单权益包后，手机仍需支付全款哦：京东 Apple iPho",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/012/862.htm",
+      "publishedAt": "2026-10-14",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "7999 元：苹果 iPhone Duo 京东早鸟先享权益包"
+      }
+    },
+    {
+      "id": "rss-ryfzb",
+      "title": "零跑纯电小车 A10s 官宣：镜夜黑车身、专属红标、红色缝线加持",
+      "summary": "IT之家 10 月 14 日消息，今天（14 日）下午，零跑汽车带来了纯电小车 A10s 的预告：新车整体为黑色涂装，被官方命名为“镜夜黑”，尾部则以专属的“S”红色字标点缀；配有 18 英寸运动轮毂，相比现款的 A10 更强调运动气息。内饰方面，该车采用摩登灰配色，专属的麂皮 + 仿皮座椅辅以红色座椅缝线，前排座椅支持通风。官方暂未公布新车的动力参数等信息，IT之家将持续关注。作为参考，零跑 A10 上市于 3 月 26 日，提供四款配置，售价 6.58 万元起：403 舒享版：6.58 万元403 悦享版：6.98 万元505 悦享版：7.68 万元505 激光雷达版：8.68 万元零跑 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/012/848.htm",
+      "publishedAt": "2026-10-14",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "零跑纯电小车 A10s 官宣：镜夜黑车身、专属红标、红色缝线"
+      }
+    },
+    {
+      "id": "rss-99ft1",
+      "title": "华为畅享 100 系列手机前瞻爆料：消息称 Pro 延续麒麟 8 系平台 + 6.84 英寸 1.5K LTPS 直屏方案",
+      "summary": "IT之家 10 月 14 日消息，博主 @数码闲聊站 今日放出了华为畅享 100 系列手机的前瞻爆料。据称，Pro 有曜金黑 / 雪域白 / 流沙金 / 蔚蓝海四种配色，屏幕还是 6.84 英寸 1.5K LTPS 直屏，采用麒麟 8 系平台打造，电池容量超 8000mAh。而标准版和低配版有幻夜黑 / 冰川白 / 云水蓝三种配色，会做运营商渠道机，包括移动 AI 定制版，用来继续冲量。有网友询问畅享系列能否出阔直板机型，博主表示：“nova 先做了再说吧，一步步均摊成本。”还有网友询问华为何时推出 10000mAh 电池的机型，博主称：“在做，明年应该能见到。”▲ IT之家开箱：华为畅享 9",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/012/835.htm",
+      "publishedAt": "2026-10-14",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华为畅享 100 系列手机前瞻爆料：消息称 Pro 延续麒麟"
+      }
+    },
+    {
+      "id": "rss-9zcym",
+      "title": "比亚迪：中欧贸易投资磋商为混动汽车贸易营造了稳定、可预期、可持续的合作环境",
+      "summary": "IT之家 10 月 14 日消息，今天（14 日）下午，比亚迪发布关于中欧贸易投资磋商机制第二次例会汽车领域成果的声明。IT之家附全文如下：近日，中欧贸易投资磋商机制第二次例会在北京成功举行。双方围绕多项重点经贸合作议题进行了密集的建设性磋商，形成多项积极成果与务实共识。比亚迪高度关注本次磋商在汽车贸易领域达成的重要共识。本次磋商成果有效管控贸易分歧、避免摩擦升级，兼顾了中欧双方产业的现实情况与合理关切，为中欧混动汽车贸易营造了稳定、可预期、可持续的合作环境。未来，比亚迪将坚持技术创新，减少温室气体排放和人类对化石燃料的依赖，为地球降温 1°C。期待与国内同行一道，做负责任的全球产业参与者，共",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/012/821.htm",
+      "publishedAt": "2026-10-14",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "北京",
+        "涉及企业": [
+          "比亚迪"
+        ],
+        "主要事件": "比亚迪：中欧贸易投资磋商为混动汽车贸易营造了稳定、可预期、可"
+      }
+    },
+    {
+      "id": "gn-1e0efz",
+      "title": "新能源发展关键矿产约束怎么破 - 新浪网",
+      "summary": "新能源发展关键矿产约束怎么破 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUUYyRHpvclAyUXZsV2ltRzNvTTdyT2hRZWhhWmZMUm1VTC15QldPSEx1NDlIcDRWV2J6U0U5c0hncE5LQnZvOU1HZkpfeC1ibzE4ZVU4OVl5MFFkWWd2cFlTZllfTl9EYllpUU84ZUFUTUk0cVJBV3BoNVptd29SS2tR?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源发展关键矿产约束怎么破 - 新浪网"
+      }
+    },
+    {
+      "id": "gn-vcmgpd",
+      "title": "明冠新材10月13日回应固态电池话题：固态锂电池封装用铝塑膜已向国内头部企业批量出货_公司新闻 - 证券之星",
+      "summary": "明冠新材10月13日回应固态电池话题：固态锂电池封装用铝塑膜已向国内头部企业批量出货_公司新闻 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9HdmdEbWdlQU1nRElGb0kxcERwT085UG9ORHBET1FKMnpJeHFyRUd0RHMtVGlzWG01U0hIQzdyMEpndUNaMmR6WFF4bGIxNWdvYWNfNENQRXdpMkV3VDdmeXVB?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "明冠新材10月13日回应固态电池话题：固态锂电池封装用铝塑膜"
+      }
+    },
+    {
+      "id": "gn-ojfx8g",
+      "title": "新能源汽车维修价格的走势会如何？ - 新浪网",
+      "summary": "新能源汽车维修价格的走势会如何？ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE15UkRUb2dTdUhPN1BLbkZUcURFZ3cwR3hTbzZjZmQ4cXpUT1NoejE5UURDeFItMXUtVFlNWktOVVM0ZGx4WlpuMkxYUXhRWmdEUF9OTGtmdzA3bk9Tc21zTjZuUnllQS1VUUZJRUtOVUF2Zw?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源汽车维修价格的走势会如何？ - 新浪网"
+      }
+    },
+    {
+      "id": "gn-ixb5fg",
+      "title": "储能向新 时代作答 - fjrb.fjdaily.com",
+      "summary": "储能向新 时代作答 fjrb.fjdaily.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBJc3JvSUx2Z0dsT3RVT3dCLUxhUXhSaXhGTTNSNG5EbmJyTUlGX292ZDBTaE84S1JCSDMtR1k3NEVoWjdLdlN0c1hiVHRjUmVuSUVTVW1PcEtHeWxKVGZfVGtKbUFyNHhKcUZfVnpB?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "储能向新 时代作答 - fjrb.fjdaily.com"
+      }
+    },
+    {
+      "id": "gn-qsijj9",
+      "title": "3.38GWh！浙江2026储能建设计划：26个项目，涉及华润/国家电投/大唐/正泰/欣旺达/晶科等 - 中关村储能产业技术联盟（CNESA）",
+      "summary": "3.38GWh！浙江2026储能建设计划：26个项目，涉及华润/国家电投/大唐/正泰/欣旺达/晶科等 中关村储能产业技术联盟（CNESA）",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5hRUtDSTFDTjJTbmlZZ2Z0bGxrVzFRd1FBUnpicUtNV25iWk9NQ0dDbzBndmc0MHRXRUF3UFNSa1lmRUZaaUNQcEVwTEw5d0YwaklTZFluUGI1cVBkMVBNU1E5YkVWbnc?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "欣旺达"
+        ],
+        "主要事件": "3.38GWh！浙江2026储能建设计划：26个项目，涉及华"
+      }
+    },
+    {
+      "id": "gn-q0xnlv",
+      "title": "河北遵化：布局氢能新赛道 赋能低碳转型发展 - 中国新闻网",
+      "summary": "河北遵化：布局氢能新赛道 赋能低碳转型发展 中国新闻网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5WVHlyV1hoSGx3QVB1elRJTGVVTjJ0eEFyWmllOWJnQkdWRU5GcVE1T293cGpVMDNDS2RfVENPMEpkN0FWc21ZNXJrOVVhQ2hyN3A5c3RYRDZ2b0txYXpUSy1WOC1kYnJoOEE?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "河北遵化：布局氢能新赛道 赋能低碳转型发展 - 中国新闻网"
+      }
+    },
+    {
+      "id": "gn-b1u62c",
+      "title": "厚积三十载，氢启新征途—— 解码东风汽车氢能全链条技术竞争力_车市动态 - 中金在线",
+      "summary": "厚积三十载，氢启新征途—— 解码东风汽车氢能全链条技术竞争力_车市动态 中金在线",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBqUkJsUlB1YnMxbWozd0pMQnlZczBQTWp6aFY3anR0YkRTT1JOenJxeDY3ZFJTZ0MwbnZiTUNqdTRRazFSTXdkdnNrVEZPVFRHcWIzZURlbVBNcWxpOFp4U3pqZ0VsM01GZjVr?oc=5",
+      "publishedAt": "2026-10-13",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "厚积三十载，氢启新征途—— 解码东风汽车氢能全链条技术竞争力"
+      }
+    },
     {
       "id": "gn-p0irdn",
       "title": "政策与标准共塑下一代电池产业发展格局 - 中国石化新闻网",
@@ -318,6 +632,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "一汽奔腾小马五座版官图发布：轴距加长至 2215 毫米、本月"
+      }
+    },
+    {
+      "id": "gn-7igjks",
+      "title": "电池未起火爆炸 新能源车坠下百米悬崖车主生还！领克回应 - 搜狐",
+      "summary": "电池未起火爆炸 新能源车坠下百米悬崖车主生还！领克回应 搜狐",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWEVINjg0dHdoMzZIN2JTNWVNVmh0WUx3N2RTUmdJT0ZkWXJRLTZiOExfV01BandiS0tzcXVTY2tDNXBZd2lLZWlWdDl6Y2NBSGdFOGNsUFJOZEt6Tkg3Z2V0d2lyWlRQcmloa3FBYWlMMnNoaURCSUhsQ3FKNnBUR0pyeWpvekJF?oc=5",
+      "publishedAt": "2026-10-12",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "电池未起火爆炸 新能源车坠下百米悬崖车主生还！领克回应 - "
       }
     },
     {
@@ -744,6 +1074,25 @@
       "tags": {
         "地点": "中国",
         "主要事件": "一加 16 官宣首发「高精度大师陀螺仪」：至高 800Hz "
+      }
+    },
+    {
+      "id": "gn-ub5yyn",
+      "title": "AI赋能、创全球量产最快速度，吉利智充引领全球补能迈入AI智能的安全快充时代 - 三湘都市报",
+      "summary": "AI赋能、创全球量产最快速度，吉利智充引领全球补能迈入AI智能的安全快充时代 三湘都市报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBRR0s4LWJ5VVBla1BjZDNtNmlfaWlralBhMmIwNEVLMXhhQlU2bGdmMEJUeWhOUG1zUXZqTnVYX19pTkRLMXpUeFhSa2lCYV9QVUV3?oc=5",
+      "publishedAt": "2026-10-10",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "涉及企业": [
+          "吉利"
+        ],
+        "主要事件": "AI赋能、创全球量产最快速度，吉利智充引领全球补能迈入AI智"
       }
     },
     {
@@ -2704,6 +3053,22 @@
           "蔚来"
         ],
         "主要事件": "蔚来充电服务突破 1 亿次，86.67% 充电电量服务于非蔚"
+      }
+    },
+    {
+      "id": "gn-tazrtd",
+      "title": "2026新规下新能源汽车电池更换费用直降90%？3个维度说清换电真相+FAQ - 手机新浪网",
+      "summary": "2026新规下新能源汽车电池更换费用直降90%？3个维度说清换电真相+FAQ 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1lYjZkV0FQVnF6QmhpQThkUzAyeFZ1OTBfLTdiYzVNMzBWb3hDbjZsZjRZNlh2Rm5xQkRUVDRkNkdkRzlpNHgycFR0d19uUXVueDhZckF3Z2JGZ3h2SVdr?oc=5",
+      "publishedAt": "2026-10-02",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026新规下新能源汽车电池更换费用直降90%？3个维度说清"
       }
     },
     {
