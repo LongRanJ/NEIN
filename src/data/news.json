@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T06:43:16.045Z",
+  "lastUpdated": "2026-10-19T07:02:48.771Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,234 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-uoxo8e",
+      "title": "加码锂电产业链！青岛10.8亿负极材料项目全速建设 - 碳索储能网",
+      "summary": "加码锂电产业链！青岛10.8亿负极材料项目全速建设 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9la0ZIODY1MEg3aFBfSTYwZFctX3FscHhSUTJyOTcycWp3T0JHMlo0MGQ0dUdreno3ZHRtaE8yTDlyVmxFYWdzVkRFZHNJaTl6dTAzYW5VUjB0aFVlMGJFVQ?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "加码锂电产业链！青岛10.8亿负极材料项目全速建设 - 碳索"
+      }
+    },
+    {
+      "id": "gn-fh7w6q",
+      "title": "宁德好锂 绿动全球 - 中新网福建",
+      "summary": "宁德好锂 绿动全球 中新网福建",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9GbnJmdno4RGJNTVNpLS04SnFIMEtGTUlXVzBDWGI2MVJFaDVoREstUzN0c29kekdyNld6cllyaXlfVHpLaEJOTDc3MmtDdEZWWGYxaHVMMWZPcGN3YzhYWVFVenNiU2ZWZEZoQWJoSXZHQQ?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "主要事件": "宁德好锂 绿动全球 - 中新网福建"
+      }
+    },
+    {
+      "id": "gn-9lr7fm",
+      "title": "0.5GWh大圆柱全固态电池投产！ - 电子工程专辑",
+      "summary": "0.5GWh大圆柱全固态电池投产！ 电子工程专辑",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBDc0dYanF4Mm5hM3BaUnlnaFZja2lpb24wLVlPLUFXdTIwbWlXdy1Wb2dzTU1wTjdrSHA3MXhKcmNGLUVEMjNJRVYyWUw5Rk4zbDQ4?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "0.5GWh大圆柱全固态电池投产！ - 电子工程专辑"
+      }
+    },
+    {
+      "id": "gn-3m7mpq",
+      "title": "固态电池的进度条，今年有了新进展？ - 爱咖号",
+      "summary": "固态电池的进度条，今年有了新进展？ 爱咖号",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE12R2VubE5yZ04yT0FDb184R05rV2FNNEFQSTdUcklmRTdYaExYMHRtLTRYd2tSdHotZFpjbTlaN0x1U0R5S09fcVFhQ2UyTVdNUi1BU0RGa2U?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "固态电池的进度条，今年有了新进展？ - 爱咖号"
+      }
+    },
+    {
+      "id": "gn-dxoj1o",
+      "title": "11:47:11【新能源新周期，关注南方基金旗下新能源系列ETF布局机遇】 - 财联社",
+      "summary": "11:47:11【新能源新周期，关注南方基金旗下新能源系列ETF布局机遇】 财联社",
+      "source": "财联社",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBJaUtxY1FzYm0zZy1oNkt2eGJHOTFyZktrZ2dZUlhnLUFrVXprd19VWlh5dmgydTdrQS1YUEJkemVZOU5QaGZyTw?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "11:47:11【新能源新周期，关注南方基金旗下新能源系列E"
+      }
+    },
+    {
+      "id": "gn-88dqlo",
+      "title": "金江能源控股、华赛能源及禄丰市参股，将投建长江以南地区最大人工硐室压缩空气储能电站 - 碳索储能网",
+      "summary": "金江能源控股、华赛能源及禄丰市参股，将投建长江以南地区最大人工硐室压缩空气储能电站 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01bmtSczdCRi1WX0lUOWRybVdJMXQzRzJrS1o0Q0RoUVlvbFY2MHFPb1hjUEppbEhrV2t5WWFZZTVOMXZmeFBQRHJhWlF2V3dZZXdUSExNdmFQQ0F5NGdONg?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "金江能源控股、华赛能源及禄丰市参股，将投建长江以南地区最大人"
+      }
+    },
+    {
+      "id": "gn-ac4ut1",
+      "title": "上海鸿芯氢能诉上海氢晨新能源买卖合同纠纷案2026年11月19日开庭 氢能赛道商事争议引关注 - 新浪网",
+      "summary": "上海鸿芯氢能诉上海氢晨新能源买卖合同纠纷案2026年11月19日开庭 氢能赛道商事争议引关注 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaVAxNlVQcldHenc3eEFvNWxEbzh6eU9nbi1KVUc5R0d3Tmx6UWNGMl9xbFBvUTN6QWU3T0JEcWtmYVI1NlUzTGx0cUlqM2VSd3FaeXowZ3NNanhfQjBGeXpGMURNX0ptWnVlb19UWU9QM1ZSOWlWZ3EtLW91RWxrbmNR?oc=5",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "时间": "2026年11月19",
+        "地点": "上海",
+        "主要事件": "上海鸿芯氢能诉上海氢晨新能源买卖合同纠纷案2026年11月1"
+      }
+    },
+    {
+      "id": "rss-b2r7l7",
+      "title": "重力星球 MH1 Pro 破茧头戴式游戏耳机预热：镂空骨骼设计耳罩、明日发售",
+      "summary": "IT之家 10 月 19 日消息，重力星球现已预热旗下 MH1 Pro 破茧头戴式游戏耳机，该产品将于明天发售，主打声学规格与赛博风格外观设计。该产品采用镂空骨骼设计耳罩，匹配 90° 自适应悬挂支臂，支持 13 档步进阻尼调节。耳机配备 53mm 大动圈单元 + 雷达式环形腔体，支持 THX 空间音效、虚拟 7.1.4 环绕声及 360° 空间采样，同时支持 ANC 主动降噪及双 ENC 降噪，降噪深度达 38dB。该耳机支持蓝牙 / 有线 / 2.4G 连接，内置 32Bit 双核 DSP 芯片，2.4G 模式下约 20ms 延迟，支持双音源混音。耳机匹配 2000mAh 三元锂电池，在蓝",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/014/828.htm",
+      "publishedAt": "2026-10-19",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "重力星球 MH1 Pro 破茧头戴式游戏耳机预热：镂空骨骼设"
+      }
+    },
+    {
+      "id": "rss-akm00a",
+      "title": "理想汽车 CEO 李想谈“自研和合作”，称是不同阶段的不同选择",
+      "summary": "IT之家 10 月 19 日消息，理想汽车 CEO 李想今日再度发文，谈及了“自研和合作”。他表示，这是不同阶段的不同选择。2020 年，我们决定自研。芯片、三电、增程器，这些核心环节，我们一步步做了起来。同时，我们也不排斥和任何技术顶级的供应商合作。自研和合作，是不同阶段的不同选择。据IT之家今日早些时候报道，李想认为汽车主机厂深入研究电池核心技术，有利于行业发展和消费者利益。他称这个世界既需要最懂智能电动车的电池企业，也需要最懂电池的智能电动车企业。理想汽车想做的是成为最懂电池的那一类企业，和最懂汽车的电池供应商一起，把长期没解决的问题往前推一步。根据规划，Power Day 理想汽车电动",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/014/816.htm",
+      "publishedAt": "2026-10-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "理想"
+        ],
+        "主要事件": "理想汽车 CEO 李想谈“自研和合作”，称是不同阶段的不同选"
+      }
+    },
+    {
+      "id": "rss-ajietk",
+      "title": "小米 REDMI K100 标准版出厂搭载澎湃 OS 4，支持《王者荣耀》极致画质开启独显超帧",
+      "summary": "IT之家 10 月 19 日消息，小米官方今日持续预热 REDMI K100 标准版机型。根据官方最新消息，该机出厂搭载小米澎湃 OS 4 系统，支持负载精算（系统资源匹配更精准）、内存预载（提前供给应用所需内存）等功能。另外，新机实现了标准版首次搭载游戏独显 D2，号称“大幅刷新旗舰游戏体验基线”，确认支持《王者荣耀》极致画质开启独显超帧，官方数据显示：144fps 极致画质，平均功耗降低 1.1W。IT之家整理小米 REDMI K100 标准版已公布 / 曝光配置如下：性能：骁龙 8 至尊版旗舰芯 | 游戏独显 D2屏幕：165Hz 高刷电竞屏规格：提供 12GB LPDDR5X + 25",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/014/814.htm",
+      "publishedAt": "2026-10-19",
+      "keywords": [],
+      "category": "政策法规",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小米"
+        ],
+        "主要事件": "小米 REDMI K100 标准版出厂搭载澎湃 OS 4，支"
+      }
+    },
+    {
+      "id": "rss-aietmu",
+      "title": "华为 Pura X View 阔直板手机将于 10 月 20 日 10:08 开启 60 天预约申购",
+      "summary": "IT之家 10 月 19 日消息，华为商城今日宣布，为了让更多消费者体验到 HUAWEI Pura X View，华为商城将于 2026 年 10 月 20 日 10:08 开启“60 天预约申购”。IT之家附预约申购说明：您成功预约申购后，我们将在预约申购期内按照随机顺序完成发货。您可在订单详情页查看根据排产状态刷新的预计发货时间。在发货前，您可随时取消预约申购单，并获全额退款。预约申购单取消后，若您再次参与本活动，需要重新预约申购。博主 @数码闲聊站 曾在 10 月 16 日爆料，渠道数据显示，华为阔直板（Pura X View）出货量已超 71 万，实销均价在 7000 元左右，其中约 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/014/812.htm",
+      "publishedAt": "2026-10-19",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华为 Pura X View 阔直板手机将于 10 月 20"
+      }
+    },
+    {
+      "id": "gn-p4n10t",
+      "title": "2026款名爵MG 07电池怎么选？半固态/三元锂/磷酸铁锂3个版本一次说清+FAQ - 新浪网",
+      "summary": "2026款名爵MG 07电池怎么选？半固态/三元锂/磷酸铁锂3个版本一次说清+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE1vNnludHNqM0ltZGpBOWdoWFZEeWtfaFRIMmNjZHNxeDJHbzU4VmozUGZiQUxmWW1BOTBEbC0xQUtLYl91NjlGbTExRzQ1WXFvNjJMY2c2WnhCUzR3Ym40WG1xdHZwNWc0V3UtQ19fTGJRQQ?oc=5",
+      "publishedAt": "2026-10-18",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026款名爵MG 07电池怎么选？半固态/三元锂/磷酸铁锂"
+      }
+    },
+    {
+      "id": "gn-oyczf1",
+      "title": "MG 07新能源2026款电池怎么选？67kWh半固态与91kWh三元锂谁更值？3个维度拆解+FAQ - 新浪网",
+      "summary": "MG 07新能源2026款电池怎么选？67kWh半固态与91kWh三元锂谁更值？3个维度拆解+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVWppNXZUX1F4cExCRkYwN2lBRmMxSDM2VDdfQmUtQS13cE9hZGJocHhFZTFMU2NHQnUzcFQybHUyMmtXcnNobDlnZmxfdW9zNDVQSXJiOGlhdVJvVUVCelZ4MUh4LUZRaGtmbEZjM1U3Zw?oc=5",
+      "publishedAt": "2026-10-18",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "MG 07新能源2026款电池怎么选？67kWh半固态与91"
+      }
+    },
+    {
+      "id": "rss-ivhbzy",
+      "title": "新增广东湖南：苹果 AirPods 国补 15%，5 代 758 元起、Pro 3 仅 1316 元",
+      "summary": "苹果 AirPods 5 支持主动降噪，国行定价 999 元起。苹果 AirPods Pro 第三代支持升级版主动降噪 + 心率传感功能，国行定价 1899 元。京东目前支持 广东、江苏、北京、湖南、吉林、河北、云南、四川、大连 政府补贴 15%，收货地址在上述地区即可。AirPods Pro (第三代) 今日叠加国补后仅需 1316 元：京东 AirPods Pro 第三代搭配 MagSafe 充电盒国补后 1316 元直达链接京东 11.11 红包至高 26888 元无门槛可用，每天可抽一次：点此抽取。京东 PLUS 目前可领 100、125 元 AirPods 5 加补券，10 月 20",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/014/610.htm",
+      "publishedAt": "2026-10-18",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "北京",
+        "主要事件": "新增广东湖南：苹果 AirPods 国补 15%，5 代 7"
+      }
+    },
     {
       "id": "rss-qny3nh",
       "title": "荣耀 WIN 2 系列手机防水性能公布，内置双风扇支持 IPX8+IPX9 级防水",
@@ -101,6 +329,38 @@
           "吉利"
         ],
         "主要事件": "吉利林杰：燃油车的未来是全面混动化、全面智能化"
+      }
+    },
+    {
+      "id": "gn-ruipqw",
+      "title": "明年一季度试产！一半固态电池项目落户河北邢台 - https://www.itdcw.com/",
+      "summary": "明年一季度试产！一半固态电池项目落户河北邢台 https://www.itdcw.com/",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE85N0Q5Q0k0a2EzdHVoeEprT0JQNWl0cUM1cGNjUEhTOU85T2Z4b05OTDlHQXhPNFNxOC1rcnBiejJDNU1rR09JWDVGNWRlSzRjV1U1Y2FqazdrbjJOLVdZ?oc=5",
+      "publishedAt": "2026-10-17",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "明年一季度试产！一半固态电池项目落户河北邢台 - https"
+      }
+    },
+    {
+      "id": "gn-t09cgg",
+      "title": "固态电池“量产前夜”的真相：2026年底实车测试，但我劝你别买 - 汽车之家",
+      "summary": "固态电池“量产前夜”的真相：2026年底实车测试，但我劝你别买 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBObmFiT0hWNUlUSDl5TjY2QWJOYV9sSk9WTnQ5M2JhQ3duMFlHUk4xRE5pU0pyZ0U1X0ZfSEk5YndsQzhCaG9RNWtJZGwtY2I2M2RIQV9GY0l6UW8?oc=5",
+      "publishedAt": "2026-10-17",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "固态电池“量产前夜”的真相：2026年底实车测试，但我劝你别"
       }
     },
     {
@@ -859,6 +1119,22 @@
           "华为"
         ],
         "主要事件": "阿维塔 06 车型焕新上市：半隐藏门把手、安全舒适配置升级，"
+      }
+    },
+    {
+      "id": "gn-ceqwqk",
+      "title": "储能向新 时代作答 - 福建省人民政府",
+      "summary": "储能向新 时代作答 福建省人民政府",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTENDTUFmaXZVdzJhVnAwNm83TUhoT1VOU0hHSW1SeWo0M241ZW9OSnZyYWw4UVk1SDhJMlRQTzFEY0dVMHZScnAwalpCUkd4SU9SMURaZjRiWHJ3SUR6SndkSWNjU25sZ0xtVXlHMUtWTHlLbUszekc3TzY0TVhWQU0tUGliQ0dIblZ6ZlpMekI?oc=5",
+      "publishedAt": "2026-10-14",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "储能向新 时代作答 - 福建省人民政府"
       }
     },
     {
@@ -2377,6 +2653,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "荣耀 Earbuds X10 蓝牙耳机上架：12.4mm 动"
+      }
+    },
+    {
+      "id": "gn-7lquf3",
+      "title": "国庆假期新能源车出行创纪录 充换电设施迎压力测试 - 经济参考报",
+      "summary": "国庆假期新能源车出行创纪录 充换电设施迎压力测试 经济参考报",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5pR05jZlJ4dk9icDl4a1hISWFwTGJFTUZyZkM2elFGRGw2bUY3S2xsalVLMFhpa3d4M0tsTVhVdmdjSkEzc1FqS0dPMFBDZms3dFg2VTM4ZEN5OTZhU1pRVzZKVTFIWXBFZ0ZhYTVSQ29Fa3pVS1NTbA?oc=5",
+      "publishedAt": "2026-10-09",
+      "keywords": [
+        "快充技术"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "国庆假期新能源车出行创纪录 充换电设施迎压力测试 - 经济参"
       }
     },
     {
@@ -32421,6 +32713,23 @@
       "importance": "medium",
       "tags": {
         "主要事件": "宁德三元锂电池份额占比82.4% 创历史新高 - 新浪财经"
+      }
+    },
+    {
+      "id": "gn-9s6kex",
+      "title": "第十届国际氢能与燃料电池汽车大会举办 - 中国科学技术协会",
+      "summary": "第十届国际氢能与燃料电池汽车大会举办 中国科学技术协会",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZndNTTJ1aWduV2VIQ1E3OVMtbkV3ZWlmUVlRNzl1aTR1M3BFdDg5TzlmUzVpd1hxbmc2VjVrZ3ZHN1B6ZmxvLVRiZnRnMEpqRVNaMHMzRUZKQUw3R2ZRb0VrUThZUjJaYUJNMm8tR090QUloVkhyTDN6Sk1oSHAtWHNrMndaeHlCN2c?oc=5",
+      "publishedAt": "2026-06-12",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "第十届国际氢能与燃料电池汽车大会举办 - 中国科学技术协会"
       }
     },
     {
