@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T06:36:10.325Z",
+  "lastUpdated": "2026-10-25T07:03:02.944Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,164 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-d05r68",
+      "title": "年产65万吨磷酸铁锂！万华化学山东莱州项目二期开工！ - https://www.itdcw.com/",
+      "summary": "年产65万吨磷酸铁锂！万华化学山东莱州项目二期开工！ https://www.itdcw.com/",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9wZ1p4ZEZBMm1RcmhQRlNfY0ZtNVhXRFRZRG9fdHpyV3JlWmdzTFFEcFpuZ2Y0dG14VEJNOEpRaE9BQUhEMVpwcmtWRFR3YUdVUkxCSnNib3JVVUhUbHJN?oc=5",
+      "publishedAt": "2026-10-25",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "年产65万吨磷酸铁锂！万华化学山东莱州项目二期开工！ - h"
+      }
+    },
+    {
+      "id": "gn-lpfob4",
+      "title": "惠阳50MW/300MWh铁铬液流电池独立储能项目通过节能审查 - 碳索储能网",
+      "summary": "惠阳50MW/300MWh铁铬液流电池独立储能项目通过节能审查 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE12eUllV04wcXVDOWp2bUp3U3djZjI5eGpPZVVZWmZjS05NTGUzUDFGQXBJR3lRaTNfNkkxVjZDUURQRExXWGQ0b1BLUTV3S0g2OFE4Wjc1aGtjN3pXdzhsXw?oc=5",
+      "publishedAt": "2026-10-25",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "惠阳50MW/300MWh铁铬液流电池独立储能项目通过节能审"
+      }
+    },
+    {
+      "id": "rss-ma9xgm",
+      "title": "一加 Ace 7 系列设计细节公布：星际光效呼吸灯、隐藏式进风口等，新机 10 月 29 日发布",
+      "summary": "IT之家 10 月 25 日消息，一加中国区总裁李杰今日发布视频，展示了一加 Ace 7 系列手机全新配色 ——「破风」和「淬火」的外观。视频画面显示，一加 Ace 7 系列手机的这两款配色采用特殊纹理设计。「破风」为一加 Ace 7 Pro 的配色，整体呈冰蓝色，背部印有冲击感较强的“Ace”图标。根据官方介绍，该机采用质感金属中框 + 旗舰大 R 角设计，后置星际光效自定义呼吸灯和暴风岛隐藏式进风口。「淬火」是一加 Ace 7 标准版的配色，后盖采用全新双渐变叠层工艺，后置金属魔方 Deco，同样配备质感金属中框、旗舰大 R 角、星际光效自定义呼吸灯、暴风岛隐藏式进风口。据IT之家此前报道",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/017/589.htm",
+      "publishedAt": "2026-10-25",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "一加 Ace 7 系列设计细节公布：星际光效呼吸灯、隐藏式进"
+      }
+    },
+    {
+      "id": "rss-lsoih2",
+      "title": "苹果 iPhone Duo 拆解：双电池 4883mAh，无实体 SIM 卡槽",
+      "summary": "IT之家 10 月 25 日消息，YouTube 频道 REWA Technology 与 Phone Repair Guru 放出了首批 iPhone Duo 的拆机视频，让外界得以看清这款折叠机型的内部构造。IT之家注意到，iPhone Duo 采用双电芯设计，两块电池都依靠电控胶拆卸：大容量电池：2962 mAh（11.56 Wh）小容量电池：1921 mAh（7.5 Wh）总容量：4883 mAhREWA 的视频给出了主板元件标注：板载 A20 Pro 芯片 + C2 蜂窝基带等核心组件。维修难点与模块化设计1. Touch ID 按键：理论上可以单独拆下维修，但拆解难度很高；2. U",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/017/578.htm",
+      "publishedAt": "2026-10-25",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "苹果 iPhone Duo 拆解：双电池 4883mAh，无"
+      }
+    },
+    {
+      "id": "rss-l7sbxc",
+      "title": "为给数据中心腾出电网容量，谷歌付费让家庭、企业减少用电",
+      "summary": "IT之家 10 月 25 日消息，AI 数据中心的用电需求持续增长，科技公司却越来越难找到足够的电力。为解决供电难题，谷歌选择了另一条路：通过付费的方式间接鼓励家庭和企业在特定时段减少用电，为数据中心腾出更多电网容量。当地时间 22 日，据《纽约时报》报道，谷歌与能源服务公司 Voltus 达成协议，将在美国大西洋中部地区的 PJM 电网建立一座“虚拟电厂”。按照协议，Voltus 将在有需要时为谷歌释放最多 1070MW 的电力容量，规模相当于一座大型核反应堆的发电功率。虚拟电厂并不依靠新建发电厂供电。Voltus 将招募家庭和企业，通过经济奖励来鼓励在用电高峰或电网供电紧张时减少电力消耗。",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/017/561.htm",
+      "publishedAt": "2026-10-25",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "美国",
+        "主要事件": "为给数据中心腾出电网容量，谷歌付费让家庭、企业减少用电"
+      }
+    },
+    {
+      "id": "rss-krai4i",
+      "title": "软银投资的农业无人机创企极飞科技：希望让每个农民都有自己的机器人",
+      "summary": "IT之家 10 月 25 日消息，据英国《金融时报》今天（25 日）上午报道，获得软银投资的中国农业无人机企业极飞科技，希望让“每个农民都有自己的机器人”。面对农业劳动力持续减少、气温不断升高，极飞认为，无需飞手操控的植保无人机能够帮助农民应对双重挑战。按营收计算，极飞是仅次于大疆的全球第二大农业无人机制造商。公司推出了一系列配套自动化无人机场的产品，无人机降落后可自动完成清洗、充电和补充药液，系统还能自行规划喷洒航线。极飞科技高级副总裁龚槚钦指出，缺少劳动力、农业从业人员老龄化，是中国农场面临的两大难题，许多农场还难以找到有空前来喷洒作业的无人机飞手。气候变化使天气更加极端，也让农业智能化、",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/017/552.htm",
+      "publishedAt": "2026-10-25",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "软银投资的农业无人机创企极飞科技：希望让每个农民都有自己的机"
+      }
+    },
+    {
+      "id": "rss-jx1thn",
+      "title": "IT早报 1025：英伟达停产传闻搅动 5090 炒至 6 万元；小鹏副总裁回应“老登”称呼；曝部分手机或平板产品线将停更；微信支持 iPhone Duo 等多端同时登录...",
+      "summary": "“IT早报”时间，大家好，现在是 2026 年 10 月 25 日星期日，今天的重要科技资讯有：1. 显卡一日一价：英伟达停产传闻搅动华强北，RTX 5090 被炒至 6 万元尽管英伟达否认停产传闻，华强北 RTX 50 系列渠道价仍持续飙升。RTX 5090 从官方约 1.6 万元涨至 6 万元，RTX 5080 翻倍至 1.7 万元。官方承认产能受限，根源在 GDDR7 显存供应不足。 查看详情2. 小鹏副总裁澄清 00 后美女产品经理发布会“老登”用词：是对内部核心负责人调侃，不指向外部用户小鹏集团副总裁 @托马斯电火车 10 月 24 日发布长文，还原了 00 后美女产品经理发布会“老",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/017/539.htm",
+      "publishedAt": "2026-10-25",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "小鹏"
+        ],
+        "主要事件": "IT早报 1025：英伟达停产传闻搅动 5090 炒至 6 "
+      }
+    },
+    {
+      "id": "gn-hztp8w",
+      "title": "买新能源车选磷酸铁锂还是三元锂 - 手机新浪网",
+      "summary": "买新能源车选磷酸铁锂还是三元锂 手机新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUlItS3ZEU3dsdlN5b0JvS29TaGdUX01pSHdHUk1HQXFFcS13Vm84ckRPUHlEUHdzWUJPTl9abU1OWUgzbUhXMEZPSTZGaV8tTkswTTFUdXBaM3lVcDF0SkQ3NHNsQjRGU0ZlZ0drU0NVd0xqQnlwRGNRQ0VLUzdjRQ?oc=5",
+      "publishedAt": "2026-10-24",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "买新能源车选磷酸铁锂还是三元锂 - 手机新浪网"
+      }
+    },
+    {
+      "id": "gn-xln4al",
+      "title": "沪闵高架，5辆新能源车相撞 - 上观新闻",
+      "summary": "沪闵高架，5辆新能源车相撞 上观新闻",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9fOGVrZmJyR2FGU0Q5d2ZoZUlXSDhnZ0dDWm13VlpZbTJleW05NjJkb0ZXeXBUblNUZkJGdkMycURiMXRnNmxSc1JGbEJfbGZrdHBjQmRTWXFhZw?oc=5",
+      "publishedAt": "2026-10-24",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "沪闵高架，5辆新能源车相撞 - 上观新闻"
+      }
+    },
+    {
+      "id": "gn-1dmmbe",
+      "title": "问界汽车碰撞起火致驾驶员遇难，新能源“下半场”安全底线怎么守？ - 网通社",
+      "summary": "问界汽车碰撞起火致驾驶员遇难，新能源“下半场”安全底线怎么守？ 网通社",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHZlFrcW8tWWpqQWQtSHowQklPVENWR3BDb1BVOXY1ZTl0dFZCS2w0SFFoOWF0ZVEwSkY2ZEkyUkpBS1hpRWppYW1ybHpiUjJzVF9vT1VIQk1ZSjlO?oc=5",
+      "publishedAt": "2026-10-24",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "问界汽车碰撞起火致驾驶员遇难，新能源“下半场”安全底线怎么守"
+      }
+    },
     {
       "id": "gn-njrspm",
       "title": "从卖产品到建生态 锂电池产业探寻“出海”新路径 - 新湖南",
@@ -133,6 +291,38 @@
           "宁德时代"
         ],
         "主要事件": "定位“年轻人的智能零压 SUV”，东风日产 NX7 公布 5"
+      }
+    },
+    {
+      "id": "gn-cylo0j",
+      "title": "10月23日海辰药业涨停：固态电池，锂电池，新能源汽车概念热股_个股掘金 - 证券之星",
+      "summary": "10月23日海辰药业涨停：固态电池，锂电池，新能源汽车概念热股_个股掘金 证券之星",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1yUFVHVW1hT0ZHYnpNWWRZNXVlSjZiWU8wNzdSOEpsZFBMYXNIM29KSUNEMVlpZm9uc2x0RjVUVEUxOVNHeXFWbjFpMkpjYXNwbE9kSmVHVUhsaGwyNFpuSQ?oc=5",
+      "publishedAt": "2026-10-23",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "10月23日海辰药业涨停：固态电池，锂电池，新能源汽车概念热"
+      }
+    },
+    {
+      "id": "gn-6repnu",
+      "title": "荷兰商会代表团走进绿萌氢能，共话加氢站与零碳交通 - 国际氢能网",
+      "summary": "荷兰商会代表团走进绿萌氢能，共话加氢站与零碳交通 国际氢能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9nQ2psTERmbnRxLU5JeUM1eGFRZnA5R3k0WEVTSzROdnVuMDRHbW1mUVdZRUJKcHh1ZEZJb0Y2QllDbzZfOE9lWEVaVFR5bUVVVVZFSlZn?oc=5",
+      "publishedAt": "2026-10-23",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "荷兰商会代表团走进绿萌氢能，共话加氢站与零碳交通 - 国际氢"
       }
     },
     {
@@ -708,6 +898,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "三星心系天下新品发布会定档 10 月 29 日，W27 系列"
+      }
+    },
+    {
+      "id": "gn-d9cz25",
+      "title": "MG4新能源2026款电池到底值不值？半固态首发+零自燃，3个维度说清+FAQ - 新浪网",
+      "summary": "MG4新能源2026款电池到底值不值？半固态首发+零自燃，3个维度说清+FAQ 新浪网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTE5uZ0VHc1VoeENqNjVLd3ZvQVhuQnctaXhQM3Frd0lYMUpHX1J2S2p1N2NiclpCVVY3M0dlaTFsMDhKekRxeGFXeHo3ME5OLXNQLVZ1cDQ0M292NTVDUU9kQUlmT09UZ0R1aWdlaFVNdHc2Zw?oc=5",
+      "publishedAt": "2026-10-21",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "技术突破",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "MG4新能源2026款电池到底值不值？半固态首发+零自燃，3"
       }
     },
     {
