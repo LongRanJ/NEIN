@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T08:54:50.559Z",
+  "lastUpdated": "2026-11-13T08:52:47.798Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,283 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-whb9px",
+      "title": "中国电池新能源产业前路何在？_行业新闻 - 全球矿产资源网",
+      "summary": "中国电池新能源产业前路何在？_行业新闻 全球矿产资源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5rTGVpYlhXVFVoVnBsXzNiQlBQY0F4N211dXowUzFGSkZIQ19pZjBqZmxtZUxkVUtSZGc0S1dxRlY2Qk1LUlZVUkRoWWk5N0I4Q3JjcHRjN09SNjI4T1VGbS1kOU9USjBjRHZlM0xESHB0b1QyX1ZuY2JZRll3bVE?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "high",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "中国电池新能源产业前路何在？_行业新闻 - 全球矿产资源网"
+      }
+    },
+    {
+      "id": "gn-byo578",
+      "title": "开源+AI，固态电池换一种模式搞协同攻关？ - 电子工程专辑EE Times China",
+      "summary": "开源+AI，固态电池换一种模式搞协同攻关？ 电子工程专辑EE Times China",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBacnpfVUg0U0dSMWxqVk1naDlpVEF0SEJHNGhpV1FSd0YwRTV5UGRxb004UFZjQ04tdElnc2sweC1BN2Z0eDhVTm5zc2pMSm5wQVdz?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "开源+AI，固态电池换一种模式搞协同攻关？ - 电子工程专辑"
+      }
+    },
+    {
+      "id": "gn-wbuzt0",
+      "title": "某新能源MPV起火，消防竟把车拽翻了！事故背后还有几个疑问 - 汽车之家",
+      "summary": "某新能源MPV起火，消防竟把车拽翻了！事故背后还有几个疑问 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5aZmRyMVU3eVU4NGxwcEU0Z0loMmhULW1wbFRvLWx3emNDQnU4SC1EY1J4Qlh3STN6ZWdPY09FT2lRYkR6SUFIR1RiZy1VUFRiQlZqMTAwREpJaEU?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "某新能源MPV起火，消防竟把车拽翻了！事故背后还有几个疑问 "
+      }
+    },
+    {
+      "id": "gn-o3jm3g",
+      "title": "两部门印发《“十五五”新型储能实施方案》 - 财联社",
+      "summary": "两部门印发《“十五五”新型储能实施方案》 财联社",
+      "source": "财联社",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE92aFFxaWlXSEJTRnVVMFh5RnR4ZV9NOWRpQzcwR1V4bWdEQ1NlOFBEZHNSN0dubWhZR1dKeHcyY3NGTWpwMDZlRg?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "两部门印发《“十五五”新型储能实施方案》 - 财联社"
+      }
+    },
+    {
+      "id": "gn-hik2s1",
+      "title": "安徽省新能源及新型储能行业报告发布 - 碳索储能网",
+      "summary": "安徽省新能源及新型储能行业报告发布 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GdFZNNDBlUmJaeHowSG5hWkxxVll4Mi1mRElETDg1eG90em1WT1pjd3NlaW9Bcjk4UTNGTUNGY3NHWjZEZWUwNkFkdjJTejdDcE5neTdJRE5VX2tlUkk4TA?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "安徽省新能源及新型储能行业报告发布 - 碳索储能网"
+      }
+    },
+    {
+      "id": "gn-2co64g",
+      "title": "国家发展改革委 国家能源局关于印发《“十五五”新型储能实施方案》的通知 - 21财经",
+      "summary": "国家发展改革委 国家能源局关于印发《“十五五”新型储能实施方案》的通知 21财经",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPN0cxQzQ3WE9CVmhsOWxkb2F0TXhYRm1lYm9GNTBiemthNThkeXhTNDJyWE94andLOExRVWk2ZzN2NFozeWFQMi0wTlBsR0lPZldIYi1KdXZodWxnd2Ryd1FuYm12OElTR3FhMU41ak1RRV9sc05uTlBkTHBsa2lBNlgxUjBMYnQyNW14RkwwMA?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "国家发展改革委 国家能源局关于印发《“十五五”新型储能实施方"
+      }
+    },
+    {
+      "id": "gn-ah3zak",
+      "title": "两部门印发“十五五”新型储能实施方案 - 观点网",
+      "summary": "两部门印发“十五五”新型储能实施方案 观点网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5IcEpiRzl1REsxSWYxckhpbDA5WVBHbDNFZXAySDllOXI3bGN2ZmNCUE5SZ1puN0hSQ3k0TVE1U0dvVGlROV8xenJCWTVkS2hUUFlBMVBWZkdDV2M3anlLX0J3?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "两部门印发“十五五”新型储能实施方案 - 观点网"
+      }
+    },
+    {
+      "id": "gn-deaiof",
+      "title": "“十五五”新型储能实施方案印发：2030年新能源基地配储50-60GW，鼓励新能源配储、一体化参与市场 - Sohu",
+      "summary": "“十五五”新型储能实施方案印发：2030年新能源基地配储50-60GW，鼓励新能源配储、一体化参与市场 Sohu",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTEsycEhZdFQyaS14NEprRjRqOGRoUnQ0c1VjZmVqZE15YXZkbHQ5a2Rlc0MyUmxHcHRGU3hZQmN6eGRROFdjbUNCOHJSbUEyTUZfcE52Y3FSMDRicll2LVNxVkxILU5JNmNtYlF6Y1FJSy00Qy1DMnRnNzFmZzNuRTRIYkxUZHNs?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "储能"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "“十五五”新型储能实施方案印发：2030年新能源基地配储50"
+      }
+    },
+    {
+      "id": "gn-ndkom0",
+      "title": "单次续航约70公里，嘉兴市氢能共享两轮车示范运营 - 世纪新能源网",
+      "summary": "单次续航约70公里，嘉兴市氢能共享两轮车示范运营 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VNXRvblpuaDQ3YTNzal9ma1hpZk8za0hrdzdJR3RhWDZjTnBrQWpZelM0QUVGRXhHWTJHcVAzaVNMOXdzaHUtMDh2ZUgtMGZkYjNobw?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "单次续航约70公里，嘉兴市氢能共享两轮车示范运营 - 世纪新"
+      }
+    },
+    {
+      "id": "gn-ysjfg0",
+      "title": "2026年阿拉善盟新能源产业供需对接会举行 - 正北方网",
+      "summary": "2026年阿拉善盟新能源产业供需对接会举行 正北方网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPNmlNaFFkNjk1VGhNYmJ6MlVBRk8wS0tmNTAzNFhPS0QzX3hIWXVjTlZxYlBzdEY2TU14dy03d1VZMUUzV3hoVm5yTnUtb1d3YV9nTDA2YjhwRW5NZmxLbkxR?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026年阿拉善盟新能源产业供需对接会举行 - 正北方网"
+      }
+    },
+    {
+      "id": "gn-i4ehnm",
+      "title": "HTWO广州与液空中国签署合作备忘录 携手探索氢能交通商业化新路径 - 世纪新能源网",
+      "summary": "HTWO广州与液空中国签署合作备忘录 携手探索氢能交通商业化新路径 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZMmJVSF9DZEFsQXZOOGc0bVdmYUNKM1hNdVZtc3FNdi1ZQnNEZnFfdHl0WDI5QUhCT1l2RUFYZk1tV0laeUt4ajhzbFZOWHQ2UlAzVg?oc=5",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "广州、中国",
+        "主要事件": "HTWO广州与液空中国签署合作备忘录 携手探索氢能交通商业化"
+      }
+    },
+    {
+      "id": "rss-ijegfd",
+      "title": "Breggz 推出 TWS 耳机 Zohn 2：五驱动单元，IMAX Enhanced 认证",
+      "summary": "IT之家 11 月 13 日消息，音频品牌 Breggz 本月 10 日正式推出了其 TWS 耳机 Zohn 2。这一型号采用五驱动单元的设计，获得 IMAX Enhanced 认证。Zohn 2 结合了 1 个 10mm 动圈单元、3 个平衡电枢驱动单元、1 个 6mm 平面驱动单元，分别擅长低音、细节、空间感，支持配置各单元的协同工作方式。该耳机配备 4 个麦克风，支持波束成形、风噪抑制、环境噪声，未提供主动降噪功能但随附 7 种不同的被动降噪耳塞。其本体可提供 7hr 续航，充电盒则能补充 25hr 续航。IT之家了解到，Breggz Zohn 2 耳机定价 579 欧元 / 549 英",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/026/814.htm",
+      "publishedAt": "2026-11-13",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "Breggz 推出 TWS 耳机 Zohn 2：五驱动单元，"
+      }
+    },
+    {
+      "id": "rss-7q44bp",
+      "title": "鸿蒙智行问界新 M8 正式上市，37.98 万-46.98 万元",
+      "summary": "IT之家 11 月 13 日现场消息，今天（13 日）下午，鸿蒙智行问界新 M8 正式上市。新车定位家庭智慧旗舰 SUV，面向 L3 级自动驾驶架构设计，搭载华为乾崑智驾 ADS 5、新一代全向立体融合感知系统，号称研发投入 15 亿元，拥有 126 项创新技术。IT之家从发布会现场获悉，问界新 M8 的售价如下：增程版阔五座：Max 售 37.98 万元，Max+ 售 39.98 万元，Ultra 售 44.98 万元享六座：Max 售 38.98 万元，Max+ 售 41.98 万元，Ultra 售 46.98 万元纯电版阔五座：Max+ 售 39.98 万元，Ultra 售 44.98 ",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/026/799.htm",
+      "publishedAt": "2026-11-13",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "鸿蒙智行问界新 M8 正式上市，37.98 万-46.98 "
+      }
+    },
+    {
+      "id": "rss-74o56m",
+      "title": "松下公布强固型平板电脑 FZ-G3：Ultra 5 处理器 335，10.1\" 屏幕",
+      "summary": "IT之家 11 月 13 日消息，Panasonic（松下）当地时间今日公布了将于 2027 年 1 月推出的强固型平板电脑 FZ-G3。这一型号配备 10.1\" 屏幕，基于英特尔酷睿 Ultra 5 处理器 335，运行 Windows 11 Pro 操作系统。FZ-G3 通过 MIL-STD-810H 军规抗冲击、抗震动测试，具备 IP66 防尘防水，工作温度范围 -10~+50℃，屏幕亮度可达 1000nits、覆盖康宁玻璃盖板、支持湿手触控、支持数字笔，集成 12.6MP 后摄、5MP IR 前摄。这一平板电脑可选 35Wh / 70Wh / 99Wh 电池，起始质量 1.07kg；可",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/026/781.htm",
+      "publishedAt": "2026-11-13",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "松下"
+        ],
+        "主要事件": "松下公布强固型平板电脑 FZ-G3：Ultra 5 处理器 "
+      }
+    },
+    {
+      "id": "rss-6s0vjb",
+      "title": "两部门：加快锂离子电池储能迭代升级，推广钠离子电池储能应用",
+      "summary": "IT之家 11 月 13 日消息，国家发展改革委、国家能源局印发《“十五五”新型储能实施方案》。IT之家获悉，到 2030 年，新型储能由规模化发展阶段步入市场化发展阶段，全国新型储能装机规模达到 3 亿千瓦，平均储能时长 3 小时左右。《方案》提出，科学布局新型储能创新方向。加快锂离子电池储能迭代升级，推广钠离子电池储能应用。推动压缩空气储能、液流电池储能、飞轮储能等从试点应用向商业化应用过渡。鼓励超级电容、压缩二氧化碳储能、液态空气储能、重力储能、熔盐储热等技术试点应用。支持固态电池、热泵储电、热储能、氢储能等前沿技术储备。进一步推动构网型储能发展。以场景需求为牵引，积极稳妥推进构网型储能",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/026/779.htm",
+      "publishedAt": "2026-11-13",
+      "keywords": [
+        "固态电池",
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "两部门：加快锂离子电池储能迭代升级，推广钠离子电池储能应用"
+      }
+    },
+    {
+      "id": "rss-57xv0h",
+      "title": "华为余承东亮相问界新 M8 上市发布会，再晒鸿蒙智行品牌矩阵",
+      "summary": "IT之家 11 月 13 日现场消息，鸿蒙智行问界新 M8 上市发布会于今日举行，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东上台发表演讲。余承东再次介绍了鸿蒙智行 —— 华为终端主导的新能源汽车生态技术联盟。华为把三十多年来积累的 ICT 技术，以及这十几二十年来积累的在消费电子领域的核心能力，为伙伴定制不同的合作方案，打造了问界、智界、享界、尊界、尚界五大品牌矩阵，帮助车企造好车、卖好车。IT之家注意到，9 月 30 日，鸿蒙智行问界业务升级战略合作签约仪式在深圳举行。华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东，赛力斯集团董事长张兴海等出席。鸿蒙智行官",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/026/740.htm",
+      "publishedAt": "2026-11-13",
+      "keywords": [],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "深圳",
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华为余承东亮相问界新 M8 上市发布会，再晒鸿蒙智行品牌矩阵"
+      }
+    },
+    {
+      "id": "gn-550l2s",
+      "title": "广东诺佳1.8GWh消费类半固态电池项目备案通过 总投资6.8亿元 - 观点网",
+      "summary": "广东诺佳1.8GWh消费类半固态电池项目备案通过 总投资6.8亿元 观点网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CQkc0SGppX0hwM3lfYWVvUFB6X1BocVhXaURnUnNwLTRITXRFNDZfMnZ5NXNPRFA4Sl91VV85N2pWelF1UnVqZWtRWW1QVHNrOXk1MEs5ZE8xZVhWbkJCMGl3?oc=5",
+      "publishedAt": "2026-11-12",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "资本动态",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "广东诺佳1.8GWh消费类半固态电池项目备案通过 总投资6."
+      }
+    },
     {
       "id": "gn-281ty",
       "title": "锂/钠/固态电池9大榜单发布！这些信号值得关注！ - https://www.itdcw.com/",
@@ -2491,6 +2768,22 @@
       "importance": "medium",
       "tags": {
         "主要事件": "不输充电宝：曝国产厂商 14000mAh 级电池新机试模中，"
+      }
+    },
+    {
+      "id": "gn-j7jz35",
+      "title": "贵安新区年产20万吨高端锂电池材料智能制造项目开工 - 人民网贵州",
+      "summary": "贵安新区年产20万吨高端锂电池材料智能制造项目开工 人民网贵州",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KenFTSUo4SEFxQU1rZTR6ck1yekJQU1RlVzJxQ2FBeElDUldvd2FNdDBIMUVwbFJlUUFOUHplNnRGWFlNRTZNOVZDd3hiRjhIb0phd1psS1VYcGRMQjVUYXJqVEQyV2V3bXc?oc=5",
+      "publishedAt": "2026-11-02",
+      "keywords": [
+        "锂电池材料"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "贵安新区年产20万吨高端锂电池材料智能制造项目开工 - 人民"
       }
     },
     {
@@ -21136,6 +21429,26 @@
       }
     },
     {
+      "id": "gn-4p3dam",
+      "title": "三元锂vs磷酸铁锂，新世代宝马iX3电池怎么选？ - 汽车之家",
+      "summary": "三元锂vs磷酸铁锂，新世代宝马iX3电池怎么选？ 汽车之家",
+      "source": "汽车之家",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PWXR2X3p1U2NVb2pDaWpORldVRmVkOTVuQ2FzLUt1QXRxMmJLNFNpZGx6UHlMcDJrQktXUC1YQUJkRms4LUIzWUV3eDdIc0pkZXZfUG5TRk5CRnM?oc=5",
+      "publishedAt": "2026-08-28",
+      "keywords": [
+        "三元锂"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "宝马",
+          "宝马"
+        ],
+        "主要事件": "三元锂vs磷酸铁锂，新世代宝马iX3电池怎么选？ - 汽车之"
+      }
+    },
+    {
       "id": "gn-qe0zxv",
       "title": "布局全球兆瓦快充赛道｜永贵MCS充电枪、车载插座荣获TÜV认证 - 国际充换电网",
       "summary": "布局全球兆瓦快充赛道｜永贵MCS充电枪、车载插座荣获TÜV认证 国际充换电网",
@@ -39121,6 +39434,22 @@
       }
     },
     {
+      "id": "gn-20xc9j",
+      "title": "爆单！磷酸铁锂开工率超85%！9个项目或新增产能约118.6万吨 - 盖世汽车社区",
+      "summary": "爆单！磷酸铁锂开工率超85%！9个项目或新增产能约118.6万吨 盖世汽车社区",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE11aHhjODYzdHVaNjlWRmp0WmFSRUhJVnpITGdXUHZLM0NoZ3Y0S3g5ZmdQYkNROVhDME5aWWpnWU10SnZpaVhOLXRBZGJVZ2lF?oc=5",
+      "publishedAt": "2026-06-27",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "产能布局",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "爆单！磷酸铁锂开工率超85%！9个项目或新增产能约118.6"
+      }
+    },
+    {
       "id": "gn-3801dq",
       "title": "新能源汽车超快充,“卷”出新高度! - 新浪财经",
       "summary": "新能源汽车超快充,“卷”出新高度! 新浪财经",
@@ -39377,6 +39706,23 @@
       "importance": "high",
       "tags": {
         "主要事件": "新能源汽车安全隐患排查进行时，动力电池、辅助驾驶是重点 - "
+      }
+    },
+    {
+      "id": "gn-691hkz",
+      "title": "2025年中国磷酸铁锂出货394.4万吨 TOP10榜单迎大变动 - www.itdcw.com",
+      "summary": "2025年中国磷酸铁锂出货394.4万吨 TOP10榜单迎大变动 www.itdcw.com",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9fQlR3YVhzbmRPdmgybElSRVFJY0RvOTBGdTMtSTZqVko3aGRaQ3BCSnExSDRWRGVkWmZNVFVsSmljSUVEWXJlRkVfVFM2d0RFLS1VTjdUSmxnSTVGMk9yX1Yza0hOT0RleFpr?oc=5",
+      "publishedAt": "2026-05-29",
+      "keywords": [
+        "磷酸铁锂"
+      ],
+      "category": "市场动态",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "2025年中国磷酸铁锂出货394.4万吨 TOP10榜单迎大"
       }
     },
     {
