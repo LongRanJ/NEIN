@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T08:54:58.129Z",
+  "lastUpdated": "2026-11-22T08:57:31.849Z",
   "keywords": [
     "锂电池材料",
     "固态电池",
@@ -23,6 +23,150 @@
     "能源杂志"
   ],
   "articles": [
+    {
+      "id": "gn-21sa1p",
+      "title": "2026粤港澳大湾区固态电池技术与产业发展论坛第一轮通知 - 电子工程专辑EE Times China",
+      "summary": "2026粤港澳大湾区固态电池技术与产业发展论坛第一轮通知 电子工程专辑EE Times China",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iRDk1ZHJtX0ZoZ05PQXY2d1VBVjBsOUtZTHBQajhhUjVZZVZUMkdCNWlJa2hWVC1yNU5KNlg2YVVnVV9taU14NDVMOHZyN09kZ1ZJ?oc=5",
+      "publishedAt": "2026-11-22",
+      "keywords": [
+        "固态电池"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "2026粤港澳大湾区固态电池技术与产业发展论坛第一轮通知 -"
+      }
+    },
+    {
+      "id": "gn-1oe4un",
+      "title": "菏泽新能源储能项目EPC总承包中标结果公示发布 - 碳索储能网",
+      "summary": "菏泽新能源储能项目EPC总承包中标结果公示发布 碳索储能网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nSXB2MVJ4VmlvWHNNcmdNOGRudzZmR3o2cGJoYVhuUkt0VEZpanRyR1FUaW5vUkduLXdldXl6T0lkaGNHWmhrTUdVaTFjWlBUMFdmS3lGa2FUNU1BSEdoXw?oc=5",
+      "publishedAt": "2026-11-22",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "菏泽新能源储能项目EPC总承包中标结果公示发布 - 碳索储能"
+      }
+    },
+    {
+      "id": "gn-4oowtb",
+      "title": "新能源装机破1.4亿千瓦：从“送不出”到“能源大通道”，东北做对了什么？ - Sohu",
+      "summary": "新能源装机破1.4亿千瓦：从“送不出”到“能源大通道”，东北做对了什么？ Sohu",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZlkxUDRXSjM3cy15elFwTWJGZzkxZWdSVUN5eUxqR0g1X3hKb1dxQXkzU1QxWXZ4S09mREJ1M2pKWDdVSjR3eWpSRDhtVVJJSi1TQ2Nic2VzSHZwWlo4dFFnckhvUXhtcDJYU0loelBjSmVoZk9ydTBVSU1BZGdYdVcteXVLM2VOdnhWSQ?oc=5",
+      "publishedAt": "2026-11-22",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "新能源装机破1.4亿千瓦：从“送不出”到“能源大通道”，东北"
+      }
+    },
+    {
+      "id": "rss-nojrry",
+      "title": "Hidisc Sound Glasses 轻量化蓝牙音频眼镜发布：10mm 扬声器、5.5 小时续航，3980 日元",
+      "summary": "IT之家 11 月 22 日消息，制造商 Hidisc 宣布推出一款 Sound Glasses 轻量化蓝牙音频眼镜，该产品搭载蓝牙 6.0 技术、配有开放式扬声器，售价为 3,980 日元（IT之家注：现汇率约合 167.5 元人民币）。与如今功能日益复杂的智能眼镜不同，这款产品没有摄像头、AI 助手等功能，而是专注于提供基础的无线音频体验。其镜腿内置 10mm 扬声器，采用开放式音频设计，支持蓝牙 6.0，但音频编码仅支持标准 SBC 格式。这款眼镜配备触控区，用户可以通过触摸镜腿实现音乐播放、切换曲目和接听电话等操作。产品还具备 IPX5 级防水能力，可以应对日常出汗或意外淋雨等情况。眼",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/030/623.htm",
+      "publishedAt": "2026-11-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "Hidisc Sound Glasses 轻量化蓝牙音频眼镜"
+      }
+    },
+    {
+      "id": "rss-n8lqkh",
+      "title": "即将停产的特斯拉 Cybertruck 迎来 OTA 更新：2027 款转弯半径缩小",
+      "summary": "IT之家 11 月 22 日消息，特斯拉 Cybertruck 现在可以更轻松地通过狭窄空间了。特斯拉官方 Cybertruck 账号在 X 平台宣布，车辆正在通过 OTA 方式获得一项新升级，进一步缩小转弯半径，让车辆能够完成“更小半径的转弯”。不过，这项升级有一定限制：车辆必须安装 2026.44 或更高版本的软件，而且只有 2027 款 Cybertruck 才能使用这项转向优化功能。大块头皮卡也能灵活转弯特斯拉没有公布优化后的具体转弯半径数据，但官方展示的升级前后对比画面显示，Cybertruck 转弯时所需的空间明显缩小。对于一辆重量超过 6000 磅（约 2722 千克）的皮卡而言",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/030/615.htm",
+      "publishedAt": "2026-11-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "特斯拉"
+        ],
+        "主要事件": "即将停产的特斯拉 Cybertruck 迎来 OTA 更新："
+      }
+    },
+    {
+      "id": "rss-n6ek71",
+      "title": "丰田公布 BKE Concept 微型折叠电动两轮车，可 30 秒完成折叠放进 GR86 跑车后备箱",
+      "summary": "IT之家 11 月 22 日消息，丰田公布了一款名为 BKE Concept 的微型折叠电动两轮车，主打短途出行、户外活动和最后一公里接驳。这款产品可以在约 30 秒内完成折叠，体积小到能够放进丰田 GR86 跑车的后备厢。虽然丰田在官方宣传资料中将 BKE Concept 称为“电动自行车”，但由于该车没有脚踏板，因此严格来说并不符合欧洲和北美市场对电动自行车的定义。它实际上更接近一款带座椅的小型电动滑板车，也被称为无脚踏电动两轮车（No-Ped），其可以通过 110V AC 交流电源插座充电，这意味着搭载这款电动两轮车的汽车本身也能充当移动充电站。尽管 BKE Concept 看起来像是一",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/030/611.htm",
+      "publishedAt": "2026-11-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "地点": "欧洲、北美",
+        "涉及企业": [
+          "丰田"
+        ],
+        "主要事件": "丰田公布 BKE Concept 微型折叠电动两轮车，可 3"
+      }
+    },
+    {
+      "id": "rss-mt7hyd",
+      "title": "DOOGEE 预热 Note 70 新机：后背酷似三星 Galaxy S26 Ultra，配 1.8 寸背屏",
+      "summary": "IT之家 11 月 22 日消息，DOOGEE 最近在领英平台公布了“Note 70”新机。该手机的后背酷似三星 Galaxy S26 Ultra，带有一块 1.8 英寸背屏。外观方面，这款手机后置摄像头模组采用竖向排列，左边是三个较大的摄像头圆环，右边还有两个小的圆形组件。背面还带有一块 1.8 英寸屏幕，具体支持功能暂未公布。规格方面，这款手机搭载紫光展锐 T7250 处理器，最高提供 6GB 内存和 256GB 存储空间。拥有 6500mAh 电池，其他已公布的配置包括 1300 万像素后置摄像头、800 万像素前置摄像头，以及 Android 17 操作系统。此外，该机可选的配置版本有",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/030/608.htm",
+      "publishedAt": "2026-11-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "DOOGEE 预热 Note 70 新机：后背酷似三星 Ga"
+      }
+    },
+    {
+      "id": "rss-mot57h",
+      "title": "华为星芒 OSTA O1 Pro 新机星闪 E2.0 规格确认，支持电竞专链、精确查找等功能",
+      "summary": "IT之家 11 月 22 日消息，在 20 日下午发布的首款为 AI 而生的鸿蒙手机 —— 星芒 OSTA O1 Pro，华为官网确认其支持星闪 E2.0 技术。此外，华为官网星闪功能支持设备清单还揭示了 OSTA O1 Pro 的具体功能支持情况：OSTA O1 Pro 星闪功能支持一览产品型号星闪星闪音频星闪车钥匙星闪精确查找星闪手写笔 / 键盘 / 鼠标连接支持星闪功能的手表星闪电竞专链星闪 K 歌耳返功能查找端被查找端关机查找关机响铃手写笔键盘 鼠标OSTA O1 Pro星闪 E2.0支持支持支持支持支持不支持支持支持支持支持不支持参考IT之家此前报道，OSTA O1 Pro 新机提供",
+      "source": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/030/600.htm",
+      "publishedAt": "2026-11-22",
+      "keywords": [],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "涉及企业": [
+          "华为"
+        ],
+        "主要事件": "华为星芒 OSTA O1 Pro 新机星闪 E2.0 规格确"
+      }
+    },
+    {
+      "id": "gn-ur4mnj",
+      "title": "山东一市：配电网容量不足，分布式新能源可采用全部自用模式、不得反送电 - Sohu",
+      "summary": "山东一市：配电网容量不足，分布式新能源可采用全部自用模式、不得反送电 Sohu",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUC02Ni0zcGFZWGttNXlNOUtBdUs2WDllTzlfS1pJVmVTNnhIdkg4NVlBdHJMVFBwdlF2TzlDRWE4ZXVRM21Jd3hUaXkxYXAteTl2TXlmYVNhcnZNanlCZXdTbW1tSkZGSDI0MTF2MjEzcE9Za0l0a0dXZGlpUFo0ZnpyTUdFVTZu?oc=5",
+      "publishedAt": "2026-11-21",
+      "keywords": [
+        "储能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "山东一市：配电网容量不足，分布式新能源可采用全部自用模式、不"
+      }
+    },
     {
       "id": "gn-d469aq",
       "title": "【视频】固态电池至少还得5年，新能源车用超大电池包是趋势 - 汽车之家",
@@ -447,6 +591,55 @@
       "tags": {
         "地点": "日本",
         "主要事件": "本田全新一代冠道亮相，全新外观、全新混动平台加持"
+      }
+    },
+    {
+      "id": "gn-uqfd5x",
+      "title": "山东能源监管办：启动新能源电站专项排查，82座场站存在电力重大事故隐患 - Sohu",
+      "summary": "山东能源监管办：启动新能源电站专项排查，82座场站存在电力重大事故隐患 Sohu",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSk0xa3RhdUt1d3RNaEpnbS1qSjlaRUdieEVvcmFlVlp5RXVTSE5hTkxib25JTFFDYjFnYWZrSlY5bmtoTnJTQTJxeGlZYkI1NWhxYjJ6ZWxGM1NETUljOVctX2JoZ0dNT2g3dTBSSHhjWjdyS2pPeVVMY1lxUW1CcGVlb0pMNEpt?oc=5",
+      "publishedAt": "2026-11-19",
+      "keywords": [
+        "新能源事故"
+      ],
+      "category": "安全事件",
+      "importance": "high",
+      "tags": {
+        "主要事件": "山东能源监管办：启动新能源电站专项排查，82座场站存在电力重"
+      }
+    },
+    {
+      "id": "gn-3zpmof",
+      "title": "数智赋能储能新赛道 中国联通泰安市分公司亮相新型储能泰山发展大会 - 潮新闻客户端",
+      "summary": "数智赋能储能新赛道 中国联通泰安市分公司亮相新型储能泰山发展大会 潮新闻客户端",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMic0FVX3lxTE12SjI0MFZPT1g5bm5Ib2o3WERURkg2a09hcEpfbFMzM2tJQmN4V0xhdDZwR1A4TWI1bEZ3U2RLZjdQZFhRcGhlaTlSMG41Q0x6QU1fNFZIa0laRWJuSE1JeFJ0dF8wSzM2QkdKZ29HSFpRVzA?oc=5",
+      "publishedAt": "2026-11-19",
+      "keywords": [
+        "储能"
+      ],
+      "category": "储能应用",
+      "importance": "medium",
+      "tags": {
+        "地点": "中国",
+        "主要事件": "数智赋能储能新赛道 中国联通泰安市分公司亮相新型储能泰山发展"
+      }
+    },
+    {
+      "id": "gn-9tkjqc",
+      "title": "氢能重卡入选！山西省首批35个省级应用场景清单公布 - 世纪新能源网",
+      "summary": "氢能重卡入选！山西省首批35个省级应用场景清单公布 世纪新能源网",
+      "source": "综合来源",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1zdEFBUUx0alBreUxwZ3ZOQkt6SXdHNzFmZkRwb1dPWk9UZnU3QnpPd0lLbUNNdUlPMGxVTGhxbGg3QkdRS1dNb1JQT1hMS1ZPYVRxMg?oc=5",
+      "publishedAt": "2026-11-19",
+      "keywords": [
+        "氢能"
+      ],
+      "category": "行业资讯",
+      "importance": "medium",
+      "tags": {
+        "主要事件": "氢能重卡入选！山西省首批35个省级应用场景清单公布 - 世纪"
       }
     },
     {
